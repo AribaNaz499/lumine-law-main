@@ -21,7 +21,7 @@ const ServicesMegaMenu = () => {
         <Box position="relative" height="100%">
           <Button
             as={Link}
-            to={"/lumine-law/all-services"}
+            to={"/all-services"}
             backgroundColor="inherit"
             color="white"
             size="sm"
@@ -48,7 +48,7 @@ const ServicesMegaMenu = () => {
         >
           <Button
             as={Link}
-            to={"/lumine-law/all-services"}
+            to={"/all-services"}
             backgroundColor="inherit"
             color="white"
             size="sm"
@@ -135,7 +135,7 @@ const ServicesMegaMenu = () => {
                 >
                   {/* Header */}
                   <Link
-                    to={"/lumine-law/all-services/immigration"}
+                    to={"/all-services/immigration"}
                     style={{ textDecoration: "none" }}
                   >
                     <Text
@@ -155,7 +155,7 @@ const ServicesMegaMenu = () => {
                   {/* Asylum */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/immigration/asylum"}
+                    to={"/all-services/immigration/asylum"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -186,7 +186,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/immigration/skilled-worker-visa"
+                      "/all-services/immigration/skilled-worker-visa"
                     }
                     fontSize={{
                       lg: "9px",
@@ -202,7 +202,7 @@ const ServicesMegaMenu = () => {
                   {/* Spouse Visa */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/immigration/spouse-visa"}
+                    to={"/all-services/immigration/spouse-visa"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -218,7 +218,7 @@ const ServicesMegaMenu = () => {
                   {/* Visitor Visa */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/immigration/uk-visitor-visa"}
+                    to={"/all-services/immigration/uk-visitor-visa"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -233,7 +233,7 @@ const ServicesMegaMenu = () => {
 
                   {/* Explore More */}
                   <Link
-                    to={"/lumine-law/all-services/immigration"}
+                    to={"/all-services/immigration"}
                     style={{ textDecoration: "none" }}
                   >
                     <Text
@@ -263,7 +263,7 @@ const ServicesMegaMenu = () => {
                 >
                   {/* Header */}
                   <Link
-                    to={"/lumine-law/all-services/residential"}
+                    to={"/all-services/residential"}
                     style={{ textDecoration: "none" }}
                   >
                     <Text
@@ -283,7 +283,7 @@ const ServicesMegaMenu = () => {
                   {/* Freehold and Leasehold Sales */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/residential/freehold-sales"}
+                    to={"/all-services/residential/freehold-sales"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -300,7 +300,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/residential/freehold-purchases"
+                      "/all-services/residential/freehold-purchases"
                     }
                     fontSize={{
                       lg: "9px",
@@ -318,7 +318,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/residential/lease-terms-advice"
+                      "/all-services/residential/lease-terms-advice"
                     }
                     fontSize={{
                       lg: "9px",
@@ -336,7 +336,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/residential/transfer-of-equity"
+                      "/all-services/residential/transfer-of-equity"
                     }
                     fontSize={{
                       lg: "9px",
@@ -362,7 +362,7 @@ const ServicesMegaMenu = () => {
                 >
                   {/* Header */}
                   <Link
-                    to={"/lumine-law/all-services/commercial"}
+                    to={"/all-services/commercial"}
                     style={{ textDecoration: "none" }}
                   >
                     <Text
@@ -383,7 +383,7 @@ const ServicesMegaMenu = () => {
                   {/* Lease Renewals */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/commercial/lease-renewals"}
+                    to={"/all-services/commercial/lease-renewals"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -399,7 +399,7 @@ const ServicesMegaMenu = () => {
                   {/* Purchase of Business and Licenses to Align */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/commercial/business-licenses"}
+                    to={"/all-services/commercial/business-licenses"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -416,7 +416,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/commercial/purchase-commercial"
+                      "/all-services/commercial/purchase-commercial"
                     }
                     fontSize={{
                       lg: "9px",
@@ -433,7 +433,7 @@ const ServicesMegaMenu = () => {
                   {/* Sales of Commercial Property */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/commercial/sales-commercial"}
+                    to={"/all-services/commercial/sales-commercial"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -448,7 +448,7 @@ const ServicesMegaMenu = () => {
 
                   {/* Explore More */}
                   <Link
-                    to={"/lumine-law/all-services/commercial"}
+                    to={"/all-services/commercial"}
                     style={{ textDecoration: "none" }}
                   >
                     <Text
@@ -478,7 +478,7 @@ const ServicesMegaMenu = () => {
                 >
                   {/* Header */}
                   <Link
-                    to={"/lumine-law/all-services/intellectual-property"}
+                    to={"/all-services/intellectual-property"}
                     style={{ textDecoration: "none" }}
                   >
                     <Text
@@ -499,7 +499,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/intellectual-property/copyright"
+                      "/all-services/intellectual-property/copyright"
                     }
                     fontSize={{
                       lg: "9px",
@@ -516,7 +516,7 @@ const ServicesMegaMenu = () => {
                   {/* Patent */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/intellectual-property/patent"}
+                    to={"/all-services/intellectual-property/patent"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -533,7 +533,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/intellectual-property/trademark"
+                      "/all-services/intellectual-property/trademark"
                     }
                     fontSize={{
                       lg: "9px",
@@ -559,7 +559,7 @@ const ServicesMegaMenu = () => {
                 >
                   {/* Header */}
                   <Link
-                    to={"/lumine-law/all-services/dispute-resolution"}
+                    to={"/all-services/dispute-resolution"}
                     style={{ textDecoration: "none" }}
                   >
                     <Text
@@ -580,7 +580,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/dispute-resolution/building-contracts"
+                      "/all-services/dispute-resolution/building-contracts"
                     }
                     fontSize={{
                       lg: "9px",
@@ -598,7 +598,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/dispute-resolution/contract-disputes"
+                      "/all-services/dispute-resolution/contract-disputes"
                     }
                     fontSize={{
                       lg: "9px",
@@ -616,7 +616,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/dispute-resolution/supply-goods-services"
+                      "/all-services/dispute-resolution/supply-goods-services"
                     }
                     fontSize={{
                       lg: "9px",
@@ -652,7 +652,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/dispute-resolution/debt-matters"
+                      "/all-services/dispute-resolution/debt-matters"
                     }
                     fontSize={{
                       lg: "9px",
@@ -668,7 +668,7 @@ const ServicesMegaMenu = () => {
 
                   {/* Explore More */}
                   <Link
-                    to={"/lumine-law/all-services/dispute-resolution"}
+                    to={"/all-services/dispute-resolution"}
                     style={{ textDecoration: "none" }}
                   >
                     <Text
@@ -706,7 +706,7 @@ const ServicesMegaMenu = () => {
                 >
                   {/* Header */}
                   <Link
-                    to={"/lumine-law/all-services/landlord-tenant"}
+                    to={"/all-services/landlord-tenant"}
                     style={{ textDecoration: "none" }}
                   >
                     <Text
@@ -727,7 +727,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/landlord-tenant/claims-disrepair"
+                      "/all-services/landlord-tenant/claims-disrepair"
                     }
                     fontSize={{
                       lg: "9px",
@@ -745,7 +745,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/landlord-tenant/possession-claims"
+                      "/all-services/landlord-tenant/possession-claims"
                     }
                     fontSize={{
                       lg: "9px",
@@ -763,7 +763,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/landlord-tenant/recovery-rent"
+                      "/all-services/landlord-tenant/recovery-rent"
                     }
                     fontSize={{
                       lg: "9px",
@@ -788,7 +788,7 @@ const ServicesMegaMenu = () => {
                 >
                   {/* Header */}
                   <Link
-                    to={"/lumine-law/all-services/family-and-children"}
+                    to={"/all-services/family-and-children"}
                     style={{ textDecoration: "none" }}
                   >
                     <Text
@@ -808,7 +808,7 @@ const ServicesMegaMenu = () => {
                   {/* Divorce */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/family/divorce"}
+                    to={"/all-services/family/divorce"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -824,7 +824,7 @@ const ServicesMegaMenu = () => {
                   {/* Domestic Violence */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/family/domestic-violence"}
+                    to={"/all-services/family/domestic-violence"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -841,7 +841,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/family/parental-responsbility"
+                      "/all-services/family/parental-responsbility"
                     }
                     fontSize={{
                       lg: "9px",
@@ -858,7 +858,7 @@ const ServicesMegaMenu = () => {
                   {/* Pre Nuptial Agreement */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/family/nuptial-agreement"}
+                    to={"/all-services/family/nuptial-agreement"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -873,7 +873,7 @@ const ServicesMegaMenu = () => {
 
                   {/* Explore more */}
                   <Link
-                    to={"/lumine-law/all-services/family-and-children"}
+                    to={"/all-services/family-and-children"}
                     style={{ textDecoration: "none" }}
                   >
                     <Text
@@ -903,7 +903,7 @@ const ServicesMegaMenu = () => {
                 >
                   {/* Header */}
                   <Link
-                    to={"/lumine-law/all-services/wills-probate"}
+                    to={"/all-services/wills-probate"}
                     style={{ textDecoration: "none" }}
                   >
                     <Text
@@ -941,7 +941,7 @@ const ServicesMegaMenu = () => {
                   {/* Probate */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/wills-probate/probate"}
+                    to={"/all-services/wills-probate/probate"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -958,7 +958,7 @@ const ServicesMegaMenu = () => {
                   <Text
                     as={Link}
                     to={
-                      "/lumine-law/all-services/wills-probate/succession-planning"
+                      "/all-services/wills-probate/succession-planning"
                     }
                     fontSize={{
                       lg: "9px",
@@ -975,7 +975,7 @@ const ServicesMegaMenu = () => {
                   {/* Wills */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/wills-probate/wills"}
+                    to={"/all-services/wills-probate/wills"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -991,7 +991,7 @@ const ServicesMegaMenu = () => {
                   {/* Trusts */}
                   <Text
                     as={Link}
-                    to={"/lumine-law/all-services/wills-probate/trusts"}
+                    to={"/all-services/wills-probate/trusts"}
                     fontSize={{
                       lg: "9px",
                       xl: "10px",
@@ -1006,7 +1006,7 @@ const ServicesMegaMenu = () => {
 
                   {/* Explore more */}
                   <Link
-                    to={"/lumine-law/all-services/wills-probate"}
+                    to={"/all-services/wills-probate"}
                     style={{ textDecoration: "none" }}
                   >
                     <Text

@@ -1,7 +1,8 @@
 import React, { Suspense } from "react";
-import { Text, Container, Box, Flex } from "@chakra-ui/react";
+import { Text, Container, Box, Flex, Button } from "@chakra-ui/react";
 import Footer from "../Footer/Footer";
 import "../../styles/fonts.css";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import BannerImg from "../../assets/about/aboutUs.jpg";
 
@@ -9,7 +10,16 @@ const AllServiceLinks = React.lazy(() => import("../NavLinks/AllServiceLinks"));
 const AllPrices = React.lazy(() => import("../NavLinks/AllPrices"));
 const AllNewsInsights = React.lazy(() => import("../NavLinks/AllNewsInsights"));
 
+
+
 const About = () => {
+  const handleSectionClick = (section) => {
+    if (activeSection === section) {
+      setActiveSection(null);
+    } else {
+      setActiveSection(section);
+    }
+  };
   return (
     <>
       <Container
@@ -29,14 +39,14 @@ const About = () => {
 
         {/* Main Wrapper */}
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
-          
+
           {/* 1. Banner Section */}
           <Box
             width={"100%"}
             bgImage={`linear-gradient(#00000044, #00000044), url(${BannerImg})`}
             bgSize={"cover"}
             bgPos={"top center"}
-            minH={"50vh"} 
+            minH={"80vh"}
             bgRepeat={"no-repeat"}
             display={"flex"}
             flexDirection={"column"}
@@ -67,17 +77,17 @@ const About = () => {
           </Box>
 
           {/* 2. Feature Boxes Section (Confidential, Trusted, Protect) */}
-          <Box 
+          <Box
             width={"100%"}
             backgroundColor={"#80808011"}
             py={{ base: "40px", md: "60px" }}
             display="flex"
             justifyContent="center"
           >
-            <Flex 
-              width={{ base: "90%", lg: "85%" }} 
-              justifyContent="space-between" 
-              flexWrap="wrap" 
+            <Flex
+              width={{ base: "90%", lg: "85%" }}
+              justifyContent="space-between"
+              flexWrap="wrap"
               gap={6}
             >
               {/* Box 1 */}
@@ -109,7 +119,7 @@ const About = () => {
                 </Box>
                 <Box p={4} display="flex" flexDirection="column" justifyContent="center">
                   <Text marginLeft={"-80px"} fontSize="20px" color="#ebc51de7">Protect</Text>
-                  <Text  marginLeft={"-17px"} color={"black"} fontWeight="400" fontSize={{ base: "20px", lg: "26px" }}>Your Rights</Text>
+                  <Text marginLeft={"-17px"} color={"black"} fontWeight="400" fontSize={{ base: "20px", lg: "26px" }}>Your Rights</Text>
                 </Box>
               </Flex>
             </Flex>
@@ -121,6 +131,7 @@ const About = () => {
             display={"flex"}
             flexDirection={"column"}
             color={"black"}
+            marginBottom={"-58px"}
             py={{ base: "40px", md: "80px" }}
           >
             <Box
@@ -131,43 +142,95 @@ const About = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ base: "14px", md: "16px", lg: "17px", "2xl": "18px" }}
+                fontSize={{ base: "16px", md: "18px", lg: "20px", "2xl": "22px" }}
+                marginTop={"-45px"}
+                color={"#deb92c"}
                 textAlign={"justify"}
                 lineHeight="1.8"
               >
-                Lumine Solicitors is an SRA regulated firm of solicitors. We offer the dedicated support 
-                and advice you require from the very outset of your matter. We provide a remarkably personal 
-                and approachable service, whatever your legal service requirements may be. We are well known 
-                for the calibre of advice we provide and the successful outcomes we acquire for our clients. 
-                Lumine Solicitors in London adopts an entirely transparent and professional approach, 
-                and we focus on delivering cost-effective solutions to our clients. 
-                <br /><br />
-                During times of personal difficulty, we always strive to successfully resolve challenging 
-                and technical aspects of disputes and applications. We represent both individuals and businesses. 
-                Our Solicitors are dedicated to client care and will fully explain the services we will be 
-                providing and a full breakdown and explanation of costs and charges will be provided from 
-                the outset of the matter. We provide all our clients with premium and bespoke legal services 
-                and support.
-                <br /><br />
-                Our aim is to simplify the process of accessing quality legal support, irrespective of financial 
-                or other restrictions. We do provide free initial consultations during which all available 
-                options will be discussed. We build and maintain relationships with our clients that are based 
-                on mutual respect. Our hard-earned reputation is based on traditional client centred values, 
-                and our objective is to meet our clients needs in every matter. 
-                <br /><br />
-                We correspond with clients in a manner that is best suited to their individual needs. 
-                We can use video calls for meetings and appointments where appropriate. Clients are always 
-                made aware of our terms of business and costs, who is dealing with their matter, and regular 
-                updates on any developments in their case. We are a modern, progressive and growing firm 
-                located close to three central London tube stations, Gloucester Road, Earl’s Court and South 
-                Kensington. We are also a 4-minute drive from Harrods. Furthermore, we are conveniently 
-                located outside of the congestion zone.
+                About Lumine Solicitors
               </Text>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                color={"#deb92c"}
+                marginTop={"8px"}
+                fontSize={{ base: "22px", md: "24px", lg: "26px", "2xl": "28px" }}
+                textAlign={"justify"}
+                lineHeight="1.8"
+              >
+                Client-Focused Legal Expertise
+              </Text>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                marginTop={"16px"}
+                fontSize={{ base: "12px", md: "14px", lg: "16px", "2xl": "18px" }}
+                textAlign={"justify"}
+                color={"#7a7a7a"}
+                lineHeight="1.6"
+              >
+                Lumine Solicitors is an SRA regulated firm of solicitors. We offer the dedicated support and advice you require from the very outset of your matter. We provide
+                a remarkably personal and approachable service, whatever your legal service requirements may be.We are well known for the calibre of advice we provide
+                and the successful outcomes we acquire for our clients.
+
+                <br /><br />
+                Lumine Solicitors in London adopts an entirely transparent and professional approach, and we focus on delivering cost-effective solutions to our clients.
+                During times of personal difficulty, we always strive to successfully resolve challenging and technical aspects of disputes and applications. We represent both
+                individuals and businesses.
+
+                <br /><br />
+                Our Solicitors are dedicated to client care and will fully explain the services we will be providing and a full breakdown and explanation of costs and charges will
+                be provided from the outset of the matter. We provide all our clients with premium and bespoke legal services and support. Our aim is to simplify the process
+                of accessing quality legal support, irrespective of financial or other restrictions.
+
+                <br /> <br />
+                We provide initial consultations during which all available options will be carefully discussed. We build and maintain relationships with our clients based on
+                mutual respect. Our hard-earned reputation is founded on traditional client-centred values, and our objective is to meet our clients’ needs in every matter.
+
+                <br /><br />
+                We correspond with clients in a manner that is best suited to their individual needs. We can use video calls for meetings and appointments where appropriate.
+                Clients are always made aware of our terms of business and costs, who is dealing with their matter, and regular updates on any developments in their case.
+
+                <br /><br />
+                We are a modern, progressive and growing firm located in Victoria, London. Our office is just a 5-minute walk from Victoria Station and Buckingham Palace,
+                conveniently situated behind the Buckingham Palace Gardens in the heart of central London.
+              </Text>
+              <Box
+                as={Link}
+                to="/contact"
+                display="inline-flex" // 'flex' ki jagah taaki button container content ke hisaab se width le
+                backgroundColor="#deb92c"
+                padding="12px 0px" // Exact rectangle shape ke liye
+                justifyContent="center"
+                alignItems="center"
+                textDecoration="none"
+                marginRight={"85%"}
+                marginTop={"15px"}
+                _hover={{ textDecoration: "none" }}
+              >
+                <Button
+                  variant="unstyled" // Default button styling hatane ke liye
+                  display="flex"
+                  // alignItems="center"
+                  // justifyContent="center"
+                  color="white"
+                  height="auto"
+                  minW="auto"
+                  
+                  fontSize={{ base: "16px", md: "18px", lg: "20px" }}
+                  fontWeight={400}
+                  _hover={{ color: "white" }} // Text color white hi rahega
+                  transition="all 0.3s ease"
+                >
+                  Contact Us
+                </Button>
+              </Box>
             </Box>
           </Box>
 
           <Footer />
-        </Box> 
+        </Box>
       </Container>
     </>
   );

@@ -21,7 +21,7 @@ const Menu = () => {
         {/* About */}
         <Button
           as={Link}
-          to={"/lumine-law/about"}
+          to={"/about"}
           backgroundColor="inherit"
           color="white"
           size="sm"
@@ -100,7 +100,7 @@ const Navbar = () => {
         >
           {/* Logo + Title */}
           <GridItem>
-            <Link to={"/lumine-law/"} textDecoration={"none"}>
+            <Link to={"/"} textDecoration={"none"}>
               <HStack
                 justifyContent={"flex-start"}
                 alignItems={"center"}
@@ -172,7 +172,7 @@ const Navbar = () => {
 
           {/* Contact Button */}
           <GridItem justifySelf={"end"} display={{ xs: "none", md: "grid" }}>
-            <Link to={"/lumine-law/contact"} style={{ textDecoration: "none" }}>
+            <Link to={"/contact"} style={{ textDecoration: "none" }}>
               <Button
                 fontWeight={400}
                 fontSize={{

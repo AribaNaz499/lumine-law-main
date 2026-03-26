@@ -84,7 +84,7 @@ const NewInsightsMenu = () => {
       <VStack alignItems={"stretch"} gap="0px">
         <Text
           as={Link}
-          to={"/lumine-law/immigration-news"}
+          to={"/immigration-news"}
           fontSize={{
             lg: "12px",
             xl: "14px",
@@ -107,7 +107,7 @@ const NewInsightsMenu = () => {
 
         <Text
           as={Link}
-          to={"/lumine-law/litigation"}
+          to={"/litigation"}
           fontSize={{
             lg: "12px",
             xl: "14px",
@@ -130,7 +130,7 @@ const NewInsightsMenu = () => {
 
         <Text
           as={Link}
-          to={"/lumine-law/conveyancing"}
+          to={"/conveyancing"}
           fontSize={{
             lg: "12px",
             xl: "14px",

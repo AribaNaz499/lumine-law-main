@@ -84,7 +84,7 @@ const PricesMenu = () => {
               <VStack alignItems={"stretch"} gap="0px">
                 <Text
                   as={Link}
-                  to={"/lumine-law/prices/property-prices"}
+                  to={"/prices/property-prices"}
                   fontSize={{
                     lg: "12px",
                     xl: "14px",
@@ -107,7 +107,7 @@ const PricesMenu = () => {
 
                 <Text
                   as={Link}
-                  to={"/lumine-law/prices/debt-recovery"}
+                  to={"/prices/debt-recovery"}
                   fontSize={{
                     lg: "12px",
                     xl: "14px",

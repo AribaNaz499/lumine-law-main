@@ -98,7 +98,7 @@ const Menu = () => {
                   {/* About */}
                   <Box
                     as={Link}
-                    to={"/lumine-law/about"}
+                    to={"/about"}
                     backgroundColor="black"
                     width={"100%"}
                     borderBottom={"1px solid white"}
@@ -203,7 +203,7 @@ const Menu = () => {
                   {/* News */}
                   <Box
                     as={Link}
-                    to={"/lumine-law/news"}
+                    to={"/news"}
                     backgroundColor="black"
                     width={"100%"}
                     borderBottom={"1px solid white"}
@@ -235,7 +235,7 @@ const Menu = () => {
                   {/* Insights */}
                   <Box
                     as={Link}
-                    to={"/lumine-law/insights"}
+                    to={"/insights"}
                     backgroundColor="black"
                     width={"100%"}
                     borderBottom={"1px solid white"}
@@ -273,7 +273,7 @@ const Menu = () => {
                     justifyContent={"flex-start"}
                     py={"10px"}
                     as={Link}
-                    to={"/lumine-law/contact"}
+                    to={"/contact"}
                     onClick={() => handleSectionClick(null)}
                   >
                     <Button
@@ -350,7 +350,7 @@ const Menu = () => {
                         display={"flex"}
                         py={"5px"}
                         as={Link}
-                        to={"/lumine-law/all-services"}
+                        to={"/all-services"}
                       >
                         <Button
                           ml={"5%"}
@@ -380,7 +380,7 @@ const Menu = () => {
                         display={"flex"}
                         py={"5px"}
                         as={Link}
-                        to={"/lumine-law/all-services/immigration"}
+                        to={"/all-services/immigration"}
                       >
                         <Button
                           ml={"5%"}
@@ -410,7 +410,7 @@ const Menu = () => {
                         display={"flex"}
                         py={"5px"}
                         as={Link}
-                        to={"/lumine-law/all-services/residential"}
+                        to={"/all-services/residential"}
                       >
                         <Button
                           ml={"5%"}
@@ -440,7 +440,7 @@ const Menu = () => {
                         display={"flex"}
                         py={"5px"}
                         as={Link}
-                        to={"/lumine-law/all-services/commercial"}
+                        to={"/all-services/commercial"}
                       >
                         <Button
                           ml={"5%"}
@@ -470,7 +470,7 @@ const Menu = () => {
                         display={"flex"}
                         py={"5px"}
                         as={Link}
-                        to={"/lumine-law/all-services/intellectual-property"}
+                        to={"/all-services/intellectual-property"}
                       >
                         <Button
                           ml={"5%"}
@@ -500,7 +500,7 @@ const Menu = () => {
                         display={"flex"}
                         py={"5px"}
                         as={Link}
-                        to={"/lumine-law/all-services/dispute-resolution"}
+                        to={"/all-services/dispute-resolution"}
                       >
                         <Button
                           ml={"5%"}
@@ -530,7 +530,7 @@ const Menu = () => {
                         display={"flex"}
                         py={"5px"}
                         as={Link}
-                        to={"/lumine-law/all-services/landlord-tenant"}
+                        to={"/all-services/landlord-tenant"}
                       >
                         <Button
                           ml={"5%"}
@@ -560,7 +560,7 @@ const Menu = () => {
                         borderBottom={"1px solid #beab7c"}
                         py={"5px"}
                         as={Link}
-                        to={"/lumine-law/all-services/family-and-children"}
+                        to={"/all-services/family-and-children"}
                       >
                         <Button
                           ml={"5%"}
@@ -590,7 +590,7 @@ const Menu = () => {
                         borderBottom={"1px solid #beab7c"}
                         py={"5px"}
                         as={Link}
-                        to={"/lumine-law/all-services/wills-probate"}
+                        to={"/all-services/wills-probate"}
                       >
                         <Button
                           ml={"5%"}
@@ -669,7 +669,7 @@ const Menu = () => {
                         display={"flex"}
                         py={"5px"}
                         as={Link}
-                        to={"/lumine-law/prices/property-prices"}
+                        to={"/prices/property-prices"}
                       >
                         <Button
                           ml={"5%"}
@@ -699,7 +699,7 @@ const Menu = () => {
                         display={"flex"}
                         py={"5px"}
                         as={Link}
-                        to="/lumine-law/prices/debt-recovery"
+                        to="/prices/debt-recovery"
                       >
                         <Button
                           ml={"5%"}
@@ -729,7 +729,7 @@ const Menu = () => {
                         display={"flex"}
                         py={"5px"}
                         as={Link}
-                        to="/lumine-law/prices/immigration-prices"
+                        to="/prices/immigration-prices"
                       >
                         <Button
                           ml={"5%"}
@@ -796,7 +796,7 @@ const MobileNav = () => {
         >
           {/* Logo + Title */}
           <GridItem>
-            <Link to={"/lumine-law/"} textDecoration={"none"}>
+            <Link to={"/"} textDecoration={"none"}>
               <HStack
                 justifyContent={"flex-start"}
                 alignItems={"center"}
