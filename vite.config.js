@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import viteCompression from "vite-plugin-compression";
 
 export default defineConfig({
-  base: "/", // ← Changed from "/lumine-law/" to "/"
+  base: process.env.VERCEL ? "/" : "/lumine-law/",
 
   plugins: [
     react(),

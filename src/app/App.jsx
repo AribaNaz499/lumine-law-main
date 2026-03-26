@@ -286,7 +286,7 @@ function App() {
       <ResourceLoader />
       <ResourceHints />
       <FontPreloader />
-      <BrowserRouter basename="/lumine-law">
+      <BrowserRouter basename={import.meta.env.PROD ? "/lumine-law" : "/"}>
         <Navbar />
         <Suspense fallback={<LoadingSpinner />}>
           <Routes>
