@@ -87,7 +87,7 @@ const About = () => {
                 </Box>
                 <Box p={4} display="flex" flexDirection="column" justifyContent="center">
                   <Text marginLeft={"-78px"} fontSize="20px" color="#ebc51de7">Confidential</Text>
-                  <Text marginLeft={"-17px"} color={"black"} fontWeight="400" fontSize={{ base: "22px", lg: "28px" }}>Client Support</Text>
+                  <Text marginLeft={"-17px"} color={"black"} fontWeight="400" fontSize={{ base: "20px", lg: "26px" }}>Client Support</Text>
                 </Box>
               </Flex>
 
@@ -98,18 +98,18 @@ const About = () => {
                 </Box>
                 <Box p={4} display="flex" flexDirection="column" justifyContent="center">
                   <Text marginLeft={"-100px"} fontSize="20px" color="#ebc51de7" >Trusted</Text>
-                  <Text marginLeft={"-17px"} color={"black"} fontWeight="400" fontSize={{ base: "22px", lg: "28px" }}>Legal Advice</Text>
+                  <Text marginLeft={"-17px"} color={"black"} fontWeight="400" fontSize={{ base: "20px", lg: "26px" }}>Legal Advice</Text>
                 </Box>
               </Flex>
 
               {/* Box 3 */}
               <Flex width={{ base: "100%", md: "31%" }} backgroundColor="white">
-                <Box width="80px" bg="#f39136e7" display="flex" justifyContent="center" alignItems="center" py="30px">
+                <Box width="80px" bg="#ebc51de7" display="flex" justifyContent="center" alignItems="center" py="30px">
                   <Text color="white" fontSize="30px">🛡️</Text>
                 </Box>
                 <Box p={4} display="flex" flexDirection="column" justifyContent="center">
-                  <Text fontSize="12px" color="#f39136e7" textTransform="uppercase">Protect</Text>
-                  <Text fontWeight="600" fontSize={{ base: "16px", lg: "20px" }}>Your Rights</Text>
+                  <Text marginLeft={"-80px"} fontSize="20px" color="#ebc51de7">Protect</Text>
+                  <Text  marginLeft={"-17px"} color={"black"} fontWeight="400" fontSize={{ base: "20px", lg: "26px" }}>Your Rights</Text>
                 </Box>
               </Flex>
             </Flex>
