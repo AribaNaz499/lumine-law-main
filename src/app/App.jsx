@@ -286,13 +286,13 @@ function App() {
       <ResourceLoader />
       <ResourceHints />
       <FontPreloader />
-      <BrowserRouter>
+      <BrowserRouter basename="/lumine-law">
         <Navbar />
         <Suspense fallback={<LoadingSpinner />}>
           <Routes>
             {/* Landing */}
             <Route
-              path="/lumine-law/"
+              path="/"
               element={
                 <SuspensePageTransition>
                   <LandingPage />
@@ -302,7 +302,7 @@ function App() {
 
             {/* Contact */}
             <Route
-              path="/lumine-law/contact"
+              path="/contact"
               element={
                 <SuspensePageTransition>
                   <Contact />
@@ -312,7 +312,7 @@ function App() {
 
             {/* All Services */}
             <Route
-              path="/lumine-law/all-services"
+              path="/all-services"
               element={
                 <SuspensePageTransition>
                   <AllServices />
@@ -322,7 +322,7 @@ function App() {
 
             {/* Immigration */}
             <Route
-              path="/lumine-law/all-services/immigration"
+              path="/all-services/immigration"
               element={
                 <SuspensePageTransition>
                   <Immigration />
@@ -332,7 +332,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/spouse-visa"
+              path="/all-services/immigration/spouse-visa"
               element={
                 <SuspensePageTransition>
                   <SpouseVisa />
@@ -342,7 +342,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/british-citizenship-application"
+              path="/all-services/immigration/british-citizenship-application"
               element={
                 <SuspensePageTransition>
                   <BritishCitizenshipApplication />
@@ -352,7 +352,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/uk-visitor-visa"
+              path="/all-services/immigration/uk-visitor-visa"
               element={
                 <SuspensePageTransition>
                   <VisitorVisa />
@@ -362,7 +362,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/skilled-worker-visa"
+              path="/all-services/immigration/skilled-worker-visa"
               element={
                 <SuspensePageTransition>
                   <SkilledWorkerVisa />
@@ -372,7 +372,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/certificate-of-sponsorship"
+              path="/all-services/immigration/certificate-of-sponsorship"
               element={
                 <SuspensePageTransition>
                   <CoS />
@@ -382,7 +382,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/student-visa"
+              path="/all-services/immigration/student-visa"
               element={
                 <SuspensePageTransition>
                   <StudentVisa />
@@ -392,7 +392,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/entry-clearance"
+              path="/all-services/immigration/entry-clearance"
               element={
                 <SuspensePageTransition>
                   <EntryClearance />
@@ -402,7 +402,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/skilled-migrant"
+              path="/all-services/immigration/skilled-migrant"
               element={
                 <SuspensePageTransition>
                   <SkilledMigrant />
@@ -412,7 +412,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/visa-categories"
+              path="/all-services/immigration/visa-categories"
               element={
                 <SuspensePageTransition>
                   <VisaCategories />
@@ -422,7 +422,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/visa-extensions"
+              path="/all-services/immigration/visa-extensions"
               element={
                 <SuspensePageTransition>
                   <VisaExtensions />
@@ -432,7 +432,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/indefinite-leave"
+              path="/all-services/immigration/indefinite-leave"
               element={
                 <SuspensePageTransition>
                   <IndefiniteLeave />
@@ -442,7 +442,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/human-rights-app"
+              path="/all-services/immigration/human-rights-app"
               element={
                 <SuspensePageTransition>
                   <HumanRights />
@@ -452,7 +452,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/discretionary-leave"
+              path="/all-services/immigration/discretionary-leave"
               element={
                 <SuspensePageTransition>
                   <DiscretionaryLeave />
@@ -462,7 +462,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/bail-revocation"
+              path="/all-services/immigration/bail-revocation"
               element={
                 <SuspensePageTransition>
                   <BailRevocation />
@@ -472,7 +472,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/eu-settlement"
+              path="/all-services/immigration/eu-settlement"
               element={
                 <SuspensePageTransition>
                   <EuSettlement />
@@ -482,7 +482,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/reviews-appeals"
+              path="/all-services/immigration/reviews-appeals"
               element={
                 <SuspensePageTransition>
                   <ReviewsAppeals />
@@ -492,7 +492,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/asylum"
+              path="/all-services/immigration/asylum"
               element={
                 <SuspensePageTransition>
                   <Asylum />
@@ -502,7 +502,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/innovator-founder"
+              path="/all-services/immigration/innovator-founder"
               element={
                 <SuspensePageTransition>
                   <InnovatorFounder />
@@ -512,7 +512,7 @@ function App() {
 
             {/* Immigration Sub Service */}
             <Route
-              path="/lumine-law/all-services/immigration/creative-worker"
+              path="/all-services/immigration/creative-worker"
               element={
                 <SuspensePageTransition>
                   <CreativeWorker />
@@ -522,7 +522,7 @@ function App() {
 
             {/* Family */}
             <Route
-              path="/lumine-law/all-services/family-and-children"
+              path="/all-services/family-and-children"
               element={
                 <SuspensePageTransition>
                   <Family />
@@ -532,7 +532,7 @@ function App() {
 
             {/* Family Sub Service */}
             <Route
-              path="/lumine-law/all-services/family/divorce"
+              path="/all-services/family/divorce"
               element={
                 <SuspensePageTransition>
                   <Divorce />
@@ -542,7 +542,7 @@ function App() {
 
             {/* Family Sub Service */}
             <Route
-              path="/lumine-law/all-services/family/nuptial-agreement"
+              path="/all-services/family/nuptial-agreement"
               element={
                 <SuspensePageTransition>
                   <NuptialAgreement />
@@ -552,7 +552,7 @@ function App() {
 
             {/* Family Sub Service */}
             <Route
-              path="/lumine-law/all-services/family/child-arrangements"
+              path="/all-services/family/child-arrangements"
               element={
                 <SuspensePageTransition>
                   <ChildArrangements />
@@ -562,7 +562,7 @@ function App() {
 
             {/* Family Sub Service */}
             <Route
-              path="/lumine-law/all-services/family/parental-responsbility"
+              path="/all-services/family/parental-responsbility"
               element={
                 <SuspensePageTransition>
                   <ParentalResponsiblity />
@@ -572,7 +572,7 @@ function App() {
 
             {/* Family Sub Service */}
             <Route
-              path="/lumine-law/all-services/family/consent-orders"
+              path="/all-services/family/consent-orders"
               element={
                 <SuspensePageTransition>
                   <ConsentOrders />
@@ -582,7 +582,7 @@ function App() {
 
             {/* Family Sub Service */}
             <Route
-              path="/lumine-law/all-services/family/financial-settlements"
+              path="/all-services/family/financial-settlements"
               element={
                 <SuspensePageTransition>
                   <FinancialStatements />
@@ -592,7 +592,7 @@ function App() {
 
             {/* Family Sub Service */}
             <Route
-              path="/lumine-law/all-services/family/domestic-violence"
+              path="/all-services/family/domestic-violence"
               element={
                 <SuspensePageTransition>
                   <DomesticViolence />
@@ -602,7 +602,7 @@ function App() {
 
             {/* Family Sub Service */}
             <Route
-              path="/lumine-law/all-services/family/adoption-surrogacy"
+              path="/all-services/family/adoption-surrogacy"
               element={
                 <SuspensePageTransition>
                   <Adoption />
@@ -612,7 +612,7 @@ function App() {
 
             {/* Residential Property */}
             <Route
-              path="/lumine-law/all-services/residential"
+              path="/all-services/residential"
               element={
                 <SuspensePageTransition>
                   <Residential />
@@ -622,7 +622,7 @@ function App() {
 
             {/* Residential Subservice */}
             <Route
-              path="/lumine-law/all-services/residential/freehold-sales"
+              path="/all-services/residential/freehold-sales"
               element={
                 <SuspensePageTransition>
                   <FreeholdSales />
@@ -632,7 +632,7 @@ function App() {
 
             {/* Residential Subservice */}
             <Route
-              path="/lumine-law/all-services/residential/freehold-purchases"
+              path="/all-services/residential/freehold-purchases"
               element={
                 <SuspensePageTransition>
                   <FreeholdPurchases />
@@ -642,7 +642,7 @@ function App() {
 
             {/* Residential Subservice */}
             <Route
-              path="/lumine-law/all-services/residential/transfer-of-equity"
+              path="/all-services/residential/transfer-of-equity"
               element={
                 <SuspensePageTransition>
                   <TransfersOfEquity />
@@ -652,7 +652,7 @@ function App() {
 
             {/* Residential Subservice */}
             <Route
-              path="/lumine-law/all-services/residential/lease-terms-advice"
+              path="/all-services/residential/lease-terms-advice"
               element={
                 <SuspensePageTransition>
                   <LeaseTermsAdvice />
@@ -662,7 +662,7 @@ function App() {
 
             {/* Commercial Property */}
             <Route
-              path="/lumine-law/all-services/commercial"
+              path="/all-services/commercial"
               element={
                 <SuspensePageTransition>
                   <Commercial />
@@ -672,7 +672,7 @@ function App() {
 
             {/* Commercial Subservice */}
             <Route
-              path="/lumine-law/all-services/commercial/purchase-commercial"
+              path="/all-services/commercial/purchase-commercial"
               element={
                 <SuspensePageTransition>
                   <PurchaseCommercial />
@@ -682,7 +682,7 @@ function App() {
 
             {/* Commercial Subservice */}
             <Route
-              path="/lumine-law/all-services/commercial/sales-commercial"
+              path="/all-services/commercial/sales-commercial"
               element={
                 <SuspensePageTransition>
                   <SaleCommercial />
@@ -692,7 +692,7 @@ function App() {
 
             {/* Commercial Subservice */}
             <Route
-              path="/lumine-law/all-services/commercial/business-licenses"
+              path="/all-services/commercial/business-licenses"
               element={
                 <SuspensePageTransition>
                   <BusinessAndLicense />
@@ -702,7 +702,7 @@ function App() {
 
             {/* Commercial Subservice */}
             <Route
-              path="/lumine-law/all-services/commercial/lease-renewals"
+              path="/all-services/commercial/lease-renewals"
               element={
                 <SuspensePageTransition>
                   <LeaseRenewals />
@@ -712,7 +712,7 @@ function App() {
 
             {/* Commercial Subservice */}
             <Route
-              path="/lumine-law/all-services/commercial/rent-recovery"
+              path="/all-services/commercial/rent-recovery"
               element={
                 <SuspensePageTransition>
                   <RentRecovery />
@@ -722,7 +722,7 @@ function App() {
 
             {/* Commercial Subservice */}
             <Route
-              path="/lumine-law/all-services/commercial/forfeiture-notices"
+              path="/all-services/commercial/forfeiture-notices"
               element={
                 <SuspensePageTransition>
                   <ForfeitureAndNotices />
@@ -732,7 +732,7 @@ function App() {
 
             {/* Commercial Subservice */}
             <Route
-              path="/lumine-law/all-services/commercial/break-rent"
+              path="/all-services/commercial/break-rent"
               element={
                 <SuspensePageTransition>
                   <BreakRent />
@@ -742,7 +742,7 @@ function App() {
 
             {/* Commercial Subservice */}
             <Route
-              path="/lumine-law/all-services/commercial/consent-alterations"
+              path="/all-services/commercial/consent-alterations"
               element={
                 <SuspensePageTransition>
                   <ConsentAlterations />
@@ -752,7 +752,7 @@ function App() {
 
             {/* Commercial Subservice */}
             <Route
-              path="/lumine-law/all-services/commercial/property-dilapidations"
+              path="/all-services/commercial/property-dilapidations"
               element={
                 <SuspensePageTransition>
                   <PropertyDilapidations />
@@ -762,7 +762,7 @@ function App() {
 
             {/* Commercial Subservice */}
             <Route
-              path="/lumine-law/all-services/commercial/schedules-conditions"
+              path="/all-services/commercial/schedules-conditions"
               element={
                 <SuspensePageTransition>
                   <SchedulesConditions />
@@ -772,7 +772,7 @@ function App() {
 
             {/* Commercial Subservice */}
             <Route
-              path="/lumine-law/all-services/commercial/advice-multiple"
+              path="/all-services/commercial/advice-multiple"
               element={
                 <SuspensePageTransition>
                   <AdviceMultiple />
@@ -782,7 +782,7 @@ function App() {
 
             {/* Dispute Resolution */}
             <Route
-              path="/lumine-law/all-services/dispute-resolution"
+              path="/all-services/dispute-resolution"
               element={
                 <SuspensePageTransition>
                   <DisputeResolution />
@@ -792,7 +792,7 @@ function App() {
 
             {/* Dispute Resolution Subservice*/}
             <Route
-              path="/lumine-law/all-services/dispute-resolution/debt-matters"
+              path="/all-services/dispute-resolution/debt-matters"
               element={
                 <SuspensePageTransition>
                   <DebtMatters />
@@ -802,7 +802,7 @@ function App() {
 
             {/* Dispute Resolution Subservice*/}
             <Route
-              path="/lumine-law/all-services/dispute-resolution/contract-disputes"
+              path="/all-services/dispute-resolution/contract-disputes"
               element={
                 <SuspensePageTransition>
                   <ContractDisputes />
@@ -812,7 +812,7 @@ function App() {
 
             {/* Dispute Resolution Subservice*/}
             <Route
-              path="/lumine-law/all-services/dispute-resolution/bankruptcy-matters"
+              path="/all-services/dispute-resolution/bankruptcy-matters"
               element={
                 <SuspensePageTransition>
                   <CorporatePersonalBankruptcy />
@@ -822,7 +822,7 @@ function App() {
 
             {/* Dispute Resolution Subservice*/}
             <Route
-              path="/lumine-law/all-services/dispute-resolution/building-contract-disputes"
+              path="/all-services/dispute-resolution/building-contract-disputes"
               element={
                 <SuspensePageTransition>
                   <BuildingContractDisputes />
@@ -832,7 +832,7 @@ function App() {
 
             {/* Dispute Resolution Subservice*/}
             <Route
-              path="/lumine-law/all-services/dispute-resolution/supply-goods-services"
+              path="/all-services/dispute-resolution/supply-goods-services"
               element={
                 <SuspensePageTransition>
                   <SupplyGoodsServices />
@@ -842,7 +842,7 @@ function App() {
 
             {/* Dispute Resolution Subservice*/}
             <Route
-              path="/lumine-law/all-services/dispute-resolution/building-contracts"
+              path="/all-services/dispute-resolution/building-contracts"
               element={
                 <SuspensePageTransition>
                   <BuildingContracts />
@@ -852,7 +852,7 @@ function App() {
 
             {/* Dispute Resolution Subservice*/}
             <Route
-              path="/lumine-law/all-services/dispute-resolution/debt-recovery"
+              path="/all-services/dispute-resolution/debt-recovery"
               element={
                 <SuspensePageTransition>
                   <DisputeDebtRecovery />
@@ -862,7 +862,7 @@ function App() {
 
             {/* Landlord & Tenant Dispute */}
             <Route
-              path="/lumine-law/all-services/landlord-tenant"
+              path="/all-services/landlord-tenant"
               element={
                 <SuspensePageTransition>
                   <Landlord />
@@ -872,7 +872,7 @@ function App() {
 
             {/* Landlord & Tenant Dispute Subpages */}
             <Route
-              path="/lumine-law/all-services/landlord-tenant/possession-claims"
+              path="/all-services/landlord-tenant/possession-claims"
               element={
                 <SuspensePageTransition>
                   <PossessionClaims />
@@ -882,7 +882,7 @@ function App() {
 
             {/* Landlord & Tenant Dispute Subpages */}
             <Route
-              path="/lumine-law/all-services/landlord-tenant/recovery-rent"
+              path="/all-services/landlord-tenant/recovery-rent"
               element={
                 <SuspensePageTransition>
                   <RecoveryRent />
@@ -892,7 +892,7 @@ function App() {
 
             {/* Landlord & Tenant Dispute Subpages */}
             <Route
-              path="/lumine-law/all-services/landlord-tenant/claims-disrepair"
+              path="/all-services/landlord-tenant/claims-disrepair"
               element={
                 <SuspensePageTransition>
                   <ClaimsDisrepair />
@@ -902,7 +902,7 @@ function App() {
 
             {/* Wills and Probate */}
             <Route
-              path="/lumine-law/all-services/wills-probate"
+              path="/all-services/wills-probate"
               element={
                 <SuspensePageTransition>
                   <WillsAndProbate />
@@ -912,7 +912,7 @@ function App() {
 
             {/* Wills and Probate Subservice */}
             <Route
-              path="/lumine-law/all-services/wills-probate/wills"
+              path="/all-services/wills-probate/wills"
               element={
                 <SuspensePageTransition>
                   <Wills />
@@ -922,7 +922,7 @@ function App() {
 
             {/* Wills and Probate Subservice */}
             <Route
-              path="/lumine-law/all-services/wills-probate/probate"
+              path="/all-services/wills-probate/probate"
               element={
                 <SuspensePageTransition>
                   <Probate />
@@ -932,7 +932,7 @@ function App() {
 
             {/* Wills and Probate Subservice */}
             <Route
-              path="/lumine-law/all-services/wills-probate/trusts"
+              path="/all-services/wills-probate/trusts"
               element={
                 <SuspensePageTransition>
                   <Trusts />
@@ -942,7 +942,7 @@ function App() {
 
             {/* Wills and Probate Subservice */}
             <Route
-              path="/lumine-law/all-services/wills-probate/power-attorney"
+              path="/all-services/wills-probate/power-attorney"
               element={
                 <SuspensePageTransition>
                   <PowerOfAttorney />
@@ -952,7 +952,7 @@ function App() {
 
             {/* Wills and Probate Subservice */}
             <Route
-              path="/lumine-law/all-services/wills-probate/estate-planning"
+              path="/all-services/wills-probate/estate-planning"
               element={
                 <SuspensePageTransition>
                   <EstatePlanning />
@@ -962,7 +962,7 @@ function App() {
 
             {/* Wills and Probate Subservice */}
             <Route
-              path="/lumine-law/all-services/wills-probate/inheritance-tax-planning"
+              path="/all-services/wills-probate/inheritance-tax-planning"
               element={
                 <SuspensePageTransition>
                   <InheritanceTaxPlanning />
@@ -972,7 +972,7 @@ function App() {
 
             {/* Wills and Probate Subservice */}
             <Route
-              path="/lumine-law/all-services/wills-probate/private-wealth-management"
+              path="/all-services/wills-probate/private-wealth-management"
               element={
                 <SuspensePageTransition>
                   <WealthManagement />
@@ -982,7 +982,7 @@ function App() {
 
             {/* Wills and Probate Subservice */}
             <Route
-              path="/lumine-law/all-services/wills-probate/succession-planning"
+              path="/all-services/wills-probate/succession-planning"
               element={
                 <SuspensePageTransition>
                   <SuccessionPlanning />
@@ -992,7 +992,7 @@ function App() {
 
             {/* Intellectual Property */}
             <Route
-              path="/lumine-law/all-services/intellectual-property"
+              path="/all-services/intellectual-property"
               element={
                 <SuspensePageTransition>
                   <IntellectualProperty />
@@ -1002,17 +1002,7 @@ function App() {
 
             {/* Intellectual Property Subservice */}
             <Route
-              path="/lumine-law/all-services/intellectual-property"
-              element={
-                <SuspensePageTransition>
-                  <IntellectualProperty />
-                </SuspensePageTransition>
-              }
-            />
-
-            {/* Intellectual Property Subservice */}
-            <Route
-              path="/lumine-law/all-services/intellectual-property/trademark"
+              path="/all-services/intellectual-property/trademark"
               element={
                 <SuspensePageTransition>
                   <Trademark />
@@ -1022,7 +1012,7 @@ function App() {
 
             {/* Intellectual Property Subservice */}
             <Route
-              path="/lumine-law/all-services/intellectual-property/copyright"
+              path="/all-services/intellectual-property/copyright"
               element={
                 <SuspensePageTransition>
                   <Copyright />
@@ -1032,7 +1022,7 @@ function App() {
 
             {/* Intellectual Property Subservice */}
             <Route
-              path="/lumine-law/all-services/intellectual-property/patent"
+              path="/all-services/intellectual-property/patent"
               element={
                 <SuspensePageTransition>
                   <Patent />
@@ -1042,7 +1032,7 @@ function App() {
 
             {/* Property Prices */}
             <Route
-              path="/lumine-law/prices/property-prices"
+              path="/prices/property-prices"
               element={
                 <SuspensePageTransition>
                   <PropertyPrices />
@@ -1052,7 +1042,7 @@ function App() {
 
             {/* Debt Recovery Prices */}
             <Route
-              path="/lumine-law/prices/debt-recovery"
+              path="/prices/debt-recovery"
               element={
                 <SuspensePageTransition>
                   <DebtRecovery />
@@ -1062,7 +1052,7 @@ function App() {
 
             {/* Immigration Prices */}
             <Route
-              path="/lumine-law/prices/immigration-prices"
+              path="/prices/immigration-prices"
               element={
                 <SuspensePageTransition>
                   <ImmigrationPrices />
@@ -1072,7 +1062,7 @@ function App() {
 
             {/* About */}
             <Route
-              path="/lumine-law/about"
+              path="/about"
               element={
                 <SuspensePageTransition>
                   <About />
@@ -1082,7 +1072,7 @@ function App() {
 
             {/* News */}
             <Route
-              path="/lumine-law/news"
+              path="/news"
               element={
                 <SuspensePageTransition>
                   <News />
@@ -1092,7 +1082,7 @@ function App() {
 
             {/* Insights */}
             <Route
-              path="/lumine-law/insights"
+              path="/insights"
               element={
                 <SuspensePageTransition>
                   <Insights />
@@ -1102,7 +1092,7 @@ function App() {
 
             {/* Article */}
             <Route
-              path="/lumine-law/article-page"
+              path="/article-page"
               element={
                 <SuspensePageTransition>
                   <Article />
