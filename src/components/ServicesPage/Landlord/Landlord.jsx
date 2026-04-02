@@ -17,7 +17,7 @@ import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import AllPrices from "../../NavLinks/AllPrices";
 
 // Import all images
-import BannerImg from "../../../assets/services/main/landlord/landlord-banner.webp";
+import BannerImg from "../../../assets/services/main/landlord/landlordImg.jpg";
 import ImmigrationImg from "../../../assets/services/main/immigration/main-banner.webp";
 import ResidentialImg from "../../../assets/services/main/residential/main-banner.webp";
 import CommercialImg from "../../../assets/services/main/commercial/main-banner.webp";
@@ -232,34 +232,33 @@ const Landlord = () => {
 
         <Box width="100%" flex="1" p={0} m={0} pt="50px">
           {/* Banner */}
-          <Box
-            width="100%"
-            height={{
-              xs: "200px",
-              lg: "250px",
-              xl: "300px",
-              "2xl": "350px",
-            }}
-            bgImage={`url(${BannerImg})`}
-            bgSize="cover"
-            bgPos="center"
-            bgRepeat="no-repeat"
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            _loading={"eager"}
-          >
-            <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
-              fontWeight={600}
-              fontFamily="CeraRoundPro"
-              width="90%"
-              textAlign="left"
-              color="black"
-            >
-              Landlord and Tenant Disputes
-            </Text>
-          </Box>
+    <Box
+  width="100%"
+  height={{
+    xs: "200px",
+    lg: "250px",
+    xl: "300px",
+    "2xl": "350px",
+  }}
+  bgImage={`url(${BannerImg})`}
+  bgSize="50%"
+  
+  bgRepeat="no-repeat"
+  display="flex"
+  justifyContent="center"
+  alignItems="center"
+>
+  <Text
+    fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
+    fontWeight={600}
+    fontFamily="CeraRoundPro"
+    width="90%"
+    textAlign="left"
+    color="black"
+  >
+    Landlord and Tenant Disputes
+  </Text>
+</Box>
 
           {/* Main Content */}
           <Box width="100%" display="flex" flexFlow="column" color="black">

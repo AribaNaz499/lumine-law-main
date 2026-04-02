@@ -130,7 +130,7 @@ const PricesMenu = () => {
 
                 <Text
                   as={Link}
-                  to={"/lumine-law/prices/immigration-prices"}
+                  to={"/prices/immigration-prices"}
                   fontSize={{
                     lg: "12px",
                     xl: "14px",

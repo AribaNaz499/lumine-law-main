@@ -1,161 +1,154 @@
-import { Text, Box, VStack, Grid, GridItem } from "@chakra-ui/react";
+import { Text, Box, VStack, Grid, GridItem, Flex } from "@chakra-ui/react";
+import { HiOutlineArrowRight } from "react-icons/hi2";
 import "../../styles/fonts.css";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
 // Import all images
-import ImmigrationImg from "../../assets/services/main/immigration/main-banner.webp";
-import ResidentialImg from "../../assets/services/main/residential/main-banner.webp";
-import DisputeImg from "../../assets/services/main/dispute/main-banner.webp";
-import LandlordImg from "../../assets/services/main/landlord/main-banner.webp";
-import FamilyImg from "../../assets/services/main/family/main-banner.webp";
-import IntellectualImg from "../../assets/services/main/intellectual/main-banner.webp";
-import CommercialImg from "../../assets/services/main/commercial/main-banner.webp";
-import WillsProbateImg from "../../assets/services/main/wills-probate/main-banner.webp";
-import AllServicesImg from "../../assets/services/all/bannertest.webp";
+import ImmigrationImg from "../../assets/services/main/immigration/ImmigrationImg.jpg";
+import ResidentialImg from "../../assets/services/main/residential/residentialImg.jpg";
+import DisputeImg from "../../assets/services/main/dispute/disputeImg.jpg";
+import LandlordImg from "../../assets/services/main/landlord/landlordImg.jpg";
+import FamilyImg from "../../assets/services/main/family/familychildrenImg.jpg";
+import IntellectualImg from "../../assets/services/main/intellectual/intellectualProperty.jpg";
+import CommercialImg from "../../assets/services/main/commercial/commercialImg.jpg";
+import WillsProbateImg from "../../assets/services/main/wills-probate/willprobateImg.jpg";
+import AllServicesImg from "../../assets/services/all/privatecrimeImg.jpg";
 
-// Service card data
 const services = [
   {
     title: "Immigration",
-    path: "/lumine-law/all-services/immigration",
+    path: "/all-services/immigration",
     image: ImmigrationImg,
-    description: "A lil para about what this service is",
+    description: "Lumine Solicitors specialised immigration team, based in London, offers a wide range of services to cover all immigration.",
     textColor: "#ffffff",
   },
   {
     title: "Residential Property",
-    path: "/lumine-law/all-services/residential",
+    path: "/all-services/residential",
     image: ResidentialImg,
-    description: "A lil para about what this service is",
+    description: "When it comes to legal matters concerning property we provide expertise that you can rely on and trust. Whether it’s for residential .",
     textColor: "#ffffff",
   },
   {
     title: "Commercial Property",
-    path: "/lumine-law/all-services/commercial",
+    path: "/all-services/commercial",
     image: CommercialImg,
-    description: "A lil para about what this service is",
+    description: "When it comes to legal matters concerning property we provide expertise that you can rely on and trust. Whether it’s for residential .",
     textColor: "#ffffff",
   },
   {
     title: "Intellectual Property",
-    path: "/lumine-law/all-services/intellectual-property",
+    path: "/all-services/intellectual-property",
     image: IntellectualImg,
-    description: "A lil para about what this service is",
+    description: "Intellectual Property services to safeguard your creations and innovations.",
     textColor: "#ffffff",
   },
   {
     title: "Dispute Resolution and Civil Litigation",
-    path: "/lumine-law/all-services/dispute-resolution",
+    path: "/all-services/dispute-resolution",
     image: DisputeImg,
-    description: "A lil para about what this service is",
+    description: "Dispute resolution solicitors in London offer a range of services to settle disputes between individuals and also for businesses.",
     textColor: "#ffffff",
   },
   {
     title: "Landlord & Tenant Disputes",
-    path: "/lumine-law/all-services/landlord-tenant",
+    path: "/all-services/landlord-tenant",
     image: LandlordImg,
-    description: "A lil para about what this service is",
-    textColor: "#000000",
+    description: "Lumine Solicitors specialised immigration team, based in London, offers a wide range of services to cover all immigration.",
+    textColor: "#ffffff",
   },
   {
     title: "Family & Children",
-    path: "/lumine-law/all-services/family-and-children",
+    path: "/all-services/family-and-children",
     image: FamilyImg,
-    description: "A lil para about what this service is",
+    description: "When it comes to legal matters concerning property we provide expertise that you can rely on and trust. Whether it’s for residential .",
     textColor: "#ffffff",
   },
   {
     title: "Wills and Probate",
-    path: "/lumine-law/all-services/wills-probate",
+    path: "/all-services/wills-probate",
     image: WillsProbateImg,
-    description: "A lil para about what this service is",
+    description: "Dispute resolution solicitors in London offer a range of services to settle disputes between individuals and also for businesses.",
     textColor: "#ffffff",
   },
   {
-    title: "All Services",
-    path: "/lumine-law/all-services",
+    title: "Private Crime",
+    path: "/all-services/private-crime",
     image: AllServicesImg,
-    description: "",
+    description: "We offer high-end criminal defence representation to private clients, professionals, and public figures facing serious criminal allegations.",
     textColor: "#ffffff",
   },
 ];
 
-// Reusable service card component
 const ServiceCard = ({ service }) => (
   <GridItem
     width="100%"
     height={{
-      xs: "175px",
-      sm: "175px",
-      md: "175px",
-      lg: "200px",
-      xl: "225px",
-      "2xl": "250px",
+      base: "290px",
+      sm: "290px",
+      md: "310px",
+      lg: "360px",
+      xl: "380px",
+      "2xl": "410px",
     }}
-    padding={{ xs: "10px 10px", lg: "10px 20px" }}
-    border="1px solid black"
-    borderRadius="8px"
+    padding={{ base: "20px", lg: "25px" }} 
+    borderRadius="12px" // Thoda smooth look ke liye
     cursor="pointer"
+    position="relative"
     _hover={{
-      opacity: "0.8",
-      transition: "all 0.5s ease",
+      opacity: "0.9",
+      transform: "scale(1.02)",
+      transition: "all 0.3s ease",
     }}
-    bgImage={`url(${service.image})`}
+    bgImage={`linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${service.image})`}
     bgPos="center"
     bgSize="cover"
     bgRepeat="no-repeat"
-    _loading={"lazy"}
   >
-    <Link to={service.path} style={{ textDecoration: "none" }}>
-      <Box
+    <Link to={service.path} style={{ textDecoration: "none", height: "100%", display: "block" }}>
+      <Flex
+        direction="column"
         height="100%"
-        display="flex"
-        flexFlow="column"
-        justifyContent="center"
-        alignItems="flex-start"
-        gap="10px"
+        justifyContent="space-between" // Isse content upar-niche phail jayega
+        alignItems="center"
+        textAlign="center"
       >
-        <Text
-          fontSize={{
-            xs: "14px",
-            sm: "14px",
-            md: "16px",
-            lg: "18px",
-            xl: "20px",
-            "2xl": "22px",
-          }}
-          fontFamily="CeraRoundPro"
-          fontWeight={500}
-          textAlign="left"
-          color={service.textColor}
-        >
-          {service.title}
-        </Text>
-        <VStack
-          width="100%"
-          height="100%"
-          justifyContent="space-between"
-          alignItems="flex-start"
-        >
+        {/* Empty Box: Taake text bilkul center mein hi rahe */}
+        <Box height="20px" /> 
+
+        {/* Text Container: Yeh hamesha center mein rahega */}
+        <VStack spacing={3} width="100%">
           <Text
-            fontSize={{
-              xs: "12px",
-              sm: "13px",
-              md: "14px",
-              lg: "15px",
-              xl: "16px",
-              "2xl": "18px",
-            }}
+            fontSize={{ base: "18px", md: "20px", lg: "22px" }}
+            fontFamily="CeraRoundPro"
+            fontWeight={500}
+            color={service.textColor}
+          >
+            {service.title}
+          </Text>
+
+          <Text
+            fontSize={{ base: "13px", md: "14px", lg: "15px" }}
             color={service.textColor}
             fontFamily="CeraRoundPro"
-            fontWeight={400}
+            fontWeight={300}
+            lineHeight="1.6"
+            maxW="90%"
+            mx="auto"
           >
             {service.description}
           </Text>
-          <HiOutlineArrowLongRight color={service.textColor} size="2em" />
         </VStack>
-      </Box>
+
+        {/* Arrow Section: Yeh hamesha bottom mein rahega */}
+        <Box width="100%" display="flex" justifyContent="flex-start">
+          <HiOutlineArrowLongRight 
+            color={service.textColor} 
+            size="45px" // Image ke mutabiq ye size perfect hai
+          />
+        </Box>
+      </Flex>
     </Link>
   </GridItem>
 );
@@ -169,14 +162,14 @@ const AllServiceLinks = () => {
           <Text
             color="black"
             fontSize={{
-              xs: "20px",
-              sm: "20px",
-              md: "24px",
-              lg: "26px",
-              xl: "28px",
-              "2xl": "30px",
+              xs: "28px",
+              sm: "28px",
+              md: "30px",
+              lg: "32px",
+              xl: "34px",
+              "2xl": "36px",
             }}
-            fontWeight={500}
+            fontWeight={400}
             mb={{
               xs: "25px",
               sm: "30px",
@@ -201,15 +194,22 @@ const AllServiceLinks = () => {
         color="black"
       >
         <Grid
-          width="90%"
-          templateColumns={{ xs: "repeat(2, 2fr)", lg: "repeat(3, 1fr)" }}
+          width="92%"
+          templateColumns={{
+            base: "repeat(1, 1fr)",   // Mobile: 1 card
+            sm: "repeat(2, 1fr)",     // Small tablets: 2 cards
+            md: "repeat(2, 1fr)",     // Tablets: 2 cards
+            lg: "repeat(4, 1fr)",     // Desktop: 4 cards
+            xl: "repeat(4, 1fr)",     // Large desktop: 4 cards
+            "2xl": "repeat(4, 1fr)"   // Extra large: 4 cards
+          }}
           gap={{
-            xs: "25px",
-            sm: "30px",
-            md: "35px",
-            lg: "40px",
-            xl: "45px",
-            "2xl": "50px",
+            base: "12px",
+            sm: "15px",
+            md: "18px",
+            lg: "20px",
+            xl: "22px",
+            "2xl": "25px",
           }}
           justifyItems="center"
           alignItems="center"

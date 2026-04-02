@@ -41,10 +41,10 @@ const AdviceMultiple = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "350px",
+              lg: "390px",
+              xl: "440",
+              "2xl": "510px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -60,9 +60,10 @@ const AdviceMultiple = () => {
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
+              lineHeight={1.1}
               textAlign={"left"}
             >
-              Advice on Commercial Lease Terms, Survey Reports, and Repairing
+              Advice on Commercial Lease Terms, <br /> Survey Reports, and Repairing <br />
               Obligations
             </Text>
           </Box>
@@ -87,9 +88,9 @@ const AdviceMultiple = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
               >
-                Commercial lease agreements require careful consideration of
-                terms and obligations that significantly impact your business's
-                success and financial stability.
+                Commercial lease agreements require careful consideration of terms and obligations that significantly impact your business’s success and financial stability.
+
+
               </Text>
 
               <Text
@@ -98,16 +99,7 @@ const AdviceMultiple = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
               >
-                A <strong>commercial lease</strong> is a legally binding
-                contract that outlines the rights and responsibilities of
-                landlords and tenants regarding the use of commercial property.
-                Before entering into a commercial lease, it's essential to
-                conduct a comprehensive <strong>survey report</strong> to assess
-                the property's condition and identify any potential liabilities.
-                Understanding
-                <strong>repairing obligations</strong> is also crucial for both
-                landlords and tenants to ensure the property's upkeep and
-                compliance with lease terms.
+                A commercial lease is a legally binding contract that outlines the rights and responsibilities of landlords and tenants regarding the use of commercial property. Before entering into a commercial lease, it’s essential to conduct a comprehensive survey report to assess the property’s condition and identify any potential liabilities. Understandingrepairing obligations is also crucial for both landlords and tenants to ensure the property’s upkeep and compliance with lease terms.
               </Text>
             </Box>
           </Box>
@@ -152,29 +144,29 @@ const AdviceMultiple = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                   fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Why choose Lumine Solicitors?
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -198,17 +190,11 @@ const AdviceMultiple = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    At Lumine Solicitors, we specialize in offering expert
-                    guidance on commercial lease terms. Our solicitors bring
-                    specialized expertise in commercial property law, providing
-                    in-depth knowledge to support your lease negotiations and
-                    operational goals. We offer tailored advice to align lease
-                    agreements with your business needs, providing complete
-                    legal support from initial negotiations to dispute
-                    resolution and lease renewals.
+                    At Lumine Solicitors, we specialize in offering expert guidance on commercial lease terms. Our solicitors bring specialized expertise in commercial property law, providing in-depth knowledge to support your lease negotiations and operational goals. We offer tailored advice to align lease agreements with your business needs, providing complete legal support from initial negotiations to dispute resolution and lease renewals.
                   </Text>
                 </VStack>
               )}
@@ -248,29 +234,29 @@ const AdviceMultiple = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Contact Us Today
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -301,7 +287,14 @@ const AdviceMultiple = () => {
                     touch with Lumine solicitors <strong>020 3950 2246</strong>{" "}
                     or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                   </Text>
                 </VStack>

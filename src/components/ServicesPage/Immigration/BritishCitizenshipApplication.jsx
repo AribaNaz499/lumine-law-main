@@ -10,13 +10,15 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/immigration.webp";
-
+import BannerImg from "../../../assets/services/main/immigration/Asylum.jpg";
+import { Heading } from "@chakra-ui/react"
 const BritishCitizenshipApplication = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
   const [decisionState, setDecisionState] = useState(false);
+  const [appeal, setAppeal] = useState(false);
+  const [review, setReview] = useState(false);
   const [helpState, setHelpState] = useState(false);
 
   return (
@@ -33,7 +35,10 @@ const BritishCitizenshipApplication = () => {
         flexDirection="column"
       >
         <Helmet>
-          <title>Lumine Law British Citizenship Applications</title>
+          <title>
+            Lumine Law British Citizen Application
+            Services
+          </title>
         </Helmet>
 
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
@@ -41,10 +46,10 @@ const BritishCitizenshipApplication = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "230px",
+              lg: "310px",
+              xl: "330px",
+              "2xl": "380px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -61,6 +66,7 @@ const BritishCitizenshipApplication = () => {
               fontFamily={"CeraRoundPro"}
               width={"90%"}
               textAlign={"left"}
+              lineHeight={1.1}
             >
               British Citizenship Application
             </Text>
@@ -75,19 +81,51 @@ const BritishCitizenshipApplication = () => {
           >
             {/* Heading */}
             <Box
-              width={"90%"}
+              width={"93%"}
               alignSelf={"center"}
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
+
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                color={"#bf9b30"}
+                fontSize={{ xs: "14px", lg: "26px", xl: "32px", "2xl": "42px" }}
+                textAlign={"left"}
+
+              >
+                BRITISH CITIZENSHIP APPLICATION
+              </Heading>
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
+                mt={5}
+                mr={2}
               >
-                A few lines on what a British Citizenship Application is.
+                Becoming a British citizen is a very significant legal status that provides one with many rights, such as the right to vote, work, and reside in the United Kingdom. The application process for British citizenship is set up for those who have been living in the UK for some time and who meet certain requirements. The application is governed by the British Nationality Act 1981 and other related immigration laws.              </Text>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"left"}
+                mt={5}
+
+              >
+                For those whose applications are rejected, there might be an opportunity to appeal or challenge the decision through judicial review, depending on the circumstances of the case.
+
               </Text>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"left"}
+
+              >
+                For personalized assistance with your legal needs, contact us or visit Lumine for expert guidance tailored to your specific situation. Our experienced team is here to help you navigate the complexities with confidence and ease.              </Text>
             </Box>
           </Box>
 
@@ -97,12 +135,12 @@ const BritishCitizenshipApplication = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is British Cit App */}
+            {/* What is Administrative Reviews, Appeals, and Judicial Reviews */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"93%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -131,29 +169,29 @@ const BritishCitizenshipApplication = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   What is British Citizenship?
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -165,6 +203,7 @@ const BritishCitizenshipApplication = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"justify"}
@@ -176,24 +215,23 @@ const BritishCitizenshipApplication = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    lineHeight={1.8}
+                    mb={2}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    British citizenship will enable you to apply for a British
-                    passport and means you can travel freely outside and within
-                    the UK without the need for a visa and freed from
-                    immigration control.
+                    British citizenship will enable you to apply for a British passport and means you can travel freely outside and within the UK without the need for a visa and freed from immigration control.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Benefits */}
+            {/* Administrative Review */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"93%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -222,29 +260,29 @@ const BritishCitizenshipApplication = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Benefits of British Citizenship
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -256,6 +294,7 @@ const BritishCitizenshipApplication = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"justify"}
@@ -267,23 +306,23 @@ const BritishCitizenshipApplication = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mr={3}
+                    mb={4}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    British citizenship will give you the same rights as a
-                    British national. For example, to live in the UK to study,
-                    work, access the NHS at no cost, and claim welfare benefits.
+                    British citizenship will give you the same rights as a British national. For example, to live in the UK to study, work, access the NHS at no cost, and claim welfare benefits.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Who is Eligible for British Citizenship? */}
+            {/* Successful Administrative Review */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"93%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -312,29 +351,29 @@ const BritishCitizenshipApplication = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setApplicationState(!applicationState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Who is Eligible for British Citizenship?
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -346,6 +385,7 @@ const BritishCitizenshipApplication = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"justify"}
@@ -357,14 +397,12 @@ const BritishCitizenshipApplication = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    ml={3}
+                    mr={3}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    To gain UK citizenship, or <strong>naturalisation</strong>,
-                    certain requirements must be fulfilled. Naturalisation
-                    refers to a person from another country gaining citizenship
-                    in the UK. Lumine solicitors can apply for your British
-                    citizenship if you:
+                    To gain UK citizenship, or naturalisation, certain requirements must be fulfilled. Naturalisation refers to a person from another country gaining citizenship in the UK. Lumine solicitors can apply for your British citizenship if you:
                   </Text>
 
                   <List.Root
@@ -377,34 +415,42 @@ const BritishCitizenshipApplication = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={-6}
+                    lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+
                   >
-                    <List.Item>Are over the age of 18</List.Item>
-                    <List.Item>
-                      Have legally resided in the UK for the required time
-                      period. This will generally be 3 years if your spouse is a
-                      British citizen or 5 years if you have had indefinite
-                      leave to remain for at least a 12-month period
+                    <List.Item >
+                      Are over the age of 18
                     </List.Item>
-                    <List.Item>
-                      Meet the language requirements and residency requirements
+                    <List.Item >
+                      Have legally resided in the UK for the required time period. This will generally be 3 years if your spouse is a British citizen or 5 years if you have had indefinite leave
+                      to remain for at least a 12-month period
                     </List.Item>
-                    <List.Item>Passed the ‘Life in the UK’ test</List.Item>
-                    <List.Item>Plan to live permanently in the UK</List.Item>
-                    <List.Item>Be of good character</List.Item>
-                    <List.Item>Comply with immigration rules</List.Item>
+                    <List.Item >Meet the language requirements and residency requirements
+                    </List.Item>
+                    <List.Item >Passed the ‘Life in the UK’ test
+                    </List.Item>
+                    <List.Item >Plan to live permanently in the UK
+                    </List.Item>
+                    <List.Item >Be of good character
+                    </List.Item>
+                    <List.Item >Comply with immigration rules
+                    </List.Item>
                   </List.Root>
+
+
                 </VStack>
               )}
             </Box>
 
-            {/* Decision */}
+            {/* Appeals */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"93%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -431,35 +477,36 @@ const BritishCitizenshipApplication = () => {
                   "2xl": "10px",
                 }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !decisionState && "black" }}
+                _hover={{ backgroundColor: !appeal && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
-                onClick={() => setDecisionState(!decisionState)}
+                backgroundColor={"black" && "black"}
+                onClick={() => setAppeal(!appeal)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
+
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How long does it take to reach a decision?
                 </Text>
-                {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                {!appeal ? (
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
-              {decisionState && (
+              {appeal && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -479,29 +526,29 @@ const BritishCitizenshipApplication = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    ml={3}
+                    mr={8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Complex cases may take up to 6 months for a decision to be
-                    made. However, Straightforward cases can be decided before
-                    this period.
+                    Complex cases may take up to 6 months for a decision to be made. However, Straightforward cases can be decided before this period.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Help */}
+            {/* Judicial Review */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"93%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
               {/* Initial Button */}
               <HStack
-                borderY={"1px solid #adacac"}
+                borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{
@@ -522,35 +569,35 @@ const BritishCitizenshipApplication = () => {
                   "2xl": "10px",
                 }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !helpState && "black" }}
+                _hover={{ backgroundColor: !review && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
-                onClick={() => setHelpState(!helpState)}
+                backgroundColor={"black" && "black"}
+                onClick={() => setReview(!review)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
-                {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                {!review ? (
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
-              {helpState && (
+              {review && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -558,6 +605,7 @@ const BritishCitizenshipApplication = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"justify"}
@@ -569,11 +617,13 @@ const BritishCitizenshipApplication = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    ml={3}
+                    mr={9}
+
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Lumine solicitors will support you with the following when
-                    applying for citizenship:
+                    Lumine solicitors will support you with the following when applying for citizenship:
                   </Text>
 
                   <List.Root
@@ -586,21 +636,27 @@ const BritishCitizenshipApplication = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mr={3}
+                    mt={-7}
+                    lineHeight={2}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    
                   >
                     <List.Item>
-                      The application process for British citizenship
+                     The application process for British citizenship
+
                     </List.Item>
                     <List.Item>
-                      Making an appointment at a UKVCAS to provide your
-                      biometric information
+                      Making an appointment at a UKVCAS to provide your biometric information
+
                     </List.Item>
                     <List.Item>
-                      Save you time by uploading your documents to UKVI
+                     Save you time by uploading your documents to UKVI
+
                     </List.Item>
+
                   </List.Root>
-
                   <Text
                     textAlign={"justify"}
                     fontSize={{
@@ -611,16 +667,14 @@ const BritishCitizenshipApplication = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={"-7"}
+                    ml={3}
                     fontWeight={400}
+                    lineHeight={1.8}
                     fontFamily={"CeraRoundPro"}
                   >
-                    If the Home Office has questions regarding your application,
-                    they will contact us for more information, so it is
-                    important you respond to any queries we contact you about to
-                    prevent rejection of your application. If successful, you
-                    will be invited to a citizenship ceremony.
+                    If the Home Office has questions regarding your application, they will contact us for more information, so it is important you respond to any queries we contact you about to prevent rejection of your application. If successful, you will be invited to a citizenship ceremony.
                   </Text>
-
                   <Text
                     textAlign={"justify"}
                     fontSize={{
@@ -631,19 +685,31 @@ const BritishCitizenshipApplication = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={"-6"}
+                    ml={3}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
                     For all immigration matters, Please do not hesitate to get
-                    in touch with Lumine solicitors{" "}
+                    in touch
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                   </Text>
+
                 </VStack>
               )}
             </Box>
+
+           
           </VStack>
 
           {/* Other Services */}

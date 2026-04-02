@@ -10,12 +10,15 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/immigration.webp";
-
+import BannerImg from "../../../assets/services/main/immigration/Asylum.jpg";
+import { Heading } from "@chakra-ui/react"
 const DiscretionaryLeave = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
   const [applicationState, setApplicationState] = useState(false);
+  const [decisionState, setDecisionState] = useState(false);
+  const [appeal, setAppeal] = useState(false);
+  const [review, setReview] = useState(false);
   const [helpState, setHelpState] = useState(false);
 
   return (
@@ -32,7 +35,9 @@ const DiscretionaryLeave = () => {
         flexDirection="column"
       >
         <Helmet>
+
           <title>Lumine Law Discretionary Leave Services</title>
+
         </Helmet>
 
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
@@ -40,10 +45,10 @@ const DiscretionaryLeave = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "230px",
+              lg: "310px",
+              xl: "330px",
+              "2xl": "380px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -60,8 +65,10 @@ const DiscretionaryLeave = () => {
               fontFamily={"CeraRoundPro"}
               width={"90%"}
               textAlign={"left"}
+              lineHeight={1.1}
             >
               Discretionary Leave
+
             </Text>
           </Box>
 
@@ -74,18 +81,85 @@ const DiscretionaryLeave = () => {
           >
             {/* Heading */}
             <Box
-              width={"90%"}
+              width={"93%"}
               alignSelf={"center"}
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
+
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                color={"#bf9b30"}
+                fontSize={{ xs: "10px", lg: "22px", xl: "28px", "2xl": "38px" }}
+                textAlign={"left"}
+
+              >
+                DISCRETIONARY LEAVE
+
+              </Heading>
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
+                mt={5}
+                mr={2}
               >
-                A few lines on what Discretionary Leave is.
+                Discretionary Leave is a form of temporary leave granted to individuals who are in the UK but do not meet the usual requirements for asylum or other forms of leave to remain. This leave is granted case-by-case basis and at the discretion of the Home Office, which is generally granted to individuals facing exceptional circumstances that may not neatly fit within any of the categories of immigration, but are still in need of protection or permission to remain in the UK for a short time.
+
+              </Text>
+              <VStack align="start" spacing={4} mt={5} width="100%">
+                <Text
+                  fontFamily={"CeraRoundPro"}
+                  fontWeight={400}
+                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  textAlign={"left"}
+                  color="black"
+                >
+                  The reasons why a person would be given Discretionary Leave are diverse, but common ones include:
+                </Text>
+
+                <List.Root
+                  as="ol"
+                  styleType="decimal"
+                  ml={5}
+                  spacing={3}
+                  fontFamily={"CeraRoundPro"}
+                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  color="black"
+                >
+                  <List.Item textAlign="justify">
+                    <Text as="span">Humanitarian Protection:</Text> A person who does not meet the asylum requirements but is at risk of suffering harm in his or her own country may be awarded Discretionary Leave. As long as the victims are threatened by violence, persecution, or other grave danger to their lives, there is still a chance for humanitarian protection, even without qualification under formal refugee status.
+                  </List.Item>
+
+                  <List.Item textAlign="justify">
+                    <Text as="span" >Compassionate Grounds:</Text> In other cases, Discretionary Leave can be awarded on compassionate grounds, including that one has members of the family in the UK or any other personal reasons to warrant an exemption. The grounds may be related to the applicant’s health, well-being, or remaining in the UK for other current legal or humanitarian matters.
+                  </List.Item>
+
+                  <List.Item textAlign="justify">
+                    <Text as="span" >Victims of Trafficking or Exploitation:</Text> Those individuals who are being trafficked or exploited or who, as a part of cooperation with investigations, might be provided with Discretionary Leave so that they can receive support and assistance to recover and rebuild their lives.
+                  </List.Item>
+
+                  <List.Item textAlign="justify">
+                    <Text as="span" >Time-limited stay owing to unresolved immigration claims:</Text> Some people are offered Discretionary Leave if their immigration claims have not been sorted out, which may include pending appeals or other applications that may take more time to process. In such circumstances, the Home Office may offer the person an opportunity to stay in the UK until they receive a determination on their application.
+                  </List.Item>
+                </List.Root>
+              </VStack>
+              <Text
+                mb={8}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"left"}
+                mt={5}
+
+
+              >
+                For personalized assistance with your legal needs, contact us or visit Lumine for expert guidance tailored to your specific situation. Our experienced team is here to help you navigate the complexities with confidence and ease.
+
+
               </Text>
             </Box>
           </Box>
@@ -96,12 +170,12 @@ const DiscretionaryLeave = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is Discretionary Leave? */}
+            {/* What is Administrative Reviews, Appeals, and Judicial Reviews */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"93%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -130,29 +204,29 @@ const DiscretionaryLeave = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   What is Discretionary Leave?
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -176,136 +250,26 @@ const DiscretionaryLeave = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    lineHeight={1.9}
+                    mb={2}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    ml={3}
+                    mr={3}
                   >
-                    Discretionary leave is a way in which the Home Office can
-                    grant a period of leave to migrants outside of the UK’s
-                    Immigration Rules. This is in exceptional and compassionate
-                    circumstances. This route is considered if applying under
-                    the asylum, humanitarian protection, family, or private life
-                    routes is not possible. However, since the UK offers other
-                    immigration routes within the Rules, the Home Office is not
-                    obliged to grant discretionary leave
+                    Discretionary leave is a way in which the Home Office can grant a period of leave to migrants outside of the UK’s Immigration Rules. This is in exceptional and compassionate circumstances. This route is considered if applying under the asylum, humanitarian protection, family, or private life routes is not possible. However, since the UK offers other immigration routes within the Rules, the Home Office is not obliged to grant discretionary leave
+
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Benefits */}
+            {/* Administrative Review */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !applicationState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
-                onClick={() => setApplicationState(!applicationState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Benefits
-                </Text>
-                {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {applicationState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Discretionary Leave to Remain has several benefits. The main
-                    benefits include the ability to:{" "}
-                  </Text>
-
-                  <List.Root
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>Claim public funds (e.g., benefits)</List.Item>
-                    <List.Item>Work without restriction </List.Item>
-                    <List.Item>Study</List.Item>
-                  </List.Root>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Eligibility Requirements */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
+              width={"93%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -334,29 +298,29 @@ const DiscretionaryLeave = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
-                  Eligibility Requirements
+                  Benefits
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -380,31 +344,13 @@ const DiscretionaryLeave = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mr={3}
+                    mb={4}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    There are no set eligibility criteria for discretionary
-                    leave, but there must be clear evidence of exceptional and
-                    compassionate circumstances. Lumine solicitors will
-                    thoroughly examine your unique circumstances to determine
-                    whether discretionary leave can be granted.
-                  </Text>
+                    Discretionary Leave to Remain has several benefits. The main benefits include the ability to:
 
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={800}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    The types of cases in which discretionary leave may be
-                    considered include:
                   </Text>
 
                   <List.Root
@@ -417,53 +363,43 @@ const DiscretionaryLeave = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={-9}
+                    lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>Medical grounds</List.Item>
-                    <List.Item>
-                      Exceptional circumstances E.g., if a human rights claim
-                      has been refused
-                    </List.Item>
-                    <List.Item>Slavery cases E.g., trafficking</List.Item>
-                    <List.Item>
-                      Children of parents with discretionary leave to remain
-                    </List.Item>
-                  </List.Root>
 
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
                   >
-                    Other unique circumstances, not falling within the points
-                    listed above, may be so compelling that discretionary leave
-                    is granted.
-                  </Text>
+                    <List.Item >
+                      Claim public funds (e.g., benefits)
+
+                    </List.Item>
+                    <List.Item >
+                      Work without restriction
+
+                    </List.Item>
+                    <List.Item >Study
+
+
+                    </List.Item>
+
+
+                  </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Help */}
+            {/* Successful Administrative Review */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"93%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
               {/* Initial Button */}
               <HStack
-                borderY={"1px solid #adacac"}
+                borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{
@@ -484,35 +420,35 @@ const DiscretionaryLeave = () => {
                   "2xl": "10px",
                 }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !helpState && "black" }}
+                _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
-                onClick={() => setHelpState(!helpState)}
+                backgroundColor={"black" && "black"}
+                onClick={() => setApplicationState(!applicationState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
-                  If Your Application is Succesful
+                  Eligibility Requirements
                 </Text>
-                {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                {!applicationState ? (
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
-              {helpState && (
+              {applicationState && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -532,13 +468,69 @@ const DiscretionaryLeave = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    ml={3}
+                    mr={3}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    If your discretionary leave application is successful, you
-                    will have no prohibition on where to study or work in the UK
-                    and recourse to public funds.
+                    There are no set eligibility criteria for discretionary leave, but there must be clear evidence of exceptional and compassionate circumstances. Lumine solicitors will thoroughly examine your unique circumstances to determine whether discretionary leave can be granted.
+
+
                   </Text>
+                  <Text
+                    textAlign={"justify"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    ml={3}
+                    mr={3}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                    mt={-6}
+                  >
+                    The types of cases in which discretionary leave may be considered include:
+
+
+                  </Text>
+
+                  <List.Root
+                    textAlign={"justify"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    mt={-6}
+                    lineHeight={1.8}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+
+                  >
+                    <List.Item >
+                      Medical grounds
+
+                    </List.Item>
+                    <List.Item >
+                      Exceptional circumstances E.g., if a human rights claim has been refused
+
+                    </List.Item>
+                    <List.Item >Slavery cases E.g., trafficking
+
+
+                    </List.Item>
+                    <List.Item >Children of parents with discretionary leave to remain
+
+
+                    </List.Item>
+                  </List.Root>
 
                   <Text
                     textAlign={"justify"}
@@ -550,19 +542,148 @@ const DiscretionaryLeave = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    ml={3}
+                    mt={-6}
+                    mr={3}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    For all immigration matters, Please do not hesitate to get
-                    in touch on
-                    <strong>020 3950 2246</strong> or{" "}
-                    <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
-                    </strong>
+                    Other unique circumstances, not falling within the points listed above, may be so compelling that discretionary leave is granted.
+
+
+
                   </Text>
                 </VStack>
               )}
             </Box>
+
+
+            {/* Judicial Review */}
+            <Box
+              display={"flex"}
+              flexDir={"column"}
+              color={"black"}
+              width={"93%"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
+              {/* Initial Button */}
+              <HStack
+                borderTop={"1px solid #adacac"}
+                width={"100%"}
+                justifyContent={"space-between"}
+                px={{
+                  xs: "8px",
+                  sm: "10px",
+                  md: "12px",
+                  lg: "13px",
+                  xl: "14px",
+                  "2xl": "15px",
+                }}
+                alignItems={"center"}
+                py={{
+                  xs: "4px",
+                  sm: "6px",
+                  md: "7px",
+                  lg: "8px",
+                  xl: "9px",
+                  "2xl": "10px",
+                }}
+                cursor={"pointer"}
+                _hover={{ backgroundColor: !review && "black" }}
+                transition={"all 0.3s ease"}
+                backgroundColor={"black" && "black"}
+                onClick={() => setReview(!review)}
+              >
+                <Text
+                  textAlign={"left"}
+                  fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
+                  }}
+                  fontWeight={500}
+                  fontFamily={"CeraRoundPro"}
+                  color={"#bf9b30"}
+                >
+                  If Your Application is Succesful
+                </Text>
+                {!review ? (
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                ) : (
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                )}
+              </HStack>
+
+              {review && (
+                <VStack
+                  justifyContent={"center"}
+                  alignItems={"flex-start"}
+                  gap={{ xs: "20px", md: "30px" }}
+                  mb={{ xs: "4px", md: "10px" }}
+                  borderTop={"1px solid #adacac"}
+                  py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
+                >
+                  <Text
+                    textAlign={"justify"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    ml={3}
+                    mr={9}
+                    lineHeight={1.9}
+
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    If your discretionary leave application is successful, you will have no prohibition on where to study or work in the UK and recourse to public funds.
+
+                  </Text>
+                  <Text
+                    textAlign={"justify"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    mt={"-8"}
+                    ml={3}
+                    fontWeight={400}
+                    lineHeight={1.9}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    For all immigration matters, Please do not hesitate to get
+                    in touch
+                    <strong>020 3950 2246</strong> or{" "}
+                    <strong>
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
+                    </strong>
+                  </Text>
+
+                </VStack>
+              )}
+            </Box>
+
+
           </VStack>
 
           {/* Other Services */}

@@ -1,4 +1,5 @@
-import { Text, Container, Box, HStack, VStack, List } from "@chakra-ui/react";
+
+import { Text, Container, Box, HStack, VStack } from "@chakra-ui/react";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import "../../../styles/fonts.css";
@@ -19,11 +20,11 @@ const TransfersOfEquity = () => {
   return (
     <>
       <Container
-        width="100vw"
-        maxWidth="100%"
-        minHeight="100vh"
-        backgroundColor={"white"}
-        overflow="auto"
+        width="100%"
+        maxW="100%"
+        minH="100vh"
+        bg="white"
+        overflowX="hidden"
         m={0}
         p={0}
         display="flex"
@@ -34,271 +35,182 @@ const TransfersOfEquity = () => {
         </Helmet>
 
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
+
           {/* Banner */}
           <Box
-            width={"100%"}
-            height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+            w="100%"
+            h={{
+              base: "200px",
+              sm: "240px",
+              md: "280px",
+              lg: "340px",
+              xl: "360px",
+              "2xl": "420px",
             }}
-            bgImage={`url(${BannerImg})`}
-            bgSize={"cover"}
-            bgPos={"center"}
-            bgRepeat={"no-repeat"}
-            display={"flex"}
-            justifyContent={"center"}
-            alignItems={"center"}
-            _loading={"eager"}
+            bgImage={`linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url(${BannerImg})`}
+            bgSize="cover"
+            bgPos="center"
+            display="flex"
+            alignItems="center"
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
+              fontSize={{
+                base: "18px",
+                sm: "22px",
+                md: "26px",
+                lg: "30px",
+                xl: "36px",
+                "2xl": "45px",
+              }}
               fontWeight={600}
-              fontFamily={"CeraRoundPro"}
-              width={"90%"}
+              fontFamily="CeraRoundPro"
+              w={{ base: "92%", md: "85%" }}
+              mx="auto"
               textAlign={"left"}
             >
               Transfers of Equity
             </Text>
           </Box>
 
-          {/* Main */}
-          <Box
-            width={"100%"}
-            display={"flex"}
-            flexFlow={"column"}
-            color={"black"}
-          >
-            {/* Heading */}
+          {/* Main Content */}
+          <Box w="100%" color="black">
             <Box
-              width={"90%"}
-              alignSelf={"center"}
-              mb={"5%"}
-              my={{ xs: "5%", md: "2.5%" }}
+              w={{ base: "95%", sm: "92%", md: "88%", lg: "84%", xl: "80%" }} mx="auto"
+              my={{ base: "20px", md: "30px" }}
             >
               <Text
-                fontFamily={"CeraRoundPro"}
+                fontFamily="CeraRoundPro"
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"justify"}
+                fontSize={{
+                  base: "12px",
+                  sm: "13px",
+                  md: "14px",
+                  xl: "16px",
+                  "2xl": "17.5px",
+                }}
+                textAlign="justify"
+                lineHeight="1.8"
               >
-                Transfers of equity involve transferring part or all of property
-                ownership from one individual to another. Whether you're adding
-                a partner, removing a name, or redistributing shares, this
-                process requires precise legal handling. At Lumine Solicitors,
-                we offer expert guidance and comprehensive services to ensure
-                your transfers of equity are seamless and stress-free. We
-                recognise that transferring equity can have a significant impact
-                on your personal and financial circumstances. Therefore, it's
-                essential to seek the correct legal support to handle this
-                process smoothly and efficiently.
+                Transfers of equity involve transferring part or all of property ownership from one individual to another. Whether you’re adding a partner, removing a name, or redistributing shares, this process requires precise legal handling. At Lumine Solicitors, we offer expert guidance and comprehensive services to ensure your transfers of equity are seamless and stress-free. We recognise that transferring equity can have a significant impact on your personal and financial circumstances. Therefore, it’s essential to seek the correct legal support to handle this process smoothly and efficiently.
               </Text>
             </Box>
           </Box>
 
-          {/* Dropdown info */}
-          <VStack
-            justifyContent={"space-around"}
-            alignItems={"center"}
-            mb={"50px"}
-          >
-            {/* Why choose Lumine Solicitors? */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
+          {/* Dropdown Info */}
+          <VStack spacing={{ base: "20px", md: "30px" }} mb="50px">
+
+            {/* Section 1 */}
+            <Box w={{ base: "95%", sm: "92%", md: "88%", lg: "84%", xl: "80%" }} mx="auto">
               <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !eligibilityState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                borderTop="1px solid #adacac"
+                w="100%"
+                justifyContent="space-between"
+                px={{ base: "10px", md: "16px", lg: "18px" }}
+                py={{ base: "10px", md: "12px" }}
+                cursor="pointer"
+                bg="black"
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  fontSize={{ base: "14px", md: "16px", xl: "18px" }}
                   fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  fontFamily="CeraRoundPro"
+                  color="#bf9b30"
                 >
                   Why choose Lumine Solicitors?
                 </Text>
-                {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+
+                {eligibilityState ? (
+                  <AiOutlineMinus color="#bf9b30" size="1.8em" />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color="#bf9b30" size="1.8em" />
                 )}
               </HStack>
 
               {eligibilityState && (
                 <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
+                  alignItems="flex-start"
+                  borderTop="1px solid #adacac"
+                  py={{ base: "15px", md: "25px" }}
                 >
                   <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
+                    fontSize={{ base: "12px", md: "14px", xl: "16px" }}
+                    lineHeight="1.9"
+                    fontFamily="CeraRoundPro"
+                    color={"black"}
+                    textAlign={"left"}
+                    mt={3}
+                    mb={6}
                   >
-                    As a Conveyancing Quality Scheme accredited law firm in the
-                    UK, we have extensive expertise in managing equity transfers
-                    for a variety of clients. Whether you're buying out a joint
-                    owner or adding a new name to the property title, our team
-                    ensures the process is executed with professionalism and
-                    minimal hassle.
+                    As a Conveyancing Quality Scheme accredited law firm in the UK, we have extensive expertise in managing equity transfers for a variety of clients. Whether you're buying out a joint owner or adding a new name to the property title, our team ensures the process is executed with professionalism and minimal hassle.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Help */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
+            {/* Section 2 */}
+            <Box w={{ base: "95%", sm: "92%", md: "88%", lg: "84%", xl: "80%" }} mx="auto">
               <HStack
-                borderY={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !helpState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                borderY="1px solid #adacac"
+                w="100%"
+                justifyContent="space-between"
+                px={{ base: "10px", md: "16px", lg: "18px" }}
+                py={{ base: "10px", md: "12px" }}
+                cursor="pointer"
+                bg="black"
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  fontSize={{ base: "14px", md: "16px", xl: "18px" }}
                   fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  fontFamily="CeraRoundPro"
+                  color="#bf9b30"
                 >
                   Contact Us Today
                 </Text>
-                {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+
+                {helpState ? (
+                  <AiOutlineMinus color="#bf9b30" size="1.8em" />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color="#bf9b30" size="1.8em" />
                 )}
               </HStack>
 
               {helpState && (
                 <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
+                  alignItems="flex-start"
+                  borderTop="1px solid #adacac"
+                  py={{ base: "15px", md: "25px" }}
                 >
                   <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
+                    fontSize={{ base: "12px", md: "14px", xl: "16px" }}
+                    fontFamily="CeraRoundPro"
+                    color={"black"}
                   >
-                    For all property matters, please do not hesitate to get in
-                    touch with Lumine solicitors <strong>020 3950 2246</strong>{" "}
+                    For all property matters, please do not hesitate to get in touch with Lumine solicitors{" "}
+                    <Text as="span" fontWeight={600}>
+                      020 3950 2246
+                    </Text>{" "}
                     or{" "}
-                    <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
-                    </strong>
+                    <Link to={"/contact"}>
+                      <Text
+                        as="span"
+                        fontWeight={700}
+                        color="#E91E63"
+                        _hover={{ color: "#10102c" }}
+                      >
+                        Contact Us HERE
+                      </Text>
+                    </Link>
                   </Text>
                 </VStack>
               )}
             </Box>
           </VStack>
 
-          {/* Other Services */}
+          {/* Other Sections */}
           <AllServiceLinks />
-
-          {/* Prices */}
           <AllPrices />
-
-          {/* News and Insights */}
           <AllNewsInsights />
 
           <Footer />

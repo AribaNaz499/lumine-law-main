@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/ip.webp";
+import BannerImg from "../../../assets/services/main/intellectual/pageBanner.jpg";
 
 const Copyright = () => {
   const [spouseState, setSpouseState] = useState(false);
@@ -38,10 +38,10 @@ const Copyright = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "240px",
+              lg: "310px",
+              xl: "335px",
+              "2xl": "420px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -72,7 +72,7 @@ const Copyright = () => {
           >
             {/* Heading */}
             <Box
-              width={"90%"}
+              width={"85%"}
               alignSelf={"center"}
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
@@ -83,7 +83,7 @@ const Copyright = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
               >
-                Intro content about Copyright issues
+                At Lumine Law, we provide expert legal advice on copyright protection and enforcement in the UK. Copyright is a vital intellectual property right that safeguards original works of authorship, including literature, music, art, and software. Our team can help you understand your rights, navigate registration processes, and address infringement issues to ensure your creative works are fully protected. Whether you are a creator or a business, we offer tailored solutions to secure and defend your intellectual property in today’s digital landscape.
               </Text>
             </Box>
           </Box>
@@ -99,7 +99,7 @@ const Copyright = () => {
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"85%"}
               justifyContent={"center"}
               alignItems={"flex-start"}
             >
@@ -114,7 +114,7 @@ const Copyright = () => {
                   md: "12px",
                   lg: "13px",
                   xl: "14px",
-                  "2xl": "15px",
+                  "2xl": "13px",
                 }}
                 alignItems={"center"}
                 py={{
@@ -128,29 +128,29 @@ const Copyright = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -176,12 +176,9 @@ const Copyright = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.7}
                   >
-                    A copyright is a form of intellectual property protection
-                    granted to the creators of original works, such as literary,
-                    artistic, musical, or dramatic creations. It provides the
-                    creators with exclusive rights to control the use and
-                    distribution of their work.
+                    A copyright is a form of intellectual property protection granted to the creators of original works, such as literary, artistic, musical, or dramatic creations. It provides the creators with exclusive rights to control the use and distribution of their work.
                   </Text>
 
                   <Text
@@ -194,17 +191,12 @@ const Copyright = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={"-7"}
                     fontWeight={400}
+                    lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
-                    With copyrights the creator has the sole right to reproduce
-                    the work, prepare derivative works based on the original,
-                    distribute copies of the work, publicly display the work,
-                    and perform the work publicly. These rights are granted
-                    automatically upon the creation of the work and do not
-                    require registration, although registering with government
-                    authorities can provide additional benefits and legal
-                    protections.
+                    With copyrights the creator has the sole right to reproduce the work, prepare derivative works based on the original, distribute copies of the work, publicly display the work, and perform the work publicly. These rights are granted automatically upon the creation of the work and do not require registration, although registering with government authorities can provide additional benefits and legal protections.
                   </Text>
 
                   <Text
@@ -217,6 +209,8 @@ const Copyright = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={"-7"}
+                    lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -236,7 +230,7 @@ const Copyright = () => {
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"85%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -265,29 +259,30 @@ const Copyright = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
+
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors Help?
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -310,6 +305,7 @@ const Copyright = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -330,6 +326,8 @@ const Copyright = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={-7}
+                    lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -340,7 +338,16 @@ const Copyright = () => {
                     intellectual property law and achieve the best possible
                     resolution for your situation.
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link to={"/contact"}>
+                        <Text
+                          as="span"
+                          fontWeight={700}
+                          color="#E91E63"
+                          _hover={{ color: "#10102c" }}
+                        >
+                          Contact Us HERE
+                        </Text>
+                      </Link>{" "}
                     </strong>
                   </Text>
                 </VStack>

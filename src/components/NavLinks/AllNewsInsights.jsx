@@ -8,10 +8,10 @@ import {
   GridItem,
 } from "@chakra-ui/react";
 import "../../styles/fonts.css";
-import NewsInsightsOne from "../../assets/landing/news-insights-one.webp";
+import NewsInsightsOne from "../../assets/landing/newsInsigtsOne.webp";
 import NewsInsightsTwo from "../../assets/landing/news-insights-two.webp";
-import NewsInsightsThree from "../../assets/landing/news-insights-three.webp";
-import NewsInsightsFour from "../../assets/landing/news-insights-four.webp";
+import NewsInsightsThree from "../../assets/landing/newsInsightsThree.png";
+import NewsInsightsFour from "../../assets/landing/newsInsightsFour.jpg";
 import { Link } from "react-router-dom";
 
 const images = [
@@ -21,50 +21,41 @@ const images = [
   NewsInsightsFour,
 ];
 
-const news = [
-  // 1
+const allItems = [
+  // News items (index 0, 1)
   {
     key: 1,
     image: images[0],
-    date: "10 December 2023",
-    heading:
-      "Understanding the role of Solicitors in London in Property Transactions",
+    heading: "A Guide to Commercial Conveyancing in London",
     description:
-      "Understand the role of Solicitors in London in property transactions. Learn why choosing local solicitors in London offers a personal touch, in depth market knowledge",
+      "commercial conveyancing, commercial property, property law, property laws in UK, law firm in UK...",
+    type: "news",
   },
-
-  // 2
   {
     key: 2,
     image: images[1],
-    date: "10 November 2023",
     heading:
       "The Building Safety Act 2022 and Establishment of the New Homes Ombudsman Scheme",
     description:
-      "A few intro lines to this article and what it holds or signifies, just so the reader has an idea what they are about to read.",
+      "A few intro lines to this article and what it holds or signifies, just so the reader has an idea...",
+    type: "news",
   },
-];
-
-const articles = [
-  // 1
+  // Insights items (index 2, 3)
   {
-    key: 1,
+    key: 3,
     image: images[2],
-    date: "02 October 2023",
-    heading: "LATEST ‘HOW TO RENT’ GUIDE",
+    heading: "How To Choose The Right Solicitor In London For Your Legal Needs",
     description:
-      "A few intro lines to this article and what it holds or signifies, just so the reader has an idea what they are about to read.",
+      "Discover how to choose the right solicitor in London for your legal needs. Expert tips to find experienced, reliable, and...",
+    type: "insights",
   },
-
-  // 2
   {
-    key: 2,
+    key: 4,
     image: images[3],
-    date: "10 December 2023",
-    heading:
-      "Understanding the role of Solicitors in London in Property Transactions",
+    heading: "Key Updates Regarding the UK's Transition to eVisas",
     description:
-      "Understand the role of Solicitors in London in property transactions. Learn why choosing local solicitors in London offers a personal touch, in depth market knowledge",
+      "Over 4 million UK visa holders have successfully set up their UKVI account to access their eVisa, according to the...",
+    type: "insights",
   },
 ];
 
@@ -76,77 +67,73 @@ const Card = ({ item }) => (
     width="100%"
     height="100%"
     cursor="pointer"
-    border="1px solid black"
-    borderRadius="8px"
+    border="1px solid #d9d9d9"
+    borderRadius="6px"
     overflow="hidden"
     _hover={{ opacity: "0.85" }}
     transition="0.3s all ease"
+    backgroundColor="white"
+    textDecoration="none"
   >
-    <Box flexShrink={0}>
+    {/* Image */}
+    <Box flexShrink={0} width="100%">
       <Image
         alt="Lumine Solicitors News and Insights"
         src={item.image}
         height={{
-          xs: "150px",
-          sm: "175px",
-          md: "225px",
-          lg: "250px",
-          xl: "275px",
-          "2xl": "300px",
+          base: "160px",
+          sm: "170px",
+          md: "175px",
+          lg: "185px",
+          xl: "190px",
+          "2xl": "200px",
         }}
         width="100%"
         objectFit="cover"
         loading="lazy"
+        display="block"
       />
     </Box>
 
+    {/* Text Content */}
     <Flex
       flex="1"
       direction="column"
-      gap="5px"
-      p="10px"
-      backgroundColor={"white"}
-      color={"black"}
+      gap="8px"
+      px={{ base: "12px", md: "14px" }}
+      pt={{ base: "12px", md: "14px" }}
+      pb={{ base: "14px", md: "16px" }}
+      color="black"
       fontFamily="CeraRoundPro"
     >
       <Text
-        textAlign={"left"}
+        textAlign="left"
         fontSize={{
-          xs: "8px",
-          md: "10px",
-          "2xl": "12px",
-        }}
-        fontWeight={300}
-      >
-        {item.date}
-      </Text>
-
-      <Text
-        textAlign={"left"}
-        fontSize={{
-          xs: "12px",
-          sm: "12px",
+          base: "13px",
           md: "14px",
           lg: "14px",
-          xl: "16px",
-          "2xl": "18px",
+          xl: "15px",
+          "2xl": "16px",
         }}
-        fontWeight={600}
+        fontWeight={700}
+        lineHeight="1.4"
+        color="black"
       >
         {item.heading}
       </Text>
 
       <Text
-        textAlign={"left"}
+        textAlign="left"
         fontSize={{
-          xs: "10px",
-          sm: "12px",
-          md: "12px",
-          lg: "12px",
-          xl: "14px",
-          "2xl": "16px",
+          base: "19px",
+          md: "10px",
+          lg: "10px",
+          xl: "12px",
+          "2xl": "12px",
         }}
         fontWeight={400}
+        color="#555555"
+        lineHeight="1.55"
       >
         {item.description}
       </Text>
@@ -155,6 +142,9 @@ const Card = ({ item }) => (
 );
 
 const AllNewsInsights = () => {
+  const newsItems = allItems.filter((i) => i.type === "news");
+  const insightsItems = allItems.filter((i) => i.type === "insights");
+
   return (
     <Flex
       width="100%"
@@ -162,133 +152,99 @@ const AllNewsInsights = () => {
       align="flex-start"
       justify="center"
       mb="50px"
+      // backgroundColor="#f7f7f7"
+      py={{ base: "30px", md: "40px", xl: "50px" }}
     >
       {/* Header */}
-      <Box width="90%" mx="auto">
+      <Box width="90%" mx="auto" mb={{ base: "20px", md: "30px", xl: "40px" }}>
         <Text
           color="black"
           fontSize={{
-            xs: "20px",
-            sm: "20px",
-            md: "24px",
-            lg: "26px",
-            xl: "28px",
-            "2xl": "30px",
+            base: "24px",
+            md: "28px",
+            lg: "30px",
+            xl: "32px",
+            "2xl": "34px",
           }}
-          fontWeight={500}
-          mb={{
-            xs: "25px",
-            sm: "30px",
-            md: "35px",
-            lg: "40px",
-            xl: "45px",
-            "2xl": "50px",
-          }}
-          textAlign={"left"}
+          fontWeight={400}
+          fontFamily="CeraRoundPro"
+          textAlign="left"
         >
           News and Insights
         </Text>
       </Box>
 
-      {/* Content */}
-      <Flex
-        width="90%"
-        mx="auto"
-        direction={{ base: "column", "2xl": "row" }}
-        gap="20px"
-      >
-        {/* News Section */}
-        <Flex direction="column" flex="1" gap="20px">
-          <Grid
-            templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
-            gap="10px"
-            height="100%"
-          >
-            {news.map((item) => (
-              <GridItem key={item.key} height="100%">
-                <Card item={item} />
-              </GridItem>
-            ))}
-          </Grid>
+      {/* 4-column card grid */}
+      <Box width="90%" mx="auto">
+        <Grid
+          templateColumns={{
+            base: "1fr",
+            sm: "repeat(2, 1fr)",
+            lg: "repeat(4, 1fr)",
+          }}
+          gap={{ base: "16px", md: "20px" }}
+          mb={{ base: "24px", md: "32px" }}
+          alignItems="stretch"
+        >
+          {allItems.map((item) => (
+            <GridItem key={item.key} height="100%">
+              <Card item={item} />
+            </GridItem>
+          ))}
+        </Grid>
 
+        {/* Two buttons: News (left under first 2 cards) and Insights (right under last 2 cards) */}
+        <Flex
+          width="100%"
+          justify="space-around"
+          mt={{ base: "20px", md: "28px" }}
+        >
           <Button
             as={Link}
             to="/lumine-law/news"
-            alignSelf="center"
-            width={{ base: "100%", md: "25%" }}
+            width={{ base: "26%", sm: "24%", md: "14%", lg: "12%" }}
             backgroundColor="black"
             color="white"
-            py={{
-              xs: "6px",
-              md: "8px",
-              lg: "10px",
-              xl: "12px",
-              "2xl": "15px",
-            }}
-            borderRadius="10px"
+            mt={"30px"}
+            mb={"-25px"}
+            py={{ base: "20px", md: "22px" }}
+            borderRadius="2px"
+            border="1px solid black"
             _hover={{
-              borderColor: "#beab7c",
-              color: "#beab7c",
+              backgroundColor: "white",
+              color: "black",
             }}
             transition="all 0.3s ease"
-            fontSize={{
-              xs: "14px",
-              md: "16px",
-              xl: "18px",
-              "2xl": "20px",
-            }}
+            fontSize={{ base: "14px", md: "15px" }}
             fontFamily="CeraRoundPro"
+            fontWeight={500}
           >
             News
           </Button>
-        </Flex>
-
-        {/* Articles Section */}
-        <Flex direction="column" flex="1" gap="20px">
-          <Grid
-            templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
-            gap="10px"
-            height="100%"
-          >
-            {articles.map((item) => (
-              <GridItem key={item.key} height="100%">
-                <Card item={item} />
-              </GridItem>
-            ))}
-          </Grid>
 
           <Button
             as={Link}
             to="/lumine-law/insights"
-            alignSelf="center"
-            width={{ base: "100%", md: "25%" }}
+            width={{ base: "26%", sm: "24%", md: "14%", lg: "12%" }}
             backgroundColor="black"
             color="white"
-            py={{
-              xs: "6px",
-              md: "8px",
-              lg: "10px",
-              xl: "12px",
-              "2xl": "15px",
-            }}
-            borderRadius="10px"
+            mt={"30px"}
+            mb={"-25px"}
+            py={{ base: "20px", md: "22px" }}
+            borderRadius="2px"
             _hover={{
-              borderColor: "#beab7c",
-              color: "#beab7c",
+              backgroundColor: "white",
+              color: "black",
             }}
             transition="all 0.3s ease"
-            fontSize={{
-              xs: "14px",
-              md: "16px",
-              xl: "18px",
-              "2xl": "20px",
-            }}
+            fontSize={{ base: "14px", md: "15px" }}
             fontFamily="CeraRoundPro"
+            fontWeight={500}
           >
             Insights
           </Button>
         </Flex>
-      </Flex>
+      </Box>
     </Flex>
   );
 };

@@ -1,3 +1,4 @@
+import React, { Suspense } from "react";
 import {
   Text,
   Container,
@@ -6,169 +7,62 @@ import {
   VStack,
   Grid,
   GridItem,
+  Heading,
+  SimpleGrid,
+  Icon,
 } from "@chakra-ui/react";
-import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { HiOutlineArrowLongRight } from "react-icons/hi2";
+import { FiMapPin, FiPhone, FiMail } from "react-icons/fi"; // Icons import fixed
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
+import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 
 // Import all images
-import BannerImg from "../../../assets/services/main/immigration/immigration-banner.webp";
-import DisputeImg from "../../../assets/services/main/dispute/main-banner.webp";
-import LandlordImg from "../../../assets/services/main/landlord/main-banner.webp";
-import FamilyImg from "../../../assets/services/main/family/main-banner.webp";
-import AllServicesImg from "../../../assets/services/all/bannertest.webp";
-import IntellectualImg from "../../../assets/services/main/intellectual/main-banner.webp";
-import ResidentialImg from "../../../assets/services/main/residential/main-banner.webp";
-import CommercialImg from "../../../assets/services/main/commercial/main-banner.webp";
-import WillsProbateImg from "../../../assets/services/main/wills-probate/main-banner.webp";
+import BannerImg from "../../../assets/services/main/immigration/immigrationBanner.jpeg";
 import "../../../styles/fonts.css";
 
-// Immigration services data
 const immigrationServices = [
-  {
-    title: "Administrative Reviews, Appeals and Judicial Reviews",
-    path: "/lumine-law/all-services/immigration/reviews-appeals",
-  },
-  {
-    title: "Asylum",
-    path: "/lumine-law/all-services/immigration/asylum",
-  },
-  {
-    title: "British Citizenship Application",
-    path: "/lumine-law/all-services/immigration/british-citizenship-application",
-  },
-  {
-    title: "Certificate of Sponsorship",
-    path: "/lumine-law/all-services/immigration/certificate-of-sponsorship",
-  },
-  {
-    title: "Creative Worker Visa",
-    path: "/lumine-law/all-services/immigration/creative-worker",
-  },
-  {
-    title: "Discretionary Leave",
-    path: "/lumine-law/all-services/immigration/discretionary-leave",
-  },
-  {
-    title: "Entry Clearance Applications from Outside of the UK",
-    path: "/lumine-law/all-services/immigration/entry-clearance",
-  },
-  {
-    title: "EU Settlement Scheme Applications",
-    path: "/lumine-law/all-services/immigration/eu-settlement",
-  },
-  {
-    title: "Immigration Bail and Revocation of a Deportation Order",
-    path: "/lumine-law/all-services/immigration/bail-revocation",
-  },
-  {
-    title: "Indefinite Leave to Remain",
-    path: "/lumine-law/all-services/immigration/indefinite-leave",
-  },
-  {
-    title: "Innovator Founder Visa",
-    path: "/lumine-law/all-services/immigration/innovator-founder",
-  },
-  {
-    title: "Private Life/Humans Right-Based Applications",
-    path: "/lumine-law/all-services/immigration/human-rights-app",
-  },
-  {
-    title:
-      "Skilled Migrant Sponsorship License Applications (In All Categories)",
-    path: "/lumine-law/all-services/immigration/skilled-migrant",
-  },
-  {
-    title: "Skilled Worker Visa",
-    path: "/lumine-law/all-services/immigration/skilled-worker-visa",
-  },
-  {
-    title: "Spouse Visa",
-    path: "/lumine-law/all-services/immigration/spouse-visa",
-  },
-  {
-    title: "Student Visa",
-    path: "/lumine-law/all-services/immigration/student-visa",
-  },
-  {
-    title: "Switching Visa Categories from within the UK",
-    path: "/lumine-law/all-services/immigration/visa-categories",
-  },
-  {
-    title: "UK Visitor Visa",
-    path: "/lumine-law/all-services/immigration/uk-visitor-visa",
-  },
-  {
-    title: "Visa Extensions",
-    path: "/lumine-law/all-services/immigration/visa-extensions",
-  },
+  { title: "Administrative Reviews, Appeals and Judicial Reviews", path: "/all-services/immigration/reviews-appeals" },
+
+  { title: "Asylum", path: "/all-services/immigration/asylum" },
+
+  { title: "British Citizenship Application", path: "/all-services/immigration/british-citizenship-application" },
+
+  { title: "Certificate of Sponsorship", path: "/all-services/immigration/cos" },
+
+  { title: "Creative Worker Visa", path: "/all-services/immigration/creative-worker" },
+
+  { title: "Discretionary Leave", path: "/all-services/immigration/discretionary-leave" },
+
+  { title: "Entry Clearance Applications from Outside of the UK", path: "/all-services/immigration/entry-clearance" },
+
+  { title: "EU Settlement Scheme Applications", path: "/all-services/immigration/eu-settlement" },
+
+  { title: "Immigration Bail and Revocation of a Deportation Order", path: "/all-services/immigration/bail-revocation" },
+
+  { title: "Indefinite Leave to Remain", path: "/all-services/immigration/indefinite-leave" },
+
+  { title: "Innovator Founder Visa", path: "/all-services/immigration/innovator-founder" },
+
+  { title: "Private Life/Humans Right-Based Applications", path: "/all-services/immigration/human-rights" },
+
+  { title: "Skilled Migrant Sponsorship Licence Applications", path: "/all-services/immigration/skilled-migrant" },
+
+  { title: "Skilled Worker Visa", path: "/all-services/immigration/skilled-worker-visa" },
+
+  { title: "Spouse Visa", path: "/all-services/immigration/spouse-visa" },
+
+  { title: "Student Visa", path: "/all-services/immigration/student-visa" },
+
+  { title: "Switching Visa Categories from within the UK", path: "/all-services/immigration/visa-categories" },
+
+  { title: "UK Visitor Visa", path: "/all-services/immigration/uk-visitor-visa" },
+
+  { title: "Visa Extensions from within the UK", path: "/all-services/immigration/visa-extensions" },
 ];
 
-// Other services data
-const otherServices = [
-  {
-    title: "Residential Property",
-    path: "/lumine-law/all-services/residential",
-    image: ResidentialImg,
-    description: "A lil para about what this service is",
-    textColor: "#ffffff",
-  },
-  {
-    title: "Commercial Property",
-    path: "/lumine-law/all-services/commercial",
-    image: CommercialImg,
-    description: "A lil para about what this service is",
-    textColor: "#ffffff",
-  },
-  {
-    title: "Intellectual Property",
-    path: "/lumine-law/all-services/intellectual-property",
-    image: IntellectualImg,
-    description: "A lil para about what this service is",
-    textColor: "#ffffff",
-  },
-  {
-    title: "Dispute Resolution and Civil Litigation",
-    path: "/lumine-law/all-services/dispute-resolution",
-    image: DisputeImg,
-    description: "A lil para about what this service is",
-    textColor: "#ffffff",
-  },
-  {
-    title: "Landlord & Tenant Disputes",
-    path: "/lumine-law/all-services/landlord-tenant",
-    image: LandlordImg,
-    description: "A lil para about what this service is",
-    textColor: "#000000",
-  },
-  {
-    title: "Family & Children",
-    path: "/lumine-law/all-services/family-and-children",
-    image: FamilyImg,
-    description: "A lil para about what this service is",
-    textColor: "#ffffff",
-  },
-  {
-    title: "Wills and Probate",
-    path: "/lumine-law/all-services/wills-probate",
-    image: WillsProbateImg,
-    description: "A lil para about what this service is",
-    textColor: "#ffffff",
-  },
-  {
-    title: "All Services",
-    path: "/lumine-law/all-services",
-    image: AllServicesImg,
-    description: "",
-    textColor: "#ffffff",
-  },
-];
-
-// Immigration Service Button Component
 const ImmigrationServiceButton = ({ service }) => (
   <GridItem
     as={Link}
@@ -177,283 +71,182 @@ const ImmigrationServiceButton = ({ service }) => (
     border="1px solid black"
     borderRadius="8px"
     width="100%"
-    height={{ xs: "100px", sm: "125px", md: "150px", lg: "175px" }}
+    height={{ base: "90px", xs: "100px", sm: "125px", md: "150px", lg: "175px" }}
     display="flex"
     justifyContent="center"
     alignItems="center"
     backgroundColor="white"
-    _hover={{
-      backgroundColor: "#000000",
-      color: "#beab7c",
-      transition: "0.3s ease all",
-      fontWeight: "600",
-      textDecor: "underline",
-    }}
-    fontSize={{
-      xs: "12px",
-      sm: "14px",
-      md: "15px",
-      lg: "16px",
-      xl: "16px",
-      "2xl": "16px",
-    }}
+    _hover={{ backgroundColor: "#000000", color: "white", transition: "0.3s ease all", fontWeight: "600" }}
+    fontSize={{ base: "10px", xs: "11px", sm: "11px", md: "14px", lg: "15px" }}
     fontWeight={500}
     fontFamily="CeraRoundPro"
     cursor="pointer"
     p="10px 5px"
+    textAlign="center"
   >
     {service.title}
   </GridItem>
 );
 
-// Other Service Card Component
-const ServiceCard = ({ service }) => (
-  <GridItem
-    width="100%"
-    height={{
-      xs: "175px",
-      sm: "175px",
-      md: "175px",
-      lg: "200px",
-      xl: "225px",
-      "2xl": "250px",
-    }}
-    padding={{ xs: "10px 10px", lg: "10px 20px" }}
-    border="1px solid black"
-    borderRadius="8px"
-    cursor="pointer"
-    _hover={{
-      opacity: "0.8",
-      transition: "all 0.5s ease",
-    }}
-    bgImage={`url(${service.image})`}
-    bgPos="center"
-    bgSize="cover"
-    bgRepeat="no-repeat"
-    _loading={"lazy"}
-  >
-    <Link to={service.path} style={{ textDecoration: "none" }}>
-      <Box
-        height="100%"
-        display="flex"
-        flexFlow="column"
-        justifyContent="center"
-        alignItems="flex-start"
-        gap="10px"
-      >
-        <Text
-          fontSize={{
-            xs: "14px",
-            sm: "14px",
-            md: "16px",
-            lg: "18px",
-            xl: "20px",
-            "2xl": "22px",
-          }}
-          fontFamily="CeraRoundPro"
-          fontWeight={500}
-          textAlign="left"
-          color={service.textColor}
-        >
-          {service.title}
-        </Text>
-        <VStack
-          width="100%"
-          height="100%"
-          justifyContent="space-between"
-          alignItems="flex-start"
-        >
-          <Text
-            fontSize={{
-              xs: "12px",
-              sm: "13px",
-              md: "14px",
-              lg: "15px",
-              xl: "16px",
-              "2xl": "18px",
-            }}
-            color={service.textColor}
-            fontFamily="CeraRoundPro"
-            fontWeight={400}
-          >
-            {service.description}
-          </Text>
-          <HiOutlineArrowLongRight color={service.textColor} size="2em" />
-        </VStack>
-      </Box>
-    </Link>
-  </GridItem>
-);
-
-// Banner Component
 const Banner = () => (
-  <Box
-    width="100%"
-    height={{
-      xs: "200px",
-      lg: "250px",
-      xl: "300px",
-      "2xl": "350px",
-    }}
-    bgImage={`url(${BannerImg})`}
-    bgSize="cover"
-    bgPos="center"
-    bgRepeat="no-repeat"
-    display="flex"
-    justifyContent="flex-start"
-    alignItems="center"
-    _loading={"eager"}
-  >
-    <Text fontSize="40px" fontWeight={600} fontFamily="CeraRoundPro" ml="2.5%">
-      Immigration
-    </Text>
-  </Box>
-);
-
-// Main Content Section
-const MainContent = () => (
-  <Box width="100%" display="flex" flexFlow="column" color="black">
-    <HStack
-      justifyContent="flex-start"
-      alignItems="center"
-      mt="2%"
-      mb="1%"
-      ml="2.5%"
-    >
-      <Text fontFamily="CeraRoundPro" fontSize="24px" fontWeight={600}>
-        What is Immigration?
-      </Text>
-    </HStack>
-
-    <Box
-      width="95%"
-      alignSelf="center"
-      mb={{ xs: "15%", sm: "10%", md: "7.5%", xl: "5%" }}
-    >
-      <Text
-        fontFamily="CeraRoundPro"
-        fontWeight={400}
-        fontSize="18px"
-        textAlign="justify"
-      >
-        Our legal services are highly recommended by our clients and other
-        professionals such as barristers and other solicitors. Our immigration
-        and litigation departments fight to win.
+  <Box width="100%" height={{ base: "220px", xs: "260px", lg: "310px", xl: "360px", "2xl": "410px" }} position="relative" overflow="hidden">
+    <Box position="absolute" top="0" left="0" right="0" bottom="0" bgImage={`url(${BannerImg})`} bgSize="cover" bgPos="center" bgRepeat="no-repeat" transition="transform 0.3s ease" _hover={{ transform: "scale(1.05)" }} />
+    <Box position="absolute" top="0" left="0" right="0" bottom="0" bg="rgba(0, 0, 0, 0.3)" zIndex={1} />
+    <Box position="relative" zIndex={2} display="flex" justifyContent="flex-start" alignItems="center" width="100%" height="100%">
+      <Text fontSize={{ base: "26px", xs: "36px", sm: "40px", md: "44px", lg: "48px", xl: "50px" }} fontWeight={600} fontFamily="CeraRoundPro" ml={{ base: "5%", md: "5%" }} color="white" textShadow="2px 2px 4px rgba(0,0,0,0.5)">
+        Top Immigration Solicitor in London
       </Text>
     </Box>
   </Box>
 );
 
-// Immigration Services Grid
+const MainContent = () => (
+  <Box width="100%" display="flex" flexFlow="column" color="black" px={{ base: "5%", md: "0" }}>
+    <HStack justifyContent="flex-start" alignItems="center" mt="2%" mb="1%" ml={{ base: "0", md: "5%" }}>
+      <Text fontFamily="CeraRoundPro" fontSize={{ base: "24px", md: "32px" }} fontWeight={400}>What is Immigration?</Text>
+    </HStack>
+    <Box width={{ base: "100%", md: "95%" }} alignSelf="center" mb={{ base: "10%", xs: "15%", sm: "10%", md: "7.5%", xl: "5%" }}>
+      <Text fontFamily="CeraRoundPro" fontWeight={350} ml={{ base: 0, md: 9 }} fontSize={{ base: "14px", md: "16px" }} textAlign="justify">
+        Immigration refers to the legal process of moving to another country to live, work, study or join family members. In the UK, immigration is regulated by strict laws, eligibility requirements and visa categories that applicants must meet.
+        <br /> <br />
+        Whether you need a work visa, spouse visa, student visa, ILR, or British citizenship, immigration law ensures that every application follows official Home Office rules. This is why many people choose to work with an experienced immigration solicitor in London who can guide them through the complex process, prepare strong documentation, and increase their chances of approval.
+      </Text>
+    </Box>
+  </Box>
+);
+
 const ImmigrationServicesGrid = () => (
-  <Box
-    width="100%"
-    display="flex"
-    flexFlow="column"
-    alignItems="center"
-    color="black"
-    mb={{ xs: "25px", lg: "50px" }}
-  >
-    <Grid
-      templateColumns={{ xs: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
-      width={{ xs: "90%", md: "80%", lg: "75%", xl: "70%" }}
-      justifySelf="center"
-      justifyItems="center"
-      gap={{ xs: "10px", lg: "15px", xl: "30px" }}
-      gapY={0}
-    >
-      {immigrationServices.map((service, index) => (
-        <ImmigrationServiceButton key={index} service={service} />
-      ))}
-      <GridItem /> {/* Empty grid item */}
+  <Box width="100%" display="flex" flexFlow="column" alignItems="center" color="black" mb={{ base: "20px", xs: "25px", lg: "50px" }}>
+    <Grid templateColumns={{ base: "repeat(2, 1fr)", xs: "repeat(3, 1fr)", lg: "repeat(4, 1fr)" }} width={{ base: "90%", xs: "80%", md: "85%", lg: "85%", xl: "90%" }} justifySelf="center" justifyItems="center" gap={{ base: "8px", lg: "12px", xl: "17px" }}>
+      {immigrationServices.map((service, index) => <ImmigrationServiceButton key={index} service={service} />)}
     </Grid>
   </Box>
 );
 
-// Other Services Section
-const OtherServices = () => (
-  <Box mb="50px">
-    <Box width="100%" display="flex" flexFlow="column" color="black">
-      <Box width="90%" alignSelf="center">
-        <Text
-          color="black"
-          fontSize={{
-            xs: "20px",
-            sm: "20px",
-            md: "24px",
-            lg: "26px",
-            xl: "28px",
-            "2xl": "30px",
-          }}
-          fontWeight={500}
-          mb={{
-            xs: "25px",
-            sm: "30px",
-            md: "35px",
-            lg: "40px",
-            xl: "45px",
-            "2xl": "50px",
-          }}
-          textAlign="left"
-        >
-          Other Services
+const ImageContentSection = () => (
+  <Box bg="white" width="100%" py={10} px={{ base: "5%", md: "8%" }} color="gray.700">
+    <VStack align="flex-start" spacing={{ base: 6, md: 10 }} maxW="1300px" mx="auto">
+      <Box textAlign={"left"} color={"#7a7a7a"}>
+        <Heading as="h2" fontSize={{ base: "28px", md: "42px" }} fontWeight="600" mb={4} mt={{ base: 0, md: '-87px' }} >
+          Immigration Lawyers & Solicitors in London
+        </Heading>
+        <Text fontSize={{ base: "15px", md: "17px" }} lineHeight="1.5" textAlign="justify">
+          Looking for reliable and experienced immigration lawyers in London? Whether you’re applying for a visa, seeking permanent residence, or planning to bring family to the UK, our team of highly qualified immigration solicitors in London is here to guide you every step of the way.
+          <br /><br />
+          At Lumine Solicitors, we’re proud to be recognised among the top immigration lawyers London has to offer. With a combined experience of over 85 years, our legal team provides practical, results-driven advice on all aspects of UK immigration law. We represent both individuals and businesses, offering clear, honest, and up-to-date legal support tailored to your circumstances.
         </Text>
       </Box>
-    </Box>
 
-    <Box
-      width="100%"
-      display="flex"
-      flexFlow="column"
-      alignItems="center"
-      color="black"
-    >
-      <Grid
-        width="90%"
-        templateColumns={{ xs: "repeat(2, 2fr)", lg: "repeat(4, 1fr)" }}
-        gap={{
-          xs: "25px",
-          sm: "30px",
-          md: "35px",
-          lg: "40px",
-          xl: "45px",
-          "2xl": "50px",
-        }}
-        justifyItems="center"
-        alignItems="center"
-      >
-        {otherServices.map((service, index) => (
-          <ServiceCard key={index} service={service} />
-        ))}
-      </Grid>
-    </Box>
+      <Box textAlign={"left"} color={"#7a7a7a"}>
+        <Heading as="h2" fontSize={{ base: "24px", md: "33px" }} mt={6} fontWeight="600" mb={4}>
+          Trusted UK Immigration Solicitors in London
+        </Heading>
+        <Text fontSize={{ base: "15px", md: "17px" }} lineHeight="1.6" textAlign="justify">
+          Our award-winning team of UK immigration lawyers in London is known for its high success rates and unmatched client care. As one of the most respected immigration law firms London offers, we handle a wide range of immigration matters — from family visas and sponsorship applications to business immigration and British citizenship.
+          <br /><br />
+          We understand that navigating the UK’s complex immigration system can be overwhelming. That’s why our clients trust us to deliver expert legal support that is efficient, cost-effective, and focused on outcomes.
+          <br /><br />
+          Whether you are in the UK or overseas, our immigration law solicitors in London can support you remotely through Zoom, Microsoft Teams, or phone consultations.
+        </Text>
+      </Box>
+
+      <Box w="100%" color={"#7a7a7a"}>
+        <Heading as="h3" fontSize={{ base: "24px", md: "33px" }} textAlign={"left"} fontWeight="600" mb={4}>
+          Immigration Services We Provide
+        </Heading>
+        <Text textAlign={"left"} fontSize={{ base: "15px", md: "17px" }} mt={"-7px"} mb={"22px"}>
+          Our firm offers legal assistance for all types of immigration matters. Below is a selection of our most in-demand services:
+        </Text>
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 1 }} spacingY={2} spacingX={10} ml={{ base: 2, md: 5 }}>
+          {[
+            "Asylum and Human Rights Applications", "Skilled Worker Visas", "Temporary Worker Visas",
+            "Global Business Mobility Visas", "UK Expansion Worker Visas", "Innovator and Start-up Visas",
+            "High Potential Individual Visas", "Global Talent Visas", "Student Visas",
+            "Spouse and Partner Visas", "Adult Dependant Visas", "Sponsor Licence Applications and Compliance",
+            "Indefinite Leave to Remain (ILR)", "Naturalisation / British Citizenship", "EU Settlement Scheme"
+          ].map((item) => (
+            <HStack key={item} align="center">
+              <Box w="6px" h="6px" bg="gray.500" borderRadius="50%" flexShrink={0} />
+              <Text fontSize="15px" fontWeight={item === "Skilled Worker Visas" ? "bold" : "normal"}>
+                {item}
+              </Text>
+            </HStack>
+          ))}
+        </SimpleGrid>
+        <Text textAlign={'left'} fontSize={"16px"} mt={"26px"} >
+          If your immigration matter isn’t listed above, don’t worry — we can still help. Our team deals with even the most complex and niche cases. We offer full legal support for both individual and corporate immigration needs.
+        </Text>
+      </Box>
+
+      <Box color={"#7a7a7a"}>
+        <Heading as="h3" fontSize={{ base: "24px", md: "33px" }} textAlign={"left"} fontWeight="600" mb={4}>
+          Why Choose Lumine Solicitors?
+        </Heading>
+        <Text textAlign={"left"} fontSize={{ base: "15px", md: "17px" }} mt={"4%"} mb={"22px"}>
+          When selecting UK immigration solicitors, it’s important to choose a firm that understands your goals and puts your case first. Here’s why clients choose us over other immigration solicitors London wide:
+        </Text>
+        <VStack align="flex-start" spacing={3} lineHeight={"1.3"} ml={{ base: 2, md: 5 }} mt={7}>
+          <Text fontSize="16px"><strong>• Proven Track Record:</strong> We’ve successfully handled thousands of immigration cases.</Text>
+          <Text fontSize="16px"><strong>• Transparent Fees:</strong> No hidden charges — we provide clear costs from day one.</Text>
+          <Text fontSize="16px"><strong>• Remote Consultations:</strong> Assist you via secure video or phone calls.</Text>
+          <Text fontSize="16px"><strong>• Client-Centred Approach:</strong> Your case is unique. We listen, advise, and act in your best interest.</Text>
+        </VStack>
+        <Text ml={{ base: 2, md: "-40%" }} mt={8} fontSize="16px"><strong>• Full UK Coverage: </strong>While based in London, we work with clients throughout the UK and globally.</Text>
+      </Box>
+
+      <Box color={"#7a7a7a"}>
+        <Heading as="h3" fontSize={{ base: "22px", md: "30px" }} mt={2} textAlign={"left"} fontWeight="600" mb={4}>
+          Good Immigration Solicitors London Can Count On
+        </Heading>
+        <Text textAlign={"left"} fontSize={"16px"} mt={"4%"} mb={"22px"}>
+          Finding good immigration lawyers in London doesn’t have to be difficult. Our commitment to legal excellence, ethical advice, and client satisfaction makes us the go-to choice for individuals, families, and businesses seeking immigration support.
+          <br /><br />
+          We’re not just any <strong>immigration attorneys in London</strong> — we are your long-term partners in achieving immigration success. Whether you need help applying for a work visa, resolving a refused application, or bringing a family member to the UK, our experienced legal team is ready to support you.
+        </Text>
+      </Box>
+
+      <Box color={"#7a7a7a"}>
+        <Heading as="h3" fontSize={{ base: "22px", md: "30px" }} textAlign={"left"} fontWeight="600" mb={2} >
+          Get in Touch Today
+        </Heading>
+        <Text textAlign={"left"} fontSize={"16px"} mb={"22px"}>
+          If you’re searching for the <strong> best immigration lawyers London </strong> has to offer, contact Lumine Solicitors today. Speak directly with an experienced <strong> immigration lawyer London </strong> based, and receive honest, professional advice tailored to your needs.
+        </Text>
+      </Box>
+    </VStack>
   </Box>
 );
 
 const Immigration = () => {
   return (
-    <Container
-      width="100vw"
-      maxWidth="100%"
-      minHeight="100vh"
-      backgroundColor="#a2cce0"
-      overflow="auto"
-      m={0}
-      p={0}
-      display="flex"
-      flexDirection="column"
-    >
-      <Helmet>
-        <title>Lumine Law Immigration Services</title>
-      </Helmet>
+    <Container width="100vw" maxWidth="100%" minHeight="100vh" backgroundColor="#a2cce0" overflowX="hidden" m={0} p={0} display="flex" flexDirection="column">
+      <Helmet><title>Lumine Law Immigration Services</title></Helmet>
 
-      <Box width="100%" flex="1" p={0} m={0} pt="50px">
+      <Box width="100%" flex="1" p={0} m={0} pt={{ base: "20px", md: "50px" }}>
         <Banner />
         <MainContent />
         <ImmigrationServicesGrid />
-        <OtherServices />
-        <AllPrices />
-        <AllNewsInsights />
+
+        <Box bg="white" width="100%" py={8}>
+          <Suspense fallback={<div>Loading All Services ...</div>}>
+            <AllServiceLinks />
+          </Suspense>
+        </Box>
+
+        <ImageContentSection />
+
+        <Box width="100%" py={8}>
+          <Suspense fallback={<div>Loading All Prices ...</div>}>
+            <AllPrices />
+          </Suspense>
+        </Box>
+
+        <Box width="100%" mt={"-4%"}>
+          <Suspense fallback={<div>Loading All News and Insights ...</div>}>
+            <AllNewsInsights />
+          </Suspense>
+        </Box>
+
         <Footer />
       </Box>
     </Container>

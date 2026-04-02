@@ -36,22 +36,22 @@ const ForfeitureAndNotices = () => {
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
           {/* Banner */}
           <Box
-            width={"100%"}
-            height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
-            }}
-            bgImage={`url(${BannerImg})`}
-            bgSize={"cover"}
-            bgPos={"center"}
-            bgRepeat={"no-repeat"}
-            display={"flex"}
-            justifyContent={"center"}
-            alignItems={"center"}
-            _loading={"eager"}
-          >
+                     width={"100%"}
+                     height={{
+                       xs: "330px",
+                       lg: "370px",
+                       xl: "420",
+                       "2xl": "490px",
+                     }}
+                     bgImage={`url(${BannerImg})`}
+                     bgSize={"cover"}
+                     bgPos={"center"}
+                     bgRepeat={"no-repeat"}
+                     display={"flex"}
+                     justifyContent={"center"}
+                     alignItems={"center"}
+                     _loading={"eager"}
+                   >
             <Text
               fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
               fontWeight={600}
@@ -139,29 +139,29 @@ const ForfeitureAndNotices = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Why choose Lumine Solicitors?
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -186,6 +186,7 @@ const ForfeitureAndNotices = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    lineHeight={1.8}
                     fontFamily={"CeraRoundPro"}
                   >
                     At Lumine Solicitors, we provide advice and planning
@@ -238,29 +239,29 @@ const ForfeitureAndNotices = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Contact Us Today
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -291,7 +292,14 @@ const ForfeitureAndNotices = () => {
                     touch with Lumine solicitors <strong>020 3950 2246</strong>{" "}
                     or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                   </Text>
                 </VStack>

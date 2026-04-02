@@ -1,5 +1,4 @@
 import { Text, Container, Box, HStack, VStack, List } from "@chakra-ui/react";
-import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import "../../../styles/fonts.css";
 import { GoPlus } from "react-icons/go";
@@ -10,14 +9,15 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/immigration.webp";
+import BannerImg from "../../../assets/services/main/immigration/Asylum.jpg";
+import { Heading } from "@chakra-ui/react";
 
 const SpouseVisa = () => {
-  const [spouseState, setSpouseState] = useState(false);
-  const [eligibilityState, setEligibilityState] = useState(false);
-  const [applicationState, setApplicationState] = useState(false);
-  const [decisionState, setDecisionState] = useState(false);
-  const [helpState, setHelpState] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggle = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
 
   return (
     <>
@@ -26,7 +26,7 @@ const SpouseVisa = () => {
         maxWidth="100%"
         minHeight="100vh"
         backgroundColor={"white"}
-        overflow="auto"
+        overflowX="hidden"
         m={0}
         p={0}
         display="flex"
@@ -41,10 +41,10 @@ const SpouseVisa = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "230px",
+              lg: "310px",
+              xl: "330px",
+              "2xl": "380px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -53,10 +53,9 @@ const SpouseVisa = () => {
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
-            _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
+              fontSize={{ xs: "22px", lg: "32px", xl: "38px", "2xl": "48px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
@@ -66,27 +65,86 @@ const SpouseVisa = () => {
             </Text>
           </Box>
 
-          {/* Main */}
+          {/* Main Content */}
           <Box
             width={"100%"}
             display={"flex"}
             flexFlow={"column"}
             color={"black"}
+            px={{ base: "5%", md: "0" }}
           >
-            {/* Heading */}
             <Box
-              width={"90%"}
+              width={{ base: "100%", md: "90%" }}
               alignSelf={"center"}
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                color={"#bf9b30"}
+                fontSize={{ xs: "14px", lg: "26px", xl: "32px", "2xl": "42px" }}
+                textAlign={"left"}
+                ml={3}
+              >
+                SPOUSE VISA
+              </Heading>
+
               <Text
                 fontFamily={"CeraRoundPro"}
-                fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontWeight={300}
+                color={"black"}
+                lineHeight={"1.5"}
+                letterSpacing={"0.8"}
+                fontSize={{ xs: "9px", lg: "11px", xl: "17px", "2xl": "19px" }}
                 textAlign={"left"}
+                ml={3}
+                mt={8}
               >
-                A few lines on what a Spouse visa is.
+                The Spouse Visa allows foreign nationals married to a British
+                citizen or someone with settled status in the UK to live
+                together in the UK. It can lead to permanent residence and
+                British citizenship.
+              </Text>
+
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={300}
+                color={"black"}
+                lineHeight={"1.5"}
+                letterSpacing={"0.8"}
+                fontSize={{ xs: "9px", lg: "11px", xl: "17px", "2xl": "19px" }}
+                textAlign={"left"}
+                ml={3}
+                mt={7}
+              >
+                The spouse visa enables an eligible foreign national to join and
+                live with their partner in the UK if they are a British citizen
+                or settled person e.g. a person with Indefinite Leave to Remain
+                or EU Settled Status. You must apply for a Spouse Visa to live
+                in the UK with your partner. Eligible applicants include those
+                who are married, in a civil partnership, or unmarried.
+                <br /> <br />
+                If you're applying for the first time and your partner is
+                outside the UK, they will complete the online application from
+                their home country or their current residence. Upon approval,
+                your partner's visa will be valid for 33 months. Before the
+                33-month visa period ends, you'll need to apply to extend your
+                partner's visa. This extension can be completed within the UK,
+                allowing your partner to remain in the country while awaiting a
+                decision.
+                <br /> <br />
+                After continuously living in the UK for five years, your partner
+                can apply for Indefinite Leave to Remain, granting them
+                permanent residency. If you're a British citizen, your partner
+                can also apply for British citizenship immediately after
+                receiving Indefinite Leave to Remain.
+                <br /> <br />
+                For personalized assistance with your legal needs, contact us or
+                visit Lumine for expert guidance tailored to your specific
+                situation. Our experienced team is here to help you navigate the
+                complexities with confidence and ease.
               </Text>
             </Box>
           </Box>
@@ -96,68 +154,46 @@ const SpouseVisa = () => {
             justifyContent={"space-around"}
             alignItems={"center"}
             mb={"50px"}
+            width="100%"
           >
-            {/* What is Spouse Visa */}
+            {/* 0 - What is a Spouse Visa? */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={{ base: "90%", md: "85%" }}
               justifyContent={"center"}
               alignItems={"center"}
             >
-              {/* Initial Button */}
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
-                onClick={() => setSpouseState(!spouseState)}
+                backgroundColor={"black"}
+                onClick={() => toggle(0)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  fontSize={{ xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "18px", "2xl": "20px" }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
-                  What is a spouse visa?
+                  What is a Spouse Visa?
                 </Text>
-                {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                {activeIndex !== 0 ? (
+                  <GoPlus color={"#bf9b30"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
                 )}
               </HStack>
 
-              {spouseState && (
+              {activeIndex === 0 && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -167,42 +203,32 @@ const SpouseVisa = () => {
                   py={{ xs: "15px", md: "30px" }}
                   width={"100%"}
                 >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
+                  <List.Root
+                    textAlign={"left"}
+                    lineHeight={1.8}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontWeight={300}
                     fontFamily={"CeraRoundPro"}
                   >
-                    The spouse visa enables an eligible foreign national to join
-                    and live with their partner in the UK if they are a British
-                    citizen or settled person e.g. a person with Indefinite
-                    Leave to Remain or EU Settled Status. You must apply for a
-                    Spouse Visa to live in the UK with your partner. Eligible
-                    applicants include those who are married, in a civil
-                    partnership, or unmarried.
-                  </Text>
+                    <List.Item>
+                      The spouse visa enables an eligible foreign national to
+                      join and live with their partner in the UK if they are a
+                      British citizen or settled person e.g. a person with
+                      Indefinite Leave to Remain or EU Settled Status. You must
+                      apply for a Spouse Visa to live in the UK with your
+                      partner. Eligible applicants include those who are
+                      married, in a civil partnership, or unmarried.
+                    </List.Item>
+                  </List.Root>
 
                   <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
+                    textAlign={"left"}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontWeight={300}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
                   >
-                    Lumine Solicitors’ team of highly experienced professionals
+                    Lumine Solicitors' team of highly experienced professionals
                     is here to expertly guide you through the spouse visa
                     application process.
                   </Text>
@@ -210,67 +236,44 @@ const SpouseVisa = () => {
               )}
             </Box>
 
-            {/* Eligibility Requirements */}
+            {/* 1 - Eligibility Requirements */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={{ base: "90%", md: "85%" }}
               justifyContent={"center"}
               alignItems={"center"}
             >
-              {/* Initial Button */}
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
-                onClick={() => setEligibilityState(!eligibilityState)}
+                backgroundColor={"black"}
+                onClick={() => toggle(1)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  fontSize={{ xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "18px", "2xl": "20px" }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Eligibility Requirements
                 </Text>
-                {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                {activeIndex !== 1 ? (
+                  <GoPlus color={"#bf9b30"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
                 )}
               </HStack>
 
-              {eligibilityState && (
+              {activeIndex === 1 && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -281,17 +284,11 @@ const SpouseVisa = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
+                    textAlign={"left"}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontWeight={300}
                     fontFamily={"CeraRoundPro"}
+                    mb={"-5"}
                   >
                     To make a successful application for a UK spouse visa
                     through Lumine Solicitors, you will need to meet the
@@ -299,16 +296,10 @@ const SpouseVisa = () => {
                   </Text>
 
                   <List.Root
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
+                    textAlign={"left"}
+                    lineHeight={1.8}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontWeight={300}
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
@@ -316,9 +307,9 @@ const SpouseVisa = () => {
                       partner
                     </List.Item>
                     <List.Item>
-                      Your and your partner’s income must be at least £29,000
+                      Your and your partner's income must be at least £29,000
                       (if your application was submitted prior to 11 April 2024,
-                      the old income requirement of £18,600 will apply)
+                      the old income requirement of £18,600 will apply)
                     </List.Item>
                     <List.Item>
                       Your partner fulfils the English Language requirements
@@ -331,67 +322,44 @@ const SpouseVisa = () => {
               )}
             </Box>
 
-            {/* Application Process */}
+            {/* 2 - Application Process */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={{ base: "90%", md: "85%" }}
               justifyContent={"center"}
               alignItems={"center"}
             >
-              {/* Initial Button */}
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
-                onClick={() => setApplicationState(!applicationState)}
+                backgroundColor={"black"}
+                onClick={() => toggle(2)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  fontSize={{ xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "18px", "2xl": "20px" }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Application Process
                 </Text>
-                {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                {activeIndex !== 2 ? (
+                  <GoPlus color={"#bf9b30"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
                 )}
               </HStack>
 
-              {applicationState && (
+              {activeIndex === 2 && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -401,40 +369,31 @@ const SpouseVisa = () => {
                   py={{ xs: "15px", md: "30px" }}
                   width={"100%"}
                 >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
+                  <List.Root
+                    textAlign={"left"}
+                    lineHeight={1.8}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontWeight={300}
                     fontFamily={"CeraRoundPro"}
                   >
-                    If you’re applying for the first time and your partner is
-                    outside the UK, they will complete the online application
-                    from their home country or their current residence. Upon
-                    approval, your partner’s visa will be valid for 33 months.
-                  </Text>
+                    <List.Item>
+                      If you're applying for the first time and your partner is
+                      outside the UK, they will complete the online application
+                      from their home country or their current residence. Upon
+                      approval, your partner's visa will be valid for 33 months.
+                    </List.Item>
+                  </List.Root>
 
                   <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
+                    textAlign={"left"}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontWeight={300}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
+                    mt={"-6"}
                   >
-                    Before the 33-month visa period ends, you’ll need to apply
-                    to extend your partner’s visa. This extension can be
+                    Before the 33-month visa period ends, you'll need to apply
+                    to extend your partner's visa. This extension can be
                     completed within the UK, allowing your partner to remain in
                     the country while awaiting a decision. After continuously
                     living in the UK for five years, your partner can apply for
@@ -443,19 +402,14 @@ const SpouseVisa = () => {
                   </Text>
 
                   <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
+                    textAlign={"left"}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontWeight={300}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
+                    mt={"-6"}
                   >
-                    If you’re a British citizen, your partner can also apply for
+                    If you're a British citizen, your partner can also apply for
                     British citizenship immediately after receiving Indefinite
                     Leave to Remain.
                   </Text>
@@ -463,67 +417,44 @@ const SpouseVisa = () => {
               )}
             </Box>
 
-            {/* Decision */}
+            {/* 3 - How long does it take */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={{ base: "90%", md: "85%" }}
               justifyContent={"center"}
               alignItems={"center"}
             >
-              {/* Initial Button */}
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
-                onClick={() => setDecisionState(!decisionState)}
+                backgroundColor={"black"}
+                onClick={() => toggle(3)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  fontSize={{ xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "18px", "2xl": "20px" }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How long does it take to reach a decision?
                 </Text>
-                {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                {activeIndex !== 3 ? (
+                  <GoPlus color={"#bf9b30"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
                 )}
               </HStack>
 
-              {decisionState && (
+              {activeIndex === 3 && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -533,90 +464,63 @@ const SpouseVisa = () => {
                   py={{ xs: "15px", md: "30px" }}
                   width={"100%"}
                 >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
+                  <List.Root
+                    textAlign={"left"}
+                    lineHeight={1.8}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontWeight={300}
                     fontFamily={"CeraRoundPro"}
                   >
-                    UK Spouse Visa applications submitted from outside of the UK
-                    typically take around 12 weeks (equivalent to 3 months) to
-                    be processed. However, if the application is made from
-                    within the UK, the processing time is normally between 6 and
-                    8 weeks.
-                  </Text>
+                    <List.Item>
+                      UK Spouse Visa applications submitted from outside of the
+                      UK typically take around 12 weeks (equivalent to 3 months)
+                      to be processed. However, if the application is made from
+                      within the UK, the processing time is normally between 6
+                      and 8 weeks.
+                    </List.Item>
+                  </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Help */}
+            {/* 4 - How can Lumine Solicitors help? */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={{ base: "90%", md: "85%" }}
               justifyContent={"center"}
               alignItems={"center"}
             >
-              {/* Initial Button */}
               <HStack
                 borderY={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
-                onClick={() => setHelpState(!helpState)}
+                backgroundColor={"black"}
+                onClick={() => toggle(4)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  fontSize={{ xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "18px", "2xl": "20px" }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
-                {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                {activeIndex !== 4 ? (
+                  <GoPlus color={"#bf9b30"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
                 )}
               </HStack>
 
-              {helpState && (
+              {activeIndex === 4 && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -627,45 +531,40 @@ const SpouseVisa = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
+                    textAlign={"left"}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
                     fontWeight={400}
+                    lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}
                   >
                     At Lumine Solicitors, we strive to simplify the visa
-                    procedure for you. Whether it’s applying for a UK spouse
+                    procedure for you. Whether it's applying for a UK spouse
                     visa, extending your existing visa, or bringing dependents
-                    along, we’re here to assist you. With our proficient team of
+                    along, we're here to assist you. With our proficient team of
                     immigration solicitors, we provide professional advice on
                     selecting the appropriate visa type and guarantee a
                     hassle-free application process.
                   </Text>
 
                   <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
+                    textAlign={"left"}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={"-6"}
                   >
                     For all immigration matters, Please do not hesitate to get
                     in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                   </Text>
                 </VStack>
@@ -673,15 +572,9 @@ const SpouseVisa = () => {
             </Box>
           </VStack>
 
-          {/* Other Services */}
           <AllServiceLinks />
-
-          {/* Prices */}
           <AllPrices />
-
-          {/* News and Insights */}
           <AllNewsInsights />
-
           <Footer />
         </Box>
       </Container>

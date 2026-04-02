@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/ip.webp";
+import BannerImg from "../../../assets/services/main/intellectual/pageBanner.jpg";
 
 const Trademark = () => {
   const [spouseState, setSpouseState] = useState(false);
@@ -38,10 +38,10 @@ const Trademark = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "240px",
+              lg: "310px",
+              xl: "335px",
+              "2xl": "420px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -72,7 +72,7 @@ const Trademark = () => {
           >
             {/* Heading */}
             <Box
-              width={"90%"}
+              width={"85%"}
               alignSelf={"center"}
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
@@ -82,9 +82,10 @@ const Trademark = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                lineHeight={1.4}
+                mt={"-4"}
               >
-                Intro content about Trademark
-              </Text>
+                At Lumine Law, we help businesses protect their brand identity through trademark registration and enforcement in the UK. A trademark ensures that your logos, names, and other distinctive signs are legally protected, preventing others from using similar marks that could confuse consumers. Our expert team provides clear guidance on the registration process, advises on the scope of protection, and helps resolve disputes involving trademark infringement. Whether you’re a new start-up or an established brand, we work to secure your intellectual property and strengthen your brand’s position in the market.                              </Text>
             </Box>
           </Box>
 
@@ -99,7 +100,7 @@ const Trademark = () => {
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"85%"}
               justifyContent={"center"}
               alignItems={"flex-start"}
             >
@@ -114,7 +115,7 @@ const Trademark = () => {
                   md: "12px",
                   lg: "13px",
                   xl: "14px",
-                  "2xl": "15px",
+                  "2xl": "13px",
                 }}
                 alignItems={"center"}
                 py={{
@@ -128,29 +129,29 @@ const Trademark = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -162,7 +163,7 @@ const Trademark = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
-                  textAlign={"justify"}
+                  textAlign={"left"}
                 >
                   <Text
                     textAlign={"justify"}
@@ -176,14 +177,9 @@ const Trademark = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
                   >
-                    A Trademark is a distinctive symbol, word, phrase, design,
-                    or combination of these elements that identifies and
-                    distinguishes the sources of goods or services from those of
-                    others. It is a form of intellectual property protection
-                    that grants exclusive rights to owner of the trademark.
-                  </Text>
-
+                    A Trademark is a distinctive symbol, word, phrase, design, or combination of these elements that identifies and distinguishes the sources of goods or services from those of others. It is a form of intellectual property protection that grants exclusive rights to owner of the trademark.                  </Text>
                   <Text
                     textAlign={"justify"}
                     fontSize={{
@@ -194,18 +190,12 @@ const Trademark = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={"-7"}
                     fontWeight={400}
+                    lineHeight={1.8}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Trademarks are used to establish brand identity and prevent
-                    others from using similar marks that could confuse consumers
-                    or dilute the reputation of the original mark. By
-                    registering a trademark with the government authority, the
-                    owner obtains legal protection and the exclusive right to
-                    use the mark in connection with the goods or services
-                    specified in the registration.
-                  </Text>
-
+                    Trademarks are used to establish brand identity and prevent others from using similar marks that could confuse consumers or dilute the reputation of the original mark. By registering a trademark with the government authority, the owner obtains legal protection and the exclusive right to use the mark in connection with the goods or services specified in the registration.                  </Text>
                   <Text
                     textAlign={"justify"}
                     fontSize={{
@@ -216,15 +206,28 @@ const Trademark = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={"-7"}
+                    lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    It is important to note that trademark rights are limited to
-                    specific goods or services and geographical regions.
-                    Additionally, trademarks can be registered at both national
-                    and international levels, depending on the scope of
-                    protection desired by the owner.
-                  </Text>
+                    It is important to note that trademark rights are limited to specific goods or services and geographical regions. Additionally, trademarks can be registered at both national and international levels, depending on the scope of protection desired by the owner.                  </Text>
+                  <Text
+                    textAlign={"justify"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    mt={"-7"}
+                    lineHeight={1.9}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                  >
+                    It is worth mentioning that obtaining a patent can be a complex and time- consuming process, involving a thorough examination by the patent office to determine the novelty, usefulness, and non-obviousness of the invention.                  </Text>
                 </VStack>
               )}
             </Box>
@@ -234,7 +237,7 @@ const Trademark = () => {
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"85%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -263,29 +266,30 @@ const Trademark = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
+
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors Help?
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -308,6 +312,7 @@ const Trademark = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    lineHeight={1.9}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -328,17 +333,28 @@ const Trademark = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={-7}
+                    lineHeight={1.9}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    For assistance with trademark issues, please do not hesitate
+                    For assistance with copyright issues, please do not hesitate
                     to contact Lumine Solicitors at{" "}
                     <strong>020 3950 2246</strong> or reach out to us through
                     our website. Let us help you navigate the complexities of
                     intellectual property law and achieve the best possible
                     resolution for your situation.
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link to={"/contact"}>
+                        <Text
+                          as="span"
+                          fontWeight={700}
+                          color="#E91E63"
+                          _hover={{ color: "#10102c" }}
+                        >
+                          Contact Us HERE
+                        </Text>
+                      </Link>{" "}
                     </strong>
                   </Text>
                 </VStack>

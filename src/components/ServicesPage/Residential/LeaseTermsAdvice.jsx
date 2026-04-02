@@ -36,27 +36,20 @@ const LeaseTermsAdvice = () => {
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
           {/* Banner */}
           <Box
-            width={"100%"}
-            height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
-            }}
-            bgImage={`url(${BannerImg})`}
-            bgSize={"cover"}
-            bgPos={"center"}
-            bgRepeat={"no-repeat"}
-            display={"flex"}
-            justifyContent={"center"}
-            alignItems={"center"}
-            _loading={"eager"}
+            w="100%"
+            h={{ base: "220px", sm: "260px", md: "300px", lg: "400px", xl: "340px", "2xl": "440px" }}
+            bgImage={`linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url(${BannerImg})`}
+            bgSize="cover"
+            bgPos="center"
+            display="flex"
+            alignItems="center"
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
+              fontSize={{ base: "18px", sm: "22px", md: "26px", lg: "30px", xl: "36px", "2xl": "45px" }}
               fontWeight={600}
-              fontFamily={"CeraRoundPro"}
-              width={"90%"}
+              fontFamily="CeraRoundPro"
+              w="90%"
+              mx="auto"
               textAlign={"left"}
             >
               Lease Terms Advice
@@ -64,231 +57,133 @@ const LeaseTermsAdvice = () => {
           </Box>
 
           {/* Main */}
-          <Box
-            width={"100%"}
-            display={"flex"}
-            flexFlow={"column"}
-            color={"black"}
-          >
-            {/* Heading */}
+          <Box w="100%" color="black">
             <Box
-              width={"90%"}
-              alignSelf={"center"}
-              mb={"5%"}
-              my={{ xs: "5%", md: "2.5%" }}
+              w={{ base: "92%", md: "85%" }}
+              mx="auto"
+              my={{ base: "20px", md: "30px" }}
             >
               <Text
-                fontFamily={"CeraRoundPro"}
+                fontFamily="CeraRoundPro"
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"justify"}
+                fontSize={{ base: "11.5px", md: "13.5px", xl: "15.5px", "2xl": "17.5px" }}
+                textAlign="justify"
+                lineHeight="1.7"
               >
-                At Lumine Solicitors, we recognise that entering into a lease
-                agreement can be a complex process, whether you are a tenant or
-                a landlord. The terms of a lease can have significant long-term
-                implications for your business or personal finances. That’s why
-                we offer professional advice on lease terms to help you make
-                informed decisions and protect your interests.
+                At Lumine Solicitors, we recognise that entering into a lease agreement can be a complex process, whether you are a tenant or a landlord. The terms of a lease can have significant long-term implications for your business or personal finances. That’s why we offer professional advice on lease terms to help you make informed decisions and protect your interests.
               </Text>
             </Box>
           </Box>
 
           {/* Dropdown info */}
-          <VStack
-            justifyContent={"space-around"}
-            alignItems={"center"}
-            mb={"50px"}
-          >
-            {/* Why choose Lumine Solicitors? */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
+           <VStack spacing={{ base: "20px", md: "30px" }} mb="50px">
+
+          {/* Section 1 */}
+          <Box w="85%">
+            <HStack
+              borderTop="1px solid #adacac"
+              w="100%"
+              justifyContent="space-between"
+              px={{ base: "10px", md: "14px" }}
+              py={{ base: "8px", md: "10px" }}
+              cursor="pointer"
+              bg="black"
+              onClick={() => setEligibilityState(!eligibilityState)}
             >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !eligibilityState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
-                onClick={() => setEligibilityState(!eligibilityState)}
+              <Text
+                fontSize={{ base: "13px", md: "15px", xl: "17px" }}
+                fontWeight={500}
+                fontFamily="CeraRoundPro"
+                color="#bf9b30"
+              >
+                Why choose Lumine Solicitors?
+              </Text>
+
+              {eligibilityState ? (
+                <AiOutlineMinus color="#bf9b30" size="1.7em" />
+              ) : (
+                <GoPlus color="#bf9b30" size="1.7em" />
+              )}
+            </HStack>
+
+            {eligibilityState && (
+              <VStack
+                alignItems="flex-start"
+                borderTop="1px solid #adacac"
+                py={{ base: "15px", md: "25px" }}
               >
                 <Text
+                  fontSize={{ base: "12px", md: "14px", xl: "16px" }}
+                  lineHeight="1.9"
+                  fontFamily="CeraRoundPro"
+                  color={"black"}
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
                 >
-                  Why choose Lumine Solicitors?
+                  Our team of experienced solicitors will review your lease documents, answer any questions you have, and provide a detailed analysis of the terms and conditions. We ensure you fully understand your rights and obligations before you sign, keeping you informed at every stage of the process. This approach guarantees that you have a clear understanding of the implications of your lease terms and can proceed with confidence.
                 </Text>
-                {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
+              </VStack>
+            )}
+          </Box>
 
-              {eligibilityState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Our team of experienced solicitors will review your lease
-                    documents, answer any questions you have, and provide a
-                    detailed analysis of the terms and conditions. We ensure you
-                    fully understand your rights and obligations before you
-                    sign, keeping you informed at every stage of the process.
-                    This approach guarantees that you have a clear understanding
-                    of the implications of your lease terms and can proceed with
-                    confidence.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Help */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
+          {/* Section 2 */}
+          <Box w="85%">
+            <HStack
+              borderY="1px solid #adacac"
+              w="100%"
+              justifyContent="space-between"
+              px={{ base: "10px", md: "14px" }}
+              py={{ base: "8px", md: "10px" }}
+              cursor="pointer"
+              bg="black"
+              onClick={() => setHelpState(!helpState)}
             >
-              {/* Initial Button */}
-              <HStack
-                borderY={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !helpState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
-                onClick={() => setHelpState(!helpState)}
+              <Text
+                fontSize={{ base: "13px", md: "15px", xl: "17px" }}
+                fontWeight={500}
+                fontFamily="CeraRoundPro"
+                color="#bf9b30"
+              >
+                Contact Us Today
+              </Text>
+
+              {helpState ? (
+                <AiOutlineMinus color="#bf9b30" size="1.7em" />
+              ) : (
+                <GoPlus color="#bf9b30" size="1.7em" />
+              )}
+            </HStack>
+
+            {helpState && (
+              <VStack
+                alignItems="flex-start"
+                borderTop="1px solid #adacac"
+                py={{ base: "15px", md: "25px" }}
               >
                 <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  fontSize={{ base: "12px", md: "14px", xl: "16px" }}
+                  fontFamily="CeraRoundPro"
+                  color={"black"}
                 >
-                  Contact Us Today
+                  For all property matters, please do not hesitate to get in touch with Lumine solicitors{" "}
+                  <Text as="span" fontWeight={500}>
+                    020 3950 2246
+                  </Text>{" "}
+                  or{" "}
+                  <Link to={"/contact"}>
+                    <Text
+                      as="span"
+                      fontWeight={700}
+                      color="#E91E63"
+                      _hover={{ color: "#10102c" }}
+                    >
+                      Contact Us HERE
+                    </Text>
+                  </Link>
                 </Text>
-                {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {helpState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    For all property matters, please do not hesitate to get in
-                    touch with Lumine solicitors <strong>020 3950 2246</strong>{" "}
-                    or{" "}
-                    <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
-                    </strong>
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-          </VStack>
+              </VStack>
+            )}
+          </Box>
+        </VStack>
 
           {/* Other Services */}
           <AllServiceLinks />

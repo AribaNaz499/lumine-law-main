@@ -22,7 +22,7 @@ const servicesContent = [
   // Immigration
   {
     key: "Immigration",
-    link: "/lumine-law/all-services/immigration",
+    link: "all-services/immigration",
     image: ImmigrationIcon,
     heading: "Immigration Services",
   },
@@ -30,7 +30,7 @@ const servicesContent = [
   //  Residential Property
   {
     key: "Residential",
-    link: "/lumine-law/all-services/residential",
+    link: "/all-services/residential",
     image: ResidentialIcon,
     heading: "Residential Property",
   },
@@ -38,7 +38,7 @@ const servicesContent = [
   //  Commercial Property
   {
     key: "Commercial",
-    link: "/lumine-law/all-services/commercial",
+    link: "/all-services/commercial",
     image: ResidentialIcon,
     heading: "Commercial Property",
   },
@@ -46,7 +46,7 @@ const servicesContent = [
   //  Intellectual Property
   {
     key: "Intellectual",
-    link: "/lumine-law/all-services/intellectual-property",
+    link: "/all-services/intellectual-property",
     image: IntellectualIcon,
     heading: "Intellectual Property",
   },
@@ -54,7 +54,7 @@ const servicesContent = [
   //  Dispute Resolution
   {
     key: "Dispute",
-    link: "/lumine-law/all-services/dispute-resolution",
+    link: "/all-services/dispute-resolution",
     image: DisputeIcon,
     heading: "Dispute Resolution",
   },
@@ -62,7 +62,7 @@ const servicesContent = [
   //  Landlord & Tenant Disputes
   {
     key: "Landlord",
-    link: "/lumine-law/all-services/landlord-tenant",
+    link: "/all-services/landlord-tenant",
     image: LandlordIcon,
     heading: "Landlord & Tenant Disputes",
   },
@@ -70,7 +70,7 @@ const servicesContent = [
   //  Family & Children
   {
     key: "Family",
-    link: "/lumine-law/all-services/family-and-children",
+    link: "/all-services/family-and-children",
     image: FamilyIcon,
     heading: "Family & Children",
   },
@@ -78,7 +78,7 @@ const servicesContent = [
   //  Wills & Probate
   {
     key: "Wills",
-    link: "/lumine-law/all-services/wills-probate",
+    link: "/all-services/wills-probate",
     image: WillsProbateIcon,
     heading: "Wills & Probate",
   },

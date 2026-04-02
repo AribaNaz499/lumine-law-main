@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/ip.webp";
+import BannerImg from "../../../assets/services/main/intellectual/pageBanner.jpg";
 
 const Patent = () => {
   const [spouseState, setSpouseState] = useState(false);
@@ -38,10 +38,10 @@ const Patent = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "240px",
+              lg: "310px",
+              xl: "335px",
+              "2xl": "420px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -72,7 +72,7 @@ const Patent = () => {
           >
             {/* Heading */}
             <Box
-              width={"90%"}
+              width={"85%"}
               alignSelf={"center"}
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
@@ -83,8 +83,7 @@ const Patent = () => {
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
               >
-                Intro content about Patent issues
-              </Text>
+                At Lumine Law, we offer specialist legal support for securing and protecting your patents in the UK. A patent grants exclusive rights to your invention, preventing others from making, using, or selling it without your permission. Our team guides you through the patent application process, ensures compliance with UK and international laws, and helps protect your innovations from infringement. Whether you’re an inventor, start-up, or established business, we provide expert advice to safeguard your technological advancements and secure your competitive edge in the marketplace.              </Text>
             </Box>
           </Box>
 
@@ -99,7 +98,7 @@ const Patent = () => {
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"85%"}
               justifyContent={"center"}
               alignItems={"flex-start"}
             >
@@ -114,7 +113,7 @@ const Patent = () => {
                   md: "12px",
                   lg: "13px",
                   xl: "14px",
-                  "2xl": "15px",
+                  "2xl": "13px",
                 }}
                 alignItems={"center"}
                 py={{
@@ -128,29 +127,29 @@ const Patent = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -162,7 +161,7 @@ const Patent = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
-                  textAlign={"justify"}
+                  textAlign={"left"}
                 >
                   <Text
                     textAlign={"justify"}
@@ -176,14 +175,10 @@ const Patent = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.9}
                   >
-                    A Patent is a form of intellectual property protection
-                    granted to inventors for their novel inventions. It provides
-                    the inventor with exclusive rights to prevent others from
-                    making, using, selling, or importing the patented invention
-                    without their permission.
+                    A Patent is a form of intellectual property protection granted to inventors for their novel inventions. It provides the inventor with exclusive rights to prevent others from making, using, selling, or importing the patented invention without their permission.
                   </Text>
-
                   <Text
                     textAlign={"justify"}
                     fontSize={{
@@ -194,17 +189,13 @@ const Patent = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={"-7"}
                     fontWeight={400}
+                    lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}
                   >
-                    A patent is granted by a government authority, in exchange
-                    for the public disclosure of the invention. This means that
-                    the inventor must provide a detailed description of the
-                    invention in a patent application, enabling others to
-                    understand and replicate the invention after the patent
-                    expires.
+                    A patent is granted by a government authority, in exchange for the public disclosure of the invention. This means that the inventor must provide a detailed description of the invention in a patent application, enabling others to understand and replicate the invention after the patent expires.
                   </Text>
-
                   <Text
                     textAlign={"justify"}
                     fontSize={{
@@ -215,17 +206,13 @@ const Patent = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={"-7"}
+                    lineHeight={1.9}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Patents protect a wide range of inventions, including new
-                    and useful processes, machines, compositions of matter, and
-                    improvements thereof. Patent duration varies depending on
-                    the type of Patent and the country in which it is granted.
-                    In general, Patents have a duration of 20 years from the
-                    date of the patent application.
+                    Patents protect a wide range of inventions, including new and useful processes, machines, compositions of matter, and improvements thereof. Patent duration varies depending on the type of Patent and the country in which it is granted. In general, Patents have a duration of 20 years from the date of the patent application.
                   </Text>
-
                   <Text
                     textAlign={"justify"}
                     fontSize={{
@@ -236,14 +223,12 @@ const Patent = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={"-7"}
+                    lineHeight={1.9}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    It is worth mentioning that obtaining a patent can be a
-                    complex and time- consuming process, involving a thorough
-                    examination by the patent office to determine the novelty,
-                    usefulness, and non-obviousness of the invention.
-                  </Text>
+                    It is worth mentioning that obtaining a patent can be a complex and time- consuming process, involving a thorough examination by the patent office to determine the novelty, usefulness, and non-obviousness of the invention.                  </Text>
                 </VStack>
               )}
             </Box>
@@ -253,7 +238,7 @@ const Patent = () => {
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"85%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -282,29 +267,30 @@ const Patent = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
+
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors Help?
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -327,6 +313,7 @@ const Patent = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    lineHeight={1.9}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -347,16 +334,28 @@ const Patent = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={-7}
+                    lineHeight={1.9}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    For assistance with patent issues, please do not hesitate to
-                    contact Lumine Solicitors at <strong>020 3950 2246</strong>{" "}
-                    or reach out to us through our website. Let us help you
-                    navigate the complexities of intellectual property law and
-                    achieve the best possible resolution for your situation.
+                    For assistance with copyright issues, please do not hesitate
+                    to contact Lumine Solicitors at{" "}
+                    <strong>020 3950 2246</strong> or reach out to us through
+                    our website. Let us help you navigate the complexities of
+                    intellectual property law and achieve the best possible
+                    resolution for your situation.
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link to={"/contact"}>
+                        <Text
+                          as="span"
+                          fontWeight={700}
+                          color="#E91E63"
+                          _hover={{ color: "#10102c" }}
+                        >
+                          Contact Us HERE
+                        </Text>
+                      </Link>{" "}
                     </strong>
                   </Text>
                 </VStack>

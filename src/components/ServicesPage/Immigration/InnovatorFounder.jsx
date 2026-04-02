@@ -10,13 +10,14 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/immigration.webp";
-
+import BannerImg from "../../../assets/services/main/immigration/Asylum.jpg";
+import { Heading } from "@chakra-ui/react"
 const InnovatorFounder = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
-  const [applicationState, setApplicationState] = useState(false);
-  const [helpState, setHelpState] = useState(false);
+  const [applyState, setapplyState] = useState(false);
+  const [longState, setLongState] = useState(false);
+  const [review, setReview] = useState(false);
 
   return (
     <>
@@ -35,15 +36,18 @@ const InnovatorFounder = () => {
           <title>Lumine Law Innovator Founder Visa Services</title>
         </Helmet>
 
+
+
+
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
           {/* Banner */}
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "230px",
+              lg: "310px",
+              xl: "330px",
+              "2xl": "380px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -60,6 +64,7 @@ const InnovatorFounder = () => {
               fontFamily={"CeraRoundPro"}
               width={"90%"}
               textAlign={"left"}
+              lineHeight={1.1}
             >
               Innovator Founder Visa
             </Text>
@@ -72,20 +77,115 @@ const InnovatorFounder = () => {
             flexFlow={"column"}
             color={"black"}
           >
-            {/* Heading */}
+            {/* Heading Section */}
             <Box
-              width={"90%"}
+              width={"93%"}
               alignSelf={"center"}
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                color={"#bf9b30"}
+                fontSize={{ xs: "7px", lg: "19px", xl: "25px", "2xl": "35px" }}
+                textAlign={"left"}
+                ml={3}
+              >
+                INNOVATOR FOUNDER VISA
+              </Heading>
+
+              <Text
+                ml={3}
+                mr={2}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"left"}
+                mt={4}
+              >
+                The Innovator Founder Visa is a UK immigration route intended for those who would like to set up and run an innovative business in the UK. This visa is for entrepreneurs with a unique and viable business idea that they intend to develop their business in the UK. The Innovator Founder Visa forms part of the UK’s move to attract talented entrepreneurs and facilitate innovation, job creation, and economic growth.
+              </Text>
+
+              <VStack align="start" spacing={4} mt={5} width="100%">
+                <Text
+                  fontFamily={"CeraRoundPro"}
+                  fontWeight={400}
+                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  textAlign={"left"}
+                  color="black"
+                  ml={3}
+                  mt={2}
+                >
+                  This visa route is primarily for individuals who want to set up a new business or scale an existing one, and it is suited for individuals who have experience in business or are ready to take on a leadership role in the enterprise. Unlike other business visa routes in the UK, the Innovator Founder Visa does not require the applicant to have access to a specific amount of investment funds; instead, the focus is on the innovativeness and potential of the business idea.
+                </Text>
+
+                <Text
+                  fontFamily={"CeraRoundPro"}
+                  fontWeight={400}
+                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  textAlign={"left"}
+                  color="black"
+                  mt={6}
+                  ml={3}
+                >
+                  There are several stages of application process to the Innovator Founder Visa. These are;
+                </Text>
+
+                {/* <Text
+                  fontFamily={"CeraRoundPro"}
+                  fontWeight={400}
+                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  textAlign={"left"}
+                  color="black"
+                  ml={3}
+                  mt={-2}
+                >
+                  To apply for Indefinite Leave to Remain, applicants must have met several eligibility criteria, such as:
+                </Text> */}
+
+                <List.Root
+                  as="ol"
+                  styleType="decimal"
+                  ml={5}
+                  mt={-2}
+                  spacing={3}
+                  fontFamily={"CeraRoundPro"}
+                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  color="black"
+                >
+                  <List.Item textAlign="justify">
+                    <Text as="span">Obtaining an endorsement; </Text>  it is through getting an approval endorsement from the body that is accepted as a visa. There is normally the submission of the business plan with details to demonstrate that the business meets the eligibility criteria to innovate and scale up. Once a body approves your idea, then an official letter will be provided.
+
+                  </List.Item>
+                  <List.Item textAlign="justify">
+                    <Text as="span"></Text>Online Application Online application by the applicant following an endorsement in GOV.UK will be filled after getting the endorsement. The online application will require personal details of the applicant with proof of identity and biometric information and letter of endorsement. Further documents are requested to prove the applicant’s proficiency in the English language and financial capability.
+
+                  </List.Item>
+                  <List.Item textAlign="justify">
+                    <Text as="span">Biometric Information: </Text> Applicants will be required to provide biometric information, such as fingerprints and a photograph, at a UK Visa and Citizenship Application Services (UKVCAS) center during the application process.
+                  </List.Item>
+                  <List.Item textAlign="justify">
+                    <Text as="span">Application Fee: </Text> The application fee for the Innovator Founder Visa is usually £1,021 (as of 2025), although this fee may vary depending on the applicant’s circumstances and whether they are applying from within the UK or from overseas.
+                  </List.Item>
+                  <List.Item textAlign="justify">
+                    <Text as="span">Decision:   </Text>The Home Office will look at the application. This involves scrutinizing the endorsing letter, business plan, and supporting documents. An application decision usually .
+                  </List.Item>
+                </List.Root>
+              </VStack>
+
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
+                mt={8}
+                mb={8}
+                ml={3}
               >
-                A few lines on what an Innovator Founder visa is.
+                For personalized assistance with your legal needs, contact us or visit Lumine for expert guidance tailored to your specific situation. Our experienced team is here to help you navigate the complexities with confidence and ease.
+
               </Text>
             </Box>
           </Box>
@@ -96,12 +196,11 @@ const InnovatorFounder = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is the Innovator Founder Visa? */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"93%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -130,29 +229,29 @@ const InnovatorFounder = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   What is the Innovator Founder Visa?
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -176,24 +275,25 @@ const InnovatorFounder = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    lineHeight={1.9}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    ml={3}
+                    mr={3}
                   >
-                    The innovator founder visa is now the main visa category for
-                    foreign entrepreneurs wishing to establish a business in the
-                    UK, effectively replacing the Innovator route and start up
-                    visa.
+                    The innovator founder visa is now the main visa category for foreign entrepreneurs wishing to establish a business in the UK, effectively replacing the Innovator route and start up visa.
+
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Benefits */}
+
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"93%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -220,35 +320,35 @@ const InnovatorFounder = () => {
                   "2xl": "10px",
                 }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !applicationState && "black" }}
+                _hover={{ backgroundColor: !applyState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
-                onClick={() => setApplicationState(!applicationState)}
+                backgroundColor={"black" && "black"}
+                onClick={() => setapplyState(!applyState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
-                  Benefits{" "}
+                  Benefits
                 </Text>
-                {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                {!applyState ? (
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
-              {applicationState && (
+              {applyState && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -268,25 +368,23 @@ const InnovatorFounder = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mr={3}
+                    mb={4}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    There are many benefits of the innovator founder visa.
-                    Firstly, you have permission to live/work in the UK for 3
-                    years, and following this, you can apply for indefinite
-                    leave to remain. Secondly, it allows you to bring your
-                    spouse and children to the UK
+                    There are many benefits of the innovator founder visa. Firstly, you have permission to live/work in the UK for 3 years, and following this, you can apply for indefinite leave to remain. Secondly, it allows you to bring your spouse and children to the UK
+
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Eligibility Requirements */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"93%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -315,29 +413,29 @@ const InnovatorFounder = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Eligibility Requirements
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -361,13 +459,13 @@ const InnovatorFounder = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mr={3}
+                    mb={4}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    You can apply for an Innovator Founder visa through Lumine
-                    Solicitors if:
+                    You can apply for an Innovator Founder visa through Lumine Solicitors if:
                   </Text>
-
                   <List.Root
                     textAlign={"justify"}
                     fontSize={{
@@ -378,24 +476,31 @@ const InnovatorFounder = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={-10}
+                    ml={-3}
+                    lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+
                   >
-                    <List.Item>
+                    <List.Item >
                       you want to run an innovative business in the UK
+
                     </List.Item>
-                    <List.Item>you are at least 18 years old</List.Item>
-                    <List.Item>
+                    <List.Item >
+                      you are at least 18 years old
+                    </List.Item>
+                    <List.Item >
                       your business plan is endorsed by an endorsing body
                     </List.Item>
-                    <List.Item>
+
+                    <List.Item >
                       you meet the English language requirements
                     </List.Item>
-                    <List.Item>
-                      you meet the financial requirements and have enough
-                      savings for yourself whilst in the UK
+                    <List.Item >
+                      you meet the financial requirements and have enough savings for yourself whilst in the UK
                     </List.Item>
-                    <List.Item>
+                    <List.Item >
                       you meet other eligibility requirements
                     </List.Item>
                   </List.Root>
@@ -403,18 +508,18 @@ const InnovatorFounder = () => {
               )}
             </Box>
 
-            {/* Help */}
+            {/* Judicial Review */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"93%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
               {/* Initial Button */}
               <HStack
-                borderY={"1px solid #adacac"}
+                borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{
@@ -435,35 +540,35 @@ const InnovatorFounder = () => {
                   "2xl": "10px",
                 }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !helpState && "black" }}
+                _hover={{ backgroundColor: !review && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
-                onClick={() => setHelpState(!helpState)}
+                backgroundColor={"black" && "black"}
+                onClick={() => setReview(!review)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
-                {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                {!review ? (
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
-              {helpState && (
+              {review && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -483,16 +588,18 @@ const InnovatorFounder = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mr={4}
+                    ml={3}
+                    mb={4}
                     fontWeight={400}
+                    lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Lumine Solicitors will get to know you and your business
-                    goals to advise you on the best way forward. We will support
-                    you from the beginning to the end of your application and
-                    ensure difficult evidential requirements are met. As well as
-                    this, we will also assess if you need to apply for an
-                    innovator founder visa or if another visa would be more
-                    suitable
+
+                    Lumine Solicitors will get to know you and your business goals to advise you on the best way forward. We will support you from the beginning to the end of your application and ensure difficult evidential requirements are met. As well as this, we will also assess if you need to apply for an innovator founder visa or if another visa would be more suitable
+
+
+
                   </Text>
 
                   <Text
@@ -505,19 +612,32 @@ const InnovatorFounder = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mr={4}
+                    ml={3}
+                    mt={-7}
                     fontWeight={400}
+                    lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}
                   >
-                    For all immigration matters, Please do not hesitate to get
-                    in touch with Lumine solicitors{" "}
+                    For all immigration matters, Please do not hesitate to get in touch with Lumine solicitors
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                   </Text>
+
                 </VStack>
               )}
             </Box>
+
+
           </VStack>
 
           {/* Other Services */}

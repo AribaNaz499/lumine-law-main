@@ -5,21 +5,16 @@ import "../../styles/fonts.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import BannerImg from "../../assets/about/aboutUs.jpg";
+import LegalExpertise from "./LegalExpertise";
+import Cards from "./Cards";
+import AboutTestimonial from "./AboutTestimonial";
 
 const AllServiceLinks = React.lazy(() => import("../NavLinks/AllServiceLinks"));
 const AllPrices = React.lazy(() => import("../NavLinks/AllPrices"));
 const AllNewsInsights = React.lazy(() => import("../NavLinks/AllNewsInsights"));
 
-
-
 const About = () => {
-  const handleSectionClick = (section) => {
-    if (activeSection === section) {
-      setActiveSection(null);
-    } else {
-      setActiveSection(section);
-    }
-  };
+  
   return (
     <>
       <Container
@@ -76,7 +71,7 @@ const About = () => {
             </Box>
           </Box>
 
-          {/* 2. Feature Boxes Section (Confidential, Trusted, Protect) */}
+          {/* 2. Feature Boxes Section */}
           <Box
             width={"100%"}
             backgroundColor={"#80808011"}
@@ -96,8 +91,8 @@ const About = () => {
                   <Text color="white" fontSize="30px">⚖️</Text>
                 </Box>
                 <Box p={4} display="flex" flexDirection="column" justifyContent="center">
-                  <Text marginLeft={"-78px"} fontSize="20px" color="#ebc51de7">Confidential</Text>
-                  <Text marginLeft={"-17px"} color={"black"} fontWeight="400" fontSize={{ base: "20px", lg: "26px" }}>Client Support</Text>
+                  <Text marginLeft={{ base: "0px", md: "-78px" }} fontSize="20px" color="#ebc51de7">Confidential</Text>
+                  <Text marginLeft={{ base: "0px", md: "-17px" }} color={"black"} fontWeight="400" fontSize={{ base: "20px", lg: "26px" }}>Client Support</Text>
                 </Box>
               </Flex>
 
@@ -107,8 +102,8 @@ const About = () => {
                   <Text color="white" fontSize="30px">🤝</Text>
                 </Box>
                 <Box p={4} display="flex" flexDirection="column" justifyContent="center">
-                  <Text marginLeft={"-100px"} fontSize="20px" color="#ebc51de7" >Trusted</Text>
-                  <Text marginLeft={"-17px"} color={"black"} fontWeight="400" fontSize={{ base: "20px", lg: "26px" }}>Legal Advice</Text>
+                  <Text marginLeft={{ base: "0px", md: "-100px" }} fontSize="20px" color="#ebc51de7" >Trusted</Text>
+                  <Text marginLeft={{ base: "0px", md: "-17px" }} color={"black"} fontWeight="400" fontSize={{ base: "20px", lg: "26px" }}>Legal Advice</Text>
                 </Box>
               </Flex>
 
@@ -118,8 +113,8 @@ const About = () => {
                   <Text color="white" fontSize="30px">🛡️</Text>
                 </Box>
                 <Box p={4} display="flex" flexDirection="column" justifyContent="center">
-                  <Text marginLeft={"-80px"} fontSize="20px" color="#ebc51de7">Protect</Text>
-                  <Text marginLeft={"-17px"} color={"black"} fontWeight="400" fontSize={{ base: "20px", lg: "26px" }}>Your Rights</Text>
+                  <Text marginLeft={{ base: "0px", md: "-80px" }} fontSize="20px" color="#ebc51de7">Protect</Text>
+                  <Text marginLeft={{ base: "0px", md: "-17px" }} color={"black"} fontWeight="400" fontSize={{ base: "20px", lg: "26px" }}>Your Rights</Text>
                 </Box>
               </Flex>
             </Flex>
@@ -131,7 +126,7 @@ const About = () => {
             display={"flex"}
             flexDirection={"column"}
             color={"black"}
-            marginBottom={"-58px"}
+            marginBottom={{ base: "40px", md: "-58px" }}
             py={{ base: "40px", md: "80px" }}
           >
             <Box
@@ -143,7 +138,7 @@ const About = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ base: "16px", md: "18px", lg: "20px", "2xl": "22px" }}
-                marginTop={"-45px"}
+                marginTop={{ base: "0px", md: "-45px" }}
                 color={"#deb92c"}
                 textAlign={"justify"}
                 lineHeight="1.8"
@@ -165,7 +160,7 @@ const About = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 marginTop={"16px"}
-                fontSize={{ base: "12px", md: "14px", lg: "16px", "2xl": "18px" }}
+                fontSize={{ base: "13px", md: "14px", lg: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
                 color={"#7a7a7a"}
                 lineHeight="1.6"
@@ -196,31 +191,33 @@ const About = () => {
                 We are a modern, progressive and growing firm located in Victoria, London. Our office is just a 5-minute walk from Victoria Station and Buckingham Palace,
                 conveniently situated behind the Buckingham Palace Gardens in the heart of central London.
               </Text>
+
+              {/* Fixed Button Container */}
               <Box
                 as={Link}
                 to="/contact"
-                display="inline-flex" // 'flex' ki jagah taaki button container content ke hisaab se width le
+                display="inline-flex" 
                 backgroundColor="#deb92c"
-                padding="12px 0px" // Exact rectangle shape ke liye
+                // Desktop pe wahi style, mobile pe padding di hai taaki cut na ho
+                padding={{ base: "12px 25px", md: "12px 0px" }} 
                 justifyContent="center"
                 alignItems="center"
                 textDecoration="none"
-                marginRight={"85%"}
+                // MarginRight desktop pe 85% waisa hi rahega, mobile pe remove kiya hai
+                marginRight={{ base: "0px", md: "85%" }}
                 marginTop={"15px"}
+                minW={{ base: "150px", md: "auto" }}
                 _hover={{ textDecoration: "none" }}
               >
                 <Button
-                  variant="unstyled" // Default button styling hatane ke liye
+                  variant="unstyled"
                   display="flex"
-                  // alignItems="center"
-                  // justifyContent="center"
                   color="white"
                   height="auto"
                   minW="auto"
-                  
                   fontSize={{ base: "16px", md: "18px", lg: "20px" }}
                   fontWeight={400}
-                  _hover={{ color: "white" }} // Text color white hi rahega
+                  _hover={{ color: "white" }}
                   transition="all 0.3s ease"
                 >
                   Contact Us
@@ -229,6 +226,9 @@ const About = () => {
             </Box>
           </Box>
 
+          <LegalExpertise/>
+         <Cards/>
+         <AboutTestimonial/>
           <Footer />
         </Box>
       </Container>

@@ -38,10 +38,10 @@ const SaleCommercial = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "300px",
+              lg: "340px",
+              xl: "390",
+              "2xl": "460px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -72,7 +72,7 @@ const SaleCommercial = () => {
           >
             {/* Heading */}
             <Box
-              width={"90%"}
+              width={"85%"}
               alignSelf={"center"}
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
@@ -80,15 +80,12 @@ const SaleCommercial = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
+                mt={"-1%"}
+                mb={"-3"}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
               >
-                When it comes to selling commercial property, having expert
-                legal support is crucial for a smooth, efficient, and successful
-                transaction. At Lumine Solicitors, our dedicated team of experts
-                is here to guide you through every step of the process, ensuring
-                a seamless and successful sale.
-              </Text>
+                When it comes to selling commercial property, having expert legal support is crucial for a smooth, efficient, and successful transaction. At Lumine Solicitors, our dedicated team of experts is here to guide you through every step of the process, ensuring a seamless and successful sale.              </Text>
             </Box>
           </Box>
 
@@ -103,7 +100,7 @@ const SaleCommercial = () => {
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"85%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -132,29 +129,29 @@ const SaleCommercial = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Why choose Lumine Solicitors?
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -178,18 +175,11 @@ const SaleCommercial = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    At Lumine Solicitors, we are committed to delivering
-                    exceptional service and achieving outstanding results for
-                    our clients. Whether you're an experienced property investor
-                    or a first-time seller, our team possesses the
-                    professionalism and expertise to manage all your commercial
-                    property sale needs. We ensure you remain well-informed
-                    throughout the process, providing clear and concise updates
-                    to ensure you are always up to date.
-                  </Text>
+                    At Lumine Solicitors, we are committed to delivering exceptional service and achieving outstanding results for our clients. Whether you're an experienced property investor or a first-time seller, our team possesses the professionalism and expertise to manage all your commercial property sale needs. We ensure you remain well-informed throughout the process, providing clear and concise updates to ensure you are always up to date                  </Text>
                 </VStack>
               )}
             </Box>
@@ -199,7 +189,7 @@ const SaleCommercial = () => {
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={"85%"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -228,29 +218,29 @@ const SaleCommercial = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Contact Us Today
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -265,23 +255,23 @@ const SaleCommercial = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
+                    textAlign={"left"}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={"2"}
                   >
-                    For all property matters, please do not hesitate to get in
-                    touch with Lumine solicitors <strong>020 3950 2246</strong>{" "}
-                    or{" "}
+                    For all property matters, please do not hesitate to get in touch with Lumine solicitors{" "}
+                    <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                   </Text>
                 </VStack>

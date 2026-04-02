@@ -1,4 +1,4 @@
-import { Text, Container, Box, VStack, Grid, GridItem } from "@chakra-ui/react";
+import { Text, Container, Box, Grid, GridItem } from "@chakra-ui/react";
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
 import { Link } from "react-router-dom";
@@ -6,7 +6,7 @@ import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { Helmet } from "react-helmet";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import AllPrices from "../../NavLinks/AllPrices";
-import BannerImg from "../../../assets/services/main/residential/residential-banner.webp";
+import BannerImg from "../../../assets/services/main/residential/residentialBanner.jpeg";
 import ImmigrationImg from "../../../assets/services/main/immigration/main-banner.webp";
 import DisputeImg from "../../../assets/services/main/dispute/main-banner.webp";
 import LandlordImg from "../../../assets/services/main/landlord/main-banner.webp";
@@ -16,207 +16,123 @@ import IntellectualImg from "../../../assets/services/main/intellectual/main-ban
 import WillsProbateImg from "../../../assets/services/main/wills-probate/main-banner.webp";
 import AllServicesImg from "../../../assets/services/all/bannertest.webp";
 import "../../../styles/fonts.css";
+import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 
-// Data for residential services
 const residentialServices = [
   {
     title: "Freehold and Leasehold Sales",
-    path: "/lumine-law/all-services/residential/freehold-sales",
+    path: "/all-services/residential/freehold-sales",
   },
   {
     title: "Freehold and Leasehold Purchases",
-    path: "/lumine-law/all-services/residential/freehold-purchases",
+    path: "/all-services/residential/freehold-purchases",
   },
   {
     title: "Lease Terms Advice",
-    path: "/lumine-law/all-services/residential/lease-terms-advice",
+    path: "/all-services/residential/lease-terms-advice",
   },
   {
     title: "Transfers of Equity",
-    path: "/lumine-law/all-services/residential/transfer-of-equity",
+    path: "/all-services/residential/transfer-of-equity",
   },
 ];
 
-// Data for other services
 const otherServices = [
   {
     title: "Immigration",
-    path: "/lumine-law/all-services/immigration",
+    path: "/all-services/immigration",
     image: ImmigrationImg,
     description: "A lil para about what this service is",
     textColor: "#ffffff",
   },
   {
     title: "Commercial Property",
-    path: "/lumine-law/all-services/commercial",
+    path: "/all-services/commercial",
     image: CommercialImg,
     description: "A lil para about what this service is",
     textColor: "#ffffff",
   },
   {
     title: "Intellectual Property",
-    path: "/lumine-law/all-services/intellectual-property",
+    path: "/all-services/intellectual-property",
     image: IntellectualImg,
     description: "A lil para about what this service is",
     textColor: "#ffffff",
   },
   {
     title: "Dispute Resolution and Civil Litigation",
-    path: "/lumine-law/all-services/dispute-resolution",
+    path: "/all-services/dispute-resolution",
     image: DisputeImg,
     description: "A lil para about what this service is",
     textColor: "#ffffff",
   },
   {
     title: "Landlord & Tenant Disputes",
-    path: "/lumine-law/all-services/landlord-tenant",
+    path: "/all-services/landlord-tenant",
     image: LandlordImg,
     description: "A lil para about what this service is",
-    textColor: "#000000",
+    textColor: "#ffffff",
   },
   {
     title: "Family & Children",
-    path: "/lumine-law/all-services/family-and-children",
+    path: "/all-services/family-and-children",
     image: FamilyImg,
     description: "A lil para about what this service is",
     textColor: "#ffffff",
   },
   {
     title: "Wills and Probate",
-    path: "/lumine-law/all-services/wills-probate",
+    path: "/all-services/wills-probate",
     image: WillsProbateImg,
     description: "A lil para about what this service is",
     textColor: "#ffffff",
   },
   {
     title: "All Services",
-    path: "/lumine-law/all-services",
+    path: "/all-services",
     image: AllServicesImg,
     description: "",
     textColor: "#ffffff",
   },
 ];
 
-// Reusable Service Button Component
 const ServiceButton = ({ service }) => (
   <GridItem
     as={Link}
     to={service.path}
     color="black"
     border="1px solid black"
-    borderRadius="8px"
+    borderRadius="12px"
     width="100%"
-    height={{ xs: "100px", sm: "125px", md: "150px", lg: "175px" }}
+    height={{ xs: "120px", sm: "130px", md: "140px", lg: "150px", xl: "160px", "2xl": "170px" }}
     display="flex"
     justifyContent="center"
     alignItems="center"
     backgroundColor="white"
     _hover={{
       backgroundColor: "#000000",
-      color: "#beab7c",
+      color: "white",
       transition: "0.3s ease all",
       fontWeight: "600",
-      textDecor: "underline",
     }}
     fontSize={{
-      xs: "12px",
-      sm: "14px",
-      md: "15px",
-      lg: "16px",
-      xl: "16px",
-      "2xl": "16px",
+      xs: "11px",
+      sm: "12px",
+      md: "13px",
+      lg: "14px",
+      xl: "14px",
+      "2xl": "15px",
     }}
     fontWeight={500}
     fontFamily="CeraRoundPro"
     cursor="pointer"
-    p="10px 5px"
+    p="8px 4px"
+    textAlign="center"
   >
     {service.title}
   </GridItem>
 );
 
-// Reusable Service Card Component
-const ServiceCard = ({ service }) => (
-  <GridItem
-    width="100%"
-    height={{
-      xs: "175px",
-      sm: "175px",
-      md: "175px",
-      lg: "200px",
-      xl: "225px",
-      "2xl": "250px",
-    }}
-    padding={{ xs: "10px 10px", lg: "10px 20px" }}
-    border="1px solid black"
-    borderRadius="8px"
-    cursor="pointer"
-    _hover={{
-      opacity: "0.8",
-      transition: "all 0.5s ease",
-    }}
-    bgImage={`url(${service.image})`}
-    bgPos="center"
-    bgSize="cover"
-    bgRepeat="no-repeat"
-    _loading={"lazy"}
-  >
-    <Link to={service.path} style={{ textDecoration: "none" }}>
-      <Box
-        height="100%"
-        display="flex"
-        flexFlow="column"
-        justifyContent="center"
-        alignItems="flex-start"
-        gap="10px"
-      >
-        <Text
-          fontSize={{
-            xs: "14px",
-            sm: "14px",
-            md: "16px",
-            lg: "18px",
-            xl: "20px",
-            "2xl": "22px",
-          }}
-          fontFamily="CeraRoundPro"
-          fontWeight={500}
-          textAlign="left"
-          color={service.textColor}
-        >
-          {service.title}
-        </Text>
-        <VStack
-          width="100%"
-          height="100%"
-          justifyContent="space-between"
-          alignItems="flex-start"
-        >
-          {service.description && (
-            <Text
-              fontSize={{
-                xs: "12px",
-                sm: "13px",
-                md: "14px",
-                lg: "15px",
-                xl: "16px",
-                "2xl": "18px",
-              }}
-              color={service.textColor}
-              fontFamily="CeraRoundPro"
-              fontWeight={400}
-            >
-              {service.description}
-            </Text>
-          )}
-          <HiOutlineArrowLongRight color={service.textColor} size="2em" />
-        </VStack>
-      </Box>
-    </Link>
-  </GridItem>
-);
-
-// Main Component
 const Residential = () => {
   return (
     <Container
@@ -235,16 +151,17 @@ const Residential = () => {
       </Helmet>
 
       <Box width="100%" flex="1" p={0} m={0} pt="50px">
+
         {/* Banner */}
         <Box
           width="100%"
           height={{
-            xs: "200px",
-            lg: "250px",
-            xl: "300px",
-            "2xl": "350px",
+            xs: "220px",
+            lg: "290px",
+            xl: "350px",
+            "2xl": "410px",
           }}
-          bgImage={`url(${BannerImg})`}
+          bgImage={`linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${BannerImg})`}
           bgSize="cover"
           bgPos="center"
           bgRepeat="no-repeat"
@@ -254,28 +171,35 @@ const Residential = () => {
           _loading={"eager"}
         >
           <Text
-            fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
+            fontSize={{ xs: "32px", lg: "40px", xl: "46px", "2xl": "54px" }}
             fontWeight={600}
             fontFamily="CeraRoundPro"
             width="90%"
             textAlign="left"
+            color="white"
           >
             Residential Property
           </Text>
         </Box>
 
-        {/* Main Content */}
-        <Box width="100%" display="flex" flexFlow="column" color="black">
+        {/* Heading + Description + Services Grid — PURPLE */}
+        <Box
+          width="100%"
+          backgroundColor="#c4c0db"
+          display="flex"
+          flexFlow="column"
+          color="black"
+          pb={{ xs: "30px", lg: "60px" }}
+        >
           <Box
             width="90%"
             alignSelf="center"
-            mb="5%"
             my={{ xs: "5%", md: "2.5%" }}
           >
             <Text
               fontFamily="CeraRoundPro"
-              fontSize="24px"
-              fontWeight={600}
+              fontSize="31px"
+              fontWeight={400}
               textAlign="left"
               mb="2.5%"
             >
@@ -285,99 +209,55 @@ const Residential = () => {
             <Text
               fontFamily="CeraRoundPro"
               fontWeight={400}
-              fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+              letterSpacing={0.5}
+              fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
               textAlign="justify"
+              lineHeight={1.9}
             >
               When it comes to legal matters concerning property we provide
               expertise that you can rely on and trust. Whether it's for
               residential property dealings or commercial property transactions.
             </Text>
           </Box>
-        </Box>
 
-        {/* Residential Services Grid */}
-        <Box
-          width="100%"
-          display="flex"
-          flexFlow="column"
-          alignItems="center"
-          color="black"
-          mb={{ xs: "25px", lg: "50px" }}
-        >
-          <Grid
-            templateColumns={{ xs: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
-            width={{ xs: "90%", md: "80%", lg: "75%", xl: "70%" }}
-            justifySelf="center"
-            justifyItems="center"
-            gap={{ xs: "10px", lg: "15px", xl: "30px" }}
-            gapY={0}
-          >
-            {residentialServices.map((service, index) => (
-              <ServiceButton key={index} service={service} />
-            ))}
-          </Grid>
-        </Box>
-
-        {/* Other Services Section */}
-        <Box mb="50px">
-          <Box width="100%" display="flex" flexFlow="column" color="black">
-            <Box width="90%" alignSelf="center">
-              <Text
-                color="black"
-                fontSize={{
-                  xs: "20px",
-                  sm: "20px",
-                  md: "24px",
-                  lg: "26px",
-                  xl: "28px",
-                  "2xl": "30px",
-                }}
-                fontWeight={500}
-                mb={{
-                  xs: "25px",
-                  sm: "30px",
-                  md: "35px",
-                  lg: "40px",
-                  xl: "45px",
-                  "2xl": "50px",
-                }}
-                textAlign="left"
-              >
-                Other Services
-              </Text>
-            </Box>
-          </Box>
-
+          {/* Services Grid */}
           <Box
             width="100%"
             display="flex"
             flexFlow="column"
             alignItems="center"
-            color="black"
           >
             <Grid
-              width="90%"
-              templateColumns={{ xs: "repeat(2, 2fr)", lg: "repeat(4, 1fr)" }}
-              gap={{
-                xs: "25px",
-                sm: "30px",
-                md: "35px",
-                lg: "40px",
-                xl: "45px",
-                "2xl": "50px",
-              }}
+              templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
+              width={{ base: "95%", md: "100%", lg: "95%", xl: "90%" }}
+              justifySelf="center"
               justifyItems="center"
-              alignItems="center"
+              gap={{ base: "12px", lg: "16px", xl: "20px" }}
             >
-              {otherServices.map((service, index) => (
-                <ServiceCard key={index} service={service} />
+              {residentialServices.map((service, index) => (
+                <ServiceButton key={index} service={service} />
               ))}
             </Grid>
           </Box>
         </Box>
 
-        <AllPrices />
-        <AllNewsInsights />
+        {/* All Service Links — WHITE */}
+        <Box backgroundColor="white" pb={{ xs: "3px", lg: "10px" }} pt={{ xs: "20px", lg: "40px" }}>
+          <AllServiceLinks />
+        </Box>
+
+        {/* Pricing — PURPLE with margin top for spacing */}
+        <Box backgroundColor="#c4c0db" mt={{ xs: "20px", lg: "40px" }}>
+          <AllPrices />
+        </Box>
+
+        {/* News Insights — PURPLE, no extra margin (Image 4 style - directly after pricing) */}
+        <Box backgroundColor="#c4c0db" 
+           mt={"-4%"}
+        >
+          <AllNewsInsights />
+        </Box>
+
         <Footer />
       </Box>
     </Container>

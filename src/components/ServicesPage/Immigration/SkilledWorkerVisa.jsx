@@ -7,17 +7,18 @@ import { useState } from "react";
 import { AiOutlineMinus } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import BannerImg from "../../../assets/services/main/immigration/Asylum.jpg";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/immigration.webp";
+import { Heading } from "@chakra-ui/react";
 
 const SkilledWorkerVisa = () => {
-  const [spouseState, setSpouseState] = useState(false);
-  const [eligibilityState, setEligibilityState] = useState(false);
-  const [applicationState, setApplicationState] = useState(false);
-  const [decisionState, setDecisionState] = useState(false);
-  const [helpState, setHelpState] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggle = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
 
   return (
     <>
@@ -26,7 +27,7 @@ const SkilledWorkerVisa = () => {
         maxWidth="100%"
         minHeight="100vh"
         backgroundColor={"white"}
-        overflow="auto"
+        overflowX="hidden" // Prevents horizontal scroll on mobile
         m={0}
         p={0}
         display="flex"
@@ -41,10 +42,10 @@ const SkilledWorkerVisa = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "230px",
+              lg: "310px",
+              xl: "330px",
+              "2xl": "380px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -53,10 +54,9 @@ const SkilledWorkerVisa = () => {
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
-            _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
+              fontSize={{ xs: "22px", lg: "32px", xl: "38px", "2xl": "48px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
@@ -66,27 +66,59 @@ const SkilledWorkerVisa = () => {
             </Text>
           </Box>
 
-          {/* Main */}
+          {/* Main Content */}
           <Box
             width={"100%"}
             display={"flex"}
             flexFlow={"column"}
             color={"black"}
+            px={{ base: "5%", md: "0" }} // Mobile padding to keep text inside
           >
             {/* Heading */}
             <Box
-              width={"90%"}
+              width={{ base: "100%", md: "90%" }} // Full width on mobile
               alignSelf={"center"}
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                color={"#bf9b30"}
+                fontSize={{ xs: "14px", lg: "26px", xl: "32px", "2xl": "42px" }}
+                textAlign={"left"}
+                ml={3}
+              >
+                SKILLED WORKER VISA
+              </Heading>
+
               <Text
                 fontFamily={"CeraRoundPro"}
-                fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontWeight={300}
+                color={"black"}
+                lineHeight={"1.5"}
+                letterSpacing={"0.8"}
+                fontSize={{ xs: "9px", lg: "11px", xl: "17px", "2xl": "19px" }}
                 textAlign={"left"}
+                ml={3}
+                mt={8}
               >
-                A few lines on what a Skilled Worker Visa is.
+                The Skilled Worker Visa is a UK immigration route, designed for foreign nationals who have a job offer from a licensed UK employer in a skilled occupation, intended to allow individuals to live and work in the UK provided they meet certain eligibility requirements including holding an offer of employment in an eligible role under the visa criteria. It is one of the most common routes through which non-EU nationals come to the UK to fill in gaps for specific skills deficiencies. The Skilled Worker Visa is a vital source for companies looking to be able to employ skilled workers who are based abroad in the UK, addressing the deficit in the labor market. It covers many sectors, such as healthcare, engineering, technological skills, teachers, and more. It can also serve as a stepping stone to both long-term employment and to permanent residency in the UK, as individuals who are employed and meet other stipulations can apply for ILR after five years.
+              </Text>
+
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={300}
+                color={"black"}
+                lineHeight={"1.5"}
+                letterSpacing={"0.8"}
+                fontSize={{ xs: "9px", lg: "11px", xl: "17px", "2xl": "19px" }}
+                textAlign={"left"}
+                ml={3}
+                mt={7}
+              >
+                For personalized assistance with your legal needs, contact us or visit Lumine for expert guidance tailored to your specific situation. Our experienced team is here to help you navigate the complexities with confidence and ease.
               </Text>
             </Box>
           </Box>
@@ -96,68 +128,46 @@ const SkilledWorkerVisa = () => {
             justifyContent={"space-around"}
             alignItems={"center"}
             mb={"50px"}
+            width="100%" // Ensure VStack takes full width for centering
           >
-            {/* What is Skilled Worker Visa */}
+            {/* 0 - What is Skilled Worker Visa? */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={{ base: "90%", md: "85%" }} // Responsive width
               justifyContent={"center"}
               alignItems={"center"}
             >
-              {/* Initial Button */}
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
-                onClick={() => setSpouseState(!spouseState)}
+                backgroundColor={"black"}
+                onClick={() => toggle(0)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   What is a Skilled Worker Visa?
                 </Text>
-                {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                {activeIndex !== 0 ? (
+                  <GoPlus color={"#bf9b30"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
                 )}
               </HStack>
 
-              {spouseState && (
+              {activeIndex === 0 && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -168,86 +178,56 @@ const SkilledWorkerVisa = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
+                    textAlign={"left"}
+                    mb={6}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontWeight={300}
                     fontFamily={"CeraRoundPro"}
                   >
-                    The Skilled Worker visa enables non-UK workers to do certain
-                    eligible jobs for licensed UK employers.
+                    The Skilled Worker visa enables non-UK workers to do certain eligible jobs for licensed UK employers.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Eligibility */}
+            {/* 1 - Eligibility */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={{ base: "90%", md: "85%" }}
               justifyContent={"center"}
               alignItems={"center"}
             >
-              {/* Initial Button */}
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
-                onClick={() => setEligibilityState(!eligibilityState)}
+                backgroundColor={"black"}
+                onClick={() => toggle(1)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Eligibility
                 </Text>
-                {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                {activeIndex !== 1 ? (
+                  <GoPlus color={"#bf9b30"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
                 )}
               </HStack>
 
-              {eligibilityState && (
+              {activeIndex === 1 && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -258,42 +238,27 @@ const SkilledWorkerVisa = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
+                    textAlign={"left"}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontWeight={300}
                     fontFamily={"CeraRoundPro"}
+                    mb={"-5"}
                   >
-                    Certain requirements must be fulfilled to gain a Skilled
-                    Worker visa. These include:
+                    Certain requirements must be fulfilled to gain a Skilled Worker visa. These include:
                   </Text>
 
                   <List.Root
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
+                    textAlign={"left"}
+                    lineHeight={1.8}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontWeight={300}
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
-                      Working for a licensed employer in the UK that has been
-                      approved by the Home Office
+                      Working for a licensed employer in the UK that has been approved by the Home Office
                     </List.Item>
                     <List.Item>
-                      Having a valid ‘certificate of sponsorship’ issued by your
-                      employer
+                      Having a valid 'certificate of sponsorship' issued by your employer
                     </List.Item>
                     <List.Item>
                       Having a biometric residence permit (BRP)
@@ -302,172 +267,54 @@ const SkilledWorkerVisa = () => {
                       Your job being on the list of eligible occupations
                     </List.Item>
                     <List.Item>
-                      Meeting the English language requirements and minimum
-                      salary requirements
+                      Meeting the English language requirements and minimum salary requirements
                     </List.Item>
                     <List.Item>
-                      Obtaining 70 points under the point-based immigration
-                      system
+                      Obtaining 70 points under the point-based immigration system
                     </List.Item>
                   </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Benefits */}
+            {/* 2 - Benefits */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={{ base: "90%", md: "85%" }}
               justifyContent={"center"}
               alignItems={"center"}
             >
-              {/* Initial Button */}
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
-                onClick={() => setApplicationState(!applicationState)}
+                backgroundColor={"black"}
+                onClick={() => toggle(2)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
-                  Benefits{" "}
+                  Benefits
                 </Text>
-                {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                {activeIndex !== 2 ? (
+                  <GoPlus color={"#bf9b30"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
                 )}
               </HStack>
 
-              {applicationState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Lumine Solicitors can assist you in obtaining a Skilled
-                    Worker visa, allowing you to reside in the UK for up to 5
-                    years. This visa may also make you eligible to apply for
-                    indefinite leave to remain. Additionally, you can bring your
-                    eligible spouse and children to the UK, pursue studies, and
-                    travel outside the UK.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
-            {/* Decision */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !decisionState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
-                onClick={() => setDecisionState(!decisionState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  How long does it take to reach a decision?
-                </Text>
-                {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {decisionState && (
+              {activeIndex === 2 && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -478,87 +325,56 @@ const SkilledWorkerVisa = () => {
                   width={"100%"}
                 >
                   <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
+                    textAlign={"left"}
+                    fontSize={{ xs: "12px", sm: "13px", md: "14px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                    fontWeight={300}
+                    lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}
                   >
-                    A decision on whether you have successfully gained a Skilled
-                    Worker visa usually takes up to 3 weeks if you are not in
-                    the UK or 8 weeks if you are within the UK.
+                    Lumine Solicitors can assist you in obtaining a Skilled Worker visa, allowing you to reside in the UK for up to 5 years. This visa may also make you eligible to apply for indefinite leave to remain. Additionally, you can bring your eligible spouse and children to the UK, pursue studies, and travel outside the UK.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Help */}
+            {/* 3 - Decision Timeframe */}
             <Box
               display={"flex"}
               flexDir={"column"}
               color={"black"}
-              width={"90%"}
+              width={{ base: "90%", md: "85%" }}
               justifyContent={"center"}
               alignItems={"center"}
             >
-              {/* Initial Button */}
               <HStack
-                borderY={"1px solid #adacac"}
+                borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
-                onClick={() => setHelpState(!helpState)}
+                backgroundColor={"black"}
+                onClick={() => toggle(3)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
-                  How can Lumine Solicitors help?
+                  How long does it take to reach a decision?
                 </Text>
-                {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                {activeIndex !== 3 ? (
+                  <GoPlus color={"#bf9b30"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
                 )}
               </HStack>
 
-              {helpState && (
+              {activeIndex === 3 && (
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
@@ -566,44 +382,96 @@ const SkilledWorkerVisa = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
+                    textAlign={"left"}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontWeight={300}
+                    fontFamily={"CeraRoundPro"}
+                    lineHeight={1.9}
+                  >
+                    A decision on whether you have successfully gained a Skilled Worker visa usually takes up to 3 weeks if you are not in the UK or 8 weeks if you are within the UK.
+                  </Text>
+                </VStack>
+              )}
+            </Box>
+
+            {/* 4 - How Lumine Helps */}
+            <Box
+              display={"flex"}
+              flexDir={"column"}
+              color={"black"}
+              width={{ base: "90%", md: "85%" }}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
+              <HStack
+                borderY={"1px solid #adacac"}
+                width={"100%"}
+                justifyContent={"space-between"}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
+                alignItems={"center"}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
+                cursor={"pointer"}
+                transition={"all 0.3s ease"}
+                backgroundColor={"black"}
+                onClick={() => toggle(4)}
+              >
+                <Text
+                  textAlign={"left"}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                  fontWeight={500}
+                  fontFamily={"CeraRoundPro"}
+                  color={"#bf9b30"}
+                >
+                  How can Lumine Solicitors help?
+                </Text>
+                {activeIndex !== 4 ? (
+                  <GoPlus color={"#bf9b30"} size={"2em"} />
+                ) : (
+                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
+                )}
+              </HStack>
+
+              {activeIndex === 4 && (
+                <VStack
+                  justifyContent={"center"}
+                  alignItems={"flex-start"}
+                  gap={{ xs: "20px", md: "30px" }}
+                  mb={{ xs: "4px", md: "10px" }}
+                  borderTop={"1px solid #adacac"}
+                  py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
+                >
+                  <Text
+                    textAlign={"left"}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontWeight={300}
+                    lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Lumine solicitors will get to know you and your employment
-                    goals to advise you on the best way forward. We will support
-                    you from the beginning to the end of your application and
-                    ensure difficult evidential requirements are met.
+                    Lumine solicitors will get to know you and your employment goals to advise you on the best way forward. We will support you from the beginning to the end of your application and ensure difficult evidential requirements are met.
                   </Text>
 
                   <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
+                    textAlign={"left"}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontWeight={300}
                     fontFamily={"CeraRoundPro"}
+                    mt={"-6"}
                   >
-                    For all immigration matters, Please do not hesitate to get
-                    in touch with Lumine solicitors{" "}
+                    For all immigration matters, Please do not hesitate to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>
                     </strong>
                   </Text>
                 </VStack>
@@ -611,15 +479,9 @@ const SkilledWorkerVisa = () => {
             </Box>
           </VStack>
 
-          {/* Other Services */}
           <AllServiceLinks />
-
-          {/* Prices */}
           <AllPrices />
-
-          {/* News and Insights */}
           <AllNewsInsights />
-
           <Footer />
         </Box>
       </Container>

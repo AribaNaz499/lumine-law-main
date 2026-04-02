@@ -83,948 +83,206 @@ const ServicesMegaMenu = () => {
             }}
           >
             Services
-            <Image
-              src={MenuIcon}
-              // remove this if theres issues
-              width={"auto"}
-              alt="Menu Icon"
-            />
-            <Image
-              src={BlackMenuIcon}
-              // remove this if theres issues
-              width={"auto"}
-              alt="Black Menu Icon"
-            />
+            <Image src={MenuIcon} width={"auto"} alt="Menu Icon" />
+            <Image src={BlackMenuIcon} width={"auto"} alt="Black Menu Icon" />
           </Button>
+
           <Box
             position="fixed"
             top="50px"
             left="50"
             width="100vw"
-            backgroundColor="#111111"
+            backgroundColor="black"
             py={"10px"}
             px={"10px"}
             zIndex={9999}
             boxShadow="0 4px 6px rgba(0, 0, 0, 0.1)"
-            className={`${styles.megaMenuContainer} ${
-              isOpen ? styles.open : ""
-            }`}
+            className={`${styles.megaMenuContainer} ${isOpen ? styles.open : ""}`}
           >
             <VStack
-              justifyContent={"center"}
-              alignItems={"center"}
+              alignItems={"flex-start"}
               onClick={() => setIsOpen(false)}
+              px={{ lg: "120px", xl: "160px", "2xl": "200px" }}
+              width={"100%"}
             >
-              {/* Row 1 */}
+
+              {/* ── ROW 1 ── */}
               <HStack
-                justifyContent={"center"}
+                justifyContent={"flex-start"}
                 alignItems={"flex-start"}
+                width={"100%"}
                 py={"10px"}
-                px={"10px"}
-                gap={{ lg: "20px", xl: "30px" }}
+                gap={{ lg: "50px", xl: "60px" }}
+                flexWrap={"nowrap"}
               >
-                {/* Immigration Services */}
+                {/* Immigration */}
                 <VStack
                   alignItems={"flex-start"}
-                  justifyContent={"center"}
-                  gap={{
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  gap={{ lg: "6px", xl: "8px", "2xl": "10px" }}
+                  minWidth={{ lg: "130px", xl: "150px", "2xl": "170px" }}
+                  maxWidth={{ lg: "150px", xl: "170px", "2xl": "190px" }}
                 >
-                  {/* Header */}
-                  <Link
-                    to={"/all-services/immigration"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      fontSize={{
-                        lg: "10px",
-                        xl: "12px",
-                        "2xl": "14px",
-                      }}
-                      fontWeight={700}
-                      className={styles.menuHeader}
-                      _hover={{ borderBottom: "2px solid #beab7c" }}
-                    >
+                  <Link to={"/all-services/immigration"} style={{ textDecoration: "none" }}>
+                    <Text fontSize={{ lg: "13px", xl: "15px", "2xl": "17px" }} fontWeight={700} color={"#efdc6b"} textAlign={"left"} className={styles.menuHeader} _hover={{ borderBottom: "2px solid #beab7c" }}>
                       Immigration
                     </Text>
                   </Link>
-                  {/* List */}
-                  {/* Asylum */}
-                  <Text
-                    as={Link}
-                    to={"/all-services/immigration/asylum"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    textAlign={"left"}
-                    className={styles.menuText}
-                  >
-                    Asylum
-                  </Text>
-                  {/* Creative Worker Visa */}
-                  {/* <Text
-                    as={Link}
-                    to={"/lumine-law/all-services/immigration/creative-worker"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    textAlign={"left"}
-                    className={styles.menuText}
-                  >
-                    Creative Worker Visa
-                  </Text> */}
-                  {/* Skilled Worker Visa */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/immigration/skilled-worker-visa"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    textAlign={"left"}
-                    className={styles.menuText}
-                  >
-                    Skilled Worker Visa
-                  </Text>
-                  {/* Spouse Visa */}
-                  <Text
-                    as={Link}
-                    to={"/all-services/immigration/spouse-visa"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Spouse Visa
-                  </Text>
-
-                  {/* Visitor Visa */}
-                  <Text
-                    as={Link}
-                    to={"/all-services/immigration/uk-visitor-visa"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    UK Visitor Visa
-                  </Text>
-
-                  {/* Explore More */}
-                  <Link
-                    to={"/all-services/immigration"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      fontSize={{
-                        lg: "9px",
-                        xl: "10px",
-                        "2xl": "11px",
-                      }}
-                      fontWeight={700}
-                      className={styles.menuText}
-                      textAlign={"left"}
-                    >
-                      {/* ... */}
-                      Explore More
-                    </Text>
+                  <Text as={Link} to={"/all-services/immigration/asylum"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} color={"white"} textAlign={"left"} className={styles.menuText}>Asylum</Text>
+                  <Text as={Link} to={"/all-services/immigration/skilled-worker-visa"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Skilled Worker Visa</Text>
+                  <Text as={Link} to={"/all-services/immigration/spouse-visa"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Spouse Visa</Text>
+                  <Text as={Link} to={"/all-services/immigration/uk-visitor-visa"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>UK Visitor Visa</Text>
+                  <Link to={"/all-services/immigration"} style={{ textDecoration: "none" }}>
+                    <Text fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={700} textAlign={"left"} className={styles.menuText}>Explore More</Text>
                   </Link>
                 </VStack>
 
                 {/* Residential Property */}
                 <VStack
                   alignItems={"flex-start"}
-                  gap={{
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  gap={{ lg: "6px", xl: "8px", "2xl": "10px" }}
+                  minWidth={{ lg: "150px", xl: "170px", "2xl": "190px" }}
+                  maxWidth={{ lg: "180px", xl: "200px", "2xl": "220px" }}
                 >
-                  {/* Header */}
-                  <Link
-                    to={"/all-services/residential"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      fontSize={{
-                        lg: "10px",
-                        xl: "12px",
-                        "2xl": "14px",
-                      }}
-                      fontWeight={700}
-                      className={styles.menuHeader}
-                      _hover={{ borderBottom: "2px solid #beab7c" }}
-                    >
+                  <Link to={"/all-services/residential"} style={{ textDecoration: "none" }}>
+                    <Text fontSize={{ lg: "13px", xl: "15px", "2xl": "17px" }} fontWeight={700} color={"#efdc6b"} textAlign={"left"} className={styles.menuHeader} _hover={{ borderBottom: "2px solid #beab7c" }}>
                       Residential Property
                     </Text>
                   </Link>
-                  {/* List */}
-                  {/* Freehold and Leasehold Sales */}
-                  <Text
-                    as={Link}
-                    to={"/all-services/residential/freehold-sales"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Freehold and Leasehold Sales
-                  </Text>
-
-                  {/* Freehold and Leasehold Purchases */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/residential/freehold-purchases"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Freehold and Leasehold Purchases
-                  </Text>
-
-                  {/* Lease Terms Advice */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/residential/lease-terms-advice"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Lease Terms Advice
-                  </Text>
-
-                  {/* Transfers of Equity */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/residential/transfer-of-equity"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Transfers of Equity
-                  </Text>
+                  <Text as={Link} to={"/all-services/residential/freehold-sales"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Freehold and Leasehold Sales</Text>
+                  <Text as={Link} to={"/all-services/residential/freehold-purchases"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Freehold and Leasehold Purchases</Text>
+                  <Text as={Link} to={"/all-services/residential/lease-terms-advice"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Lease Terms Advice</Text>
+                  <Text as={Link} to={"/all-services/residential/transfer-of-equity"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Transfers of Equity</Text>
                 </VStack>
 
                 {/* Commercial Property */}
                 <VStack
                   alignItems={"flex-start"}
-                  gap={{
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  gap={{ lg: "6px", xl: "8px", "2xl": "10px" }}
+                  minWidth={{ lg: "160px", xl: "180px", "2xl": "200px" }}
+                  maxWidth={{ lg: "200px", xl: "220px", "2xl": "240px" }}
                 >
-                  {/* Header */}
-                  <Link
-                    to={"/all-services/commercial"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      fontSize={{
-                        lg: "10px",
-                        xl: "12px",
-                        "2xl": "14px",
-                      }}
-                      fontWeight={700}
-                      className={styles.menuHeader}
-                      _hover={{ borderBottom: "2px solid #beab7c" }}
-                    >
+                  <Link to={"/all-services/commercial"} style={{ textDecoration: "none" }}>
+                    <Text fontSize={{ lg: "13px", xl: "15px", "2xl": "17px" }} fontWeight={700} color={"#efdc6b"} textAlign={"left"} className={styles.menuHeader} _hover={{ borderBottom: "2px solid #beab7c" }}>
                       Commercial Property
                     </Text>
                   </Link>
-                  {/* List */}
-
-                  {/* Lease Renewals */}
-                  <Text
-                    as={Link}
-                    to={"/all-services/commercial/lease-renewals"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Lease Renewals
-                  </Text>
-
-                  {/* Purchase of Business and Licenses to Align */}
-                  <Text
-                    as={Link}
-                    to={"/all-services/commercial/business-licenses"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Purchase of Business and Licenses to Align
-                  </Text>
-
-                  {/* Purchase of Commercial Property */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/commercial/purchase-commercial"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Purchase of Commercial Property
-                  </Text>
-
-                  {/* Sales of Commercial Property */}
-                  <Text
-                    as={Link}
-                    to={"/all-services/commercial/sales-commercial"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Sales of Commercial Property
-                  </Text>
-
-                  {/* Explore More */}
-                  <Link
-                    to={"/all-services/commercial"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      fontSize={{
-                        lg: "9px",
-                        xl: "10px",
-                        "2xl": "11px",
-                      }}
-                      fontWeight={700}
-                      className={styles.menuText}
-                      textAlign={"left"}
-                    >
-                      {/* ... */}
-                      Explore More
-                    </Text>
+                  <Text as={Link} to={"/all-services/commercial/lease-renewals"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Lease Renewals</Text>
+                  <Text as={Link} to={"/all-services/commercial/business-licenses"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Purchase of Business and Licenses to Align</Text>
+                  <Text as={Link} to={"/all-services/commercial/purchase-commercial"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Purchase of Commercial Property</Text>
+                  <Text as={Link} to={"/all-services/commercial/sales-commercial"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Sales of Commercial Property</Text>
+                  <Link to={"/all-services/commercial"} style={{ textDecoration: "none" }}>
+                    <Text fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={700} textAlign={"left"} className={styles.menuText}>Explore More</Text>
                   </Link>
                 </VStack>
 
                 {/* Intellectual Property */}
                 <VStack
                   alignItems={"flex-start"}
-                  gap={{
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  gap={{ lg: "6px", xl: "8px", "2xl": "10px" }}
+                  minWidth={{ lg: "120px", xl: "140px", "2xl": "160px" }}
+                  maxWidth={{ lg: "160px", xl: "180px", "2xl": "200px" }}
                 >
-                  {/* Header */}
-                  <Link
-                    to={"/all-services/intellectual-property"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      fontSize={{
-                        lg: "10px",
-                        xl: "12px",
-                        "2xl": "14px",
-                      }}
-                      fontWeight={700}
-                      className={styles.menuHeader}
-                      _hover={{ borderBottom: "2px solid #beab7c" }}
-                    >
+                  <Link to={"/all-services/intellectual-property"} style={{ textDecoration: "none" }}>
+                    <Text fontSize={{ lg: "13px", xl: "15px", "2xl": "17px" }} fontWeight={700} color={"#efdc6b"} textAlign={"left"} className={styles.menuHeader} _hover={{ borderBottom: "2px solid #beab7c" }}>
                       Intellectual Property
                     </Text>
                   </Link>
-                  {/* List */}
-                  {/* Copyright */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/intellectual-property/copyright"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Copyright
-                  </Text>
-
-                  {/* Patent */}
-                  <Text
-                    as={Link}
-                    to={"/all-services/intellectual-property/patent"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Patent
-                  </Text>
-
-                  {/* Trademark */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/intellectual-property/trademark"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Trademark
-                  </Text>
+                  <Text as={Link} to={"/all-services/intellectual-property/copyright"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Copyright</Text>
+                  <Text as={Link} to={"/all-services/intellectual-property/patent"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Patent</Text>
+                  <Text as={Link} to={"/all-services/intellectual-property/trademark"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Trademark</Text>
                 </VStack>
 
-                {/* Dispute Resolution and Civil Litigation Services*/}
+                {/* Dispute Resolution */}
                 <VStack
                   alignItems={"flex-start"}
-                  gap={{
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  gap={{ lg: "6px", xl: "8px", "2xl": "10px" }}
+                  minWidth={{ lg: "160px", xl: "180px", "2xl": "200px" }}
+                  maxWidth={{ lg: "220px", xl: "240px", "2xl": "260px" }}
                 >
-                  {/* Header */}
-                  <Link
-                    to={"/all-services/dispute-resolution"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      fontSize={{
-                        lg: "10px",
-                        xl: "12px",
-                        "2xl": "14px",
-                      }}
-                      fontWeight={700}
-                      className={styles.menuHeader}
-                      _hover={{ borderBottom: "2px solid #beab7c" }}
-                    >
+                  <Link to={"/all-services/dispute-resolution"} style={{ textDecoration: "none" }}>
+                    <Text fontSize={{ lg: "13px", xl: "15px", "2xl": "17px" }} fontWeight={700} color={"#efdc6b"} textAlign={"left"} className={styles.menuHeader} _hover={{ borderBottom: "2px solid #beab7c" }}>
                       Dispute Resolution and Civil Litigation Services
                     </Text>
                   </Link>
-                  {/* List */}
-                  {/* Building Contracts */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/dispute-resolution/building-contracts"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Building Contracts
-                  </Text>
-
-                  {/* Contract Disputes */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/dispute-resolution/contract-disputes"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Contract Disputes
-                  </Text>
-
-                  {/* Contracts for the Supply of Goods and Services */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/dispute-resolution/supply-goods-services"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Contracts for the Supply of Goods and Services
-                  </Text>
-
-                  {/* Corporate and Personal Bankruptcy Matters */}
-                  {/* <Text
-                    as={Link}
-                    to={
-                      "/lumine-law/all-services/dispute-resolution/bankruptcy-matters"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Corporate and Personal Bankruptcy Matters
-                  </Text> */}
-
-                  {/* Debt Matters */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/dispute-resolution/debt-matters"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Debt Matters
-                  </Text>
-
-                  {/* Explore More */}
-                  <Link
-                    to={"/all-services/dispute-resolution"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      fontSize={{
-                        lg: "9px",
-                        xl: "10px",
-                        "2xl": "11px",
-                      }}
-                      fontWeight={700}
-                      className={styles.menuText}
-                      textAlign={"left"}
-                    >
-                      {/* ... */}
-                      Explore More
-                    </Text>
+                  <Text as={Link} to={"/all-services/dispute-resolution/building-contracts"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Building Contracts</Text>
+                  <Text as={Link} to={"/all-services/dispute-resolution/contract-disputes"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Contract Disputes</Text>
+                  <Text as={Link} to={"/all-services/dispute-resolution/supply-goods-services"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Contracts for the Supply of Goods and Services</Text>
+                  <Text as={Link} to={"/all-services/dispute-resolution/debt-matters"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Debt Matters</Text>
+                  <Link to={"/all-services/dispute-resolution"} style={{ textDecoration: "none" }}>
+                    <Text fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={700} textAlign={"left"} className={styles.menuText}>Explore More</Text>
                   </Link>
                 </VStack>
               </HStack>
 
-              {/* Row 2 */}
+              {/* ── ROW 2 ── same gap and minWidth so columns align under Row 1 */}
               <HStack
                 justifyContent={"flex-start"}
                 alignItems={"flex-start"}
+                width={"100%"}
                 py={"10px"}
-                gap={{ lg: "20px", xl: "30px" }}
+                gap={{ lg: "50px", xl: "60px" }}
+                flexWrap={"nowrap"}
               >
-                {/* Landlord and Tenant Disputes */}
+                {/* Landlord — same minWidth as Immigration */}
                 <VStack
                   alignItems={"flex-start"}
-                  gap={{
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  gap={{ lg: "6px", xl: "8px", "2xl": "10px" }}
+                  minWidth={{ lg: "130px", xl: "150px", "2xl": "170px" }}
+                  maxWidth={{ lg: "150px", xl: "170px", "2xl": "190px" }}
                 >
-                  {/* Header */}
-                  <Link
-                    to={"/all-services/landlord-tenant"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      fontSize={{
-                        lg: "10px",
-                        xl: "12px",
-                        "2xl": "14px",
-                      }}
-                      fontWeight={700}
-                      className={styles.menuHeader}
-                      _hover={{ borderBottom: "2px solid #beab7c" }}
-                    >
+                  <Link to={"/all-services/landlord-tenant"} style={{ textDecoration: "none" }}>
+                    <Text fontSize={{ lg: "13px", xl: "15px", "2xl": "17px" }} fontWeight={700} color={"#efdc6b"} textAlign={"left"} className={styles.menuHeader} _hover={{ borderBottom: "2px solid #beab7c" }}>
                       Landlord and Tenant Disputes
                     </Text>
                   </Link>
-                  {/* List */}
-                  {/* Claims for Disrepair */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/landlord-tenant/claims-disrepair"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Claims for Disrepair
-                  </Text>
-
-                  {/* Possession Claims */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/landlord-tenant/possession-claims"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Possession Claims
-                  </Text>
-
-                  {/* Recovery of Rent Arrears */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/landlord-tenant/recovery-rent"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Recovery of Rent Arrears
-                  </Text>
+                  <Text as={Link} to={"/all-services/landlord-tenant/claims-disrepair"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Claims for Disrepair</Text>
+                  <Text as={Link} to={"/all-services/landlord-tenant/possession-claims"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Possession Claims</Text>
+                  <Text as={Link} to={"/all-services/landlord-tenant/recovery-rent"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Recovery of Rent Arrears</Text>
                 </VStack>
-                {/* Family and Children */}
+
+                {/* Family — same minWidth as Residential */}
                 <VStack
                   alignItems={"flex-start"}
-                  gap={{
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  gap={{ lg: "6px", xl: "8px", "2xl": "10px" }}
+                  minWidth={{ lg: "150px", xl: "170px", "2xl": "190px" }}
+                  maxWidth={{ lg: "180px", xl: "200px", "2xl": "220px" }}
                 >
-                  {/* Header */}
-                  <Link
-                    to={"/all-services/family-and-children"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      fontSize={{
-                        lg: "10px",
-                        xl: "12px",
-                        "2xl": "14px",
-                      }}
-                      fontWeight={700}
-                      className={styles.menuHeader}
-                      _hover={{ borderBottom: "2px solid #beab7c" }}
-                    >
+                  <Link to={"/all-services/family-and-children"} style={{ textDecoration: "none" }}>
+                    <Text fontSize={{ lg: "13px", xl: "15px", "2xl": "17px" }} fontWeight={700} color={"#efdc6b"} textAlign={"left"} className={styles.menuHeader} _hover={{ borderBottom: "2px solid #beab7c" }}>
                       Family and Children
                     </Text>
                   </Link>
-                  {/* List */}
-                  {/* Divorce */}
-                  <Text
-                    as={Link}
-                    to={"/all-services/family/divorce"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Divorce{" "}
-                  </Text>
-
-                  {/* Domestic Violence */}
-                  <Text
-                    as={Link}
-                    to={"/all-services/family/domestic-violence"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Domestic Violence
-                  </Text>
-
-                  {/* Parental Responsibility */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/family/parental-responsbility"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Parental Responsibility
-                  </Text>
-
-                  {/* Pre Nuptial Agreement */}
-                  <Text
-                    as={Link}
-                    to={"/all-services/family/nuptial-agreement"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Pre Nuptial Agreements{" "}
-                  </Text>
-
-                  {/* Explore more */}
-                  <Link
-                    to={"/all-services/family-and-children"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      fontSize={{
-                        lg: "9px",
-                        xl: "10px",
-                        "2xl": "11px",
-                      }}
-                      fontWeight={700}
-                      className={styles.menuText}
-                      textAlign={"left"}
-                    >
-                      {/* ... */}
-                      Explore More
-                    </Text>
+                  <Text as={Link} to={"/all-services/family/divorce"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Divorce</Text>
+                  <Text as={Link} to={"/all-services/family/domestic-violence"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Domestic Violence</Text>
+                  <Text as={Link} to={"/all-services/family/parental-responsbility"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Parental Responsibility</Text>
+                  <Text as={Link} to={"/all-services/family/nuptial-agreement"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Pre Nuptial Agreements</Text>
+                  <Link to={"/all-services/family-and-children"} style={{ textDecoration: "none" }}>
+                    <Text fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={700} textAlign={"left"} className={styles.menuText}>Explore More</Text>
                   </Link>
                 </VStack>
 
-                {/* Wills and Probate */}
+                {/* Wills — same minWidth as Commercial */}
                 <VStack
                   alignItems={"flex-start"}
-                  gap={{
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  gap={{ lg: "6px", xl: "8px", "2xl": "10px" }}
+                  minWidth={{ lg: "160px", xl: "180px", "2xl": "200px" }}
+                  maxWidth={{ lg: "200px", xl: "220px", "2xl": "240px" }}
                 >
-                  {/* Header */}
-                  <Link
-                    to={"/all-services/wills-probate"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      fontSize={{
-                        lg: "10px",
-                        xl: "12px",
-                        "2xl": "14px",
-                      }}
-                      fontWeight={700}
-                      className={styles.menuHeader}
-                      _hover={{ borderBottom: "2px solid #beab7c" }}
-                    >
+                  <Link to={"/all-services/wills-probate"} style={{ textDecoration: "none" }}>
+                    <Text fontSize={{ lg: "13px", xl: "15px", "2xl": "17px" }} fontWeight={700} color={"#efdc6b"} textAlign={"left"} className={styles.menuHeader} _hover={{ borderBottom: "2px solid #beab7c" }}>
                       Wills and Probate
                     </Text>
                   </Link>
-                  {/* List */}
-                  {/* Inheritance Tax Planning */}
-                  {/* <Text
-                    as={Link}
-                    to={
-                      "/lumine-law/all-services/wills-probate/inheritance-tax-planning"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Inheritance Tax Planning
-                  </Text> */}
-
-                  {/* Probate */}
-                  <Text
-                    as={Link}
-                    to={"/all-services/wills-probate/probate"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Probate
-                  </Text>
-
-                  {/* Succession Planning */}
-                  <Text
-                    as={Link}
-                    to={
-                      "/all-services/wills-probate/succession-planning"
-                    }
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Succession Planning
-                  </Text>
-
-                  {/* Wills */}
-                  <Text
-                    as={Link}
-                    to={"/all-services/wills-probate/wills"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Wills
-                  </Text>
-
-                  {/* Trusts */}
-                  <Text
-                    as={Link}
-                    to={"/all-services/wills-probate/trusts"}
-                    fontSize={{
-                      lg: "9px",
-                      xl: "10px",
-                      "2xl": "11px",
-                    }}
-                    fontWeight={400}
-                    className={styles.menuText}
-                    textAlign={"left"}
-                  >
-                    Trusts
-                  </Text>
-
-                  {/* Explore more */}
-                  <Link
-                    to={"/all-services/wills-probate"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      fontSize={{
-                        lg: "9px",
-                        xl: "10px",
-                        "2xl": "11px",
-                      }}
-                      fontWeight={700}
-                      className={styles.menuText}
-                      textAlign={"left"}
-                    >
-                      {/* ... */}
-                      Explore More
-                    </Text>
+                  <Text as={Link} to={"/all-services/wills-probate/probate"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Probate</Text>
+                  <Text as={Link} to={"/all-services/wills-probate/succession-planning"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Succession Planning</Text>
+                  <Text as={Link} to={"/all-services/wills-probate/wills"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Wills</Text>
+                  <Text as={Link} to={"/all-services/wills-probate/trusts"} fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={400} textAlign={"left"} className={styles.menuText}>Trusts</Text>
+                  <Link to={"/all-services/wills-probate"} style={{ textDecoration: "none" }}>
+                    <Text fontSize={{ lg: "12px", xl: "14px", "2xl": "16px" }} fontWeight={700} textAlign={"left"} className={styles.menuText}>Explore More</Text>
                   </Link>
                 </VStack>
               </HStack>
+
             </VStack>
           </Box>
         </Box>
