@@ -40,10 +40,10 @@ const BuildingContracts = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "300px",
+              lg: "330px",
+              xl: "360px",
+              "2xl": "370px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -84,6 +84,8 @@ const BuildingContracts = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                ml={4}
+                mr={5}
               >
                 Building contracts are crucial for the successful execution of
                 construction projects, defining the rights and obligations of
@@ -101,6 +103,9 @@ const BuildingContracts = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                 ml={4}
+                mr={5}
+                mt={6}
               >
                 Building contracts encompass a wide range of agreements, from
                 the initial stages of planning and design to the final stages of
@@ -119,6 +124,8 @@ const BuildingContracts = () => {
             justifyContent={"space-around"}
             alignItems={"center"}
             mb={"50px"}
+             ml={4}
+                mr={5}
           >
             {/* Our Services */}
             <Box
@@ -154,29 +161,29 @@ const BuildingContracts = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -201,7 +208,7 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={600}
+                    fontWeight={350}
                     fontFamily={"CeraRoundPro"}
                   >
                     Contract Drafting and Review
@@ -220,6 +227,8 @@ const BuildingContracts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={-6}
+                    lineHeight={1.7}
                   >
                     Our experienced solicitors will draft and review your
                     building contracts to ensure they are clear, comprehensive,
@@ -239,6 +248,8 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                             mt={-6}
+                    lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -268,7 +279,9 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={600}
+                             mt={-7}
+                    lineHeight={1.7}
+                    fontWeight={350}
                     fontFamily={"CeraRoundPro"}
                   >
                     Negotiation and Mediation
@@ -285,6 +298,8 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                     mt={-7}
+                    lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -310,6 +325,8 @@ const BuildingContracts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     mt={-7}
+                    lineHeight={1.7}
                   >
                     <List.Item>
                       <strong>Facilitating Negotiations</strong>: We assist in
@@ -336,8 +353,10 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={600}
+                    fontWeight={350}
                     fontFamily={"CeraRoundPro"}
+                     mt={-7}
+                    lineHeight={1.7}
                   >
                     Adjudication and Arbitration
                   </Text>
@@ -353,6 +372,8 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                     mt={-7}
+                    lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -375,6 +396,8 @@ const BuildingContracts = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                     mt={-7}
+                    lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
@@ -404,6 +427,8 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                     mt={-7}
+                    lineHeight={1.7}
                     fontWeight={600}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -422,6 +447,8 @@ const BuildingContracts = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                     mt={-7}
+                    lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
                     When a negotiated settlement cannot be reached, we are
@@ -443,6 +470,8 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                     mt={-7}
+                    lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -471,7 +500,9 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={600}
+                    fontWeight={350}
+                     mt={-7}
+                    lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
                     Enforcement of Judgments
@@ -489,6 +520,8 @@ const BuildingContracts = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                     mt={-7}
+                    lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
                     If a court judgment or adjudicator’s decision is obtained in
@@ -509,6 +542,8 @@ const BuildingContracts = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                     mt={-7}
+                    lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
@@ -561,29 +596,29 @@ const BuildingContracts = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Building Contract Disputes
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -609,6 +644,8 @@ const BuildingContracts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    letterSpacing={0.4}
+
                   >
                     If your business is involved in a building contract dispute
                     where an agreement has been breached, you may be able to
@@ -630,6 +667,8 @@ const BuildingContracts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={-7}
+                     letterSpacing={0.4}
                   >
                     In the event of a breach, it is vital to act quickly as time
                     limits for action are short. The recent introduction of
@@ -676,29 +715,29 @@ const BuildingContracts = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setApplicationState(!applicationState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How to Avoid a Building Contract Dispute
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -722,8 +761,11 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                     lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    
+
                   >
                     To avoid disagreements over contracts, it is important to
                     take advice before entering into a contract. Obtain
@@ -747,6 +789,9 @@ const BuildingContracts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     mt={-7}
+                     letterSpacing={0.4}
+                     lineHeight={1.7}
                   >
                     At Lumine Solicitors, we are dedicated to providing
                     comprehensive legal support for all your building contract
@@ -793,29 +838,29 @@ const BuildingContracts = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -841,6 +886,7 @@ const BuildingContracts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    letterSpacing={0.5}
                   >
                     At Lumine, we understand the intricacies of building
                     contracts under the updated UK laws. Our experienced
@@ -859,6 +905,8 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    letterSpacing={0.5}
+                    mt={-6}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -877,6 +925,8 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                     letterSpacing={0.5}
+                    mt={-6}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -897,6 +947,8 @@ const BuildingContracts = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                     letterSpacing={0.5}
+                    mt={-6}
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Comprehensive Support</strong>: From initial
@@ -916,6 +968,8 @@ const BuildingContracts = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                     letterSpacing={0.5}
+                    mt={-6}
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Updated Knowledge</strong>: We stay abreast of the
@@ -935,12 +989,21 @@ const BuildingContracts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     letterSpacing={0.5}
+                    mt={-6}
                   >
                     For assistance with building contracts, please do not
                     hesitate to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                       <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                     Let us help you navigate the complexities of construction
                     law and achieve the best possible resolution for your

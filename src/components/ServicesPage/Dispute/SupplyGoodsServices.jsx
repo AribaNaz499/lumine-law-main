@@ -42,10 +42,10 @@ const SupplyGoodsServices = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "290px",
+              lg: "320px",
+              xl: "350px",
+              "2xl": "360px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -62,8 +62,11 @@ const SupplyGoodsServices = () => {
               fontFamily={"CeraRoundPro"}
               width={"90%"}
               textAlign={"left"}
+              lineHeight={
+                1
+              }
             >
-              Contracts for the Supply of Goods and Services
+              Contracts for the Supply of Goods <br /> and Services
             </Text>
           </Box>
 
@@ -86,6 +89,10 @@ const SupplyGoodsServices = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                ml={4}
+                mr={4}
+                letterSpacing={0.1}
+                lineHeight={1.4}
               >
                 Disputes with suppliers can have a crippling effect on your
                 business, particularly where the goods or services they provide
@@ -112,6 +119,10 @@ const SupplyGoodsServices = () => {
               width={"90%"}
               justifyContent={"center"}
               alignItems={"center"}
+              ml={4}
+              mr={4}
+              letterSpacing={0.1}
+              lineHeight={1.4}
             >
               {/* Initial Button */}
               <HStack
@@ -138,7 +149,7 @@ const SupplyGoodsServices = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
@@ -186,6 +197,7 @@ const SupplyGoodsServices = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
                   >
                     Contracts for the supply of goods and services form the
                     backbone of commercial relationships. These contracts define
@@ -287,7 +299,10 @@ const SupplyGoodsServices = () => {
                   </Text>
 
                   <List.Root
-                    textAlign={"justify"}
+                    as="ul" // unordered list (dots ke liye)
+                    listStyle="disc" // Dots show karne ke liye
+                    ps="25px" // Padding zaroori hai warna bullets container ke piche chup jayenge
+                    textAlign="justify"
                     fontSize={{
                       xs: "12px",
                       sm: "12px",
@@ -296,44 +311,46 @@ const SupplyGoodsServices = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    variant={"ol"}
                     fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
+                    fontFamily="CeraRoundPro"
+                    display="flex"
+                    flexDirection="column"
+                    mt={-4}
+                    gap={3} // Items ke darmiyan gap ke liye
                   >
-                    <List.Item>
-                      <strong>Description of Goods/Services</strong>: Detailed
-                      specifications of the goods or services to be supplied,
-                      including quality standards, quantities, and delivery
-                      schedules.
+                    <List.Item _marker={{ color: "black" }}> {/* Bullets ka color change karne ke liye */}
+                      <strong>Description of Goods/Services</strong>: Detailed specifications of
+                      the goods or services to be supplied, including quality standards,
+                      quantities, and delivery schedules.
                     </List.Item>
-                    <List.Item>
-                      <strong>Price and Payment Terms</strong>: Clear terms
-                      regarding pricing, payment schedules, and any applicable
-                      taxes or additional costs.
+
+                    <List.Item _marker={{ color: "black" }}>
+                      <strong>Price and Payment Terms</strong>: Clear terms regarding pricing,
+                      payment schedules, and any applicable taxes or additional costs.
                     </List.Item>
-                    <List.Item>
-                      <strong>Delivery Terms</strong>: Conditions related to the
-                      delivery of goods or performance of services, including
-                      timelines, delivery locations, and responsibilities for
-                      transportation and insurance.
+
+                    <List.Item _marker={{ color: "black" }}>
+                      <strong>Delivery Terms</strong>: Conditions related to the delivery of goods
+                      or performance of services, including timelines, delivery locations, and
+                      responsibilities for transportation and insurance.
                     </List.Item>
-                    <List.Item>
-                      <strong>Warranties and Guarantees</strong>: Provisions for
-                      warranties and guarantees, specifying the conditions under
-                      which goods or services can be returned, repaired, or
-                      replaced.
+
+                    <List.Item _marker={{ color: "black" }}>
+                      <strong>Warranties and Guarantees</strong>: Provisions for warranties and
+                      guarantees, specifying the conditions under which goods or services can be
+                      returned, repaired, or replaced.
                     </List.Item>
-                    <List.Item>
-                      <strong>Liability and Indemnity</strong>: Clauses that
-                      outline the extent of each party’s liability and any
-                      indemnity arrangements to protect against potential
-                      losses.
+
+                    <List.Item _marker={{ color: "black" }}>
+                      <strong>Liability and Indemnity</strong>: Clauses that outline the extent of
+                      each party’s liability and any indemnity arrangements to protect against
+                      potential losses.
                     </List.Item>
-                    <List.Item>
-                      <strong>Dispute Resolution</strong>: Mechanisms for
-                      resolving disputes, such as mediation, arbitration, or
-                      litigation, to ensure that conflicts are handled
-                      efficiently and effectively.
+
+                    <List.Item _marker={{ color: "black" }}>
+                      <strong>Dispute Resolution</strong>: Mechanisms for resolving disputes, such
+                      as mediation, arbitration, or litigation, to ensure that conflicts are
+                      handled efficiently and effectively.
                     </List.Item>
                   </List.Root>
                 </VStack>
@@ -374,7 +391,7 @@ const SupplyGoodsServices = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setApplicationState(!applicationState)}
               >
                 <Text
@@ -389,14 +406,14 @@ const SupplyGoodsServices = () => {
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -404,7 +421,7 @@ const SupplyGoodsServices = () => {
                 <VStack
                   justifyContent={"center"}
                   alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
+                  gap={{ xs: "20px", m: "30px" }}
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
@@ -422,6 +439,7 @@ const SupplyGoodsServices = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                   
                   >
                     At Lumine, we offer a comprehensive range of services to
                     help you manage and resolve issues related to contracts for
@@ -438,6 +456,7 @@ const SupplyGoodsServices = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={-4}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -691,7 +710,14 @@ const SupplyGoodsServices = () => {
                     services, please do not hesitate to get in touch with Lumine
                     solicitors <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                     Let us help you navigate the complexities of construction
                     law and achieve the best possible resolution for your

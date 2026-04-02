@@ -38,10 +38,10 @@ const RecoveryRent = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "275px",
+              lg: "300px",
+              xl: "325px",
+              "2xl": "350px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -82,6 +82,8 @@ const RecoveryRent = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                ml={4}
+                mr={4}
               >
                 Effectively recovering rent arrears involves various legal
                 complexities that must be navigated carefully to ensure
@@ -131,7 +133,7 @@ const RecoveryRent = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
@@ -146,14 +148,14 @@ const RecoveryRent = () => {
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -179,6 +181,7 @@ const RecoveryRent = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    
                   >
                     At Lumine, we offer comprehensive services to assist you
                     with the recovery of rent arrears effectively:
@@ -194,6 +197,8 @@ const RecoveryRent = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={-7}
+                    lineHeight={1.9}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -215,6 +220,8 @@ const RecoveryRent = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={-7}
+                     lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Legal Proceedings</strong>: When negotiation fails,
@@ -234,7 +241,9 @@ const RecoveryRent = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={-7}
                     fontFamily={"CeraRoundPro"}
+                     lineHeight={1.9}
                   >
                     <strong>Enforcement of Court Orders</strong>: We assist in
                     enforcing court orders to secure payment of rent arrears.
@@ -255,6 +264,8 @@ const RecoveryRent = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     lineHeight={1.9}
+                    mt={-7}
                   >
                     <strong>Debt Respite Scheme (Breathing Space)</strong>: We
                     provide expert advice on the implications of the Debt
@@ -300,7 +311,7 @@ const RecoveryRent = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
@@ -315,14 +326,14 @@ const RecoveryRent = () => {
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors Help?
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -347,6 +358,7 @@ const RecoveryRent = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.7}
                   >
                     At Lumine, we understand the intricacies of recovering rent
                     arrears under the updated UK laws. Our experienced
@@ -366,6 +378,8 @@ const RecoveryRent = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={-7}
+                    lineHeight={1.7}
                   >
                     <strong>Expert Advice</strong>: We offer clear, concise, and
                     practical legal advice tailored to your specific
@@ -391,6 +405,8 @@ const RecoveryRent = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     mt={-7}
+                     lineHeight={1.7}
                   >
                     For assistance with the recovery of rent arrears, please do
                     not hesitate to contact Lumine Solicitors at{" "}
@@ -399,7 +415,14 @@ const RecoveryRent = () => {
                     property law and achieve the best possible resolution for
                     your situation.
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                     <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                   </Text>
                 </VStack>

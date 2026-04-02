@@ -38,10 +38,10 @@ const ClaimsDisrepair = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "275px",
+              lg: "300px",
+              xl: "325px",
+              "2xl": "350px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -76,12 +76,15 @@ const ClaimsDisrepair = () => {
               alignSelf={"center"}
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
+
             >
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                ml={3.5}
+                mr={3.5}
               >
                 Managing claims for disrepair involves various legal
                 complexities that must be navigated carefully to ensure
@@ -105,6 +108,8 @@ const ClaimsDisrepair = () => {
               width={"90%"}
               justifyContent={"center"}
               alignItems={"flex-start"}
+              ml={3.5}
+              mr={3.5}
             >
               {/* Initial Button */}
               <HStack
@@ -119,6 +124,7 @@ const ClaimsDisrepair = () => {
                   xl: "14px",
                   "2xl": "15px",
                 }}
+
                 alignItems={"center"}
                 py={{
                   xs: "4px",
@@ -128,32 +134,36 @@ const ClaimsDisrepair = () => {
                   xl: "9px",
                   "2xl": "10px",
                 }}
+                ml={3.5}
+                mr={3.5}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
+                  ml={3.5}
+                  mr={3.5}
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                 fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -166,6 +176,8 @@ const ClaimsDisrepair = () => {
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
                   textAlign={"justify"}
+                  ml={3.5}
+                  mr={3.5}
                 >
                   <Text
                     textAlign={"justify"}
@@ -177,7 +189,10 @@ const ClaimsDisrepair = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    ml={3.5}
+                    mr={3.5}
                     fontWeight={400}
+                    lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}
                   >
                     At Lumine, we offer comprehensive services to assist you
@@ -196,6 +211,9 @@ const ClaimsDisrepair = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={-7}
+                    ml={3}
+                    lineHeight={1.9}
                   >
                     <strong>Assessment and Documentation</strong>: Our
                     experienced solicitors conduct thorough assessments of
@@ -216,6 +234,9 @@ const ClaimsDisrepair = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={-7}
+                    ml={3}
+                    lineHeight={1.9}
                   >
                     <strong>Negotiation and Settlement</strong>: We employ
                     negotiation techniques to resolve disrepair claims amicably.
@@ -233,8 +254,11 @@ const ClaimsDisrepair = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={-7}
+                    ml={3}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.9}
                   >
                     <strong>Legal Proceedings</strong>: When negotiation fails,
                     we initiate legal proceedings to resolve disrepair claims.
@@ -252,8 +276,11 @@ const ClaimsDisrepair = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={-7}
+                    ml={3}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.9}
                   >
                     <strong>Compliance and Remediation</strong>: We provide
                     expert advice on compliance with relevant laws and
@@ -272,11 +299,13 @@ const ClaimsDisrepair = () => {
               color={"black"}
               width={"90%"}
               justifyContent={"center"}
-              alignItems={"center"}
+              alignItems={"flex-start"}
+              ml={3.5}
+              mr={3.5}
             >
               {/* Initial Button */}
               <HStack
-                borderY={"1px solid #adacac"}
+                borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{
@@ -287,6 +316,7 @@ const ClaimsDisrepair = () => {
                   xl: "14px",
                   "2xl": "15px",
                 }}
+
                 alignItems={"center"}
                 py={{
                   xs: "4px",
@@ -296,32 +326,36 @@ const ClaimsDisrepair = () => {
                   xl: "9px",
                   "2xl": "10px",
                 }}
+                ml={3.5}
+                mr={3.5}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
+                  ml={3.5}
+                  mr={3.5}
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
-                  How can Lumine Solicitors Help?
+                  How can Lumine Solicitors help?
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -333,6 +367,9 @@ const ClaimsDisrepair = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  textAlign={"justify"}
+                  ml={3.5}
+                  mr={3.5}
                 >
                   <Text
                     textAlign={"justify"}
@@ -344,14 +381,37 @@ const ClaimsDisrepair = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    ml={3.5}
+                    mr={3.5}
                     fontWeight={400}
+                    lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}
                   >
-                    At Lumine, we understand the intricacies of managing claims
-                    for disrepair under the updated UK laws. Our experienced
-                    solicitors are dedicated to providing personalized and
-                    effective solutions to your disrepair-related issues. Here's
-                    how we can help:
+                    At Lumine, we understand the intricacies of managing claims for disrepair under the updated UK laws. Our experienced solicitors are dedicated to providing personalized and effective solutions to your disrepair-related issues. Here's how we can help:
+
+
+                  </Text>
+
+                  <Text
+                    textAlign={"justify"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                    mt={-7}
+                    ml={3}
+                    lineHeight={1.9}
+                  >
+                    <strong>Expert Advice:</strong>: We offer clear, concise, and practical legal advice tailored to your specific circumstances.
+                    <strong>Strategic Approach:</strong> Our team develops customized strategies to manage disrepair claims, maximizing your chances of a successful outcome.
+                    <strong>Comprehensive Support: </strong>From initial consultations to court representation, we provide comprehensive support throughout the disrepair claim process
+                    <strong>Updated Knowledge: </strong>  We stay abreast of the latest legal developments to ensure that our advice and strategies are always current and effective.
                   </Text>
                   <Text
                     textAlign={"justify"}
@@ -365,42 +425,23 @@ const ClaimsDisrepair = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={-7}
+                    ml={3}
+                    lineHeight={1.9}
                   >
-                    <strong>Expert Advice</strong>: We offer clear, concise, and
-                    practical legal advice tailored to your specific
-                    circumstances. <strong>Strategic Approach</strong>: Our team
-                    develops customized strategies to manage disrepair claims,
-                    maximizing your chances of a successful outcome.
-                    <strong>Comprehensive Support</strong>: From initial
-                    consultations to court representation, we provide
-                    comprehensive support throughout the disrepair claim
-                    process. <strong>Updated Knowledge</strong>: We stay abreast
-                    of the latest legal developments to ensure that our advice
-                    and strategies are always current and effective.
-                  </Text>
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    For assistance with claims for disrepair, please do not
-                    hesitate to contact Lumine Solicitors at{" "}
-                    <strong>020 3950 2246</strong> or reach out to us through
-                    our website. Let us help you navigate the complexities of
-                    property law and achieve the best possible resolution for
-                    your situation.
-                    <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                   For assistance with claims for disrepair, please do not hesitate to contact Lumine Solicitors at <strong>020 3950 2246</strong>  or reach out to us through our website. Let us help you navigate the complexities of property law and achieve the best possible resolution for your situation.
+                   <strong>
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                   </Text>
+
                 </VStack>
               )}
             </Box>

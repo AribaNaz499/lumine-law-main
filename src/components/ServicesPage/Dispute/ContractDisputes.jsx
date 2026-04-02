@@ -41,10 +41,10 @@ const ContractDisputes = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "290px",
+              lg: "320px",
+              xl: "350px",
+              "2xl": "360px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -85,6 +85,8 @@ const ContractDisputes = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                ml={6}
+                mr={6}
               >
                 Contract disputes can arise in both personal and business
                 contexts, often leading to significant financial and operational
@@ -103,6 +105,9 @@ const ContractDisputes = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                ml={6}
+                mr={6}
+                mt={6}
               >
                 At Lumine Solicitors, we recognize the profound impact that
                 contract disputes can have on your business operations and
@@ -125,6 +130,8 @@ const ContractDisputes = () => {
             justifyContent={"space-around"}
             alignItems={"center"}
             mb={"50px"}
+            ml={6}
+            mr={6}
           >
             {/* Contract Review and Advice */}
             <Box
@@ -160,7 +167,7 @@ const ContractDisputes = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
@@ -175,14 +182,14 @@ const ContractDisputes = () => {
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Contract Review and Advice
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -206,8 +213,10 @@ const ContractDisputes = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={400}
+                    fontWeight={350}
                     fontFamily={"CeraRoundPro"}
+                    ml={2}
+                    lineHeight={1.8}
                   >
                     Our team of experienced solicitors will thoroughly review
                     your contracts and provide clear, practical advice on your
@@ -226,8 +235,10 @@ const ContractDisputes = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={400}
+                    fontWeight={350}
                     fontFamily={"CeraRoundPro"}
+                    mt={-6}
+                    lineHeight={1.8}
                   >
                     <List.Item>
                       <strong>Contract Analysis</strong>: Detailed examination
@@ -284,7 +295,7 @@ const ContractDisputes = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
@@ -299,14 +310,14 @@ const ContractDisputes = () => {
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Alternative Dispute Resolution (ADR)
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -330,8 +341,10 @@ const ContractDisputes = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={400}
+                    fontWeight={350}
                     fontFamily={"CeraRoundPro"}
+                    ml={2}
+                    lineHeight={1.8}
                   >
                     We prioritize resolving disputes amicably whenever possible.
                     Our skilled negotiators will work to achieve a mutually
@@ -350,8 +363,11 @@ const ContractDisputes = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={400}
+                    fontWeight={350}
                     fontFamily={"CeraRoundPro"}
+                    ml={2}
+                    lineHeight={1.8}
+                    mt={-7}
                   >
                     <List.Item>
                       <strong>Confidentiality</strong>: Ensuring that sensitive
@@ -406,7 +422,7 @@ const ContractDisputes = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setApplicationState(!applicationState)}
               >
                 <Text
@@ -421,14 +437,14 @@ const ContractDisputes = () => {
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Litigation
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -473,8 +489,11 @@ const ContractDisputes = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={400}
+                    fontWeight={350}
                     fontFamily={"CeraRoundPro"}
+                    ml={2}
+                    lineHeight={1.8}
+                    mt={-7}
                   >
                     <List.Item>
                       <strong>Court Representation</strong>: Advocating on your
@@ -528,7 +547,7 @@ const ContractDisputes = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !screening && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={screening && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setScreening(!screening)}
               >
                 <Text
@@ -543,14 +562,14 @@ const ContractDisputes = () => {
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Enforcement of Judgements
                 </Text>
                 {!screening ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -574,8 +593,11 @@ const ContractDisputes = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={400}
+                    fontWeight={350}
                     fontFamily={"CeraRoundPro"}
+                    ml={2}
+                    lineHeight={1.8}
+
                   >
                     If a court judgment is obtained in your favor, we assist
                     with the enforcement process to ensure that you receive the
@@ -586,15 +608,19 @@ const ContractDisputes = () => {
                   <List.Root
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "13px",
+                      sm: "13px",
+                      md: "15px",
+                      lg: "15px",
+                      xl: "17px",
+                      "2xl": "19px",
                     }}
-                    fontWeight={400}
+                    fontWeight={350}
                     fontFamily={"CeraRoundPro"}
+                    ml={2}
+                    lineHeight={1.9}
+
+                    mt={-7}
                   >
                     <List.Item>
                       <strong>Execution of Judgments</strong>: Taking necessary
@@ -645,7 +671,7 @@ const ContractDisputes = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
@@ -660,14 +686,14 @@ const ContractDisputes = () => {
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -704,15 +730,19 @@ const ContractDisputes = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "13px",
+                      sm: "13px",
+                      md: "15px",
+                      lg: "15px",
+                      xl: "17px",
+                      "2xl": "19px",
                     }}
-                    fontWeight={400}
+                    fontWeight={350}
                     fontFamily={"CeraRoundPro"}
+                    ml={2}
+                    lineHeight={1.9}
+
+                    mt={-7}
                   >
                     <strong>Expert Advice</strong>: We offer clear, concise, and
                     practical legal advice tailored to your specific
@@ -722,15 +752,19 @@ const ContractDisputes = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "13px",
+                      sm: "13px",
+                      md: "15px",
+                      lg: "15px",
+                      xl: "17px",
+                      "2xl": "19px",
                     }}
-                    fontWeight={400}
+                    fontWeight={350}
                     fontFamily={"CeraRoundPro"}
+                    ml={2}
+                    lineHeight={1.9}
+
+                    mt={-7}
                   >
                     <strong>Strategic Approach</strong>: Our team develops
                     customized strategies to resolve contract disputes,
@@ -740,15 +774,19 @@ const ContractDisputes = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "13px",
+                      sm: "13px",
+                      md: "15px",
+                      lg: "15px",
+                      xl: "17px",
+                      "2xl": "19px",
                     }}
-                    fontWeight={400}
+                    fontWeight={350}
                     fontFamily={"CeraRoundPro"}
+                    ml={2}
+                    lineHeight={1.9}
+
+                    mt={-7}
                   >
                     <strong>Comprehensive Support</strong>: From initial
                     consultations to court representation, we provide
@@ -759,15 +797,19 @@ const ContractDisputes = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "13px",
+                      sm: "13px",
+                      md: "15px",
+                      lg: "15px",
+                      xl: "17px",
+                      "2xl": "19px",
                     }}
-                    fontWeight={400}
+                    fontWeight={350}
                     fontFamily={"CeraRoundPro"}
+                    ml={2}
+                    lineHeight={1.9}
+
+                    mt={-7}
                   >
                     <strong>Updated Knowledge</strong>: We stay abreast of the
                     latest legal developments to ensure that our advice and
@@ -777,21 +819,32 @@ const ContractDisputes = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "13px",
+                      sm: "13px",
+                      md: "15px",
+                      lg: "15px",
+                      xl: "17px",
+                      "2xl": "19px",
                     }}
-                    fontWeight={400}
+                    fontWeight={350}
                     fontFamily={"CeraRoundPro"}
+                    ml={2}
+                    lineHeight={1.9}
+
+                    mt={-7}
                   >
                     For assistance with contract disputes, please do not
                     hesitate to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                     Let us help you navigate the complexities of construction
                     law and achieve the best possible resolution for your

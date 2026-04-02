@@ -35,23 +35,23 @@ const PossessionClaims = () => {
 
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
           {/* Banner */}
-          <Box
-            width={"100%"}
-            height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
-            }}
-            bgImage={`url(${BannerImg})`}
-            bgSize={"cover"}
-            bgPos={"center"}
-            bgRepeat={"no-repeat"}
-            display={"flex"}
-            justifyContent={"center"}
-            alignItems={"center"}
-            _loading={"eager"}
-          >
+             <Box
+                     width={"100%"}
+                     height={{
+                       xs: "275px",
+                       lg: "300px",
+                       xl: "325px",
+                       "2xl": "350px",
+                     }}
+                     bgImage={`url(${BannerImg})`}
+                     bgSize={"cover"}
+                     bgPos={"center"}
+                     bgRepeat={"no-repeat"}
+                     display={"flex"}
+                     justifyContent={"center"}
+                     alignItems={"center"}
+                     _loading={"eager"}
+                   >
             <Text
               fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
               fontWeight={600}
@@ -82,6 +82,7 @@ const PossessionClaims = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                letterSpacing={0.1}
               >
                 Handling possession claims requires navigating various legal
                 complexities to ensure compliance and achieve a fair resolution.
@@ -131,29 +132,29 @@ const PossessionClaims = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
                 )}
               </HStack>
 
@@ -187,13 +188,15 @@ const PossessionClaims = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "13px",
+                      sm: "13px",
+                      md: "15px",
+                      lg: "15px",
+                      xl: "17px",
+                      "2xl": "19px",
                     }}
+                    mt={-6}
+                    lineHeight={1.5}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -217,6 +220,8 @@ const PossessionClaims = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={-6}
+                    lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -240,6 +245,8 @@ const PossessionClaims = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={-6}
+                    lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -288,29 +295,29 @@ const PossessionClaims = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                 fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors Help?
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -334,6 +341,8 @@ const PossessionClaims = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    
+                  lineHeight={1.6}
                     fontFamily={"CeraRoundPro"}
                   >
                     At Lumine, we understand the intricacies of possession
@@ -352,6 +361,8 @@ const PossessionClaims = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={-6}
+                  lineHeight={1.6}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -378,6 +389,8 @@ const PossessionClaims = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={-6}
+                  lineHeight={1.6}
                     fontFamily={"CeraRoundPro"}
                   >
                     For assistance with possession claims, please do not
@@ -387,7 +400,14 @@ const PossessionClaims = () => {
                     property law and achieve the best possible resolution for
                     your situation.
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                   </Text>
                 </VStack>
