@@ -76,6 +76,10 @@ const BuildingContracts = React.lazy(() => import("../components/ServicesPage/Di
 const ContractDisputes = React.lazy(() => import("../components/ServicesPage/Dispute/ContractDisputes"));
 const SupplyGoodsServices = React.lazy(() => import("../components/ServicesPage/Dispute/SupplyGoodsServices"));
 const DebtMatters = React.lazy(() => import("../components/ServicesPage/Dispute/DebtMatters"));
+const BuildingContractDisputes = React.lazy(() => import("../components/ServicesPage/Dispute/BuildingContractDisputes"));
+const BankruptcyMatters = React.lazy(() => import("../components/ServicesPage/Dispute/CorporatePersonalBankruptcty.jsx"));
+const DebtRecovery = React.lazy(() => import("../components/ServicesPage/Dispute/DisputeDebtRecovery"));
+
 
 // 🔹 Landlord & Tenant Sub-pages
 const ClaimsDisrepair = React.lazy(() => import("../components/ServicesPage/Landlord/ClaimsDisrepair"));
@@ -173,26 +177,25 @@ function App() {
             <Route path="/all-services/wills-probate" element={<SuspensePageTransition><Wills /></SuspensePageTransition>} />
 
             {/* 🔹 Immigration Sub Pages */}
-           {/* 🔹 Immigration Sub Pages */}
-<Route path="/all-services/immigration/reviews-appeals" element={<SuspensePageTransition><ReviewsAppeals /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/asylum" element={<SuspensePageTransition><Asylum /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/british-citizenship-application" element={<SuspensePageTransition><BritishCitizenshipApplication /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/cos" element={<SuspensePageTransition><CoS /></SuspensePageTransition>} /> {/* Changed from certificate-of-sponsorship to cos */}
-<Route path="/all-services/immigration/creative-worker" element={<SuspensePageTransition><CreativeWorker /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/discretionary-leave" element={<SuspensePageTransition><DiscretionaryLeave /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/entry-clearance" element={<SuspensePageTransition><EntryClearance /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/eu-settlement" element={<SuspensePageTransition><EuSettlement /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/bail-revocation" element={<SuspensePageTransition><BailRevocation /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/indefinite-leave" element={<SuspensePageTransition><IndefiniteLeave /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/innovator-founder" element={<SuspensePageTransition><InnovatorFounder /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/human-rights" element={<SuspensePageTransition><HumanRights /></SuspensePageTransition>} /> {/* Changed from human-rights-app to human-rights */}
-<Route path="/all-services/immigration/skilled-migrant" element={<SuspensePageTransition><SkilledMigrant /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/skilled-worker-visa" element={<SuspensePageTransition><SkilledWorkerVisa /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/spouse-visa" element={<SuspensePageTransition><SpouseVisa /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/student-visa" element={<SuspensePageTransition><StudentVisa /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/visa-categories" element={<SuspensePageTransition><VisaCategories /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/uk-visitor-visa" element={<SuspensePageTransition><UKVisitorVisa /></SuspensePageTransition>} />
-<Route path="/all-services/immigration/visa-extensions" element={<SuspensePageTransition><VisaExtensions /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/reviews-appeals" element={<SuspensePageTransition><ReviewsAppeals /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/asylum" element={<SuspensePageTransition><Asylum /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/british-citizenship-application" element={<SuspensePageTransition><BritishCitizenshipApplication /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/cos" element={<SuspensePageTransition><CoS /></SuspensePageTransition>} /> {/* Changed from certificate-of-sponsorship to cos */}
+            <Route path="/all-services/immigration/creative-worker" element={<SuspensePageTransition><CreativeWorker /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/discretionary-leave" element={<SuspensePageTransition><DiscretionaryLeave /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/entry-clearance" element={<SuspensePageTransition><EntryClearance /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/eu-settlement" element={<SuspensePageTransition><EuSettlement /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/bail-revocation" element={<SuspensePageTransition><BailRevocation /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/indefinite-leave" element={<SuspensePageTransition><IndefiniteLeave /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/innovator-founder" element={<SuspensePageTransition><InnovatorFounder /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/human-rights" element={<SuspensePageTransition><HumanRights /></SuspensePageTransition>} /> {/* Changed from human-rights-app to human-rights */}
+            <Route path="/all-services/immigration/skilled-migrant" element={<SuspensePageTransition><SkilledMigrant /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/skilled-worker-visa" element={<SuspensePageTransition><SkilledWorkerVisa /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/spouse-visa" element={<SuspensePageTransition><SpouseVisa /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/student-visa" element={<SuspensePageTransition><StudentVisa /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/visa-categories" element={<SuspensePageTransition><VisaCategories /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/uk-visitor-visa" element={<SuspensePageTransition><UKVisitorVisa /></SuspensePageTransition>} />
+            <Route path="/all-services/immigration/visa-extensions" element={<SuspensePageTransition><VisaExtensions /></SuspensePageTransition>} />
 
             {/* 🔹 Residential Sub Pages */}
             <Route path="/all-services/residential/freehold-sales" element={<SuspensePageTransition><FreeholdSales /></SuspensePageTransition>} />
@@ -223,6 +226,9 @@ function App() {
             <Route path="/all-services/dispute-resolution/contract-disputes" element={<SuspensePageTransition><ContractDisputes /></SuspensePageTransition>} />
             <Route path="/all-services/dispute-resolution/supply-goods-services" element={<SuspensePageTransition><SupplyGoodsServices /></SuspensePageTransition>} />
             <Route path="/all-services/dispute-resolution/debt-matters" element={<SuspensePageTransition><DebtMatters /></SuspensePageTransition>} />
+            <Route path="/all-services/dispute-resolution/building-contract-disputes" element={<SuspensePageTransition><BuildingContractDisputes /></SuspensePageTransition>} />
+            <Route path="/all-services/dispute-resolution/bankruptcy-matters" element={<SuspensePageTransition><BankruptcyMatters /></SuspensePageTransition>} />
+            <Route path="/all-services/dispute-resolution/debt-recovery" element={<SuspensePageTransition><DebtRecovery /></SuspensePageTransition>} />
 
             {/* 🔹 Landlord & Tenant Sub Pages */}
             <Route path="/all-services/landlord-tenant/claims-disrepair" element={<SuspensePageTransition><ClaimsDisrepair /></SuspensePageTransition>} />

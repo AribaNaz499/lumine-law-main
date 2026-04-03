@@ -155,23 +155,23 @@ const SupplyGoodsServices = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   The Importance of Supplier Contracts
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -245,29 +245,29 @@ const SupplyGoodsServices = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Key Elements of Supplier Contracts
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -397,12 +397,12 @@ const SupplyGoodsServices = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
@@ -439,7 +439,8 @@ const SupplyGoodsServices = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                   
+                    lineHeight={1.9}
+
                   >
                     At Lumine, we offer a comprehensive range of services to
                     help you manage and resolve issues related to contracts for
@@ -459,6 +460,7 @@ const SupplyGoodsServices = () => {
                     mt={-4}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.9}
                   >
                     <strong>Contract Drafting and Review</strong>: Our
                     experienced solicitors will draft and review contracts to
@@ -479,6 +481,8 @@ const SupplyGoodsServices = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={-4}
+                    lineHeight={1.9}
                   >
                     <strong>Negotiation and Mediation</strong>: We prioritize
                     resolving disputes amicably whenever possible. Our skilled
@@ -499,6 +503,8 @@ const SupplyGoodsServices = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={-4}
+                    lineHeight={1.9}
                   >
                     <strong>Litigation and Dispute Resolution</strong>: When a
                     negotiated settlement cannot be reached, we are prepared to
@@ -519,7 +525,9 @@ const SupplyGoodsServices = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={-4}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.9}
                   >
                     <strong>Enforcement of Contracts</strong>: If a court
                     judgment or arbitrator’s decision is obtained in your favor,
@@ -564,29 +572,29 @@ const SupplyGoodsServices = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -612,6 +620,7 @@ const SupplyGoodsServices = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.7}
                   >
                     At Lumine, we understand the intricacies of contracts for
                     the supply of goods and services under the updated UK laws.
@@ -632,6 +641,8 @@ const SupplyGoodsServices = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={-5}
+                    lineHeight={1.7}
                   >
                     <strong>Expert Advice</strong>: We offer clear, concise, and
                     practical legal advice tailored to your specific
@@ -650,6 +661,8 @@ const SupplyGoodsServices = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={-5}
+                    lineHeight={1.7}
                   >
                     <strong>Strategic Approach</strong>: Our team develops
                     customized strategies to manage and resolve contract
@@ -668,6 +681,8 @@ const SupplyGoodsServices = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={-5}
+                    lineHeight={1.7}
                   >
                     <strong>Comprehensive Support</strong>: From initial
                     consultations to court representation, we provide
@@ -686,6 +701,8 @@ const SupplyGoodsServices = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={-5}
+                    lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Updated Knowledge</strong>: We stay abreast of the
@@ -704,6 +721,8 @@ const SupplyGoodsServices = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={-5}
+                    lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}
                   >
                     For assistance with contracts for the supply of goods and

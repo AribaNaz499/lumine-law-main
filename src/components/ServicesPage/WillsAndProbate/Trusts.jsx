@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/wills-probate.webp";
+import BannerImg from "../../../assets/services/main/wills-probate/banner.jpg";
 
 const Trusts = () => {
   const [spouseState, setSpouseState] = useState(false);
@@ -41,10 +41,10 @@ const Trusts = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "295px",
+              lg: "320px",
+              xl: "345px",
+              "2xl": "370px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -56,10 +56,12 @@ const Trusts = () => {
             _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
-              fontWeight={600}
+              fontSize={{ xs: "32px", lg: "42px", xl: "46px", "2xl": "56px" }}
+              fontWeight={700}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
+              maxWidth={"1400px"}
+              mx={"auto"}
               textAlign={"left"}
             >
               Trusts
@@ -76,14 +78,15 @@ const Trusts = () => {
             {/* Heading */}
             <Box
               width={"90%"}
-              alignSelf={"center"}
+              maxWidth={"1400px"}
+              mx={"auto"}
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11.5px", lg: "13.5px", xl: "15.5px", "2xl": "17.5px" }}
                 textAlign={"justify"}
               >
                 Trusts are a form of wealth management. This includes property
@@ -96,8 +99,9 @@ const Trusts = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+              fontSize={{ xs: "11.5px", lg: "13.5px", xl: "15.5px", "2xl": "17.5px" }}
                 textAlign={"justify"}
+                mt={4}
               >
                 Our solicitors will work with you in accordance with your needs
                 and offer you advice on the drafting, creation, and
@@ -113,6 +117,7 @@ const Trusts = () => {
             justifyContent={"space-around"}
             alignItems={"center"}
             mb={"50px"}
+            width={"100%"}
           >
             {/* Administering Trusts */}
             <Box
@@ -120,6 +125,8 @@ const Trusts = () => {
               flexDir={"column"}
               color={"black"}
               width={"90%"}
+              maxWidth={"1400px"}
+              mx={"auto"}
               justifyContent={"center"}
               alignItems={"flex-start"}
             >
@@ -148,29 +155,29 @@ const Trusts = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Administering Trusts
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -183,6 +190,7 @@ const Trusts = () => {
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
                   textAlign={"justify"}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"justify"}
@@ -194,6 +202,7 @@ const Trusts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                      lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -214,7 +223,9 @@ const Trusts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    lineHeight={1.7}
                     fontWeight={400}
+                    mt={-7}
                     fontFamily={"CeraRoundPro"}
                   >
                     We aim to maximise benefits for beneficiaries while ensuring
@@ -233,7 +244,9 @@ const Trusts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                      lineHeight={1.7}
                     fontWeight={400}
+                    mt={-7}
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
@@ -261,6 +274,8 @@ const Trusts = () => {
               flexDir={"column"}
               color={"black"}
               width={"90%"}
+              maxWidth={"1400px"}
+              mx={"auto"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -289,7 +304,7 @@ const Trusts = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
@@ -304,14 +319,14 @@ const Trusts = () => {
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Will Trusts
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -337,6 +352,7 @@ const Trusts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.7}
                   >
                     A will trust offers a way for your assets to be safeguarded
                     while providing for your loved ones' future. This can be
@@ -355,6 +371,7 @@ const Trusts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={-7}
                   >
                     In essence, will trusts provide:
                   </Text>
@@ -369,11 +386,14 @@ const Trusts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    color={"black"}
+                    mt={-7}
+                    lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    <List.Item>A flexible approach</List.Item>
-                    <List.Item>
+                    <List.Item  color={"black"}>A flexible approach</List.Item>
+                    <List.Item  color={"black"}>
                       Providing benefits to individuals in unforeseen ways
                       during will drafting
                     </List.Item>
@@ -392,6 +412,9 @@ const Trusts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                      mt={-7}
+                    lineHeight={1.7}
+                    
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -409,6 +432,8 @@ const Trusts = () => {
               flexDir={"column"}
               color={"black"}
               width={"90%"}
+              maxWidth={"1400px"}
+              mx={"auto"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -437,29 +462,29 @@ const Trusts = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
+                backgroundColor={"black"}
                 onClick={() => setApplicationState(!applicationState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                   fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Discretionary and Family Trusts
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -471,6 +496,7 @@ const Trusts = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"justify"}
@@ -484,6 +510,7 @@ const Trusts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
                   >
                     A discretionary trust, often referred to as a family trust
                     or trust fund, is a legal arrangement in which an individual
@@ -505,6 +532,8 @@ const Trusts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={-7}
+                    lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -526,6 +555,8 @@ const Trusts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
+                    mt={-7}
                   >
                     With our expertise in trust creation and administration, our
                     services include:
@@ -541,6 +572,8 @@ const Trusts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    lineHeight={1.8}
+                    mt={-7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -567,6 +600,8 @@ const Trusts = () => {
               flexDir={"column"}
               color={"black"}
               width={"90%"}
+              maxWidth={"1400px"}
+              mx={"auto"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -595,29 +630,29 @@ const Trusts = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                 fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Personal Injury Trusts
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -629,6 +664,7 @@ const Trusts = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"justify"}
@@ -642,6 +678,7 @@ const Trusts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.7}
                   >
                     A personal injury trust allows individuals who have obtained
                     compensation from a successful personal injury claim to
@@ -662,6 +699,8 @@ const Trusts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.7}
+                    mt={-7}
                   >
                     The benefits of a personal injury trust include:
                   </Text>
@@ -676,6 +715,8 @@ const Trusts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    lineHeight={1.8}
+                    mt={-7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -693,6 +734,8 @@ const Trusts = () => {
               flexDir={"column"}
               color={"black"}
               width={"90%"}
+              maxWidth={"1400px"}
+              mx={"auto"}
               justifyContent={"center"}
               alignItems={"center"}
             >
@@ -721,29 +764,29 @@ const Trusts = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors Help?
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -755,6 +798,7 @@ const Trusts = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"justify"}
@@ -768,12 +812,19 @@ const Trusts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.7}
                   >
                     If you have any further queries or are interested in our
                     trusts services please do not hesitate to get in touch with
                     Lumine solicitors <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                       <Link
+                        to={"/contact"}
+                        style={{ color: "#efdc6b" }}
+                        onMouseLeave={(e) => (e.target.style.color = "#efdc6b")}
+                      >
+                        Contact Us HERE
+                      </Link>
                     </strong>
                   </Text>
                 </VStack>
