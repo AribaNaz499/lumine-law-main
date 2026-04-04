@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/wills-probate.webp";
+import BannerImg from "../../../assets/services/main/wills-probate/banner.jpg";
 
 const EstatePlanning = () => {
   const [spouseState, setSpouseState] = useState(false);
@@ -38,10 +38,10 @@ const EstatePlanning = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "295px",
+              lg: "320px",
+              xl: "345px",
+              "2xl": "370px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -53,8 +53,8 @@ const EstatePlanning = () => {
             _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
-              fontWeight={600}
+              fontSize={{ xs: "38px", lg: "48px", xl: "50px", "2xl": "60px" }}
+              fontWeight={700}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
               textAlign={"left"}
@@ -82,6 +82,7 @@ const EstatePlanning = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                lineHeight={1.7}
               >
                 Estate planning involves using various legal strategies to
                 manage your financial matters, with a focus on tax efficiency.
@@ -133,29 +134,29 @@ const EstatePlanning = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Services
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -195,64 +196,23 @@ const EstatePlanning = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={600}
+                    mt={{ lg: -6 }}
+                    fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    textDecor={"underline"}
                   >
-                    <List.Item
-                      as={Link}
-                      to={"/lumine-law/all-services/wills-probate/wills"}
-                      _hover={{
-                        color: "#beab7c",
-                        transition: "0.3s color ease",
-                      }}
-                    >
+                    <List.Item>
                       Wills
                     </List.Item>
-                    <List.Item
-                      as={Link}
-                      to={"/lumine-law/all-services/wills-probate/trusts"}
-                      _hover={{
-                        color: "#beab7c",
-                        transition: "0.3s color ease",
-                      }}
-                    >
+                    <List.Item>
                       Trusts
                     </List.Item>
-                    <List.Item
-                      as={Link}
-                      to={
-                        "/lumine-law/all-services/wills-probate/power-attorney"
-                      }
-                      _hover={{
-                        color: "#beab7c",
-                        transition: "0.3s color ease",
-                      }}
-                    >
+                    <List.Item>
                       Power of Attorney
                     </List.Item>
-                    <List.Item
-                      as={Link}
-                      to={
-                        "/lumine-law/all-services/wills-probate/inheritance-tax-planning"
-                      }
-                      _hover={{
-                        color: "#beab7c",
-                        transition: "0.3s color ease",
-                      }}
-                    >
+                    <List.Item >
                       Inheritance Tax Planning
                     </List.Item>
-                    <List.Item
-                      as={Link}
-                      to={
-                        "/lumine-law/all-services/wills-probate/private-wealth-management"
-                      }
-                      _hover={{
-                        color: "#beab7c",
-                        transition: "0.3s color ease",
-                      }}
-                    >
+                    <List.Item>
                       Wealth Management
                     </List.Item>
                   </List.Root>
@@ -267,8 +227,10 @@ const EstatePlanning = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={-5}
                   >
                     Our team of specialised solicitors, experienced in estate
                     and tax planning, is available to provide expert advice and
@@ -312,29 +274,29 @@ const EstatePlanning = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors Help?
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -358,6 +320,7 @@ const EstatePlanning = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mr={{ lg: 20 }}
                     fontFamily={"CeraRoundPro"}
                   >
                     If you have any further queries or are interested in our
@@ -365,7 +328,13 @@ const EstatePlanning = () => {
                     touch with Lumine solicitors <strong>020 3950 2246</strong>{" "}
                     or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#efdc6b" }}
+                        onMouseLeave={(e) => (e.target.style.color = "#efdc6b")}
+                      >
+                        Contact Us HERE
+                      </Link>
                     </strong>
                   </Text>
                 </VStack>

@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/wills-probate.webp";
+import BannerImg from "../../../assets/services/main/wills-probate/banner.jpg";
 
 const PowerOfAttorney = () => {
   const [decisionState, setDecisionState] = useState(false);
@@ -37,10 +37,10 @@ const PowerOfAttorney = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "295px",
+              lg: "320px",
+              xl: "345px",
+              "2xl": "370px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -52,13 +52,14 @@ const PowerOfAttorney = () => {
             _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
-              fontWeight={600}
+              fontSize={{ xs: "38px", lg: "48px", xl: "50px", "2xl": "60px" }}
+              fontWeight={700}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
               textAlign={"left"}
             >
               Power of Attorney
+
             </Text>
           </Box>
 
@@ -132,29 +133,29 @@ const PowerOfAttorney = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors Help?
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -177,6 +178,7 @@ const PowerOfAttorney = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    ml={{ lg: -36 }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -184,7 +186,13 @@ const PowerOfAttorney = () => {
                     attorney, please feel free to contact Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#efdc6b" }}
+                        onMouseLeave={(e) => (e.target.style.color = "#efdc6b")}
+                      >
+                        Contact Us HERE
+                      </Link>
                     </strong>
                   </Text>
                 </VStack>

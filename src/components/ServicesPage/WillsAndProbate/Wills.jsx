@@ -648,7 +648,7 @@ const Wills = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    mr={20}
+                    mr={{lg:20}}
                   >
                     If you have any further queries or are interested in our
                     will services please do not hesitate to get in touch with

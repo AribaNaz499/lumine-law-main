@@ -97,7 +97,10 @@ const Probate = React.lazy(() => import("../components/ServicesPage/WillsAndProb
 const SuccessionPlanning = React.lazy(() => import("../components/ServicesPage/WillsAndProbate/SuccessionPlanning"));
 const WillsPage = React.lazy(() => import("../components/ServicesPage/WillsAndProbate/Wills"));
 const Trusts = React.lazy(() => import("../components/ServicesPage/WillsAndProbate/Trusts"));
-
+const EstatePlanning = React.lazy(() => import("../components/ServicesPage/WillsAndProbate/EstatePlanning"));
+const InheritanceTaxPlanning = React.lazy(() => import("../components/ServicesPage/WillsAndProbate/InheritanceTaxPlanning"));
+const PowerAttorney = React.lazy(() => import("../components/ServicesPage/WillsAndProbate/PowerOfAttorney"));
+const PrivateWealthManagement = React.lazy(() => import("../components/ServicesPage/WillsAndProbate/WealthManagement"));
 // 🔹 Price Pages
 const DebtRecoveryPrices = React.lazy(() => import("../components/Prices/DebtRecovery"));
 const ImmigrationPrices = React.lazy(() => import("../components/Prices/ImmigrationPrices"));
@@ -246,7 +249,11 @@ function App() {
             <Route path="/all-services/wills-probate/succession-planning" element={<SuspensePageTransition><SuccessionPlanning /></SuspensePageTransition>} />
             <Route path="/all-services/wills-probate/wills" element={<SuspensePageTransition><WillsPage /></SuspensePageTransition>} />
             <Route path="/all-services/wills-probate/trusts" element={<SuspensePageTransition><Trusts /></SuspensePageTransition>} />
-          </Routes>
+            <Route path="/all-services/wills-probate/estate-planning" element={<SuspensePageTransition><EstatePlanning /></SuspensePageTransition>} />
+            <Route path="/all-services/wills-probate/inheritance-tax-planning" element={<SuspensePageTransition><InheritanceTaxPlanning /></SuspensePageTransition>} />
+            <Route path="/all-services/wills-probate/power-attorney" element={<SuspensePageTransition><PowerAttorney /></SuspensePageTransition>} />
+            <Route path="/all-services/wills-probate/private-wealth-management"
+              element={<SuspensePageTransition><PrivateWealthManagement /></SuspensePageTransition>} />          </Routes>
         </Suspense>
       </BrowserRouter>
     </>
