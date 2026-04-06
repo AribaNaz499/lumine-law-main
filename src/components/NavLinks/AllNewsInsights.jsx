@@ -62,7 +62,7 @@ const allItems = [
 const Card = ({ item }) => (
   <Flex
     as={Link}
-    to="/lumine-law/article-page"
+    to="/article-page"
     direction="column"
     width="100%"
     height="100%"
@@ -201,7 +201,7 @@ const AllNewsInsights = () => {
         >
           <Button
             as={Link}
-            to="/lumine-law/news"
+            to="/news"
             width={{ base: "26%", sm: "24%", md: "14%", lg: "12%" }}
             backgroundColor="black"
             color="white"
@@ -224,7 +224,7 @@ const AllNewsInsights = () => {
 
           <Button
             as={Link}
-            to="/lumine-law/insights"
+            to="/insights"
             width={{ base: "26%", sm: "24%", md: "14%", lg: "12%" }}
             backgroundColor="black"
             color="white"
