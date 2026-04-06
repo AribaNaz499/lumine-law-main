@@ -210,7 +210,7 @@ const Insights = () => {
             {/* Main Article */}
             <Box
               as={Link}
-              to={"/lumine-law/article-page"}
+              to={"/article-page"}
               width={"100%"}
               height={{
                 xs: "200px",
