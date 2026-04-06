@@ -213,7 +213,7 @@ const Wills = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mt={-6}
+                    mt={{lg:"-6" , xs:"-3"}}
                     lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -337,7 +337,8 @@ const Wills = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mt={-7}
+                                        mt={{lg:"-7" , xs:"-4"}}
+
                     lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -457,7 +458,7 @@ const Wills = () => {
                     fontWeight={400}
                     ml={3}
                     lineHeight={1.8}
-                    mt={-7}
+                                        mt={{lg:"-7" , xs:"-4"}}
                     fontFamily={"CeraRoundPro"}
                   >
                     Whether you opt for a codicil or write a new will depends on

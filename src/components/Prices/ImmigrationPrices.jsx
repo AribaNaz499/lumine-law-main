@@ -10,6 +10,7 @@ import {
   GridItem,
   Image,
   Flex,
+  Heading
 } from "@chakra-ui/react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
@@ -21,7 +22,7 @@ import { Link } from "react-router-dom";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import ImmigrationImg from "../../assets/pricing/property-prices.webp";
 import ResidentialImg from "../../assets/pricing/debt-recovery.webp";
-import BannerImg from "../../assets/pricing/immigration.webp";
+import BannerImg from "../../assets/pricing/immigration.jpg";
 import { Helmet } from "react-helmet";
 import UKWorkVisa from "./Immigration/UKWorkVisa";
 import TimeFrameSection from "./Immigration/TimeFrameSection";
@@ -34,7 +35,7 @@ import ImmiApps from "./Immigration/ImmiApps";
 import AppealAdmin from "./Immigration/AppealAdmin";
 import AllServiceLinks from "../NavLinks/AllServiceLinks";
 import AllNewsInsights from "../NavLinks/AllNewsInsights";
-
+import AllPrices from "../NavLinks/AllPrices";
 const ImmigrationPrices = () => {
   const [purchaseState, setPurchaseState] = useState(false);
   const [disbursementsState, setDisbursementsState] = useState(false);
@@ -73,12 +74,12 @@ const ImmigrationPrices = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "200px",
-              lg: "250px",
-              xl: "300px",
-              "2xl": "350px",
+              xs: "250px",
+              lg: "300px",
+              xl: "350px",
+              "2xl": "400px",
             }}
-            bgImage={`url(${BannerImg})`}
+            bgImage={`linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${BannerImg})`}
             bgSize={"cover"}
             bgPos={"center"}
             bgRepeat={"no-repeat"}
@@ -88,8 +89,8 @@ const ImmigrationPrices = () => {
             _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
-              fontWeight={600}
+              fontSize={{ xs: "32px", lg: "42px", xl: "48px", "2xl": "56px" }}
+              fontWeight={400}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
               textAlign={"left"}
@@ -112,14 +113,60 @@ const ImmigrationPrices = () => {
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                color={"#bf9b30"}
+                fontSize={{ xs: "12px", lg: "20px", xl: "24px", "2xl": "34px" }}
+                textAlign={"left"}
+                ml={{ lg: "2" }}
+                mt={{ lg: "-3" }}
+
+              >
+                Our fees in relation to different categories of visas
+
+              </Heading>
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
+                mt={{ lg: "3" }}
+                ml={{ lg: "2" }}
+                lineHeight={1.8}
               >
-                A few lines on Immigration
+                Our exact fees will depend on the circumstances of your particular case. You will need to pay us extra legal fees in relation to any additional family members. We will determine our fees depending on the following circumstances:
               </Text>
+              <List.Root
+                textAlign={"justify"}
+                fontSize={{
+                  xs: "12px",
+                  sm: "12px",
+                  md: "14px",
+                  lg: "14px",
+                  xl: "16px",
+                  "2xl": "18px",
+                }}
+                fontWeight={400}
+                fontFamily={"CeraRoundPro"}
+                ml={{ lg: "3" }}
+              >
+                <List.Item>
+                  The type of application
+
+                </List.Item>
+                <List.Item>
+                  The amount of supporting evidence that we need to consider
+
+                </List.Item>
+                <List.Item>
+                  Which language(s) you speak
+                </List.Item>
+                <List.Item>
+                  Whether you are applying with dependants
+                </List.Item>
+              </List.Root>
             </Box>
           </Box>
 
@@ -129,196 +176,7 @@ const ImmigrationPrices = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* Our fees in relation to different categories of visas */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !purchaseState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={purchaseState && "black"}
-                onClick={() => setPurchaseState(!purchaseState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Our Fees in Relation to Different Categories of Visas
-                </Text>
-                {!purchaseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
 
-              {purchaseState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Our exact fees will depend on the circumstances of your
-                    particular case. You will need to pay us extra legal fees in
-                    relation to any additional family members. We will determine
-                    our fees depending on the following circumstances:
-                  </Text>
-
-                  <List.Root
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>The type of application</List.Item>
-                    <List.Item>
-                      The amount of supporting evidence that we need to consider
-                    </List.Item>
-                    <List.Item>Which language(s) you speak</List.Item>
-                    <List.Item>
-                      Whether you are applying with dependants
-                    </List.Item>
-                  </List.Root>
-
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={600}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Our fees include:
-                  </Text>
-
-                  <List.Root
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>
-                      Discussing the circumstances of your case in detail,
-                      confirming the most appropriate application for you to
-                      make and advising you on what other options may be
-                      available to you
-                    </List.Item>
-                    <List.Item>
-                      Giving you advice about the requirements of the
-                      Immigration Rules and whether you meet the criteria
-                    </List.Item>
-                    <List.Item>
-                      If you do not fulfil certain criteria, whether this can be
-                      overcome and how
-                    </List.Item>
-                    <List.Item>
-                      Considering the supporting evidence you have provided
-                    </List.Item>
-                    <List.Item>
-                      Where necessary, helping you obtain further evidence (such
-                      as medical records and bank statements), including
-                      considering statements of any witnesses
-                    </List.Item>
-                    <List.Item>
-                      Preparing your application and submitting it on your
-                      behalf
-                    </List.Item>
-                    <List.Item>
-                      Booking the super priority service depending on the visa
-                      application category
-                    </List.Item>
-                    <List.Item>
-                      Attendance at a Home Office interview. If the Home Office
-                      ask you to attend an interview, we will give you clear
-                      advice (and discuss the possibility of us attending with
-                      you) at the appropriate time
-                    </List.Item>
-                    <List.Item>
-                      Giving you advice about the outcome of the application and
-                      any further steps you need to take
-                    </List.Item>
-                    <List.Item>
-                      Considering the number of documents, whether they need to
-                      be translated, whether anything is missing and how long it
-                      will take for you or us to obtain the missing documents
-                    </List.Item>
-                  </List.Root>
-                </VStack>
-              )}
-            </Box>
 
             {/* Disbursements (not included in the pricing set out below) */}
             <DisbursementsSection
@@ -390,23 +248,23 @@ const ImmigrationPrices = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Long Residence Applications:
                 </Text>
                 {!residentialState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -524,23 +382,23 @@ const ImmigrationPrices = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Passport and Travel Document Applications:
                 </Text>
                 {!additionalState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -733,23 +591,23 @@ const ImmigrationPrices = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Turkish Citizens:
                 </Text>
                 {!nameState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -998,23 +856,23 @@ const ImmigrationPrices = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Judicial Review in the Upper Tribunal:
                 </Text>
                 {!judicialState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -1166,182 +1024,10 @@ const ImmigrationPrices = () => {
             </Box>
           </VStack>
 
-          {/* Other Prices */}
-          <Box mb="50px">
-            {/* Header */}
-            <Box
-              width={"100%"}
-              display={"flex"}
-              flexFlow={"column"}
-              color={"black"}
-            >
-              <Box width={"90%"} alignSelf={"center"}>
-                <Text
-                  color={"black"}
-                  fontSize={{
-                    xs: "20px",
-                    sm: "20px",
-                    md: "24px",
-                    lg: "26px",
-                    xl: "28px",
-                    "2xl": "30px",
-                  }}
-                  fontWeight={500}
-                  mb={{
-                    xs: "25px",
-                    sm: "30px",
-                    md: "35px",
-                    lg: "40px",
-                    xl: "45px",
-                    "2xl": "50px",
-                  }}
-                  textAlign={"left"}
-                >
-                  Other Prices
-                </Text>
-              </Box>
-            </Box>
-
-            {/* List */}
-            <Box
-              width={"100%"}
-              display={"flex"}
-              flexFlow={"column"}
-              alignItems={"center"}
-              color={"black"}
-            >
-              <Grid
-                width={"90%"}
-                templateColumns={{ xs: "repeat(2, 2fr)", lg: "repeat(2, 2fr)" }}
-                gap={{
-                  xs: "25px",
-                  sm: "30px",
-                  md: "35px",
-                  lg: "40px",
-                  xl: "45px",
-                  "2xl": "50px",
-                }}
-                justifyItems={"center"}
-                alignItems={"center"}
-              >
-                {/* Col 1 */}
-                <GridItem
-                  width={"100%"}
-                  height={{
-                    xs: "175px",
-                    sm: "175px",
-                    md: "175px",
-                    lg: "200px",
-                    xl: "225px",
-                    "2xl": "250px",
-                  }}
-                  padding={{ xs: "10px 10px", lg: "10px 20px" }}
-                  border={"1px solid black"}
-                  borderRadius={"8px"}
-                  cursor={"pointer"}
-                  _hover={{
-                    opacity: "0.8",
-                    transition: "all 0.5s ease",
-                  }}
-                  bgImage={`url(${ImmigrationImg})`}
-                  bgPos={"center"}
-                  bgSize={"cover"}
-                  bgRepeat={"no-repeat"}
-                  _loading={"lazy"}
-                >
-                  <Link
-                    to={"/lumine-law/prices/property-prices"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Box
-                      height={"100%"}
-                      display={"flex"}
-                      flexFlow={"column"}
-                      justifyContent={"space-between"}
-                      alignItems={"flex-start"}
-                      gap={"10px"}
-                    >
-                      <Text
-                        fontSize={{
-                          xs: "14px",
-                          sm: "14px",
-                          md: "16px",
-                          lg: "18px",
-                          xl: "20px",
-                          "2xl": "22px",
-                        }}
-                        fontFamily={"CeraRoundPro"}
-                        fontWeight={500}
-                        textAlign={"left"}
-                        color={"#ffffff"}
-                      >
-                        Property Prices
-                      </Text>
-                      <HiOutlineArrowLongRight color={"#ffffff"} size={"2em"} />
-                    </Box>
-                  </Link>
-                </GridItem>
-
-                {/* Col 2 */}
-                <GridItem
-                  width={"100%"}
-                  height={{
-                    xs: "175px",
-                    sm: "175px",
-                    md: "175px",
-                    lg: "200px",
-                    xl: "225px",
-                    "2xl": "250px",
-                  }}
-                  padding={{ xs: "10px 10px", lg: "10px 20px" }}
-                  border={"1px solid black"}
-                  borderRadius={"8px"}
-                  cursor={"pointer"}
-                  _hover={{
-                    opacity: "0.8",
-                    transition: "all 0.5s ease",
-                  }}
-                  bgImage={`url(${ResidentialImg})`}
-                  bgPos={"center"}
-                  bgSize={"cover"}
-                  bgRepeat={"no-repeat"}
-                  _loading={"lazy"}
-                >
-                  <Link
-                    to={"/lumine-law/prices/debt-recovery"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Box
-                      height={"100%"}
-                      display={"flex"}
-                      flexFlow={"column"}
-                      justifyContent={"space-between"}
-                      alignItems={"flex-start"}
-                      gap={"10px"}
-                    >
-                      <Text
-                        fontSize={{
-                          xs: "14px",
-                          sm: "14px",
-                          md: "16px",
-                          lg: "18px",
-                          xl: "20px",
-                          "2xl": "22px",
-                        }}
-                        fontFamily={"CeraRoundPro"}
-                        fontWeight={500}
-                        textAlign={"left"}
-                        color={"#ffffff"}
-                      >
-                        Debt Recovery Prices
-                      </Text>
-                      <HiOutlineArrowLongRight color={"#ffffff"} size={"2em"} />
-                    </Box>
-                  </Link>
-                </GridItem>
-              </Grid>
-            </Box>
-          </Box>
+       {/* All Prices */}
+          <Suspense fallback={<div>Loading All Prices ...</div>}>
+            <AllPrices />
+          </Suspense>
 
           {/* All Services */}
           <Suspense fallback={<div>Loading All Services ...</div>}>

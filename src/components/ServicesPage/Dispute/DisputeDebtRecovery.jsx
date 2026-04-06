@@ -38,10 +38,10 @@ const DisputeDebtRecovery = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "290px",
+              lg: "320px",
+              xl: "350px",
+              "2xl": "360px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -98,6 +98,7 @@ const DisputeDebtRecovery = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                mt={{ lg: "6" }}
               >
                 Effective debt recovery is essential for maintaining a healthy
                 cash flow and protecting your business reputation. Without a
@@ -150,29 +151,29 @@ const DisputeDebtRecovery = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -197,7 +198,7 @@ const DisputeDebtRecovery = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={600}
+                    fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
                     Debt Recovery
@@ -216,6 +217,8 @@ const DisputeDebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -6, xs: "-4" }}
+                    lineHeight={1.7}
                   >
                     Our team of skilled solicitors will guide you through the
                     debt recovery process, ensuring that you recover what is
@@ -236,6 +239,8 @@ const DisputeDebtRecovery = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={{ lg: -6, xs: "-4" }}
+                    lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -275,8 +280,10 @@ const DisputeDebtRecovery = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={600}
+                    fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -7, xs: "-5" }}
+                    lineHeight={1.7}
                   >
                     Debt Management
                   </Text>
@@ -294,6 +301,8 @@ const DisputeDebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -6, xs: "-5" }}
+                    lineHeight={1.7}
                   >
                     For individuals and businesses struggling with debt, we
                     provide expert advice on debt management. We work with you
@@ -316,6 +325,8 @@ const DisputeDebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -6, xs: "-4" }}
+                    lineHeight={1.7}
                   >
                     <List.Item>
                       <strong>Debt Consolidation</strong>: We assist in
@@ -346,8 +357,11 @@ const DisputeDebtRecovery = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={600}
+                    fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -7, xs: "-5" }}
+
+                    lineHeight={1.7}
                   >
                     Litigation and Enforcement
                   </Text>
@@ -365,6 +379,8 @@ const DisputeDebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -6, xs: "-4" }}
+                    lineHeight={1.7}
                   >
                     When amicable solutions are not possible, we represent your
                     interests in court to secure a favorable judgment. We also
@@ -386,6 +402,9 @@ const DisputeDebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -6, xs: "-4" }}
+
+                    lineHeight={1.7}
                   >
                     <List.Item>
                       <strong>Court Representation</strong>: We provide robust
@@ -425,8 +444,10 @@ const DisputeDebtRecovery = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    fontWeight={600}
+                    fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -7, xs: "-5" }}
+                    lineHeight={1.7}
                   >
                     Insolvency Services
                   </Text>
@@ -444,6 +465,9 @@ const DisputeDebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -7, xs: "-5" }}
+
+                    lineHeight={1.7}
                   >
                     If your debt situation is severe, we offer insolvency
                     services, including advice on bankruptcy, individual
@@ -452,6 +476,7 @@ const DisputeDebtRecovery = () => {
                     your financial difficulties. Our insolvency services
                     include:
                   </Text>
+
 
                   {/* List */}
                   <List.Root
@@ -466,6 +491,8 @@ const DisputeDebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -6, xs: "-4" }}
+                    lineHeight={1.7}
                   >
                     <List.Item>
                       <strong>Bankruptcy Advice</strong>: We provide guidance on
@@ -530,23 +557,23 @@ const DisputeDebtRecovery = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -572,6 +599,8 @@ const DisputeDebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    pr={{ lg: 20 }}
+                    pl={{ lg: "3" }}
                   >
                     At Lumine, we understand the intricacies of debt recovery
                     under the updated UK laws. Our experienced solicitors are
@@ -591,6 +620,10 @@ const DisputeDebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    pr={{ lg: 20 }}
+                    pl={{ lg: "3" }}
+                    mt={{ lg: -6, xs: "-3" , md:"-6" }}
+                    lineHeight={1.8}
                   >
                     <strong>Expert Advice</strong>: We offer clear, concise, and
                     practical legal advice tailored to your specific
@@ -609,6 +642,10 @@ const DisputeDebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    pr={{ lg: 20 }}
+                    pl={{ lg: "3" }}
+                    mt={{ lg: -6, xs: "-3" , md:"-6"}}
+                    lineHeight={1.8}
                   >
                     <strong>Strategic Approach</strong>: Our team develops
                     customized strategies to recover and manage debts,
@@ -627,6 +664,10 @@ const DisputeDebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    pr={{ lg: 20 }}
+                    pl={{ lg: "3" }}
+                    mt={{ lg: -6, xs: "-3", md:"-6" }}
+                    lineHeight={1.8}
                   >
                     <strong>Comprehensive Support</strong>: From initial
                     consultations to court representation, we provide
@@ -645,6 +686,10 @@ const DisputeDebtRecovery = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    pr={{ lg: 20 }}
+                    pl={{ lg: "3" }}
+                    mt={{ lg: -6, xs: "-3", md:"-6" }}
+                    lineHeight={1.8}
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Updated Knowledge</strong>: We stay abreast of the
@@ -664,12 +709,23 @@ const DisputeDebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    pr={{ lg: 20 }}
+                    pl={{ lg: "3" }}
+                    mt={{ lg: -6, xs: "-3", md:"-6" }}
+                    lineHeight={1.8}
                   >
                     For assistance with building contracts, please do not
                     hesitate to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                     Let us help you navigate the complexities of construction
                     law and achieve the best possible resolution for your

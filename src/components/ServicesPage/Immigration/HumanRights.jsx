@@ -91,7 +91,7 @@ const HumanRights = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 color={"#bf9b30"}
-                fontSize={{ xs: "7px", lg: "19px", xl: "25px", "2xl": "35px" }}
+                fontSize={{ xs: "12px", lg: "19px", xl: "25px", "2xl": "35px" }}
                 textAlign={"left"}
                 ml={3}
               >
@@ -152,6 +152,7 @@ const HumanRights = () => {
                   as="ol"
                   styleType="decimal"
                   ml={5}
+                  mr={{ xs: "2" }}
                   mt={-2}
                   spacing={3}
                   fontFamily={"CeraRoundPro"}
@@ -280,7 +281,7 @@ const HumanRights = () => {
                   </Text>
 
                   <Text
-                    mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
                     textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
@@ -300,7 +301,8 @@ const HumanRights = () => {
                     <strong>   Article 3: Prohibition of torture, </strong> of the European Convention on Human Rights, says:
                   </Text>
                   <Text
-                    mt={-10}
+                    mt={{ lg: "-10", xs: "-6" }}
+
                     textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
@@ -321,7 +323,8 @@ const HumanRights = () => {
                   </Text>
 
                   <Text
-                    mt={-10}
+                    mt={{ lg: "-10", xs: "-6" }}
+
                     textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
@@ -342,7 +345,8 @@ const HumanRights = () => {
                   </Text>
 
                   <Text
-                    mt={-10}
+                    mt={{ lg: "-10", xs: "-6" }}
+
                     textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
@@ -362,7 +366,8 @@ const HumanRights = () => {
                     <strong>Article 8: Private life,</strong>   of the European Convention on Human Rights, says:
                   </Text>
                   <Text
-                    mt={-10}
+                    mt={{ lg: "-10", xs: "-6" }}
+
                     textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
@@ -382,7 +387,8 @@ const HumanRights = () => {
                     <strong>8 (1) ‘Everyone has the right to respect for his private and family life, his home, and his correspondence.’</strong>
                   </Text>
                   <Text
-                    mt={-10}
+                    mt={{ lg: "-10", xs: "-6" }}
+
                     textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
@@ -402,7 +408,8 @@ const HumanRights = () => {
                     <strong>8 (2) ‘There shall be no interference by a public authority with the exercise of this right except such as is in accordance with the law and is necessary in a democratic society in the interests of national security, public safety, or the economic well-being of the country, for the prevention of disorder or crime, for the protection of health or morals, or for the protection of the rights and freedoms of others.’</strong>
                   </Text>
                   <Text
-                    mt={-9}
+                    mt={{ lg: "-9", xs: "-6" }}
+
                     textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
@@ -523,7 +530,7 @@ const HumanRights = () => {
                       "2xl": "18px",
                     }}
                     mt={-10}
-                    ml={-3}
+                    ml={{ lg: "-3", xs: "1" }}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -671,7 +678,8 @@ const HumanRights = () => {
                       "2xl": "18px",
                     }}
                     mt={-10}
-                    ml={-3}
+                    ml={{ lg: "-3", xs: "1" }}
+
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}

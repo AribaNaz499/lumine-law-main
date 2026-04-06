@@ -10,7 +10,8 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/family.webp";
+import BannerImg from "../../../assets/services/main/family/bannerImg.jpg";
+import { Heading } from "@chakra-ui/react"
 
 const DomesticViolence = () => {
   const [spouseState, setSpouseState] = useState(false);
@@ -42,10 +43,10 @@ const DomesticViolence = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "250px",
+              lg: "300px",
+              xl: "350px",
+              "2xl": "400px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -81,16 +82,140 @@ const DomesticViolence = () => {
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                color={"#bf9b30"}
+                fontSize={{ xs: "12px", lg: "20px", xl: "24px", "2xl": "34px" }}
+                textAlign={"left"}
+                ml={{ lg: "2" }}
+
+              >
+                What qualifies as Domestic Violence?
+              </Heading>
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                ml={{ lg: "2" }}
+                mt={{ lg: "3" }}
+
               >
-                Legal issues concerning domestic violence can often be
-                distressing and require urgent attention. At Lumine Solicitors,
-                we provide expert legal advice with compassion and understanding
-                to help you seek protection and support.
+                Anyone can be a victim of domestic violence and abuse. You do not have to wait for an emergency to seek help, and if you notice early signs, Lumine Solicitors recommends that you inform someone as soon as possible. Our expert team can also support you in getting a divorce and resolve any other issues that may arise in your case. If you are experiencing any of the following, it is likely that you are a victim of domestic violence and abuse:
+
+              </Text>
+              <List.Root
+                textAlign={"justify"}
+                fontSize={{
+                  xs: "12px",
+                  sm: "12px",
+                  md: "14px",
+                  lg: "14px",
+                  xl: "16px",
+                  "2xl": "18px",
+                }}
+                fontWeight={400}
+                fontFamily={"CeraRoundPro"}
+                mt={{ lg: "1" }}
+                ml={{ lg: "5" }}
+              >
+                <List.Item>
+                  Physical harm such as slapping, punching, or burning.
+                </List.Item>
+                <List.Item>
+                  Psychological harm, including threats and insults.
+                </List.Item>
+                <List.Item>
+                  Harassment, such as receiving unpleasant texts and calls or being followed.
+                </List.Item>
+                <List.Item>
+                  Sexual misconduct, such as rape, or coercion into sexual activities against your will.
+                </List.Item>
+                <List.Item>
+                  Financial control such as strict monitoring of spending or withholding money.
+                </List.Item>
+              </List.Root>
+            </Box>
+            <Box
+              width={"90%"}
+              alignSelf={"center"}
+              mb={"5%"}
+              my={{ xs: "5%", md: "2.5%" }}
+            >
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                color={"#bf9b30"}
+                fontSize={{ xs: "12px", lg: "20px", xl: "24px", "2xl": "34px" }}
+                textAlign={"left"}
+                ml={{ lg: "2" }}
+                mt={{ lg: -8, md:"-5", xs:"-8" }}
+
+              >
+                Protection orders
+
+              </Heading>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"justify"}
+                ml={{ lg: "2" }}
+                mt={{ lg: "3" }}
+                lineHeight={1.8}
+
+              >
+                There are several measures that can be put in place to prevent you from being a victim of such abuse, such as protection orders. The types of orders that you may consider include: Non-Molestation Order: This can be used to prevent the abuser from using threatening violence towards you or your children. It can also be used to prevent other individuals acting on behalf of the abuser from threatening or using violence against you. Occupation Order: This can be used to prevent the abuser from entering the home premises and to help you or your children feel secure.
+              </Text>
+            </Box>
+
+            <Box
+              width={"90%"}
+              alignSelf={"center"}
+              mb={"5%"}
+              my={{ xs: "5%", md: "2.5%" }}
+            >
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                color={"#bf9b30"}
+                fontSize={{ xs: "12px", lg: "20px", xl: "24px", "2xl": "34px" }}
+                textAlign={"left"}
+                ml={{ lg: "2" }}
+                               mt={{ lg: -8, md:"-5", xs:"-8" }}
+
+
+              >
+                How Can Lumine Solicitors Help?
+              </Heading>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"justify"}
+                ml={{ lg: "2" }}
+                mt={{ lg: "3" }}
+                lineHeight={1.8}
+
+              >
+                Domestic abuse can deeply impact individuals and families. For this reason, our compassionate solicitors are here to offer comfort and legal assistance to those affected. Whether you’re seeking protection orders, taking legal action against an abuser, or just needing advice about your rights and options, our domestic violence solicitors in London are here to help you. We prioritise your safety and well-being, providing individualised support and advocacy every step of the way.
+              </Text>
+
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"justify"}
+                ml={{ lg: "2" }}
+                mt={{ lg: "-1" }}
+                lineHeight={1.8}
+
+              >
+                For all immigration matters, Please do not hesitate to get in touch on 020 3950 2246 or Contact Us HERE
               </Text>
             </Box>
           </Box>
@@ -135,29 +260,29 @@ const DomesticViolence = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   What is Domestic Violence?
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -184,7 +309,7 @@ const DomesticViolence = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    Domestic Violence encompasses various forms of maltreatment,
+                    • Domestic Violence encompasses various forms of maltreatment,
                     including physical, emotional, financial, sexual, and
                     psychological abuse. Regardless of the type, it is crucial
                     to remember that abuse is never the survivor’s fault.
@@ -227,29 +352,29 @@ const DomesticViolence = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Types of Domestic Abuse:
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -335,29 +460,29 @@ const DomesticViolence = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setApplicationState(!applicationState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Support and Legal Action:
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -384,7 +509,7 @@ const DomesticViolence = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    At Lumine Solicitors, we believe that all survivors of
+                    • At Lumine Solicitors, we believe that all survivors of
                     domestic abuse should receive the necessary support to feel
                     safe and move forward from its impact. Domestic abuse is a
                     crime, extending beyond physical violence. Coercive and
@@ -430,29 +555,29 @@ const DomesticViolence = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !screening && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={screening && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setScreening(!screening)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Seeking Help:
                 </Text>
                 {!screening ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -511,6 +636,7 @@ const DomesticViolence = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-6", xs: "-4" }}
                     fontFamily={"CeraRoundPro"}
                   >
                     Remember, you are not alone, and there are resources and
@@ -554,29 +680,29 @@ const DomesticViolence = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -619,6 +745,7 @@ const DomesticViolence = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
                   >
                     <strong>Initial Consultation</strong>: We offer an initial
                     consultation to understand your unique circumstances and
@@ -636,6 +763,8 @@ const DomesticViolence = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -656,6 +785,8 @@ const DomesticViolence = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Emergency Applications</strong>: We provide urgent
@@ -675,6 +806,8 @@ const DomesticViolence = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Ongoing Support</strong>: We offer ongoing support
@@ -726,23 +859,23 @@ const DomesticViolence = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -785,6 +918,8 @@ const DomesticViolence = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Expert Advice</strong>: We offer clear, concise, and
@@ -804,6 +939,8 @@ const DomesticViolence = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                   >
                     <strong> Compassionate Support</strong>: Our team provides
                     compassionate support throughout the divorce process,
@@ -822,6 +959,8 @@ const DomesticViolence = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                   >
                     <strong> Strategic Approach</strong>: We develop customized
                     strategies to achieve the best possible outcome for you.
@@ -838,6 +977,8 @@ const DomesticViolence = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong> Cost Certainty</strong>: We offer fixed,
@@ -857,12 +998,22 @@ const DomesticViolence = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+                lineHeight={1.7}
+
                   >
                     For assistance with domestic violence matters, please do not
                     hesitate to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                       <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                     We are here to help you navigate the complexities of family
                     law and achieve the best possible resolution for your

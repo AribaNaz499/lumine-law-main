@@ -10,7 +10,8 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/family.webp";
+import BannerImg from "../../../assets/services/main/family/bannerImg.jpg";
+import { Heading } from "@chakra-ui/react"
 
 const FinancialSettlements = () => {
   const [spouseState, setSpouseState] = useState(false);
@@ -42,10 +43,10 @@ const FinancialSettlements = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "250px",
+              lg: "300px",
+              xl: "350px",
+              "2xl": "400px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -81,16 +82,66 @@ const FinancialSettlements = () => {
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                color={"#bf9b30"}
+                fontSize={{ xs: "14px", lg: "26px", xl: "32px", "2xl": "42px" }}
+                textAlign={"left"}
+
+              >
+                What is a Financial Settlement?
+              </Heading>
+              <List.Root
+                textAlign={"justify"}
+                fontSize={{
+                  xs: "12px",
+                  sm: "12px",
+                  md: "14px",
+                  lg: "14px",
+                  xl: "16px",
+                  "2xl": "18px",
+                }}
+                as={"ol"}
+                fontWeight={400}
+                fontFamily={"CeraRoundPro"}
+                mt={{ lg: "5" }}
+                lineHeight={1.7}
+              >
+                <List.Item>
+                  A financial settlement aims to equitably divide marital resources, enabling each party to independently move forward while meeting their financial obligations and those of any children. Fairness is determined by individual circumstances.
+                </List.Item>
+              </List.Root>
+
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                lineHeight={1.7}
               >
-                Legal issues concerning financial settlements can often be
-                stressful and, at times, upsetting. At Lumine Solicitors, we
-                provide expert legal advice with compassion and understanding to
-                help you achieve fair and equitable outcomes.
+                When terms are agreed upon, preparing a draft Consent Order is necessary for court approval. The sealed Order ensures a legally binding agreement. If agreement isn’t reached voluntarily, arbitration or a court application may be considered.
+              </Text>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"justify"}
+                lineHeight={1.7}
+              >
+                The financial settlement encompasses all financial claims at the end of a marriage, covering assets, income, pensions, property, and movable items like cars, artwork, and jewellery. It also addresses potential maintenance for a spouse and/or children.
+
+              </Text>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"justify"}
+                lineHeight={1.7}
+              >
+                We understand that each couple has unique financial needs and priorities. Our approach ensures we consider your priorities to achieve the best possible outcome.
+
               </Text>
             </Box>
           </Box>
@@ -135,29 +186,29 @@ const FinancialSettlements = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   What is a Financial Settlement?
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -183,6 +234,7 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.7}
                   >
                     A financial settlement aims to equitably divide marital
                     resources, enabling each party to independently move forward
@@ -203,6 +255,8 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                   >
                     When terms are agreed upon, preparing a draft Consent Order
                     is necessary for court approval. The sealed Order ensures a
@@ -223,6 +277,9 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.7}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+
                   >
                     The financial settlement encompasses all financial claims at
                     the end of a marriage, covering assets, income, pensions,
@@ -243,6 +300,8 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                   >
                     We understand that each couple has unique financial needs
                     and priorities. Our approach ensures we consider your
@@ -286,29 +345,29 @@ const FinancialSettlements = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   When Might Family Financial Issues Arise?
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -334,6 +393,7 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.7}
                   >
                     <List.Item>
                       <strong>Separation of Unmarried Couples</strong>: Issues
@@ -404,29 +464,29 @@ const FinancialSettlements = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setApplicationState(!applicationState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   What are Marital Assets?
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -452,8 +512,9 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.7}
                   >
-                    The "marital pot" includes all income and assets each party
+                    • The "marital pot" includes all income and assets each party
                     is entitled to worldwide, regardless of ownership timing
                     relative to marriage. Full financial disclosure via Form E
                     is crucial for fair divorce financial settlements, and we
@@ -497,29 +558,29 @@ const FinancialSettlements = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !screening && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={screening && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setScreening(!screening)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Financial Applications in Divorce Proceedings
                 </Text>
                 {!screening ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -546,7 +607,7 @@ const FinancialSettlements = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    The court process begins with a financial application, where
+                    • The court process begins with a financial application, where
                     the court provides directions for case progression,
                     including exchanging financial disclosures using Form E.
                   </Text>
@@ -563,6 +624,8 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                   >
                     Typically, a financial application involves three court
                     hearings:
@@ -580,6 +643,8 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={600}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                   >
                     Financial Dispute Resolution Hearing
                   </Text>
@@ -596,6 +661,8 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                   >
                     Here, a judge reviews provided information and encourages
                     negotiation. If an agreement isn't reached, the matter
@@ -614,6 +681,8 @@ const FinancialSettlements = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={600}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
                     Final Hearing
@@ -630,6 +699,8 @@ const FinancialSettlements = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
                     A judge considers all evidence, including witness statements
@@ -650,6 +721,8 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={600}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                   >
                     First Directions Hearing
                   </Text>
@@ -666,6 +739,8 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                   >
                     This procedural hearing decides necessary case steps, such
                     as document requests or valuations.
@@ -708,29 +783,30 @@ const FinancialSettlements = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
+
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -773,6 +849,8 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                   >
                     <strong>Initial Consultation</strong>: We offer an initial
                     consultation to understand your unique circumstances and
@@ -791,6 +869,8 @@ const FinancialSettlements = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Asset Valuation and Division</strong>: Our
@@ -810,6 +890,8 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                   >
                     <strong>Spousal Maintenance</strong>: We provide guidance on
                     spousal maintenance, helping you understand your rights and
@@ -828,6 +910,8 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                   >
                     <strong>Pension Sharing</strong>: We offer expert advice on
                     pension sharing arrangements to ensure that retirement
@@ -871,29 +955,29 @@ const FinancialSettlements = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -937,6 +1021,8 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                   >
                     <strong>Expert Advice</strong>: We offer clear, concise, and
                     practical legal advice tailored to your specific
@@ -955,6 +1041,8 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                   >
                     <strong> Compassionate Support</strong>: Our team provides
                     compassionate support throughout the divorce process,
@@ -973,6 +1061,8 @@ const FinancialSettlements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                   >
                     <strong> Strategic Approach</strong>: We develop customized
                     strategies to achieve the best possible outcome for you.
@@ -989,6 +1079,8 @@ const FinancialSettlements = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong> Cost Certainty</strong>: We offer fixed,
@@ -1007,13 +1099,22 @@ const FinancialSettlements = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
                     For assistance with financial settlements, please do not
                     hesitate to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                     We are here to help you navigate the complexities of family
                     law and achieve the best possible resolution for your

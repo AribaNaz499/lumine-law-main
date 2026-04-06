@@ -125,7 +125,7 @@ const StudentVisa = () => {
                 <List.Root
                   as="ol"
                   styleType="decimal"
-                  ml={5}
+                  ml={{lg:"5" , xs:1}}
                   mt={-2}
                   spacing={3}
                   fontFamily={"CeraRoundPro"}
@@ -149,16 +149,16 @@ const StudentVisa = () => {
                   fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                   color="black"
                 > */}
-                  <List.Item ml={3.5} textAlign="justify">
+                  <List.Item ml={{lg:"3.5" , xs: "2"}} mr={{xs:"2"}} textAlign="justify">
                     <Text as="span"> Financial Condition: </Text> Candidates have to show they can pay for their stay in the UK for the full duration of the course by both tuition fees and living costs.
                   </List.Item>
-                  <List.Item ml={3.5} textAlign="justify">
+                  <List.Item ml={{lg:"3.5" , xs: "2"}} mr={{xs:"2"}} textAlign="justify">
                     <Text as="span">English language proficiency:  </Text>One must prove English language proficiency through an approved test in English or by having any degree-level qualification taught in the English language. The minimum accepted level of CEFR B1 is applied in most courses, however, a certain institution or course might request a higher one.
                   </List.Item>
-                  <List.Item ml={3.5} textAlign="justify">
+                  <List.Item ml={{lg:"3.5" , xs: "2"}} mr={{xs:"2"}} textAlign="justify">
                     <Text as="span"> Age Requirement: </Text>The applicant must be at least 16 years old to apply for a Student Visa.
                   </List.Item>
-                  <List.Item ml={3.5} textAlign="justify">
+                  <List.Item ml={{lg:"3.5" , xs: "2"}} mr={{xs:"2"}} textAlign="justify">
                     <Text as="span"> Tuberculosis (TB) Test:  </Text> Applicants from certain countries are required to submit a TB test certificate as part of the application process if they plan to stay in the UK for more than 6 months. A list of countries where TB testing is required can be found on the official UK government website.
                   </List.Item>
 
@@ -378,7 +378,7 @@ const StudentVisa = () => {
                       "2xl": "18px",
                     }}
                     mt={-10}
-                    ml={-3}
+                    ml={{lg:"-3" , xs:"1"}}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -486,7 +486,7 @@ const StudentVisa = () => {
                       "2xl": "18px",
                     }}
 
-                    ml={-3}
+                    ml={{lg:"-3", xs:"1"}}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -615,7 +615,8 @@ const StudentVisa = () => {
                       "2xl": "18px",
                     }}
 
-                    ml={-2}
+                    ml={{lg:"-2" , xs:"1"}}
+                    mr={{xs:"1"}}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -712,7 +713,8 @@ const StudentVisa = () => {
                       "2xl": "18px",
                     }}
 
-                    ml={-2}
+                   ml={{lg:"-2" , xs:"1"}}
+                    mr={{xs:"1"}}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -735,9 +737,9 @@ const StudentVisa = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mr={4}
-                    ml={3}
-                    mt={-7}
+                    ml={{lg:"3" , xs:"1"}}
+                    mr={{lg:"4",xs:"1"}}
+                    mt={{lg:"-7" , xs:"-4"}}
                     fontWeight={400}
                     lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}

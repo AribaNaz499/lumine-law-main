@@ -196,7 +196,7 @@ const EstatePlanning = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mt={{ lg: -6 }}
+                    mt={{ lg: -6 , md:"-6", xs:"-4"}}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >

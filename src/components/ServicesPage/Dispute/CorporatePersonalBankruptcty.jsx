@@ -43,10 +43,10 @@ const CorporatePersonalBankruptcy = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "300px",
+              lg: "330px",
+              xl: "360px",
+              "2xl": "370px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -63,8 +63,9 @@ const CorporatePersonalBankruptcy = () => {
               fontFamily={"CeraRoundPro"}
               width={"90%"}
               textAlign={"left"}
+              lineHeight={1}
             >
-              Corporate and Personal Bankruptcy Matters
+              Corporate and Personal Bankruptcy <br /> Matters
             </Text>
           </Box>
 
@@ -87,6 +88,7 @@ const CorporatePersonalBankruptcy = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                lineHeight={1.7}
               >
                 Facing bankruptcy can be an overwhelming and stressful
                 experience, whether as a business or an individual. The
@@ -103,6 +105,8 @@ const CorporatePersonalBankruptcy = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                lineHeight={1.7}
+                mt={{ lg: "5" }}
               >
                 At Lumine, we understand that every bankruptcy situation is
                 unique, requiring tailored solutions and a compassionate
@@ -155,29 +159,29 @@ const CorporatePersonalBankruptcy = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Corporate Bankruptcy
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -203,6 +207,7 @@ const CorporatePersonalBankruptcy = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    ml={{ lg: "2" }}
                   >
                     Our team of experienced solicitors provides expert guidance
                     on corporate insolvency proceedings. We specialize in:
@@ -220,6 +225,9 @@ const CorporatePersonalBankruptcy = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    ml={{ lg: "-3" }}
+                    mt={{ lg: "-7", xs: "-4" }}
+                    lineHeight={1.8}
                   >
                     <List.Item>
                       <strong>Administration</strong>: We help businesses
@@ -230,7 +238,7 @@ const CorporatePersonalBankruptcy = () => {
                       necessary support to stabilize operations.
                     </List.Item>
                     <List.Item>
-                      <strong>Liquidation</strong>: : In cases where a business
+                      <strong>Liquidation</strong>: In cases where a business
                       cannot be saved, we assist with the liquidation process,
                       ensuring that assets are distributed fairly among
                       creditors. We handle both compulsory and voluntary
@@ -284,29 +292,29 @@ const CorporatePersonalBankruptcy = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                 fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Personal Bankruptcy
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -349,6 +357,9 @@ const CorporatePersonalBankruptcy = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    ml={{ lg: "-3" }}
+                    mt={{ lg: "-7", xs: "-4" }}
+                    lineHeight={1.8}
                   >
                     <List.Item>
                       <strong>Bankruptcy Proceedings</strong>: We guide
@@ -409,29 +420,29 @@ const CorporatePersonalBankruptcy = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setApplicationState(!applicationState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                   fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Debt Restructuring and Negotiation
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -457,6 +468,7 @@ const CorporatePersonalBankruptcy = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
                   >
                     We assist businesses and individuals in negotiating with
                     creditors to restructure debts and create manageable
@@ -505,29 +517,29 @@ const CorporatePersonalBankruptcy = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !screening && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={screening && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setScreening(!screening)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                   fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Litigation and Dispute Resolution
                 </Text>
                 {!screening ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -553,6 +565,7 @@ const CorporatePersonalBankruptcy = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
                   >
                     When disputes arise during the bankruptcy process, our
                     litigation team is ready to represent your interests in
@@ -573,6 +586,9 @@ const CorporatePersonalBankruptcy = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    ml={{ lg: "-3" }}
+                    mt={{ lg: "-7", xs: "-4" }}
+                    lineHeight={1.8}
                   >
                     <List.Item>
                       <strong>Representation in Court</strong>: We provide
@@ -624,29 +640,29 @@ const CorporatePersonalBankruptcy = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -672,6 +688,7 @@ const CorporatePersonalBankruptcy = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
                   >
                     At Lumine Law, we understand the intricacies of corporate
                     and personal bankruptcy under the updated UK laws. Our
@@ -692,6 +709,9 @@ const CorporatePersonalBankruptcy = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+
+                    mt={{ lg: "-7", xs: "-4" }}
+                    lineHeight={1.8}
                   >
                     <strong>Expert Advice</strong>: We offer clear, concise, and
                     practical legal advice tailored to your specific
@@ -710,6 +730,9 @@ const CorporatePersonalBankruptcy = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+
+                    mt={{ lg: "-7", xs: "-4" }}
+                    lineHeight={1.8}
                   >
                     <strong>Strategic Approach</strong>: Our team develops
                     customized strategies to manage and resolve bankruptcy
@@ -728,6 +751,9 @@ const CorporatePersonalBankruptcy = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+
+                    mt={{ lg: "-7", xs: "-4" }}
+                    lineHeight={1.8}
                   >
                     <strong>Comprehensive Support</strong>: From initial
                     consultations to court representation, we provide
@@ -746,6 +772,9 @@ const CorporatePersonalBankruptcy = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+
+                    mt={{ lg: "-7", xs: "-4" }}
+                    lineHeight={1.8}
                   >
                     <strong>Updated Knowledge</strong>: We stay abreast of the
                     latest legal developments to ensure that our advice and
@@ -764,12 +793,22 @@ const CorporatePersonalBankruptcy = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+
+                    mt={{ lg: "-7", xs: "-4" }}
+                    lineHeight={1.8}
                   >
                     For assistance with corporate and personal bankruptcy
                     matters, please do not hesitate to get in touch with Lumine
                     solicitors <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                     Let us help you navigate the complexities of construction
                     law and achieve the best possible resolution for your

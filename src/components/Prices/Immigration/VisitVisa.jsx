@@ -147,23 +147,23 @@ const VisitVisa = ({ isOpen, onToggle }) => {
         <Text
           textAlign="left"
           fontSize={{
-            xs: "14px",
-            sm: "14px",
-            md: "16px",
-            lg: "16px",
-            xl: "18px",
-            "2xl": "20px",
+            xs: "13px",
+            sm: "13px",
+            md: "15px",
+            lg: "15px",
+            xl: "17px",
+            "2xl": "19px",
           }}
           fontWeight={500}
           fontFamily="CeraRoundPro"
-          color="#beab7c"
+          color="#bf9b30"
         >
           Visitor Visa
         </Text>
         {!isOpen ? (
-          <GoPlus color="#beab7c" size="2em" />
+          <GoPlus color="#bf9b30" size="1.8em" />
         ) : (
-          <AiOutlineMinus color="#beab7c" size="2em" />
+          <AiOutlineMinus color="#bf9b30" size="1.8em" />
         )}
       </HStack>
 

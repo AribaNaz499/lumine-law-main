@@ -99,7 +99,7 @@ const Trusts = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-              fontSize={{ xs: "11.5px", lg: "13.5px", xl: "15.5px", "2xl": "17.5px" }}
+                fontSize={{ xs: "11.5px", lg: "13.5px", xl: "15.5px", "2xl": "17.5px" }}
                 textAlign={"justify"}
                 mt={4}
               >
@@ -202,7 +202,7 @@ const Trusts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                      lineHeight={1.7}
+                    lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -225,7 +225,8 @@ const Trusts = () => {
                     }}
                     lineHeight={1.7}
                     fontWeight={400}
-                    mt={-7}
+                                                            mt={{lg:"-7", xs:"-4"}}
+
                     fontFamily={"CeraRoundPro"}
                   >
                     We aim to maximise benefits for beneficiaries while ensuring
@@ -244,9 +245,11 @@ const Trusts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                      lineHeight={1.7}
+                    lineHeight={1.7}
                     fontWeight={400}
-                    mt={-7}
+                                                            mt={{lg:"-7", xs:"-4"}}
+
+
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>
@@ -371,7 +374,8 @@ const Trusts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    mt={-7}
+                                        mt={{lg:"-7", xs:"-4"}}
+
                   >
                     In essence, will trusts provide:
                   </Text>
@@ -387,13 +391,14 @@ const Trusts = () => {
                       "2xl": "18px",
                     }}
                     color={"black"}
-                    mt={-7}
+                                        mt={{lg:"-7", xs:"-4"}}
+
                     lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    <List.Item  color={"black"}>A flexible approach</List.Item>
-                    <List.Item  color={"black"}>
+                    <List.Item color={"black"}>A flexible approach</List.Item>
+                    <List.Item color={"black"}>
                       Providing benefits to individuals in unforeseen ways
                       during will drafting
                     </List.Item>
@@ -412,9 +417,10 @@ const Trusts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                      mt={-7}
+                                        mt={{lg:"-7", xs:"-4"}}
+
                     lineHeight={1.7}
-                    
+
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -467,7 +473,7 @@ const Trusts = () => {
               >
                 <Text
                   textAlign={"left"}
-                   fontSize={{
+                  fontSize={{
                     xs: "13px",
                     sm: "13px",
                     md: "15px",
@@ -532,7 +538,8 @@ const Trusts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mt={-7}
+                                        mt={{lg:"-7", xs:"-4"}}
+
                     lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -556,7 +563,8 @@ const Trusts = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                     lineHeight={1.8}
-                    mt={-7}
+                                        mt={{lg:"-7", xs:"-4"}}
+
                   >
                     With our expertise in trust creation and administration, our
                     services include:
@@ -573,7 +581,8 @@ const Trusts = () => {
                       "2xl": "18px",
                     }}
                     lineHeight={1.8}
-                    mt={-7}
+                                        mt={{lg:"-7", xs:"-4"}}
+
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -635,7 +644,7 @@ const Trusts = () => {
               >
                 <Text
                   textAlign={"left"}
-                 fontSize={{
+                  fontSize={{
                     xs: "13px",
                     sm: "13px",
                     md: "15px",
@@ -700,7 +709,7 @@ const Trusts = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                     lineHeight={1.7}
-                    mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
                   >
                     The benefits of a personal injury trust include:
                   </Text>
@@ -716,7 +725,7 @@ const Trusts = () => {
                       "2xl": "18px",
                     }}
                     lineHeight={1.8}
-                    mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -818,7 +827,7 @@ const Trusts = () => {
                     trusts services please do not hesitate to get in touch with
                     Lumine solicitors <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                       <Link
+                      <Link
                         to={"/contact"}
                         style={{ color: "#efdc6b" }}
                         onMouseLeave={(e) => (e.target.style.color = "#efdc6b")}

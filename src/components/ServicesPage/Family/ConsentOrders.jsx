@@ -10,7 +10,8 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/family.webp";
+import BannerImg from "../../../assets/services/main/family/bannerImg.jpg";
+import { Heading } from "@chakra-ui/react"
 
 const ConsentOrders = () => {
   const [eligibilityState, setEligibilityState] = useState(false);
@@ -39,10 +40,10 @@ const ConsentOrders = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "250px",
+              lg: "300px",
+              xl: "350px",
+              "2xl": "400px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -78,56 +79,63 @@ const ConsentOrders = () => {
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
-              <Text
+              <Heading
+                as={"h2"}
                 fontFamily={"CeraRoundPro"}
-                fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"justify"}
-              >
-                Legal issues concerning consent orders can often be complex and
-                require careful navigation. At Lumine Solicitors, we provide
-                expert legal advice with compassion and understanding to help
-                you formalize agreements with legal certainty.
-              </Text>
+                fontWeight={600}
+                color={"#bf9b30"}
+                fontSize={{ xs: "14px", lg: "26px", xl: "32px", "2xl": "42px" }}
+                textAlign={"left"}
 
-              <Text
-                fontFamily={"CeraRoundPro"}
-                fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"justify"}
               >
-                Most divorcing couples now voluntarily agree on how their
-                finances will be divided through a divorce settlement. Applying
-                for a consent order makes this agreement legally binding,
-                eliminating the risk of your spouse changing their mind in the
-                future.
-              </Text>
+                Four Reasons You Need a Consent Order
+              </Heading>
+              <List.Root
+                textAlign={"justify"}
+                fontSize={{
+                  xs: "12px",
+                  sm: "12px",
+                  md: "14px",
+                  lg: "14px",
+                  xl: "16px",
+                  "2xl": "18px",
+                }}
+                as={"ol"}
+                fontWeight={400}
+                fontFamily={"CeraRoundPro"}
+                mt={{ lg: "5" }}
+              >
+                <List.Item>
+                  Avoid Future Disputes: A consent order
+                  formalizes your financial settlement, reducing the
+                  likelihood of future disagreements. It minimizes the risk
+                  of court litigation and associated costs by leaving less
+                  room for confusion over the terms.
+                </List.Item>
+                <List.Item>
+                  Enforce Settlement Agreements: If one
+                  party defaults on agreed payments, a consent order allows
+                  you to enforce the settlement through the court. Without a
+                  consent order, you risk losing claims on sole-owned
+                  properties, especially if not professionally advised to
+                  place a Restriction on the property.
+                </List.Item>
+                <List.Item>
+                  Protect Against Future Claims: A consent
+                  order protects you and your estate from future claims by
+                  your ex-spouse. This includes shielding any future income
+                  increases, inheritances, or your estate after death from
+                  being claimed by your ex.
+                </List.Item>
+                <List.Item>
+                  Provide Certainty and Peace of Mind:
+                  Making your divorce settlement binding with a consent
+                  order gives both parties clarity and security, allowing
+                  you to focus on important matters such as effective
+                  co-parenting.
+                </List.Item>
+              </List.Root>
 
-              <Text
-                fontFamily={"CeraRoundPro"}
-                fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"justify"}
-              >
-                Without a consent order, your ex could potentially make a claim
-                for a share of your assets, property, income, or pensions down
-                the line. A consent order formalizes the financial agreement
-                you've reached with your former spouse and severs the financial
-                ties between you.
-              </Text>
-
-              <Text
-                fontFamily={"CeraRoundPro"}
-                fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                textAlign={"justify"}
-              >
-                It is strongly recommended that you seek expert legal advice on
-                the terms of your settlement before applying for a consent
-                order. Once a consent order has been issued, you cannot legally
-                change the terms of the settlement without your ex’s agreement
-                if you need to vary the terms.
-              </Text>
             </Box>
           </Box>
 
@@ -137,124 +145,6 @@ const ConsentOrders = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* Four Reasons You Need a Consent Order */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !eligibilityState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
-                onClick={() => setEligibilityState(!eligibilityState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Four Reasons You Need a Consent Order
-                </Text>
-                {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {eligibilityState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <List.Root
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    as={"ol"}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>
-                      <strong>Avoid Future Disputes</strong>: A consent order
-                      formalizes your financial settlement, reducing the
-                      likelihood of future disagreements. It minimizes the risk
-                      of court litigation and associated costs by leaving less
-                      room for confusion over the terms.
-                    </List.Item>
-                    <List.Item>
-                      <strong>Enforce Settlement Agreements </strong>: If one
-                      party defaults on agreed payments, a consent order allows
-                      you to enforce the settlement through the court. Without a
-                      consent order, you risk losing claims on sole-owned
-                      properties, especially if not professionally advised to
-                      place a Restriction on the property.
-                    </List.Item>
-                    <List.Item>
-                      <strong>Protect Against Future Claims</strong>: A consent
-                      order protects you and your estate from future claims by
-                      your ex-spouse. This includes shielding any future income
-                      increases, inheritances, or your estate after death from
-                      being claimed by your ex.
-                    </List.Item>
-                    <List.Item>
-                      <strong>Provide Certainty and Peace of Mind </strong>:
-                      Making your divorce settlement binding with a consent
-                      order gives both parties clarity and security, allowing
-                      you to focus on important matters such as effective
-                      co-parenting.
-                    </List.Item>
-                  </List.Root>
-                </VStack>
-              )}
-            </Box>
-
             {/* Our Services */}
             <Box
               display={"flex"}
@@ -289,29 +179,29 @@ const ConsentOrders = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -354,6 +244,7 @@ const ConsentOrders = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
                   >
                     <strong>Initial Consultation</strong>: We offer an initial
                     consultation to understand your unique circumstances and
@@ -373,11 +264,14 @@ const ConsentOrders = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                   >
                     <strong>Drafting Consent Orders</strong>: Our experienced
                     solicitors draft consent orders that accurately reflect the
                     terms of your agreement, ensuring they meet legal standards
                     and are enforceable.
+
                   </Text>
 
                   <Text
@@ -391,6 +285,8 @@ const ConsentOrders = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Review and Approval</strong>:We review existing
@@ -411,6 +307,8 @@ const ConsentOrders = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                   >
                     <strong>Negotiation and Amendments</strong>: We negotiate
                     with your former spouse regarding any necessary amendments
@@ -429,6 +327,8 @@ const ConsentOrders = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Dispute Resolution</strong>: If disputes arise
@@ -449,6 +349,8 @@ const ConsentOrders = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                   >
                     <strong>Enforcement and Breach</strong>: We can take action
                     if your ex breaches the consent order or accuses you of
@@ -492,29 +394,29 @@ const ConsentOrders = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -557,6 +459,8 @@ const ConsentOrders = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Expert Advice</strong>: We offer clear, concise, and
@@ -575,6 +479,8 @@ const ConsentOrders = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong> Compassionate Support</strong>: Our team provides
@@ -593,6 +499,8 @@ const ConsentOrders = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong> Strategic Approach</strong>: We develop customized
@@ -611,6 +519,8 @@ const ConsentOrders = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                   >
                     <strong> Cost Certainty</strong>: We offer fixed,
                     competitive, and transparent fee packages to maintain cost
@@ -629,12 +539,21 @@ const ConsentOrders = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-6", xs: "-4", md: "-5" }}
+
                   >
                     For assistance with divorce matters, please do not hesitate
                     to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                     We are here to help you navigate the complexities of family
                     law and achieve the best possible resolution for your

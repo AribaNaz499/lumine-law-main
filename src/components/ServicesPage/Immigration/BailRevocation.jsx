@@ -98,7 +98,7 @@ const BailRevocation = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 color={"#bf9b30"}
-                fontSize={{ xs: "7px", lg: "19px", xl: "25px", "2xl": "35px" }}
+                fontSize={{ xs: "10px", lg: "19px", xl: "25px", "2xl": "35px" }}
                 textAlign={"left"}
               >
                 IMMIGRATION BAIL AND REVOCATION OF A DEPORTATION ORDER
@@ -119,12 +119,12 @@ const BailRevocation = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
-                
+
               >
                 Immigration Bail
               </Text>
 
-              <VStack align="start" spacing={4}  width="100%">
+              <VStack align="start" spacing={4} width="100%">
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
@@ -212,7 +212,7 @@ const BailRevocation = () => {
                   <List.Root
                     as="ol"
                     styleType="decimal"
-                    ml={5}
+                    ml={{ lg: "5", xs: "-2" }}
                     spacing={3}
                     fontFamily={"CeraRoundPro"}
                     fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
@@ -418,7 +418,7 @@ const BailRevocation = () => {
                       "2xl": "18px",
                     }}
                     mt={-9}
-                    ml={-3}
+                    ml={{ lg: "-3", xs: "1" }}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -433,7 +433,7 @@ const BailRevocation = () => {
                   </List.Root>
 
                   <Text
-                    mt={-7}
+                    mt={{ lg: "-7", xs: "-1" }}
                     textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
@@ -454,7 +454,7 @@ const BailRevocation = () => {
                   </Text>
 
                   <Text
-                    mt={-9}
+                    mt={{ lg: "-9", xs: "-4" }}
                     textAlign={"justify"}
                     fontSize={{
                       xs: "12px",
@@ -506,8 +506,9 @@ const BailRevocation = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mt={-9}
-                    ml={-3}
+                    mt={{ lg: "-9", xs: "-5" }}
+
+                    ml={{ lg: "-3", xs: "1" }}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -667,8 +668,8 @@ const BailRevocation = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mt={-9}
-                    ml={-3}
+                    mt={{ lg: "-9", xs: "-5" }}
+                    ml={{ lg: "-3", xs: "1" }}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -793,7 +794,7 @@ const BailRevocation = () => {
                     }}
                     mr={4}
                     ml={3}
-                    mt={-7}
+                    mt={{ lg: "-7", xs: "-3", md: "-4" }}
                     fontWeight={400}
                     lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}

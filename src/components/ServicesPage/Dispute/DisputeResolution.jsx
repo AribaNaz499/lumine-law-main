@@ -18,7 +18,7 @@ const disputeServices = [
   },
   {
     title: "Building Contract Disputes",
-    path: "/all-services/dispute-resolution/contract-disputes", // ✅ FIX
+    path: "/all-services/dispute-resolution/building-contract-disputes", // ✅ FIX
   },
   {
     title: "Contract Disputes",
@@ -30,7 +30,7 @@ const disputeServices = [
   },
   {
     title: "Corporate and Personal Bankruptcy Matters",
-    path: "/all-services/dispute-resolution/debt-matters", // ✅ FIX
+    path: "/all-services/dispute-resolution/bankruptcy-matters", // ✅ FIX
   },
   {
     title: "Debt Matters",
@@ -38,7 +38,7 @@ const disputeServices = [
   },
   {
     title: "Debt Recovery",
-    path: "/all-services/dispute-resolution/debt-matters", // ✅ FIX
+    path: "/all-services/dispute-resolution/debt-recovery", // ✅ FIX
   },
 ];
 

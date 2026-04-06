@@ -10,7 +10,8 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/family.webp";
+import BannerImg from "../../../assets/services/main/family/bannerImg.jpg";
+import { Heading } from "@chakra-ui/react"
 
 const ParentalResponsiblity = () => {
   const [spouseState, setSpouseState] = useState(false);
@@ -42,10 +43,10 @@ const ParentalResponsiblity = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "250px",
+              lg: "300px",
+              xl: "350px",
+              "2xl": "400px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -57,8 +58,8 @@ const ParentalResponsiblity = () => {
             _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
-              fontWeight={600}
+              fontSize={{ xs: "30px", lg: "40px", xl: "44px", "2xl": "50px" }}
+              fontWeight={700}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
               textAlign={"left"}
@@ -81,16 +82,27 @@ const ParentalResponsiblity = () => {
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                color={"#bf9b30"}
+                fontSize={{ xs: "14px", lg: "26px", xl: "32px", "2xl": "42px" }}
+                textAlign={"left"}
+
+              >
+                What is Parental Responsibility?
+              </Heading>
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                lineHeight={1.6}
+                mt={{ lg: "6" }}
+                mr={{ lg: 8 }}
               >
-                Legal issues concerning parental responsibility can often be
-                stressful and, at times, upsetting. At Lumine Solicitors, we
-                provide expert legal advice with compassion and understanding to
-                help you navigate your legal rights and duties.
+                Parental responsibility refers to all of the rights, duties, and responsibilities a parent has in relation to their child. Both parents will usually have parental responsibility and can meet it individually on a day-to-day basis, provided they do so within the terms of the order.
               </Text>
             </Box>
           </Box>
@@ -101,170 +113,6 @@ const ParentalResponsiblity = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is Parental Responsibility? */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !eligibilityState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
-                onClick={() => setEligibilityState(!eligibilityState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  What is Parental Responsibility?
-                </Text>
-                {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
-
-              {eligibilityState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    The strictly legal definition of parental responsibility
-                    comes from the Children Act 1989, which defines it as "all
-                    the rights, duties, powers, responsibilities, and
-                    authorities which by law a parent of a child has in relation
-                    to the child and the child's property."
-                  </Text>
-
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Having parental responsibility means you have many legal
-                    rights and responsibilities in relation to your child. This
-                    enables you to be involved in making important decisions
-                    such as:
-                  </Text>
-
-                  <List.Root
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    <List.Item>Where the child should live.</List.Item>
-                    <List.Item>What to name the child.</List.Item>
-                    <List.Item>Where the child should be educated.</List.Item>
-                    <List.Item>
-                      The child's religious upbringing, which may include
-                      decisions relating to whether the child should be
-                      christened or circumcised.
-                    </List.Item>
-                    <List.Item>
-                      Whether the child is to receive certain medical
-                      treatments.
-                    </List.Item>
-                  </List.Root>
-
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    It's important to understand that if you share parental
-                    responsibility with someone else, you are not able to remove
-                    a child from the country without the other party's consent.
-                    The one exception is that a resident parent may take a child
-                    abroad on holiday for up to a month without consent, as long
-                    as the child arrangement order makes provisions that the
-                    child should live with that parent. However, if you remove a
-                    child from the country for longer than this without consent,
-                    you may face charges of child abduction, leading to
-                    substantial fines and even imprisonment.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
-
             {/* Who Gets Parental Responsibility? */}
             <Box
               display={"flex"}
@@ -299,29 +147,29 @@ const ParentalResponsiblity = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Who Gets Parental Responsibility?
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -347,6 +195,7 @@ const ParentalResponsiblity = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
                   >
                     While a child's birth mother automatically has parental
                     responsibility, the biological father only has
@@ -397,29 +246,29 @@ const ParentalResponsiblity = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setApplicationState(!applicationState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Who Can Apply for Parental Responsibility?
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -445,6 +294,7 @@ const ParentalResponsiblity = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
                   >
                     Every child needs someone with their best interests at heart
                     to be responsible for their welfare. The law allows people
@@ -464,6 +314,8 @@ const ParentalResponsiblity = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
+                    mt={{ lg: "-8", md: "-7", xs: "-5" }}
                   >
                     <List.Item>
                       <strong>Unmarried biological fathers</strong>:Can gain
@@ -536,29 +388,29 @@ const ParentalResponsiblity = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -583,6 +435,8 @@ const ParentalResponsiblity = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    lineHeight={1.7}
+
                     fontFamily={"CeraRoundPro"}
                   >
                     At Lumine, we offer comprehensive services to assist you
@@ -601,6 +455,9 @@ const ParentalResponsiblity = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", md: "-6", xs: "-4" }}
+                    lineHeight={1.7}
+
                   >
                     <strong>Initial Consultation</strong>: We offer an initial
                     consultation to understand your unique circumstances and
@@ -620,6 +477,9 @@ const ParentalResponsiblity = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", md: "-6", xs: "-4" }}
+                    lineHeight={1.7}
+
                   >
                     <strong>Parental Responsibility Agreements</strong>: Our
                     experienced solicitors assist in drafting and reviewing
@@ -639,6 +499,10 @@ const ParentalResponsiblity = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", md: "-6", xs: "-4" }}
+                    lineHeight={1.7}
+
+
                   >
                     <strong>Court Applications</strong>: If necessary, we help
                     you apply to the court for parental responsibility orders,
@@ -658,6 +522,9 @@ const ParentalResponsiblity = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.7}
+                    mt={{ lg: "-7", md: "-6", xs: "-4" }}
+
                   >
                     <strong>Mediation and Negotiation</strong>: We employ
                     mediation and negotiation techniques to resolve disputes
@@ -702,29 +569,29 @@ const ParentalResponsiblity = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -750,6 +617,8 @@ const ParentalResponsiblity = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
+                    pr={{lg:"9"}}
                   >
                     At Lumine, we understand the intricacies of parental
                     responsibility cases and are dedicated to providing
@@ -769,6 +638,8 @@ const ParentalResponsiblity = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                      lineHeight={1.7}
+                    mt={{ lg: "-7", md: "-6", xs: "-4" }}
                   >
                     <strong>Expert Advice</strong>: We offer clear, concise, and
                     practical legal advice tailored to your specific
@@ -787,6 +658,8 @@ const ParentalResponsiblity = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                      lineHeight={1.7}
+                    mt={{ lg: "-7", md: "-6", xs: "-4" }}
                   >
                     <strong> Compassionate Support</strong>: Our team provides
                     compassionate support throughout the divorce process,
@@ -805,6 +678,8 @@ const ParentalResponsiblity = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                      lineHeight={1.7}
+                    mt={{ lg: "-7", md: "-6", xs: "-4" }}
                   >
                     <strong> Strategic Approach</strong>: We develop customized
                     strategies to achieve the best possible outcome for you.
@@ -822,6 +697,8 @@ const ParentalResponsiblity = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                      lineHeight={1.7}
+                    mt={{ lg: "-7", md: "-6", xs: "-4" }}
                   >
                     <strong> Cost Certainty</strong>: We offer fixed,
                     competitive, and transparent fee packages to maintain cost
@@ -840,12 +717,22 @@ const ParentalResponsiblity = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                      lineHeight={1.7}
+                    mt={{ lg: "-7", md: "-6", xs: "-4" }}
+                    pr={{lg:"10"}}
                   >
                     For assistance with parental responsibility matters, please
                     do not hesitate to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                       <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                     We are here to help you navigate the complexities of family
                     law and achieve the best possible resolution for your

@@ -89,7 +89,7 @@ const VisaExtensions = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 color={"#bf9b30"}
-                fontSize={{ xs: "7px", lg: "18px", xl: "24px", "2xl": "34px" }}
+                fontSize={{ xs: "12px", lg: "18px", xl: "24px", "2xl": "34px" }}
                 textAlign={"left"}
                 ml={3}
               >
@@ -367,7 +367,7 @@ const VisaExtensions = () => {
                       "2xl": "18px",
                     }}
                     mt={-10}
-                    ml={-3}
+                    ml={{lg:"-3" , xs:"1"}}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -601,7 +601,7 @@ const VisaExtensions = () => {
                     }}
                     mr={4}
                     ml={3}
-                    mt={-7}
+                    mt={{lg:"-7" , xs:"-4"}}
                     fontWeight={400}
                     lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}

@@ -93,7 +93,7 @@ const SkilledMigrant = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 color={"#bf9b30"}
-                fontSize={{ xs: "7px", lg: "17px", xl: "24px", "2xl": "34px" }}
+                fontSize={{ xs: "13px", lg: "17px", xl: "24px", "2xl": "34px" }}
                 textAlign={"left"}
                 ml={3}
               >
@@ -122,7 +122,7 @@ const SkilledMigrant = () => {
                   textAlign={"left"}
                   color="black"
                   ml={3}
-                  mt={2}
+                  mt={{lg:"2", xs:"-1"}}
                 >
                   Employers who would like to bring skilled workers to the UK have to apply for a sponsorship license from the UK Home Office. The license enables them to sponsor foreign workers and issue CoS. A Certificate of Sponsorship is an official document issued by the employer, which allows the migrant worker to apply for a visa.
 
@@ -134,7 +134,7 @@ const SkilledMigrant = () => {
                   fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                   textAlign={"left"}
                   color="black"
-                  mt={6}
+                                    mt={{lg:"6", xs:"2"}}
                   ml={3}
                 >
                   Eligibility Criteria for a Sponsorship License
@@ -191,7 +191,7 @@ const SkilledMigrant = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
-                mt={8}
+                mt={{lg:"8", xs:"3"}}
                 mb={8}
                 ml={3}
               >
@@ -302,6 +302,8 @@ const SkilledMigrant = () => {
                     fontFamily={"CeraRoundPro"}
                     fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                     color="black"
+                    ml={{xs:"1"}}
+                    mr={{xs:"1"}}
                   >
                     <List.Item textAlign="justify">
                       <Text as="span"></Text>  A sponsor licence for ‘Workers’, which includes long-term employment such as the Skilled Worker visa; and
@@ -416,7 +418,7 @@ const SkilledMigrant = () => {
                       "2xl": "18px",
                     }}
                     mt={-10}
-                    ml={-3}
+                    ml={{lg:"-3" , xs: "1"}}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -543,7 +545,7 @@ const SkilledMigrant = () => {
                       "2xl": "18px",
                     }}
                     mt={-10}
-                    ml={-3}
+                    ml={{lg:"-3", xs:"1"}}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}

@@ -190,7 +190,8 @@ const Trademark = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mt={"-7"}
+                    mt={{ lg: "-7", xs: "-4" }}
+
                     fontWeight={400}
                     lineHeight={1.8}
                     fontFamily={"CeraRoundPro"}
@@ -206,7 +207,8 @@ const Trademark = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mt={"-7"}
+                    mt={{ lg: "-7", xs: "-4" }}
+
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -222,7 +224,8 @@ const Trademark = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mt={"-7"}
+                    mt={{ lg: "-7", xs: "-4" }}
+
                     lineHeight={1.9}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -333,7 +336,8 @@ const Trademark = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
+
                     lineHeight={1.9}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}

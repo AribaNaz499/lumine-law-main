@@ -6,7 +6,7 @@ import { GoPlus } from "react-icons/go";
 import { useState } from "react";
 import { AiOutlineMinus } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import BannerImg from "../../../assets/services/main/sub-services/family.webp";
+import BannerImg from "../../../assets/services/main/family/bannerImg.jpg";
 import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
@@ -41,10 +41,10 @@ const Adoption = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "250px",
+              lg: "300px",
+              xl: "350px",
+              "2xl": "400px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -67,13 +67,13 @@ const Adoption = () => {
           </Box>
 
           {/* Main */}
-          <Box
+          {/* <Box
             width={"100%"}
             display={"flex"}
             flexFlow={"column"}
             color={"black"}
           >
-            {/* Heading */}
+        
             <Box
               width={"90%"}
               alignSelf={"center"}
@@ -102,13 +102,14 @@ const Adoption = () => {
                 adoption and surrogacy cases.
               </Text>
             </Box>
-          </Box>
+          </Box> */}
 
           {/* Dropdown info */}
           <VStack
             justifyContent={"space-around"}
             alignItems={"center"}
             mb={"50px"}
+            mt={"6"}
           >
             {/* Adoption and Surrogacy in the UK */}
             <Box
@@ -144,29 +145,29 @@ const Adoption = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Adoption and Surrogacy in the UK
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -235,29 +236,29 @@ const Adoption = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Adoption in the UK
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -302,6 +303,7 @@ const Adoption = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -6, xs: "-3", md: "-6" }}
                   >
                     <List.Item>
                       <strong>Eligibility</strong>: Prospective adoptive parents
@@ -363,29 +365,29 @@ const Adoption = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setApplicationState(!applicationState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Surrogacy in the UK
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -427,6 +429,7 @@ const Adoption = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={{ lg: -6, xs: "-4", md: "-6" }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -487,29 +490,29 @@ const Adoption = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -551,6 +554,7 @@ const Adoption = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: -6, xs: "-4", md: "-6" }}
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Initial Consultation</strong>: We offer an initial
@@ -570,6 +574,8 @@ const Adoption = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: -6, xs: "-4", md: "-6" }}
+
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Adoption Applications</strong>: Our experienced
@@ -589,6 +595,8 @@ const Adoption = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: -6, xs: "-4", md: "-6" }}
+
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Surrogacy Agreements</strong>: We provide expert
@@ -609,6 +617,8 @@ const Adoption = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -6, xs: "-4", md: "-6" }}
+
                   >
                     <strong>Court Representation</strong>: If necessary, we
                     provide robust representation in court to protect your
@@ -653,7 +663,7 @@ const Adoption = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
@@ -668,14 +678,14 @@ const Adoption = () => {
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -719,6 +729,8 @@ const Adoption = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -6, xs: "-4", md: "-6" }}
+
                   >
                     <strong>Expert Advice</strong>: We offer clear, concise, and
                     practical legal advice tailored to your specific
@@ -737,6 +749,8 @@ const Adoption = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -6, xs: "-4", md: "-6" }}
+
                   >
                     <strong> Compassionate Support</strong>: Our team provides
                     compassionate support throughout the divorce process,
@@ -755,6 +769,8 @@ const Adoption = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -6, xs: "-4", md: "-6" }}
+
                   >
                     <strong> Strategic Approach</strong>: We develop customized
                     strategies to achieve the best possible outcome for you.
@@ -772,6 +788,8 @@ const Adoption = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -6, xs: "-4", md: "-6" }}
+
                   >
                     <strong> Cost Certainty</strong>: We offer fixed,
                     competitive, and transparent fee packages to maintain cost
@@ -790,12 +808,21 @@ const Adoption = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: -6, xs: "-4", md: "-6" }}
+
                   >
                     For assistance with adoption and surrogacy matters, please
                     do not hesitate to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                       <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                     We are here to help you navigate the complexities of family
                     law and achieve the best possible resolution for your
@@ -804,6 +831,7 @@ const Adoption = () => {
                 </VStack>
               )}
             </Box>
+
           </VStack>
 
           {/* Other Services */}

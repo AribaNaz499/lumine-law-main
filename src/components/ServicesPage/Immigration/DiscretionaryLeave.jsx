@@ -658,7 +658,7 @@ const DiscretionaryLeave = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mt={"-8"}
+                    mt={{lg: "-8" , xs: "-4"}}
                     ml={3}
                     fontWeight={400}
                     lineHeight={1.9}

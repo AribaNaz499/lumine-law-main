@@ -167,21 +167,28 @@ const PowerOfAttorney = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                
                 >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    ml={{ lg: -36 }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
+ <Text
+  textAlign={"justify"}
+  fontSize={{
+    base: "12px",
+    md: "14px",
+    lg: "16px",
+    xl: "18px",
+  }}
+  fontWeight={400}
+  fontFamily={"CeraRoundPro"}
+  /* Yahan fix hai: 
+     Mobile (base) par thoda gap, 
+     md (768px se upar) par margin auto taake center rahe,
+     lg (992px se upar) par padding control
+  */
+  ml={{ base: "0", md: "2", lg: "4" }} 
+  px={{ base: "4", md: "6", lg: "0" }} // Padding side se push karegi taake left side se chipke nahi
+  maxW="100%" 
+  lineHeight="1.6"
+>
                     If you have any further queries or require a power of
                     attorney, please feel free to contact Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}

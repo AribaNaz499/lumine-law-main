@@ -108,23 +108,23 @@ const TimeFrameSection = ({ isOpen, onToggle }) => {
         <Text
           textAlign="left"
           fontSize={{
-            xs: "14px",
-            sm: "14px",
-            md: "16px",
-            lg: "16px",
-            xl: "18px",
-            "2xl": "20px",
+            xs: "13px",
+            sm: "13px",
+            md: "15px",
+            lg: "15px",
+            xl: "17px",
+            "2xl": "19px",
           }}
           fontWeight={500}
           fontFamily="CeraRoundPro"
-          color="#beab7c"
+          color="#bf9b30"
         >
           Time Frame for Immigration Applications:
         </Text>
         {!isOpen ? (
-          <GoPlus color="#beab7c" size="2em" />
+          <GoPlus color="#bf9b30" size="1.8em" />
         ) : (
-          <AiOutlineMinus color="#beab7c" size="2em" />
+          <AiOutlineMinus color="#bf9b30" size="1.8em" />
         )}
       </HStack>
 
@@ -166,6 +166,8 @@ const TimeFrameSection = ({ isOpen, onToggle }) => {
               "2xl": "18px",
             }}
             fontWeight={400}
+            mt={{ lg: "-7", xs: "-5", md: "-7" }}
+
             fontFamily="CeraRoundPro"
           >
             <List.Item>
@@ -192,6 +194,8 @@ const TimeFrameSection = ({ isOpen, onToggle }) => {
               "2xl": "18px",
             }}
             fontWeight={400}
+            mt={{ lg: "-7", xs: "-5", md: "-7" }}
+
             fontFamily="CeraRoundPro"
           >
             We cannot guarantee how long the Home Office will take to process

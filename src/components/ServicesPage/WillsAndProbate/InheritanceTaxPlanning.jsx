@@ -34,33 +34,33 @@ const InheritanceTaxPlanning = () => {
 
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
           {/* Banner */}
-         <Box
-                     width={"100%"}
-                     height={{
-                       xs: "295px",
-                       lg: "320px",
-                       xl: "345px",
-                       "2xl": "370px",
-                     }}
-                     bgImage={`url(${BannerImg})`}
-                     bgSize={"cover"}
-                     bgPos={"center"}
-                     bgRepeat={"no-repeat"}
-                     display={"flex"}
-                     justifyContent={"center"}
-                     alignItems={"center"}
-                     _loading={"eager"}
-                   >
-                     <Text
-                       fontSize={{ xs: "38px", lg: "48px", xl: "50px", "2xl": "60px" }}
-                       fontWeight={700}
-                       fontFamily={"CeraRoundPro"}
-                       width={"90%"}
-                       textAlign={"left"}
-                     >
-                     Inheritance Tax Planning
-                     </Text>
-                   </Box>
+          <Box
+            width={"100%"}
+            height={{
+              xs: "295px",
+              lg: "320px",
+              xl: "345px",
+              "2xl": "370px",
+            }}
+            bgImage={`url(${BannerImg})`}
+            bgSize={"cover"}
+            bgPos={"center"}
+            bgRepeat={"no-repeat"}
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            _loading={"eager"}
+          >
+            <Text
+              fontSize={{ xs: "38px", lg: "48px", xl: "50px", "2xl": "60px" }}
+              fontWeight={700}
+              fontFamily={"CeraRoundPro"}
+              width={"90%"}
+              textAlign={"left"}
+            >
+              Inheritance Tax Planning
+            </Text>
+          </Box>
 
           {/* Main */}
           <Box
@@ -138,7 +138,7 @@ const InheritanceTaxPlanning = () => {
               >
                 <Text
                   textAlign={"left"}
-                   fontSize={{
+                  fontSize={{
                     xs: "13px",
                     sm: "13px",
                     md: "15px",
@@ -178,7 +178,7 @@ const InheritanceTaxPlanning = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mr={{lg:20}}
+                    mr={{ lg: 20 }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -187,7 +187,7 @@ const InheritanceTaxPlanning = () => {
                     get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                    <Link
+                      <Link
                         to={"/contact"}
                         style={{ color: "#efdc6b" }}
                         onMouseLeave={(e) => (e.target.style.color = "#efdc6b")}

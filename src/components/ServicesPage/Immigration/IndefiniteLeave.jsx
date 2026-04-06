@@ -90,7 +90,7 @@ const IndefiniteLeave = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 color={"#bf9b30"}
-                fontSize={{ xs: "7px", lg: "19px", xl: "25px", "2xl": "35px" }}
+                fontSize={{ xs: "10px", lg: "19px", xl: "25px", "2xl": "35px" }}
                 textAlign={"left"}
                 ml={3}
               >
@@ -297,7 +297,7 @@ const IndefiniteLeave = () => {
                       "2xl": "18px",
                     }}
                     mt={-8}
-                    ml={-3}
+                    ml={{lg:"-3", xs: "1"}}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -510,7 +510,7 @@ const IndefiniteLeave = () => {
                       "2xl": "18px",
                     }}
                     mt={-10}
-                    ml={-3}
+                    ml={{lg:"-3" , xs:"1"}}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -735,7 +735,7 @@ const IndefiniteLeave = () => {
                       "2xl": "18px",
                     }}
                     mt={-10}
-                    ml={-3}
+                    ml={{lg:"-3" , xs:"1"}}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}

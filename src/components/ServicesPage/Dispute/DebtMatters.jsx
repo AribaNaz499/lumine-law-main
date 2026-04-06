@@ -42,10 +42,10 @@ const DebtMatters = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "300px",
+              lg: "330px",
+              xl: "360px",
+              "2xl": "370px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -84,8 +84,10 @@ const DebtMatters = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11.5px", lg: "13.5px", xl: "15.5px", "2xl": "17.5px" }}
                 textAlign={"justify"}
+                letterSpacing={0.1}
+                 mt={{lg:"-2"}}
               >
                 Managing debt is a crucial aspect of financial stability for
                 both individuals and businesses. Debt matters encompass a range
@@ -138,29 +140,29 @@ const DebtMatters = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                   fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Debt Recovery
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -186,6 +188,7 @@ const DebtMatters = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
                   >
                     Our team of skilled solicitors will guide you through the
                     debt recovery process, ensuring that you recover what is
@@ -207,6 +210,9 @@ const DebtMatters = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={{lg:"1.8" , xs:"1.7"}}
+                    mt={{lg:"-8" , xs:"-5"}}
+                    ml={{lg:"-5"}}
                   >
                     <List.Item>
                       <strong>Credit Control Policy Advice</strong>: We help
@@ -280,29 +286,29 @@ const DebtMatters = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                   fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Debt Management
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -327,7 +333,9 @@ const DebtMatters = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    lineHeight={1.8}
                     fontFamily={"CeraRoundPro"}
+                    ml={{lg:"3"}}
                   >
                     For individuals and businesses struggling with debt, we
                     provide expert advice on debt management. We work with you
@@ -374,29 +382,29 @@ const DebtMatters = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setApplicationState(!applicationState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Litigation and Enforcement
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -422,6 +430,9 @@ const DebtMatters = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.9}
+                    ml={{lg:"2"}}
+                    mr={{lg:"6"}}
                   >
                     When amicable solutions are not possible, we represent your
                     interests in court to secure a favorable judgment. We also
@@ -466,29 +477,29 @@ const DebtMatters = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !screening && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={screening && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setScreening(!screening)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                   fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Insolvency Services
                 </Text>
                 {!screening ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -514,6 +525,10 @@ const DebtMatters = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    ml={{lg:"-8"}}
+                    px={{lg:"12"}}
+                    lineHeight={1.8}
+                  
                   >
                     If your debt situation is severe, we offer insolvency
                     services, including advice on bankruptcy, individual
@@ -559,29 +574,29 @@ const DebtMatters = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                 fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   The Benefits of Effective Debt Recovery Services
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -607,6 +622,9 @@ const DebtMatters = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
+                    pr={{lg:"12"}}
+                    pl={{lg:"3"}}
                   >
                     There is nothing more disappointing than doing an excellent
                     job, whether producing a product or delivering a service,
@@ -654,29 +672,29 @@ const DebtMatters = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                   fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -702,6 +720,8 @@ const DebtMatters = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    pl={{lg:"5", xs:"3" }}
+                    pr={{lg:"12" , xs:"8"}}
                   >
                     At Lumine , we understand the intricacies of debt recovery
                     and management under the updated UK laws. Our experienced
@@ -722,6 +742,9 @@ const DebtMatters = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    pl={{lg:"5", xs:"3" }}
+                    pr={{lg:"12" , xs:"8"}}
+                    mt={{lg:"-6", xs:"-4"}}
                   >
                     <strong>Expert Advice</strong>: We offer clear, concise, and
                     practical legal advice tailored to your specific
@@ -740,6 +763,9 @@ const DebtMatters = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     pl={{lg:"5", xs:"3" }}
+                    pr={{lg:"12" , xs:"8"}}
+                    mt={{lg:"-6", xs:"-4"}}
                   >
                     <strong>Strategic Approach</strong>: Our team develops
                     customized strategies to recover and manage debts,
@@ -758,6 +784,9 @@ const DebtMatters = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     pl={{lg:"5", xs:"3" }}
+                    pr={{lg:"12" , xs:"8"}}
+                    mt={{lg:"-6", xs:"-4"}}
                   >
                     <strong>Comprehensive Support</strong>: From initial
                     consultations to court representation, we provide
@@ -777,6 +806,9 @@ const DebtMatters = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     pl={{lg:"5", xs:"3" }}
+                    pr={{lg:"12" , xs:"8"}}
+                    mt={{lg:"-6", xs:"-4"}}
                   >
                     <strong>Updated Knowledge</strong>: We stay abreast of the
                     latest legal developments to ensure that our advice and
@@ -795,12 +827,22 @@ const DebtMatters = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     pl={{lg:"5", xs:"3" }}
+                    pr={{lg:"12" , xs:"8"}}
+                    mt={{lg:"-6", xs:"-4"}}
                   >
                     For assistance with debt recovery and management, please do
                     not hesitate to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                     <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                     Let us help you navigate the complexities of construction
                     law and achieve the best possible resolution for your

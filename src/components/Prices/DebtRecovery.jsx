@@ -8,7 +8,9 @@ import {
   Grid,
   GridItem,
   Flex,
+  Heading
 } from "@chakra-ui/react";
+
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import "../../styles/fonts.css";
@@ -19,10 +21,12 @@ import { Link } from "react-router-dom";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import ImmigrationImg from "../../assets/pricing/property-prices.webp";
 import ResidentialImg from "../../assets/pricing/immigration.webp";
-import BannerImg from "../../assets/pricing/debt-recovery.webp";
+import BannerImg from "../../assets/pricing/debtRecovery.jpg";
 import { Helmet } from "react-helmet";
 const AllServiceLinks = React.lazy(() => import("../NavLinks/AllServiceLinks"));
 const AllNewsInsights = React.lazy(() => import("../NavLinks/AllNewsInsights"));
+const AllPrices = React.lazy(() => import("../NavLinks/AllPrices"));
+
 
 const DebtRecovery = () => {
   const [purchaseState, setPurchaseState] = useState(false);
@@ -55,12 +59,12 @@ const DebtRecovery = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "200px",
-              lg: "250px",
-              xl: "300px",
-              "2xl": "350px",
+              xs: "240px",
+              lg: "290px",
+              xl: "340px",
+              "2xl": "390px",
             }}
-            bgImage={`url(${BannerImg})`}
+            bgImage={`linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(${BannerImg})`}
             bgSize={"cover"}
             bgPos={"center"}
             bgRepeat={"no-repeat"}
@@ -70,8 +74,8 @@ const DebtRecovery = () => {
             _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
-              fontWeight={600}
+              fontSize={{ xs: "28px", lg: "38px", xl: "44px", "2xl": "54px" }}
+              fontWeight={500}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
               textAlign={"left"}
@@ -94,13 +98,41 @@ const DebtRecovery = () => {
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={650}
+                color={"#bf9b30"}
+                fontSize={{ xs: "12px", lg: "20px", xl: "24px", "2xl": "34px" }}
+                textAlign={"left"}
+                ml={{ lg: "1" }}
+                mt={{ lg: "-3" }}
+
+              >
+                Instructing Us
+              </Heading>
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"left"}
+                ml={{ lg: "1" }}
+                mt={{ lg: "5" }}
+                lineHeight={1.6}
+
               >
-                A few lines on Debt Recovery
+                Usually all we require from you to action an instruction is a copy of the outstanding invoices/statement of account, together with the debtor’s contact details and any relevant correspondence between you and the debtor.
+              </Text>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={400}
+                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                textAlign={"left"}
+                ml={{ lg: "1" }}
+                lineHeight={1.6}
+              >
+                Should further action be required our solicitors can assist you with issuing legal proceedings or even bankruptcy and winding up proceedings. For more information please do not hesitate to contact us.
+
               </Text>
             </Box>
           </Box>
@@ -111,116 +143,7 @@ const DebtRecovery = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* Instructing us DONE */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !houseState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={houseState && "black"}
-                onClick={() => setHouseState(!houseState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Instructing Us
-                </Text>
-                {!houseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
 
-              {houseState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Usually all we require from you to action an instruction is
-                    a copy of the outstanding invoices/statement of account,
-                    together with the debtor’s contact details and any relevant
-                    correspondence between you and the debtor.
-                  </Text>
-
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Should further action be required our solicitors can assist
-                    you with issuing legal proceedings or even bankruptcy and
-                    winding up proceedings. For more information please do not
-                    hesitate to contact us.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
 
             {/* Debt Recovery – the Costs Involved DONE*/}
             <Box
@@ -233,7 +156,7 @@ const DebtRecovery = () => {
             >
               {/* Initial Button */}
               <HStack
-                borderTop={"1px solid #adacac"}
+                // borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{
@@ -254,31 +177,31 @@ const DebtRecovery = () => {
                   "2xl": "10px",
                 }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !timescaleState && "black" }}
+                // _hover={{ backgroundColor: !timescaleState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={timescaleState && "black"}
+                backgroundColor={timescaleState ? "black" : "#f9f9f9"}
                 onClick={() => setTimescaleState(!timescaleState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Debt Recovery – the Costs Involved
                 </Text>
                 {!timescaleState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -304,6 +227,7 @@ const DebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
                   >
                     These costs apply where your claim relates to an unpaid
                     invoice or invoices which are not disputed and enforcement
@@ -328,7 +252,7 @@ const DebtRecovery = () => {
             >
               {/* Initial Button */}
               <HStack
-                borderTop={"1px solid #adacac"}
+                // borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{
@@ -349,31 +273,31 @@ const DebtRecovery = () => {
                   "2xl": "10px",
                 }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !serviceState && "black" }}
+                // _hover={{ backgroundColor: !serviceState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={serviceState && "black"}
+                backgroundColor={serviceState ? "black" : "#f9f9f9"}
                 onClick={() => setServiceState(!serviceState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Fees
                 </Text>
                 {!serviceState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -399,96 +323,93 @@ const DebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+
                   >
                     We can give you a more accurate estimate of costs once we
                     have more information about your specific case.
                   </Text>
 
-                  <Flex flexFlow={{ xs: "column", md: "row" }} gap={"20px"}>
-                    {/* 1st col */}
-                    <Flex
-                      flexFlow={"column"}
-                      gap={"10px"}
-                      width={{ xs: "100%", lg: "50%" }}
-                    >
-                      <Text
-                        textAlign={"justify"}
-                        fontSize={{
-                          xs: "12px",
-                          sm: "12px",
-                          md: "14px",
-                          lg: "14px",
-                          xl: "16px",
-                          "2xl": "18px",
-                        }}
-                        fontWeight={600}
-                        fontFamily={"CeraRoundPro"}
-                      >
-                        Undefended/Undisputed
-                      </Text>
 
-                      <Text
-                        textAlign={"justify"}
-                        fontSize={{
-                          xs: "12px",
-                          sm: "12px",
-                          md: "14px",
-                          lg: "14px",
-                          xl: "16px",
-                          "2xl": "18px",
-                        }}
-                        fontWeight={400}
-                        fontFamily={"CeraRoundPro"}
-                      >
-                        Our estimated fees structure in relation to the
-                        undisputed claim is noted below from stage 1-4. Our
-                        estimated fees are exclusive of VAT and all
-                        disbursements such as court fees, counsel fees and any
-                        other necessary disbursements which you may need to
-                        incur.
-                      </Text>
-                    </Flex>
+                  <Text
+                    textAlign={"justify"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={600}
+                    fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                  >
+                    Undefended/Undisputed
+                  </Text>
 
-                    {/* 2nd col */}
-                    <Flex
-                      flexFlow={"column"}
-                      gap={"10px"}
-                      width={{ xs: "100%", lg: "50%" }}
-                    >
-                      <Text
-                        textAlign={"justify"}
-                        fontSize={{
-                          xs: "12px",
-                          sm: "12px",
-                          md: "14px",
-                          lg: "14px",
-                          xl: "16px",
-                          "2xl": "18px",
-                        }}
-                        fontWeight={600}
-                        fontFamily={"CeraRoundPro"}
-                      >
-                        Defended
-                      </Text>
+                  <Text
+                    textAlign={"justify"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+                    lineHeight={1.8}
+                  >
+                    Our estimated fees structure in relation to the
+                    undisputed claim is noted below from stage 1-4. Our
+                    estimated fees are exclusive of VAT and all
+                    disbursements such as court fees, counsel fees and any
+                    other necessary disbursements which you may need to
+                    incur.
+                  </Text>
 
-                      <Text
-                        textAlign={"justify"}
-                        fontSize={{
-                          xs: "12px",
-                          sm: "12px",
-                          md: "14px",
-                          lg: "14px",
-                          xl: "16px",
-                          "2xl": "18px",
-                        }}
-                        fontWeight={400}
-                        fontFamily={"CeraRoundPro"}
-                      >
-                        If the matter is defended we charge hourly fees which
-                        start from £175+ VAT, excluding all disbursements.
-                      </Text>
-                    </Flex>
-                  </Flex>
+
+
+                  <Text
+                    textAlign={"justify"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={600}
+                    fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4", md: "-6" }}
+
+                  >
+                    Defended
+                  </Text>
+
+                  <Text
+                    textAlign={"justify"}
+                    fontSize={{
+                      xs: "12px",
+                      sm: "12px",
+                      md: "14px",
+                      lg: "14px",
+                      xl: "16px",
+                      "2xl": "18px",
+                    }}
+                    fontWeight={400}
+                    fontFamily={"CeraRoundPro"}
+                                              mt={{lg:"-7", xs:"-4", md:"-6"}}
+lineHeight={1.8}
+                  >
+                    If the matter is defended we charge hourly fees which
+                    start from £175+ VAT, excluding all disbursements.
+                  </Text>
+
+
                 </VStack>
               )}
             </Box>
@@ -504,7 +425,7 @@ const DebtRecovery = () => {
             >
               {/* Initial Button */}
               <HStack
-                borderTop={"1px solid #adacac"}
+                // borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{
@@ -525,31 +446,31 @@ const DebtRecovery = () => {
                   "2xl": "10px",
                 }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !residentialState && "black" }}
+                // _hover={{ backgroundColor: !residentialState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={residentialState && "black"}
+                backgroundColor={residentialState ? "black" : "#f9f9f9"}
                 onClick={() => setResidentialState(!residentialState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Pre-Action Advice (Stage 1)
                 </Text>
                 {!residentialState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -742,7 +663,7 @@ const DebtRecovery = () => {
             >
               {/* Initial Button */}
               <HStack
-                borderTop={"1px solid #adacac"}
+                // borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{
@@ -763,31 +684,31 @@ const DebtRecovery = () => {
                   "2xl": "10px",
                 }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !purchaseState && "black" }}
+                // _hover={{ backgroundColor: !purchaseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={purchaseState && "black"}
+                backgroundColor={purchaseState ? "black" : "#f9f9f9"}
                 onClick={() => setPurchaseState(!purchaseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Issuing a Claim (Stage 2)
                 </Text>
                 {!purchaseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -1170,7 +1091,7 @@ const DebtRecovery = () => {
             >
               {/* Initial Button */}
               <HStack
-                borderTop={"1px solid #adacac"}
+                // borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{
@@ -1191,31 +1112,31 @@ const DebtRecovery = () => {
                   "2xl": "10px",
                 }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !disbursementsState && "black" }}
+                // _hover={{ backgroundColor: !disbursementsState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={disbursementsState && "black"}
+                backgroundColor={disbursementsState ? "black" : "#f9f9f9"}
                 onClick={() => setDisbursementsState(!disbursementsState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Request for Judgement (Stage 3)
                 </Text>
                 {!disbursementsState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -1257,6 +1178,8 @@ const DebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{lg:"-6", md:"-7", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     If judgment is obtained but not duly settled then further
                     action will be required to enforce the judgment and secure
@@ -1278,6 +1201,8 @@ const DebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                      mt={{lg:"-6", md:"-7", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     Timescale: It usually takes the court about 10 working days
                     to enter judgment following receipt of a request for
@@ -1295,6 +1220,8 @@ const DebtRecovery = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={600}
+                      mt={{lg:"-6", md:"-7", xs:"-4"}}
+                    lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
                     Defended Claims
@@ -1312,6 +1239,8 @@ const DebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                      mt={{lg:"-6", md:"-7", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     Please Note: The above set fees are only applicable in
                     undefended actions. If your debt claim becomes defended at
@@ -1332,6 +1261,8 @@ const DebtRecovery = () => {
                     }}
                     fontWeight={600}
                     fontFamily={"CeraRoundPro"}
+                      mt={{lg:"-6", md:"-7", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     Additional services if necessary
                   </Text>
@@ -1348,6 +1279,8 @@ const DebtRecovery = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                      mt={{lg:"-6", md:"-7", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     Where possible indications of third-party costs are given.
                   </Text>
@@ -1366,7 +1299,7 @@ const DebtRecovery = () => {
             >
               {/* Initial Button */}
               <HStack
-                borderTop={"1px solid #adacac"}
+                // borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{
@@ -1387,31 +1320,31 @@ const DebtRecovery = () => {
                   "2xl": "10px",
                 }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !leaseholdState && "black" }}
+                // _hover={{ backgroundColor: !leaseholdState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={leaseholdState && "black"}
+                backgroundColor={leaseholdState ? "black" : "#f9f9f9"}
                 onClick={() => setLeaseholdState(!leaseholdState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Enforcement of Judgement (Stage 4)
                 </Text>
                 {!leaseholdState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -1769,7 +1702,7 @@ const DebtRecovery = () => {
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    f we are required to enter into correspondence about the
+                    If we are required to enter into correspondence about the
                     enforcement then the matter will no longer be treated as a
                     fixed fee enforcement and additional charges will apply
                     based on the applicable hourly rate set out in our client
@@ -1780,184 +1713,10 @@ const DebtRecovery = () => {
             </Box>
           </VStack>
 
-          {/* Other Prices */}
-          <Box mb="50px">
-            {/* Header */}
-            <HStack justifyContent={"center"} alignItems={"center"}>
-              <Text
-                color={"black"}
-                fontSize={{
-                  xs: "20px",
-                  sm: "20px",
-                  md: "24px",
-                  lg: "26px",
-                  xl: "28px",
-                  "2xl": "30px",
-                }}
-                fontWeight={500}
-                mb={{
-                  xs: "25px",
-                  sm: "30px",
-                  md: "35px",
-                  lg: "40px",
-                  xl: "45px",
-                  "2xl": "50px",
-                }}
-              >
-                Other Prices
-              </Text>
-              <Box
-                width={{
-                  xs: "55%",
-                  sm: "55%",
-                  md: "60%",
-                  lg: "65%",
-                  xl: "70%",
-                  "2xl": "75%",
-                }}
-              ></Box>
-            </HStack>
-
-            {/* List */}
-            <Box
-              width={"100%"}
-              display={"flex"}
-              flexFlow={"column"}
-              alignItems={"center"}
-              color={"black"}
-            >
-              <Grid
-                width={"90%"}
-                templateColumns={{ xs: "repeat(2, 2fr)", lg: "repeat(2, 2fr)" }}
-                gap={{
-                  xs: "25px",
-                  sm: "30px",
-                  md: "35px",
-                  lg: "40px",
-                  xl: "45px",
-                  "2xl": "50px",
-                }}
-                justifyItems={"center"}
-                alignItems={"center"}
-              >
-                {/* Col 1 */}
-                <GridItem
-                  width={"100%"}
-                  height={{
-                    xs: "175px",
-                    sm: "175px",
-                    md: "175px",
-                    lg: "200px",
-                    xl: "225px",
-                    "2xl": "250px",
-                  }}
-                  padding={{ xs: "10px 10px", lg: "10px 20px" }}
-                  border={"1px solid black"}
-                  borderRadius={"8px"}
-                  cursor={"pointer"}
-                  _hover={{
-                    opacity: "0.8",
-                    transition: "all 0.5s ease",
-                  }}
-                  bgImage={`url(${ImmigrationImg})`}
-                  bgPos={"center"}
-                  bgSize={"cover"}
-                  bgRepeat={"no-repeat"}
-                  _loading={"lazy"}
-                >
-                  <Link
-                    to={"/lumine-law/prices/property-prices"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Box
-                      height={"100%"}
-                      display={"flex"}
-                      flexFlow={"column"}
-                      justifyContent={"space-between"}
-                      alignItems={"flex-start"}
-                      gap={"10px"}
-                    >
-                      <Text
-                        fontSize={{
-                          xs: "14px",
-                          sm: "14px",
-                          md: "16px",
-                          lg: "18px",
-                          xl: "20px",
-                          "2xl": "22px",
-                        }}
-                        fontFamily={"CeraRoundPro"}
-                        fontWeight={500}
-                        textAlign={"left"}
-                        color={"#ffffff"}
-                      >
-                        Property Prices
-                      </Text>
-                      <HiOutlineArrowLongRight color={"#ffffff"} size={"2em"} />
-                    </Box>
-                  </Link>
-                </GridItem>
-
-                {/* Col 2 */}
-                <GridItem
-                  width={"100%"}
-                  height={{
-                    xs: "175px",
-                    sm: "175px",
-                    md: "175px",
-                    lg: "200px",
-                    xl: "225px",
-                    "2xl": "250px",
-                  }}
-                  padding={{ xs: "10px 10px", lg: "10px 20px" }}
-                  border={"1px solid black"}
-                  borderRadius={"8px"}
-                  cursor={"pointer"}
-                  _hover={{
-                    opacity: "0.8",
-                    transition: "all 0.5s ease",
-                  }}
-                  bgImage={`url(${ResidentialImg})`}
-                  bgPos={"center"}
-                  bgSize={"cover"}
-                  bgRepeat={"no-repeat"}
-                  _loading={"lazy"}
-                >
-                  <Link
-                    to={"/lumine-law/prices/immigration-prices"}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <Box
-                      height={"100%"}
-                      display={"flex"}
-                      flexFlow={"column"}
-                      justifyContent={"space-between"}
-                      alignItems={"flex-start"}
-                      gap={"10px"}
-                    >
-                      <Text
-                        fontSize={{
-                          xs: "14px",
-                          sm: "14px",
-                          md: "16px",
-                          lg: "18px",
-                          xl: "20px",
-                          "2xl": "22px",
-                        }}
-                        fontFamily={"CeraRoundPro"}
-                        fontWeight={500}
-                        textAlign={"left"}
-                        color={"#ffffff"}
-                      >
-                        Immigration Prices
-                      </Text>
-                      <HiOutlineArrowLongRight color={"#ffffff"} size={"2em"} />
-                    </Box>
-                  </Link>
-                </GridItem>
-              </Grid>
-            </Box>
-          </Box>
+        {/* Prices */}
+                 <Suspense fallback={<div>Loading All Prices ...</div>}>
+                   <AllPrices />
+                 </Suspense>
 
           {/* All Services */}
           <Suspense fallback={<div>Loading All Services ...</div>}>

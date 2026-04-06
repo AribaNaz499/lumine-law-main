@@ -23,8 +23,10 @@ import DebtRecoovery from "../../assets/pricing/debtRecovery.jpg";
 import Immigration from "../../assets/pricing/immigration.jpg";
 import BannerImg from "../../assets/pricing/priceBanner.jpg";
 import { Helmet } from "react-helmet";
-import AllServiceLinks from "../NavLinks/AllServiceLinks"; 
+import AllServiceLinks from "../NavLinks/AllServiceLinks";
 import AllNewsInsights from "../NavLinks/AllNewsInsights";
+import AllPrices from "../../NavLinks/AllPrices";
+
 
 const PropertyPrices = () => {
   const [purchaseState, setPurchaseState] = useState(false);
@@ -405,7 +407,9 @@ const PropertyPrices = () => {
             justifyContent={"space-around"}
             alignItems={"center"}
             mb={"50px"}
+
           >
+
             {/* Residential sale freehold and leasehold estimated fee */}
             <Box
               display={"flex"}
@@ -414,18 +418,18 @@ const PropertyPrices = () => {
               width={"90%"}
               justifyContent={"center"}
               alignItems={"center"}
+
             >
               <HStack
-                borderTop={"1px solid #adacac"}
+                // borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{ base: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
                 py={{ base: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !residentialState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={residentialState && "black"}
+                backgroundColor={residentialState ? "black" : "#f9f9f9"}
                 onClick={() => setResidentialState(!residentialState)}
               >
                 <Text
@@ -434,6 +438,7 @@ const PropertyPrices = () => {
                   fontWeight={700}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
+
                 >
                   Residential Sale Freehold and Leasehold Estimated Fee
                 </Text>
@@ -564,16 +569,15 @@ const PropertyPrices = () => {
               alignItems={"center"}
             >
               <HStack
-                borderTop={"1px solid #adacac"}
+                // borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{ base: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
                 py={{ base: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !likelyState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={likelyState && "black"}
+                backgroundColor={likelyState ? "black" : "#f9f9f9"}
                 onClick={() => setLikelyState(!likelyState)}
               >
                 <Text
@@ -642,16 +646,15 @@ const PropertyPrices = () => {
               alignItems={"center"}
             >
               <HStack
-                borderTop={"1px solid #adacac"}
+                // borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{ base: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
                 py={{ base: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !additionalState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={additionalState && "black"}
+                backgroundColor={additionalState ? "black" : "#f9f9f9"}
                 onClick={() => setAdditionalState(!additionalState)}
               >
                 <Text
@@ -741,16 +744,15 @@ const PropertyPrices = () => {
               alignItems={"center"}
             >
               <HStack
-                borderTop={"1px solid #adacac"}
+                // borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{ base: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
                 py={{ base: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !timescaleState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={timescaleState && "black"}
+                backgroundColor={timescaleState ? "black" : "#f9f9f9"}
                 onClick={() => setTimescaleState(!timescaleState)}
               >
                 <Text
@@ -810,16 +812,15 @@ const PropertyPrices = () => {
               alignItems={"center"}
             >
               <HStack
-                borderTop={"1px solid #adacac"}
+                // borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
                 px={{ base: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
                 py={{ base: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 cursor={"pointer"}
-                _hover={{ backgroundColor: !nameState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={nameState && "black"}
+                backgroundColor={nameState ? "black" : "#f9f9f9"}
                 onClick={() => setNameState(!nameState)}
               >
                 <Text
@@ -882,127 +883,12 @@ const PropertyPrices = () => {
             </Box>
           </VStack>
 
-          {/* Other Prices */}
-          <Box mb="50px" px={{ base: "4%", sm: "4%", md: "4%" }}>
-            {/* Header */}
-            <Text
-              color="black"
-              fontSize={{ base: "22px", sm: "24px", md: "28px", lg: "32px", xl: "34px", "2xl": "36px" }}
-              fontWeight={400}
-              mb={{ base: "20px", sm: "25px", md: "30px", lg: "40px", xl: "45px", "2xl": "50px" }}
-              textAlign="left"
-              fontFamily={"CeraRoundPro"}
-            >
-              Pricing
-            </Text>
 
-            {/* List */}
-            <Box
-              width={"100%"}
-              display={"flex"}
-              flexFlow={"column"}
-              alignItems={"center"}
-              color={"black"}
-            >
-              <Grid
-                width={"100%"}
-                templateColumns={{ base: "repeat(1, 1fr)", sm: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
-                gap={{ base: "14px", sm: "16px", md: "20px", lg: "23px", xl: "25px", "2xl": "27px" }}
-                justifyItems={"center"}
-                alignItems={"center"}
-              >
-                {/* Col 1 - Property Prices */}
-                <GridItem
-                  width={"100%"}
-                  height={{ base: "160px", sm: "175px", md: "185px", lg: "210px", xl: "235px", "2xl": "260px" }}
-                  padding={{ base: "10px 12px", lg: "10px 20px" }}
-                  border={"1px solid black"}
-                  borderRadius={"8px"}
-                  cursor={"pointer"}
-                  _hover={{ opacity: "0.8", transition: "all 0.5s ease" }}
-                  bgImage={`linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${BannerImg})`}
-                  bgPos={"center"}
-                  bgSize={"cover"}
-                  bgRepeat={"no-repeat"}
-                >
-                  <Link to={"/prices/property-prices"} style={{ textDecoration: "none" }}>
-                    <Box height={"100%"} display={"flex"} flexFlow={"column"} justifyContent={"space-between"} alignItems={"flex-start"} gap={"10px"}>
-                      <Text
-                        fontSize={{ base: "15px", sm: "16px", md: "19px", lg: "21px", xl: "23px", "2xl": "25px" }}
-                        fontFamily={"CeraRoundPro"}
-                        fontWeight={400}
-                        textAlign={"left"}
-                        color={"#ffffff"}
-                        mt={"20px"}
-                      >
-                        Property Prices
-                      </Text>
-                    </Box>
-                  </Link>
-                </GridItem>
 
-                {/* Col 2 - Debt Recovery Prices */}
-                <GridItem
-                  width={"100%"}
-                  height={{ base: "160px", sm: "175px", md: "185px", lg: "210px", xl: "235px", "2xl": "260px" }}
-                  padding={{ base: "10px 12px", lg: "10px 20px" }}
-                  border={"1px solid black"}
-                  borderRadius={"8px"}
-                  cursor={"pointer"}
-                  _hover={{ opacity: "0.8", transition: "all 0.5s ease" }}
-                  bgImage={`linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${DebtRecoovery})`}
-                  bgPos={"center"}
-                  bgSize={"cover"}
-                  bgRepeat={"no-repeat"}
-                >
-                  <Link to={"/prices/debt-recovery"} style={{ textDecoration: "none" }}>
-                    <Box height={"100%"} display={"flex"} flexFlow={"column"} justifyContent={"space-between"} alignItems={"flex-start"} gap={"10px"}>
-                      <Text
-                        fontSize={{ base: "15px", sm: "16px", md: "19px", lg: "21px", xl: "23px", "2xl": "25px" }}
-                        fontFamily={"CeraRoundPro"}
-                        fontWeight={400}
-                        textAlign={"left"}
-                        color={"#ffffff"}
-                        mt={"20px"}
-                      >
-                        Debt Recovery Prices
-                      </Text>
-                    </Box>
-                  </Link>
-                </GridItem>
-
-                {/* Col 3 - Immigration Prices */}
-                <GridItem
-                  width={"100%"}
-                  height={{ base: "160px", sm: "175px", md: "185px", lg: "210px", xl: "235px", "2xl": "260px" }}
-                  padding={{ base: "10px 12px", lg: "10px 20px" }}
-                  border={"1px solid black"}
-                  borderRadius={"8px"}
-                  cursor={"pointer"}
-                  _hover={{ opacity: "0.8", transition: "all 0.5s ease" }}
-                  bgImage={`linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${Immigration})`}
-                  bgPos={"center"}
-                  bgSize={"cover"}
-                  bgRepeat={"no-repeat"}
-                >
-                  <Link to={"/prices/immigration-prices"} style={{ textDecoration: "none" }}>
-                    <Box height={"100%"} display={"flex"} flexFlow={"column"} justifyContent={"space-between"} alignItems={"flex-start"} gap={"10px"}>
-                      <Text
-                        fontSize={{ base: "15px", sm: "16px", md: "19px", lg: "21px", xl: "23px", "2xl": "25px" }}
-                        fontFamily={"CeraRoundPro"}
-                        fontWeight={400}
-                        textAlign={"left"}
-                        color={"#ffffff"}
-                        mt={"20px"}
-                      >
-                        Immigration Prices
-                      </Text>
-                    </Box>
-                  </Link>
-                </GridItem>
-              </Grid>
-            </Box>
-          </Box>
+          {/* Prices */}
+          <Suspense fallback={<div>Loading All Prices ...</div>}>
+            <AllPrices />
+          </Suspense>
 
           {/* All Services */}
           <Suspense fallback={<div>Loading All Services ...</div>}>

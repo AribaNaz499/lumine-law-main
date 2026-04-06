@@ -488,7 +488,7 @@ const EntryClearance = () => {
                       "2xl": "18px",
                     }}
                     mt={-9}
-                    ml={-3}
+                    ml={{lg: "-3" , xs: "1"}}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}

@@ -11,9 +11,8 @@ import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import BannerImg from "../../../assets/services/main/wills-probate/banner.jpg";
-import {
-  Heading
-} from "@chakra-ui/react";
+import { Heading } from "@chakra-ui/react";
+
 const Probate = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
@@ -76,7 +75,6 @@ const Probate = () => {
             mt={-5}
             color={"black"}
           >
-
             <Box
               width={"90%"}
               alignSelf={"center"}
@@ -93,7 +91,7 @@ const Probate = () => {
             mb={"50px"}
             px={{ xs: 2, sm: 3, md: 4 }}
           >
-            {/* What is Probate*/}
+            {/* What is Probate */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -102,28 +100,13 @@ const Probate = () => {
               justifyContent={"center"}
               alignItems={"flex-start"}
             >
-              {/* Initial Button */}
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
@@ -132,14 +115,7 @@ const Probate = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
@@ -162,22 +138,16 @@ const Probate = () => {
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
                   textAlign={"justify"}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
                     fontWeight={400}
-                    ml={2}
-                    mr={7}
                     lineHeight={2}
                     fontFamily={"CeraRoundPro"}
+                    px={{ xs: 1, md: 2 }}
+                    width={"100%"}
                   >
                     Probate involves the administration process of a deceased
                     person's estate. To begin the administration of the estate,
@@ -204,28 +174,13 @@ const Probate = () => {
               justifyContent={"center"}
               alignItems={"center"}
             >
-              {/* Initial Button */}
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
@@ -234,14 +189,7 @@ const Probate = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
+                  fontSize={{ xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "18px", "2xl": "20px" }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
@@ -267,19 +215,12 @@ const Probate = () => {
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
                     fontWeight={400}
-                    ml={2}
-                    mr={7}
                     lineHeight={2}
                     fontFamily={"CeraRoundPro"}
+                    px={{ xs: 1, md: 2 }}
+                    width={"100%"}
                   >
                     When it comes to your probate matter, we will arrange a
                     personal meaning that will provide you with the processing
@@ -302,28 +243,13 @@ const Probate = () => {
               justifyContent={"center"}
               alignItems={"center"}
             >
-              {/* Initial Button */}
               <HStack
                 borderY={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
@@ -332,14 +258,7 @@ const Probate = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
@@ -361,22 +280,16 @@ const Probate = () => {
                   mb={{ xs: "4px", md: "10px" }}
                   borderTop={"1px solid #adacac"}
                   py={{ xs: "15px", md: "30px" }}
+                  width={"100%"}
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
+                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
                     fontWeight={400}
-                    ml={2}
-                    mr={7}
                     lineHeight={2}
                     fontFamily={"CeraRoundPro"}
+                    px={{ xs: 1, md: 2 }}
+                    width={"100%"}
                   >
                     Lumine solicitors recognise that discussing and planning the
                     death or loss of a loved one is never an easy process, but
@@ -400,420 +313,404 @@ const Probate = () => {
             </Box>
           </VStack>
 
+          {/* ✅ Main Content Wrapper */}
+          <Box
+            width={"100%"}
+            display={"flex"}
+            flexDirection={"column"}
+            alignItems={"center"}
+            px={{ xs: "16px", sm: "24px", md: "40px", lg: "60px", xl: 0 }}
+          >
+            {/* 1. Introduction */}
+            <Box width={"100%"} maxW="1200px" my={{ xs: "5%", md: "2.5%" }}>
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                fontSize={{ xs: "22px", sm: "26px", md: "30px", lg: "36px", xl: "38px", "2xl": "42px" }}
+                color={"gray"}
+                textAlign={"left"}
+                mb={3}
+               mt={{lg:"-6"}}
+              >
+                Probate Solicitor in London
+              </Heading>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={300}
+                fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", xl: "16px", "2xl": "18px" }}
+                color={"gray"}
+                textAlign={"justify"}
+                letterSpacing={0.2}
+                lineHeight={1.8}
+              >
+                <b>Trusted Probate & Estate Administration Services in London</b><br />
+                Dealing with the estate of a loved one after their passing can be emotionally overwhelming and legally complex. At Lumine Law, our experienced probate solicitors in London provide compassionate, professional guidance to make the process as smooth and stress-free as possible. Whether your case involves a straightforward estate or a complex situation with international assets, we handle everything with care, precision, and complete transparency.
+              </Text>
+            </Box>
 
-    {/* ✅ Main Wrapper - Ensuring maxW center and responsive padding */}
-<Box
-  width={"100%"}
-  display={"flex"}
-  flexDirection={"column"}
-  alignItems={"center"}
-  px={{ xs: 4, md: 0 }} // Mobile par thodi padding taake text corners se na lage
->
-  {/* 1. Introduction */}
-  <Box
-    width={"100%"}
-    maxW="1200px"
-    alignSelf={"center"}
-    mb={"5%"}
-    my={{ xs: "5%", md: "2.5%" }}
-  >
-    <Heading
-      as={"h2"}
-      fontFamily={"CeraRoundPro"}
-      fontWeight={600}
-      fontSize={{ xs: "34px", lg: "36px", xl: "38px", "2xl": "42px" }}
-      mt={{ xs: 0, md: -12 }} // Desktop par wahi -12 spacing
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }} // Desktop par wahi margins
-      color={"gray"}
-      textAlign={"justify"}
-    >
-      Probate Solicitor in London
-    </Heading>
+            {/* 2. What Is Probate */}
+            <Box width={"100%"} maxW="1200px" my={{ xs: "5%", md: "2.5%" }}>
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                fontSize={{ xs: "20px", sm: "24px", md: "28px", lg: "33px", xl: "35px", "2xl": "39px" }}
+                color={"gray"}
+                textAlign={"left"}
+                mb={3}
+                mt={{ lg: "-12" }}
+              >
+                What Is Probate and Why It Matters
+              </Heading>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={300}
+                fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", xl: "16px", "2xl": "18px" }}
+                color={"gray"}
+                textAlign={"justify"}
+                letterSpacing={0.2}
+                lineHeight={1.8}
+              >
+                Probate is the legal and financial process of administering a deceased person's estate, collecting their assets, settling any debts and taxes, and distributing what remains to the rightful beneficiaries. If there is a Will, the executors apply for a Grant of Probate. If there is no Will, the process continues under the rules of intestacy, and the administrators apply for Letters of Administration. Both situations require careful handling of legal paperwork, tax matters, and deadlines.
+              </Text>
+            </Box>
 
-    <Text
-      fontFamily={"CeraRoundPro"}
-      fontWeight={300}
-      fontSize={{ xs: "14px", lg: "16px", xl: "16px", "2xl": "18px" }}
-      mt={3}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-      letterSpacing={0.2}
-    >
-      <b>Trusted Probate & Estate Administration Services in London</b><br />
-      Dealing with the estate of a loved one after their passing can be emotionally overwhelming and legally complex. At Lumine Law, our experienced probate solicitors in London provide compassionate, professional guidance to make the process as smooth and stress-free as possible. Whether your case involves a straightforward estate or a complex situation with international assets, we handle everything with care, precision, and complete transparency.
-    </Text>
-  </Box>
+            {/* 3. How We Help */}
+            <Box width={"100%"} maxW="1200px" my={{ xs: "5%", md: "2.5%" }}>
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                fontSize={{ xs: "20px", sm: "24px", md: "28px", lg: "33px", xl: "35px", "2xl": "39px" }}
+                color={"gray"}
+                textAlign={"left"}
+                mb={3}
+                mt={{ lg: "-12" }}
+              >
+                How Our Probate Solicitors in London Can Help
+              </Heading>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={300}
+                fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", xl: "16px", "2xl": "18px" }}
+                color={"gray"}
+                textAlign={"justify"}
+                letterSpacing={0.2}
+                lineHeight={1.8}
+                mb={2}
+              >
+                Our team assists with every stage of the probate and estate administration process, including:
+              </Text>
+              <List.Root
+                textAlign={"left"}
+                lineHeight={1.8}
+                fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "16px", "2xl": "18px" }}
+                fontWeight={300}
+                fontFamily={"CeraRoundPro"}
+                color={"gray"}
+                pl={{ xs: 4, md: 6 }}
+                mt={2}
+              >
+                <List.Item>Preparing and submitting probate or intestacy applications</List.Item>
+                <List.Item>Valuing all estate assets and liabilities</List.Item>
+                <List.Item>Advising on and calculating Inheritance Tax (IHT)</List.Item>
+                <List.Item>Liaising directly with HM Revenue & Customs (HMRC)</List.Item>
+                <List.Item>Settling debts and distributing assets to beneficiaries</List.Item>
+                <List.Item>Resolving disputes among executors, beneficiaries, or family members</List.Item>
+                <List.Item>Advising on executor duties to help you avoid personal liability</List.Item>
+              </List.Root>
+            </Box>
 
-  {/* 2. What Is Probate */}
-  <Box
-    width={"100%"}
-    maxW="1200px"
-    alignSelf={"center"}
-    mb={"5%"}
-    my={{ xs: "5%", md: "2.5%" }}
-  >
-    <Heading
-      as={"h2"}
-      fontFamily={"CeraRoundPro"}
-      fontWeight={600}
-      fontSize={{ xs: "31px", lg: "33px", xl: "35px", "2xl": "39px" }}
-      mt={{ xs: 0, md: -14 }}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-    >
-      What Is Probate and Why It Matters
-    </Heading>
+            {/* 4. Inheritance Tax */}
+            <Box width={"100%"} maxW="1200px" my={{ xs: "5%", md: "2.5%" }}>
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                fontSize={{ xs: "20px", sm: "24px", md: "28px", lg: "33px", xl: "35px", "2xl": "39px" }}
+                color={"gray"}
+                textAlign={"left"}
+                mb={3}
+                mt={{ lg: "-12" }}
 
-    <Text
-      fontFamily={"CeraRoundPro"}
-      fontWeight={300}
-      fontSize={{ xs: "14px", lg: "16px", xl: "16px", "2xl": "18px" }}
-      mt={3}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-      letterSpacing={0.2}
-    >
-      Probate is the legal and financial process of administering a deceased person's estate, collecting their assets, settling any debts and taxes, and distributing what remains to the rightful beneficiaries. If there is a Will, the executors apply for a Grant of Probate. If there is no Will, the process continues under the rules of intestacy, and the administrators apply for Letters of Administration. Both situations require careful handling of legal paperwork, tax matters, and deadlines.
-    </Text>
-  </Box>
+              >
+                Inheritance Tax & HMRC Guidance
+              </Heading>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={300}
+                fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", xl: "16px", "2xl": "18px" }}
+                color={"gray"}
+                textAlign={"justify"}
+                letterSpacing={0.2}
+                lineHeight={1.8}
+              >
+                Navigating inheritance tax (IHT) can be challenging. We provide step-by-step advice on completing HMRC forms, determining tax liabilities, and ensuring all payments are made on time. Where inheritance tax is due, we can also help you explore practical ways to raise funds, such as selling assets or securing short-term financing. We handle communication with HMRC on your behalf, ensuring full compliance and minimizing unnecessary delays.
+              </Text>
+            </Box>
 
-  {/* 3. How We Help */}
-  <Box
-    width={"100%"}
-    maxW="1200px"
-    alignSelf={"center"}
-    mb={"5%"}
-    my={{ xs: "5%", md: "2.5%" }}
-  >
-    <Heading
-      as={"h2"}
-      fontFamily={"CeraRoundPro"}
-      fontWeight={600}
-      fontSize={{ xs: "31px", lg: "33px", xl: "35px", "2xl": "39px" }}
-      mt={{ xs: 0, md: -14 }}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-    >
-      How Our Probate Solicitors in London Can Help
-    </Heading>
+            {/* 5. Cross-Border Probate */}
+            <Box width={"100%"} maxW="1200px" my={{ xs: "5%", md: "2.5%" }}>
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                fontSize={{ xs: "20px", sm: "24px", md: "28px", lg: "33px", xl: "35px", "2xl": "39px" }}
+                color={"gray"}
+                textAlign={"left"}
+                mb={3}
+                mt={{ lg: "-12" }}
 
-    <Text
-      fontFamily={"CeraRoundPro"}
-      fontWeight={300}
-      fontSize={{ xs: "14px", lg: "16px", xl: "16px", "2xl": "18px" }}
-      mt={3}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-      letterSpacing={0.2}
-    >
-      Our team assists with every stage of the probate and estate administration process, including:
-    </Text>
+              >
+                Cross-Border & International Probate
+              </Heading>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={300}
+                fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", xl: "16px", "2xl": "18px" }}
+                color={"gray"}
+                textAlign={"justify"}
+                letterSpacing={0.2}
+                lineHeight={1.8}
+              >
+                If the deceased owned property or assets outside the UK, our international probate solicitors in London can manage the process from start to finish. We work with foreign lawyers to release or transfer overseas assets, reseal foreign grants of probate, and have foreign documents recognized in UK courts. Whether the person died domiciled in the UK or abroad, we ensure the estate is administered properly across all jurisdictions.
+              </Text>
+            </Box>
 
-    <List.Root
-      textAlign={"left"}
-      lineHeight={1.6}
-      fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
-      fontWeight={300}
-      fontFamily={"CeraRoundPro"}
-      color={"gray"}
-      ml={{ xs: 6, sm: 10, md: 14, lg: 22 }}
-      mt={2}
-    >
-      <List.Item>Preparing and submitting probate or intestacy applications</List.Item>
-      <List.Item>Valuing all estate assets and liabilities</List.Item>
-      <List.Item>Advising on and calculating Inheritance Tax (IHT)</List.Item>
-      <List.Item>Liaising directly with HM Revenue & Customs (HMRC)</List.Item>
-      <List.Item>Settling debts and distributing assets to beneficiaries</List.Item>
-      <List.Item>Resolving disputes among executors, beneficiaries, or family members</List.Item>
-      <List.Item>Advising on executor duties to help you avoid personal liability</List.Item>
-    </List.Root>
-  </Box>
+            {/* 6. Deeds of Variation */}
+            <Box width={"100%"} maxW="1200px" my={{ xs: "5%", md: "2.5%" }}>
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                fontSize={{ xs: "20px", sm: "24px", md: "28px", lg: "33px", xl: "35px", "2xl": "39px" }}
+                color={"gray"}
+                textAlign={"left"}
+                mb={3}
+                mt={{ lg: "-12" }}
+              >
+                Deeds of Variation & Estate Planning
+              </Heading>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={300}
+                fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", xl: "16px", "2xl": "18px" }}
+                color={"gray"}
+                textAlign={"justify"}
+                letterSpacing={0.2}
+                lineHeight={1.8}
+              >
+                Even after someone passes away, tax planning may still be possible. We can help beneficiaries or executors prepare a Deed of Variation, which allows changes to the distribution of an estate to reduce inheritance tax or achieve fairer outcomes. Alternatively, an inheritance can be disclaimed if it's not needed. Our probate solicitors in London will explain all available options clearly and in plain English.
+              </Text>
+            </Box>
 
-  {/* 4. Inheritance Tax */}
-  <Box
-    width={"100%"}
-    maxW="1200px"
-    alignSelf={"center"}
-    mb={"5%"}
-    my={{ xs: "5%", md: "2.5%" }}
-  >
-    <Heading
-      as={"h2"}
-      fontFamily={"CeraRoundPro"}
-      fontWeight={600}
-      fontSize={{ xs: "31px", lg: "33px", xl: "35px", "2xl": "39px" }}
-      mt={{ xs: 0, md: -14 }}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-    >
-      Inheritance Tax & HMRC Guidance
-    </Heading>
-    <Text
-      fontFamily={"CeraRoundPro"}
-      fontWeight={300}
-      fontSize={{ xs: "14px", lg: "16px", xl: "16px", "2xl": "18px" }}
-      mt={3}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-      letterSpacing={0.2}
-    >
-      Navigating inheritance tax (IHT) can be challenging. We provide step-by-step advice on completing HMRC forms, determining tax liabilities, and ensuring all payments are made on time. Where inheritance tax is due, we can also help you explore practical ways to raise funds, such as selling assets or securing short-term financing. We handle communication with HMRC on your behalf, ensuring full compliance and minimizing unnecessary delays.
-    </Text>
-  </Box>
+            {/* 7. Contentious Probate */}
+            <Box width={"100%"} maxW="1200px" my={{ xs: "5%", md: "2.5%" }}>
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                fontSize={{ xs: "20px", sm: "24px", md: "28px", lg: "33px", xl: "35px", "2xl": "39px" }}
+                color={"gray"}
+                textAlign={"left"}
+                mb={3}
+                mt={{ lg: "-12" }}
+              >
+                Contentious or Disputed Probate
+              </Heading>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={300}
+                fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", xl: "16px", "2xl": "18px" }}
+                color={"gray"}
+                textAlign={"justify"}
+                letterSpacing={0.2}
+                lineHeight={1.8}
+              >
+                Unfortunately, probate disputes can arise over the validity of a Will, how an executor handles the estate, or under the Inheritance Act 1975. Our contentious probate solicitors specialise in resolving these disagreements with sensitivity and professionalism. We aim for early resolution through negotiation or mediation but are also fully prepared to represent you in court if needed.
+              </Text>
+            </Box>
 
-  {/* 5. Cross-Border Probate */}
-  <Box
-    width={"100%"}
-    maxW="1200px"
-    alignSelf={"center"}
-    mb={"5%"}
-    my={{ xs: "5%", md: "2.5%" }}
-  >
-    <Heading
-      as={"h2"}
-      fontFamily={"CeraRoundPro"}
-      fontWeight={600}
-      fontSize={{ xs: "31px", lg: "33px", xl: "35px", "2xl": "39px" }}
-      mt={{ xs: 0, md: -14 }}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-    >
-      Cross-Border & International Probate
-    </Heading>
-    <Text
-      fontFamily={"CeraRoundPro"}
-      fontWeight={300}
-      fontSize={{ xs: "14px", lg: "16px", xl: "16px", "2xl": "18px" }}
-      mt={3}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-      letterSpacing={0.2}
-    >
-      If the deceased owned property or assets outside the UK, our international probate solicitors in London can manage the process from start to finish. We work with foreign lawyers to release or transfer overseas assets, reseal foreign grants of probate, and have foreign documents recognized in UK courts. Whether the person died domiciled in the UK or abroad, we ensure the estate is administered properly across all jurisdictions.
-    </Text>
-  </Box>
+            {/* 8. Why Choose Us */}
+            <Box width={"100%"} maxW="1200px" my={{ xs: "5%", md: "2.5%" }}>
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                fontSize={{ xs: "20px", sm: "24px", md: "28px", lg: "33px", xl: "35px", "2xl": "39px" }}
+                color={"gray"}
+                textAlign={"left"}
+                mb={3}
+                mt={{ lg: "-12" }}
+              >
+                Why Choose Lumine Law
+              </Heading>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={300}
+                fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", xl: "16px", "2xl": "18px" }}
+                color={"gray"}
+                textAlign={"justify"}
+                letterSpacing={0.2}
+                lineHeight={2}
+              >
+                ✅ <b>Experienced Probate Solicitors</b> – Extensive experience in complex international estates.<br />
+                ✅ <b>STEP & SRA Accredited</b> – Regulated by the SRA and members of STEP.<br />
+                ✅ <b>Transparent Fees</b> – Clear, upfront pricing with no hidden surprises.<br />
+                ✅ <b>Local Expertise</b> – Deep understanding of London court procedures and property issues.<br />
+                ✅ <b>Compassionate Approach</b> – Combining legal expertise with genuine empathy.
+              </Text>
+            </Box>
 
-  {/* 6. Deeds of Variation */}
-  <Box
-    width={"100%"}
-    maxW="1200px"
-    alignSelf={"center"}
-    mb={"5%"}
-    my={{ xs: "5%", md: "2.5%" }}
-  >
-    <Heading
-      as={"h2"}
-      fontFamily={"CeraRoundPro"}
-      fontWeight={600}
-      fontSize={{ xs: "31px", lg: "33px", xl: "35px", "2xl": "39px" }}
-      mt={{ xs: 0, md: -14 }}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-    >
-      Deeds of Variation & Estate Planning
-    </Heading>
-    <Text
-      fontFamily={"CeraRoundPro"}
-      fontWeight={300}
-      fontSize={{ xs: "14px", lg: "16px", xl: "16px", "2xl": "18px" }}
-      mt={3}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-      letterSpacing={0.2}
-    >
-      Even after someone passes away, tax planning may still be possible. We can help beneficiaries or executors prepare a Deed of Variation, which allows changes to the distribution of an estate to reduce inheritance tax or achieve fairer outcomes. Alternatively, an inheritance can be disclaimed if it's not needed. Our probate solicitors in London will explain all available options clearly and in plain English.
-    </Text>
-  </Box>
+            {/* FAQ Section */}
+            <Box width={"100%"} maxW="1200px" my={{ xs: "5%", md: "2.5%" }}>
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                fontSize={{ xs: "20px", sm: "24px", md: "28px", lg: "33px", xl: "35px", "2xl": "39px" }}
+                mb={4}
+                mt={{ lg: "-12" }}
+                color={"gray"}
+                textAlign={"left"}
+              >
+                Frequently Asked Questions (FAQs)
+              </Heading>
 
-  {/* 7. Contentious Probate */}
-  <Box
-    width={"100%"}
-    maxW="1200px"
-    alignSelf={"center"}
-    mb={"5%"}
-    my={{ xs: "5%", md: "2.5%" }}
-  >
-    <Heading
-      as={"h2"}
-      fontFamily={"CeraRoundPro"}
-      fontWeight={600}
-      fontSize={{ xs: "31px", lg: "33px", xl: "35px", "2xl": "39px" }}
-      mt={{ xs: 0, md: -14 }}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-    >
-      Contentious or Disputed Probate
-    </Heading>
-    <Text
-      fontFamily={"CeraRoundPro"}
-      fontWeight={300}
-      fontSize={{ xs: "14px", lg: "16px", xl: "16px", "2xl": "18px" }}
-      mt={3}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-      letterSpacing={0.2}
-    >
-      Unfortunately, probate disputes can arise over the validity of a Will, how an executor handles the estate, or under the Inheritance Act 1975. Our contentious probate solicitors specialise in resolving these disagreements with sensitivity and professionalism. We aim for early resolution through negotiation or mediation but are also fully prepared to represent you in court if needed.
-    </Text>
-  </Box>
+              <Box mb={2}>
+                <Text
+                  textAlign={"left"}
+                  fontFamily={"CeraRoundPro"}
+                  fontWeight={400}
+                  fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", "2xl": "18px" }}
+                  color={"gray"}
+                  mb={1}
+                >
+                  1. How long does probate take in the UK?
+                </Text>
+                <Text
+                  fontFamily={"CeraRoundPro"}
+                  fontWeight={300}
+                  fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", "2xl": "18px" }}
+                  color={"gray"}
+                  textAlign={"justify"}
+                  lineHeight={1.8}
+                >
+                  On average, probate takes between 6 to 12 months, depending on the complexity of the estate and whether there are any disputes or foreign assets.
+                </Text>
+              </Box>
 
-  {/* 8. Why Choose Us */}
-  <Box
-    width={"100%"}
-    maxW="1200px"
-    alignSelf={"center"}
-    mb={"5%"}
-    my={{ xs: "5%", md: "2.5%" }}
-  >
-    <Heading
-      as={"h2"}
-      fontFamily={"CeraRoundPro"}
-      fontWeight={600}
-      fontSize={{ xs: "31px", lg: "33px", xl: "35px", "2xl": "39px" }}
-      mt={{ xs: 0, md: -14 }}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-    >
-      Why Choose Lumine Law
-    </Heading>
-    <Text
-      fontFamily={"CeraRoundPro"}
-      fontWeight={300}
-      fontSize={{ xs: "14px", lg: "16px", xl: "16px", "2xl": "18px" }}
-      mt={1.5}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-      letterSpacing={0.2}
-    >
-      ✅ <b>Experienced Probate Solicitors</b> – Extensive experience in complex international estates.<br />
-      ✅ <b>STEP & SRA Accredited</b> – Regulated by the SRA and members of STEP.<br />
-      ✅ <b>Transparent Fees</b> – Clear, upfront pricing with no hidden surprises.<br />
-      ✅ <b>Local Expertise</b> – Deep understanding of London court procedures and property issues.<br />
-      ✅ <b>Compassionate Approach</b> – Combining legal expertise with genuine empathy.
-    </Text>
-  </Box>
+              <Box mb={2}>
+                <Text
+                  textAlign={"left"}
+                  fontFamily={"CeraRoundPro"}
+                  fontWeight={400}
+                  fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", "2xl": "18px" }}
+                  color={"gray"}
+                  mb={1}
+                >
+                  2. Do I always need a probate solicitor?
+                </Text>
+                <Text
+                  fontFamily={"CeraRoundPro"}
+                  fontWeight={300}
+                  fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", "2xl": "18px" }}
+                  color={"gray"}
+                  textAlign={"justify"}
+                  lineHeight={1.8}
+                >
+                  Not always, but legal support ensures the process is done correctly — avoiding mistakes that could delay estate distribution or cause personal liability for executors.
+                </Text>
+              </Box>
 
-  {/* FAQ Section */}
-  <Box
-    width={"100%"}
-    maxW="1200px"
-    alignSelf={"center"}
-    mb={"5%"}
-    my={{ xs: "5%", md: "2.5%" }}
-    px={{ xs: 0, md: 15 }}
-  >
-    <Heading
-      as={"h2"}
-      fontFamily={"CeraRoundPro"}
-      fontWeight={600}
-      fontSize={{ xs: "28px", lg: "33px", xl: "35px", "2xl": "39px" }}
-      mb={6}
-      color={"gray"}
-      textAlign={"left"}
-      mt={{ xs: 0, md: -12 }}
-    >
-      Frequently Asked Questions (FAQs)
-    </Heading>
+              <Box mb={2}>
+                <Text
+                  textAlign={"left"}
+                  fontFamily={"CeraRoundPro"}
+                  fontWeight={400}
+                  fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", "2xl": "18px" }}
+                  color={"gray"}
+                  mb={1}
+                >
+                  3. How much does probate cost in London?
+                </Text>
+                <Text
+                  fontFamily={"CeraRoundPro"}
+                  fontWeight={300}
+                  fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", "2xl": "18px" }}
+                  color={"gray"}
+                  textAlign={"justify"}
+                  lineHeight={1.8}
+                >
+                  Costs vary by estate size and complexity. We provide a clear quote before starting work and offer fixed-fee options where possible.
+                </Text>
+              </Box>
 
-    <Box mb={5} ml={{ xs: 0, md: 0 }}>
-      <Text textAlign={"left"} fontFamily={"CeraRoundPro"} fontWeight={300} fontSize={{ xs: "14px", md: "16px", "2xl": "18px" }} color={"gray"}>
-        1. How long does probate take in the UK?
-      </Text>
-      <Text fontFamily={"CeraRoundPro"} fontWeight={300} fontSize={{ xs: "14px", md: "16px", "2xl": "18px" }} color={"gray"} textAlign={"justify"} lineHeight={1.6}>
-        On average, probate takes between 6 to 12 months, depending on the complexity of the estate and whether there are any disputes or foreign assets.
-      </Text>
-    </Box>
+              <Box mb={{ lg: -10 }}>
+                <Text
+                  textAlign={"left"}
+                  fontFamily={"CeraRoundPro"}
+                  fontWeight={400}
+                  fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", "2xl": "18px" }}
+                  color={"gray"}
+                  mb={1}
+                >
+                  4. What happens if there is no Will?
+                </Text>
+                <Text
+                  fontFamily={"CeraRoundPro"}
+                  fontWeight={300}
+                  fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", "2xl": "18px" }}
+                  color={"gray"}
+                  textAlign={"justify"}
+                  lineHeight={1.8}
+                >
+                  If someone dies intestate, the estate is distributed under the UK's intestacy rules. We can guide you through obtaining <i>Letters of Administration</i> and managing the estate accordingly.
+                </Text>
+              </Box>
+            </Box>
 
-    <Box mb={2} ml={{ xs: 0, md: 0 }}>
-      <Text textAlign={"left"} fontFamily={"CeraRoundPro"} fontWeight={300} fontSize={{ xs: "14px", md: "16px", "2xl": "18px" }} color={"gray"} mt={{ xs: 0, md: -4 }}>
-        2. Do I always need a probate solicitor?
-      </Text>
-      <Text fontFamily={"CeraRoundPro"} fontWeight={300} fontSize={{ xs: "14px", md: "16px", "2xl": "18px" }} mt={1} color={"gray"} textAlign={"justify"} lineHeight={1.6}>
-        Not always, but legal support ensures the process is done correctly — avoiding mistakes that could delay estate distribution or cause personal liability for executors.
-      </Text>
-    </Box>
-
-    <Box mb={5} ml={{ xs: 0, md: 0 }}>
-      <Text mt={{ xs: 0, md: -2 }} textAlign={"left"} fontFamily={"CeraRoundPro"} fontWeight={300} fontSize={{ xs: "14px", md: "16px", "2xl": "18px" }} color={"gray"}>
-        3. How much does probate cost in London?
-      </Text>
-      <Text fontFamily={"CeraRoundPro"} fontWeight={300} fontSize={{ xs: "14px", md: "16px", "2xl": "18px" }} mt={1} color={"gray"} textAlign={"justify"} lineHeight={1.6}>
-        Costs vary by estate size and complexity. We provide a clear quote before starting work and offer fixed-fee options where possible.
-      </Text>
-    </Box>
-
-    <Box mb={5} ml={{ xs: 0, md: 0 }}>
-      <Text textAlign={"left"} fontFamily={"CeraRoundPro"} fontWeight={300} fontSize={{ xs: "14px", md: "16px", "2xl": "18px" }} color={"gray"} mt={{ xs: 0, md: -4 }}>
-        4. What happens if there is no Will?
-      </Text>
-      <Text fontFamily={"CeraRoundPro"} fontWeight={300} fontSize={{ xs: "14px", md: "16px", "2xl": "18px" }} mt={1} color={"gray"} textAlign={"justify"} lineHeight={1.6}>
-        If someone dies intestate, the estate is distributed under the UK's intestacy rules. We can guide you through obtaining <i>Letters of Administration</i> and managing the estate accordingly.
-      </Text>
-    </Box>
-  </Box>
-
-  {/* Final Section */}
-  <Box
-    width={"100%"}
-    maxW="1200px"
-    alignSelf={"center"}
-    mb={"5%"}
-    my={{ xs: "5%", md: "2.5%" }}
-    lineHeight={1.6}
-  >
-    <Heading
-      as={"h2"}
-      fontFamily={"CeraRoundPro"}
-      fontWeight={600}
-      fontSize={{ xs: "31px", lg: "33px", xl: "35px", "2xl": "39px" }}
-      mt={{ xs: 0, lg: -14, xl: -16 }}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-    >
-      Speak to a Trusted Probate Solicitor in London
-    </Heading>
-    <Text
-      fontFamily={"CeraRoundPro"}
-      fontWeight={300}
-      fontSize={{ xs: "14px", lg: "16px", xl: "16px", "2xl": "18px" }}
-      mt={3}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      mr={{ xs: 0, sm: 5 }}
-      color={"gray"}
-      textAlign={"justify"}
-      letterSpacing={0.2}
-    >
-      If you've recently lost a loved one and need expert legal guidance, contact our probate solicitors in London today. We'll help you understand your options, complete all legal requirements, and protect your family's best interests with care and professionalism.
-    </Text>
-    <Text
-      fontFamily={"CeraRoundPro"}
-      fontWeight={300}
-      fontSize={{ xs: "14px", lg: "16px", xl: "16px", "2xl": "18px" }}
-      ml={{ xs: 0, sm: 4, md: 8, lg: 10, xl: 18 }}
-      color={"gray"}
-      textAlign={"justify"}
-      letterSpacing={0.2}
-    >
-      📞 Call us today or 📩 book a consultation online — our experienced probate team is here to help you every step of the way.
-    </Text>
-  </Box>
-</Box>
+            {/* Final Section */}
+            <Box width={"100%"} maxW="1200px" my={{ xs: "5%", md: "2.5%" }}>
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={600}
+                fontSize={{ xs: "20px", sm: "24px", md: "28px", lg: "33px", xl: "35px", "2xl": "39px" }}
+                color={"gray"}
+                textAlign={"left"}
+                mb={3}
+                mt={{ lg: -15 }}
+              >
+                Speak to a Trusted Probate Solicitor in London
+              </Heading>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={300}
+                fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", xl: "16px", "2xl": "18px" }}
+                color={"gray"}
+                textAlign={"justify"}
+                letterSpacing={0.2}
+                lineHeight={1.8}
+                mb={3}
+              >
+                If you've recently lost a loved one and need expert legal guidance, contact our probate solicitors in London today. We'll help you understand your options, complete all legal requirements, and protect your family's best interests with care and professionalism.
+              </Text>
+              <Text
+                fontFamily={"CeraRoundPro"}
+                fontWeight={300}
+                fontSize={{ xs: "14px", sm: "14px", md: "15px", lg: "16px", xl: "16px", "2xl": "18px" }}
+                color={"gray"}
+                mt={{ lg: "-2" }}
+                textAlign={"justify"}
+                letterSpacing={0.2}
+                lineHeight={1.8}
+              >
+                📞 Call us today or 📩 book a consultation online — our experienced probate team is here to help you every step of the way.
+              </Text>
+            </Box>
+          </Box>
 
           {/* Other Services */}
           <AllServiceLinks />

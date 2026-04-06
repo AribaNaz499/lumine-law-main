@@ -24,12 +24,11 @@ const Landlord = React.lazy(() => import("../components/ServicesPage/Landlord/La
 const Family = React.lazy(() => import("../components/ServicesPage/Family/Family"));
 const Wills = React.lazy(() => import("../components/ServicesPage/WillsAndProbate/WillsAndProbate"));
 
-// 🔹 Immigration Sub-pages (FULL FIX ✅)
+// 🔹 Immigration Sub-pages
 const Asylum = React.lazy(() => import("../components/ServicesPage/Immigration/Asylum"));
 const SkilledWorkerVisa = React.lazy(() => import("../components/ServicesPage/Immigration/SkilledWorkerVisa"));
 const SpouseVisa = React.lazy(() => import("../components/ServicesPage/Immigration/SpouseVisa"));
 const UKVisitorVisa = React.lazy(() => import("../components/ServicesPage/Immigration/VisitorVisa"));
-
 const BailRevocation = React.lazy(() => import("../components/ServicesPage/Immigration/BailRevocation"));
 const BritishCitizenshipApplication = React.lazy(() => import("../components/ServicesPage/Immigration/BritishCitizenshipApplication"));
 const CoS = React.lazy(() => import("../components/ServicesPage/Immigration/CoS"));
@@ -46,14 +45,13 @@ const StudentVisa = React.lazy(() => import("../components/ServicesPage/Immigrat
 const VisaCategories = React.lazy(() => import("../components/ServicesPage/Immigration/VisaCategories"));
 const VisaExtensions = React.lazy(() => import("../components/ServicesPage/Immigration/VisaExtensions"));
 
-
 // 🔹 Residential Property Sub-pages
 const FreeholdSales = React.lazy(() => import("../components/ServicesPage/Residential/FreeholdSales"));
 const FreeholdPurchases = React.lazy(() => import("../components/ServicesPage/Residential/FreeholdPurchases"));
 const LeaseTermsAdvice = React.lazy(() => import("../components/ServicesPage/Residential/LeaseTermsAdvice"));
 const TransferOfEquity = React.lazy(() => import("../components/ServicesPage/Residential/TransfersOfEquity"));
 
-// 🔹 Commercial Property Sub-pages — ALL 11 files
+// 🔹 Commercial Property Sub-pages
 const AdviceMultiple = React.lazy(() => import("../components/ServicesPage/Commercial/AdviceMultiple"));
 const BreakRent = React.lazy(() => import("../components/ServicesPage/Commercial/BreakRent"));
 const BusinessLicenses = React.lazy(() => import("../components/ServicesPage/Commercial/BusinessAndLicense"));
@@ -80,17 +78,20 @@ const BuildingContractDisputes = React.lazy(() => import("../components/Services
 const BankruptcyMatters = React.lazy(() => import("../components/ServicesPage/Dispute/CorporatePersonalBankruptcty.jsx"));
 const DebtRecovery = React.lazy(() => import("../components/ServicesPage/Dispute/DisputeDebtRecovery"));
 
-
 // 🔹 Landlord & Tenant Sub-pages
 const ClaimsDisrepair = React.lazy(() => import("../components/ServicesPage/Landlord/ClaimsDisrepair"));
 const PossessionClaims = React.lazy(() => import("../components/ServicesPage/Landlord/PossessionClaims"));
 const RecoveryRent = React.lazy(() => import("../components/ServicesPage/Landlord/RecoveryRent"));
 
 // 🔹 Family Sub-pages
+const Adoption = React.lazy(() => import("../components/ServicesPage/Family/Adoption"));
+const ChildArrangements = React.lazy(() => import("../components/ServicesPage/Family/ChildArrangements"));
+const ConsentOrders = React.lazy(() => import("../components/ServicesPage/Family/ConsentOrders"));
 const Divorce = React.lazy(() => import("../components/ServicesPage/Family/Divorce"));
 const DomesticViolence = React.lazy(() => import("../components/ServicesPage/Family/DomesticViolence"));
-const ParentalResponsibility = React.lazy(() => import("../components/ServicesPage/Family/ParentalResponsibility"));
+const FinancialSettlements = React.lazy(() => import("../components/ServicesPage/Family/FinancialSettlements"));
 const NuptialAgreement = React.lazy(() => import("../components/ServicesPage/Family/NuptialAgreement"));
+const ParentalResponsibility = React.lazy(() => import("../components/ServicesPage/Family/ParentalResponsibility"));
 
 // 🔹 Wills & Probate Sub-pages
 const Probate = React.lazy(() => import("../components/ServicesPage/WillsAndProbate/Probate"));
@@ -101,6 +102,7 @@ const EstatePlanning = React.lazy(() => import("../components/ServicesPage/Wills
 const InheritanceTaxPlanning = React.lazy(() => import("../components/ServicesPage/WillsAndProbate/InheritanceTaxPlanning"));
 const PowerAttorney = React.lazy(() => import("../components/ServicesPage/WillsAndProbate/PowerOfAttorney"));
 const PrivateWealthManagement = React.lazy(() => import("../components/ServicesPage/WillsAndProbate/WealthManagement"));
+
 // 🔹 Price Pages
 const DebtRecoveryPrices = React.lazy(() => import("../components/Prices/DebtRecovery"));
 const ImmigrationPrices = React.lazy(() => import("../components/Prices/ImmigrationPrices"));
@@ -183,7 +185,7 @@ function App() {
             <Route path="/all-services/immigration/reviews-appeals" element={<SuspensePageTransition><ReviewsAppeals /></SuspensePageTransition>} />
             <Route path="/all-services/immigration/asylum" element={<SuspensePageTransition><Asylum /></SuspensePageTransition>} />
             <Route path="/all-services/immigration/british-citizenship-application" element={<SuspensePageTransition><BritishCitizenshipApplication /></SuspensePageTransition>} />
-            <Route path="/all-services/immigration/cos" element={<SuspensePageTransition><CoS /></SuspensePageTransition>} /> {/* Changed from certificate-of-sponsorship to cos */}
+            <Route path="/all-services/immigration/cos" element={<SuspensePageTransition><CoS /></SuspensePageTransition>} />
             <Route path="/all-services/immigration/creative-worker" element={<SuspensePageTransition><CreativeWorker /></SuspensePageTransition>} />
             <Route path="/all-services/immigration/discretionary-leave" element={<SuspensePageTransition><DiscretionaryLeave /></SuspensePageTransition>} />
             <Route path="/all-services/immigration/entry-clearance" element={<SuspensePageTransition><EntryClearance /></SuspensePageTransition>} />
@@ -191,7 +193,7 @@ function App() {
             <Route path="/all-services/immigration/bail-revocation" element={<SuspensePageTransition><BailRevocation /></SuspensePageTransition>} />
             <Route path="/all-services/immigration/indefinite-leave" element={<SuspensePageTransition><IndefiniteLeave /></SuspensePageTransition>} />
             <Route path="/all-services/immigration/innovator-founder" element={<SuspensePageTransition><InnovatorFounder /></SuspensePageTransition>} />
-            <Route path="/all-services/immigration/human-rights" element={<SuspensePageTransition><HumanRights /></SuspensePageTransition>} /> {/* Changed from human-rights-app to human-rights */}
+            <Route path="/all-services/immigration/human-rights" element={<SuspensePageTransition><HumanRights /></SuspensePageTransition>} />
             <Route path="/all-services/immigration/skilled-migrant" element={<SuspensePageTransition><SkilledMigrant /></SuspensePageTransition>} />
             <Route path="/all-services/immigration/skilled-worker-visa" element={<SuspensePageTransition><SkilledWorkerVisa /></SuspensePageTransition>} />
             <Route path="/all-services/immigration/spouse-visa" element={<SuspensePageTransition><SpouseVisa /></SuspensePageTransition>} />
@@ -206,7 +208,7 @@ function App() {
             <Route path="/all-services/residential/lease-terms-advice" element={<SuspensePageTransition><LeaseTermsAdvice /></SuspensePageTransition>} />
             <Route path="/all-services/residential/transfer-of-equity" element={<SuspensePageTransition><TransferOfEquity /></SuspensePageTransition>} />
 
-            {/* 🔹 Commercial Sub Pages — ALL 11 routes ✅ */}
+            {/* 🔹 Commercial Sub Pages */}
             <Route path="/all-services/commercial/advice-multiple" element={<SuspensePageTransition><AdviceMultiple /></SuspensePageTransition>} />
             <Route path="/all-services/commercial/break-rent" element={<SuspensePageTransition><BreakRent /></SuspensePageTransition>} />
             <Route path="/all-services/commercial/business-licenses" element={<SuspensePageTransition><BusinessLicenses /></SuspensePageTransition>} />
@@ -239,10 +241,14 @@ function App() {
             <Route path="/all-services/landlord-tenant/recovery-rent" element={<SuspensePageTransition><RecoveryRent /></SuspensePageTransition>} />
 
             {/* 🔹 Family Sub Pages */}
-            <Route path="/all-services/family/divorce" element={<SuspensePageTransition><Divorce /></SuspensePageTransition>} />
-            <Route path="/all-services/family/domestic-violence" element={<SuspensePageTransition><DomesticViolence /></SuspensePageTransition>} />
-            <Route path="/all-services/family/parental-responsbility" element={<SuspensePageTransition><ParentalResponsibility /></SuspensePageTransition>} />
-            <Route path="/all-services/family/nuptial-agreement" element={<SuspensePageTransition><NuptialAgreement /></SuspensePageTransition>} />
+            <Route path="/all-services/family-and-children/adoption-surrogacy" element={<SuspensePageTransition><Adoption /></SuspensePageTransition>} />
+            <Route path="/all-services/family-and-children/child-arrangements" element={<SuspensePageTransition><ChildArrangements /></SuspensePageTransition>} />
+            <Route path="/all-services/family-and-children/consent-orders" element={<SuspensePageTransition><ConsentOrders /></SuspensePageTransition>} />
+            <Route path="/all-services/family-and-children/divorce" element={<SuspensePageTransition><Divorce /></SuspensePageTransition>} />
+            <Route path="/all-services/family-and-children/domestic-violence" element={<SuspensePageTransition><DomesticViolence /></SuspensePageTransition>} />
+            <Route path="/all-services/family-and-children/financial-settlements" element={<SuspensePageTransition><FinancialSettlements /></SuspensePageTransition>} />
+            <Route path="/all-services/family-and-children/nuptial-agreement" element={<SuspensePageTransition><NuptialAgreement /></SuspensePageTransition>} />
+            <Route path="/all-services/family-and-children/parental-responsbility" element={<SuspensePageTransition><ParentalResponsibility /></SuspensePageTransition>} />
 
             {/* 🔹 Wills & Probate Sub Pages */}
             <Route path="/all-services/wills-probate/probate" element={<SuspensePageTransition><Probate /></SuspensePageTransition>} />
@@ -252,12 +258,11 @@ function App() {
             <Route path="/all-services/wills-probate/estate-planning" element={<SuspensePageTransition><EstatePlanning /></SuspensePageTransition>} />
             <Route path="/all-services/wills-probate/inheritance-tax-planning" element={<SuspensePageTransition><InheritanceTaxPlanning /></SuspensePageTransition>} />
             <Route path="/all-services/wills-probate/power-attorney" element={<SuspensePageTransition><PowerAttorney /></SuspensePageTransition>} />
-            <Route path="/all-services/wills-probate/private-wealth-management"
-              element={<SuspensePageTransition><PrivateWealthManagement /></SuspensePageTransition>} />          </Routes>
+            <Route path="/all-services/wills-probate/private-wealth-management" element={<SuspensePageTransition><PrivateWealthManagement /></SuspensePageTransition>} />
+          </Routes>
         </Suspense>
       </BrowserRouter>
     </>
-
   );
 }
 

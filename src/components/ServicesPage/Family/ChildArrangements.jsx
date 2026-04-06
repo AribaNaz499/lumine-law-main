@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/family.webp";
+import BannerImg from "../../../assets/services/main/family/bannerImg.jpg";
 
 const ChildArrangements = () => {
   const [spouseState, setSpouseState] = useState(false);
@@ -40,11 +40,11 @@ const ChildArrangements = () => {
           {/* Banner */}
           <Box
             width={"100%"}
-            height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+             height={{
+              xs: "250px",
+              lg: "300px",
+              xl: "350px",
+              "2xl": "400px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -62,18 +62,18 @@ const ChildArrangements = () => {
               width={"90%"}
               textAlign={"left"}
             >
-              Child Arrangements: Prioritizing your Child's Best Interests
+              Child Arrangements
             </Text>
           </Box>
 
           {/* Main */}
-          <Box
+          {/* <Box
             width={"100%"}
             display={"flex"}
             flexFlow={"column"}
             color={"black"}
           >
-            {/* Heading */}
+            
             <Box
               width={"90%"}
               alignSelf={"center"}
@@ -117,13 +117,14 @@ const ChildArrangements = () => {
                 the Children Act 1989 to address disputes about children:
               </Text>
             </Box>
-          </Box>
+          </Box> */}
 
           {/* Dropdown info */}
           <VStack
             justifyContent={"space-around"}
             alignItems={"center"}
             mb={"50px"}
+            mt={"10"}
           >
             {/* Child Arrangements Order */}
             <Box
@@ -159,29 +160,29 @@ const ChildArrangements = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setEligibilityState(!eligibilityState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Child Arrangements Order
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -223,6 +224,8 @@ const ChildArrangements = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
+                    mt={{lg:"-6", md:"-5", xs:"-4"}}
+                    lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -275,29 +278,29 @@ const ChildArrangements = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                   fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Prohibited Steps Order
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"2em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
                 )}
               </HStack>
 
@@ -323,6 +326,7 @@ const ChildArrangements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.7}
                   >
                     A Prohibited Steps Order is used to restrict when certain
                     parental rights and duties can be exercised. For example, it
@@ -369,29 +373,29 @@ const ChildArrangements = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setApplicationState(!applicationState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                 fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Specific Issue Order
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -460,29 +464,29 @@ const ChildArrangements = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                 fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -526,6 +530,8 @@ const ChildArrangements = () => {
                     }}
                     fontWeight={600}
                     fontFamily={"CeraRoundPro"}
+                     mt={{lg:"-6", md:"-5", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     Understanding Your Needs
                   </Text>
@@ -542,6 +548,8 @@ const ChildArrangements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     mt={{lg:"-6", md:"-5", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     We take the time to listen to your concerns and understand
                     your family dynamics, ensuring that our advice and solutions
@@ -561,6 +569,8 @@ const ChildArrangements = () => {
                     }}
                     fontWeight={600}
                     fontFamily={"CeraRoundPro"}
+                     mt={{lg:"-6", md:"-5", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     Creating a Parenting Plan
                   </Text>
@@ -577,6 +587,8 @@ const ChildArrangements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     mt={{lg:"-6", md:"-5", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     Our experienced solicitors help you develop a comprehensive
                     parenting plan that covers all aspects of child
@@ -597,6 +609,8 @@ const ChildArrangements = () => {
                     }}
                     fontWeight={600}
                     fontFamily={"CeraRoundPro"}
+                     mt={{lg:"-6", md:"-5", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     Ensuring Stability and Continuity
                   </Text>
@@ -613,6 +627,8 @@ const ChildArrangements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     mt={{lg:"-6", md:"-5", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     We focus on creating arrangements that provide stability and
                     continuity for your child, minimizing disruption and
@@ -632,6 +648,8 @@ const ChildArrangements = () => {
                     }}
                     fontWeight={600}
                     fontFamily={"CeraRoundPro"}
+                     mt={{lg:"-6", md:"-5", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     Addressing Special Circumstances
                   </Text>
@@ -648,6 +666,8 @@ const ChildArrangements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     mt={{lg:"-6", md:"-5", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     We are equipped to handle cases involving special
                     circumstances, such as relocation, international child
@@ -691,29 +711,29 @@ const ChildArrangements = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                   fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -758,6 +778,8 @@ const ChildArrangements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     mt={{lg:"-6", md:"-5", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     <strong>Expert Advice</strong>: We offer clear, concise, and
                     practical legal advice tailored to your specific
@@ -776,6 +798,8 @@ const ChildArrangements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     mt={{lg:"-6", md:"-5", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     <strong> Compassionate Support</strong>: Our team provides
                     compassionate support throughout the divorce process,
@@ -793,6 +817,8 @@ const ChildArrangements = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                     mt={{lg:"-6", md:"-5", xs:"-4"}}
+                    lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong> Strategic Approach</strong>: We develop customized
@@ -811,6 +837,8 @@ const ChildArrangements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     mt={{lg:"-6", md:"-5", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     <strong> Cost Certainty</strong>: We offer fixed,
                     competitive, and transparent fee packages to maintain cost
@@ -829,12 +857,21 @@ const ChildArrangements = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                     mt={{lg:"-6", md:"-5", xs:"-4"}}
+                    lineHeight={1.7}
                   >
                     For assistance with divorce matters, please do not hesitate
                     to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                       <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                     We are here to help you navigate the complexities of family
                     law and achieve the best possible resolution for your

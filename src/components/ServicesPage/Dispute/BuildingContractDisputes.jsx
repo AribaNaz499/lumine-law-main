@@ -38,10 +38,10 @@ const BuildingContractDisputes = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "300px",
+              lg: "330px",
+              xl: "360px",
+              "2xl": "370px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -138,24 +138,24 @@ const BuildingContractDisputes = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                   fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -181,6 +181,8 @@ const BuildingContractDisputes = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
+                    mr={{lg:"9"}}
                   >
                     At Lumine, we offer a comprehensive range of services to
                     help you manage and resolve building contract disputes
@@ -199,6 +201,9 @@ const BuildingContractDisputes = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4" }}
+                    lineHeight={1.8}
+                    mr={{lg:"9"}}
                   >
                     <strong>Contract Review and Drafting</strong>: Our
                     experienced solicitors will review and draft construction
@@ -220,6 +225,9 @@ const BuildingContractDisputes = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-4" }}
+                    lineHeight={1.8}
+                    mr={{lg:"9"}}
                   >
                     <strong>Negotiation and Mediation</strong>: We prioritize
                     resolving disputes amicably whenever possible. Our skilled
@@ -240,7 +248,11 @@ const BuildingContractDisputes = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
+                    mt={{ lg: "-7", xs: "-4" }}
+                    mr={{lg:"9"}}
                   >
+
                     <strong>Adjudication and Arbitration</strong>: For
                     construction disputes that require formal resolution, we
                     provide representation in adjudication and arbitration
@@ -260,6 +272,9 @@ const BuildingContractDisputes = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
+                    mt={{ lg: "-7", xs: "-4" }}
+                    mr={{lg:"9"}}
                   >
                     <strong>Litigation</strong>: When a negotiated settlement
                     cannot be reached, we are prepared to represent your
@@ -281,6 +296,9 @@ const BuildingContractDisputes = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
+                    mt={{ lg: "-7", xs: "-4" }}
+                    mr={{lg:"9"}}
                   >
                     <strong>Enforcement of Judgments</strong>: If a court
                     judgment or adjudicator’s decision is obtained in your
@@ -326,29 +344,29 @@ const BuildingContractDisputes = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -374,6 +392,7 @@ const BuildingContractDisputes = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mr={{lg:"9"}}
                   >
                     At Lumine, we understand the intricacies of building
                     contract disputes under the updated UK laws. Our experienced
@@ -394,6 +413,9 @@ const BuildingContractDisputes = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                      mt={{ lg: "-7", xs: "-4" }}
+                    lineHeight={1.8}
+                    mr={{lg:"9"}}
                   >
                     <strong>Expert Advice</strong>: We offer clear, concise, and
                     practical legal advice tailored to your specific
@@ -412,6 +434,9 @@ const BuildingContractDisputes = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                      mt={{ lg: "-7", xs: "-4" }}
+                    lineHeight={1.8}
+                    mr={{lg:"9"}}
                   >
                     <strong>Strategic Approach</strong>: Our team develops
                     customized strategies to manage and resolve building
@@ -431,6 +456,9 @@ const BuildingContractDisputes = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                      mt={{ lg: "-7", xs: "-4" }}
+                    lineHeight={1.8}
+                    mr={{lg:"9"}}
                   >
                     <strong>Comprehensive Support</strong>: From initial
                     consultations to court representation, we provide
@@ -450,6 +478,9 @@ const BuildingContractDisputes = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                      mt={{ lg: "-7", xs: "-4" }}
+                    lineHeight={1.8}
+                    mr={{lg:"9"}}
                   >
                     <strong>Updated Knowledge</strong>: We stay abreast of the
                     latest legal developments to ensure that our advice and
@@ -468,12 +499,22 @@ const BuildingContractDisputes = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                      mt={{ lg: "-7", xs: "-4" }}
+                    lineHeight={1.8}
+                    mr={{lg:"9"}}
                   >
                     For assistance with building contract disputes, please do
                     not hesitate to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
+                     <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}
                     </strong>
                     Let us help you navigate the complexities of construction
                     law and achieve the best possible resolution for your

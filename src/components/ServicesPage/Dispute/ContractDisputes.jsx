@@ -107,7 +107,7 @@ const ContractDisputes = () => {
                 textAlign={"justify"}
                 ml={6}
                 mr={6}
-                mt={6}
+                mt={{ lg: "6", xs: "2" }}
               >
                 At Lumine Solicitors, we recognize the profound impact that
                 contract disputes can have on your business operations and
@@ -237,7 +237,7 @@ const ContractDisputes = () => {
                     }}
                     fontWeight={350}
                     fontFamily={"CeraRoundPro"}
-                    mt={-6}
+                    mt={{ lg: "-6", xs: "-3" }}
                     lineHeight={1.8}
                   >
                     <List.Item>
@@ -367,7 +367,7 @@ const ContractDisputes = () => {
                     fontFamily={"CeraRoundPro"}
                     ml={2}
                     lineHeight={1.8}
-                    mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
                   >
                     <List.Item>
                       <strong>Confidentiality</strong>: Ensuring that sensitive
@@ -493,7 +493,7 @@ const ContractDisputes = () => {
                     fontFamily={"CeraRoundPro"}
                     ml={2}
                     lineHeight={1.8}
-                    mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
                   >
                     <List.Item>
                       <strong>Court Representation</strong>: Advocating on your
@@ -619,8 +619,7 @@ const ContractDisputes = () => {
                     fontFamily={"CeraRoundPro"}
                     ml={2}
                     lineHeight={1.9}
-
-                    mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
                   >
                     <List.Item>
                       <strong>Execution of Judgments</strong>: Taking necessary
@@ -740,9 +739,8 @@ const ContractDisputes = () => {
                     fontWeight={350}
                     fontFamily={"CeraRoundPro"}
                     ml={2}
-                    lineHeight={1.9}
-
-                    mt={-7}
+                    lineHeight={1.7}
+                    mt={{ lg: "-7", xs: "-4" }}
                   >
                     <strong>Expert Advice</strong>: We offer clear, concise, and
                     practical legal advice tailored to your specific
@@ -762,9 +760,8 @@ const ContractDisputes = () => {
                     fontWeight={350}
                     fontFamily={"CeraRoundPro"}
                     ml={2}
-                    lineHeight={1.9}
-
-                    mt={-7}
+                    lineHeight={1.7}
+                    mt={{ lg: "-7", xs: "-4" }}
                   >
                     <strong>Strategic Approach</strong>: Our team develops
                     customized strategies to resolve contract disputes,
@@ -784,9 +781,8 @@ const ContractDisputes = () => {
                     fontWeight={350}
                     fontFamily={"CeraRoundPro"}
                     ml={2}
-                    lineHeight={1.9}
-
-                    mt={-7}
+                    lineHeight={1.7}
+                    mt={{ lg: "-7", xs: "-4" }}
                   >
                     <strong>Comprehensive Support</strong>: From initial
                     consultations to court representation, we provide
@@ -807,9 +803,8 @@ const ContractDisputes = () => {
                     fontWeight={350}
                     fontFamily={"CeraRoundPro"}
                     ml={2}
-                    lineHeight={1.9}
-
-                    mt={-7}
+                    lineHeight={1.7}
+                    mt={{ lg: "-7", xs: "-4" }}
                   >
                     <strong>Updated Knowledge</strong>: We stay abreast of the
                     latest legal developments to ensure that our advice and
@@ -829,9 +824,8 @@ const ContractDisputes = () => {
                     fontWeight={350}
                     fontFamily={"CeraRoundPro"}
                     ml={2}
-                    lineHeight={1.9}
-
-                    mt={-7}
+                    lineHeight={1.7}
+                    mt={{ lg: "-7", xs: "-4" }}
                   >
                     For assistance with contract disputes, please do not
                     hesitate to get in touch with Lumine solicitors{" "}

@@ -191,7 +191,7 @@ const Copyright = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mt={"-7"}
+                    mt={{ lg: "-7", xs: "-4" }}
                     fontWeight={400}
                     lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
@@ -209,7 +209,7 @@ const Copyright = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mt={"-7"}
+                    mt={{ lg: "-7", xs: "-4" }}
                     lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -326,10 +326,11 @@ const Copyright = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                    mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
                     lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+
                   >
                     For assistance with copyright issues, please do not hesitate
                     to contact Lumine Solicitors at{" "}

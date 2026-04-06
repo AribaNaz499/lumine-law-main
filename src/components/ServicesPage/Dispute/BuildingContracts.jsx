@@ -103,7 +103,7 @@ const BuildingContracts = () => {
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
-                 ml={4}
+                ml={4}
                 mr={5}
                 mt={6}
               >
@@ -124,8 +124,8 @@ const BuildingContracts = () => {
             justifyContent={"space-around"}
             alignItems={"center"}
             mb={"50px"}
-             ml={4}
-                mr={5}
+            ml={4}
+            mr={5}
           >
             {/* Our Services */}
             <Box
@@ -248,7 +248,7 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                             mt={-6}
+                    mt={-6}
                     lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -279,7 +279,7 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                             mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
                     lineHeight={1.7}
                     fontWeight={350}
                     fontFamily={"CeraRoundPro"}
@@ -298,7 +298,8 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                     mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
+
                     lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -325,7 +326,7 @@ const BuildingContracts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                     mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
                     lineHeight={1.7}
                   >
                     <List.Item>
@@ -355,7 +356,8 @@ const BuildingContracts = () => {
                     }}
                     fontWeight={350}
                     fontFamily={"CeraRoundPro"}
-                     mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
+
                     lineHeight={1.7}
                   >
                     Adjudication and Arbitration
@@ -372,7 +374,8 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                     mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
+
                     lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -396,7 +399,8 @@ const BuildingContracts = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
-                     mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
+
                     lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -427,7 +431,8 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                     mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
+
                     lineHeight={1.7}
                     fontWeight={600}
                     fontFamily={"CeraRoundPro"}
@@ -447,7 +452,8 @@ const BuildingContracts = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
-                     mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
+
                     lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -470,7 +476,8 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                     mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
+
                     lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -501,7 +508,8 @@ const BuildingContracts = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={350}
-                     mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
+
                     lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -520,7 +528,8 @@ const BuildingContracts = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
-                     mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
+
                     lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -542,7 +551,8 @@ const BuildingContracts = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
-                     mt={-7}
+                    mt={{ lg: "-7", xs: "-4" }}
+
                     lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -667,8 +677,9 @@ const BuildingContracts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    mt={-7}
-                     letterSpacing={0.4}
+                    mt={{ lg: "-7", xs: "-4" }}
+
+                    letterSpacing={0.4}
                   >
                     In the event of a breach, it is vital to act quickly as time
                     limits for action are short. The recent introduction of
@@ -761,10 +772,10 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                     lineHeight={1.7}
+                    lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    
+
 
                   >
                     To avoid disagreements over contracts, it is important to
@@ -789,9 +800,10 @@ const BuildingContracts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                     mt={-7}
-                     letterSpacing={0.4}
-                     lineHeight={1.7}
+                    mt={{ lg: "-7", xs: "-4" }}
+
+                    letterSpacing={0.4}
+                    lineHeight={1.7}
                   >
                     At Lumine Solicitors, we are dedicated to providing
                     comprehensive legal support for all your building contract
@@ -906,7 +918,7 @@ const BuildingContracts = () => {
                       "2xl": "18px",
                     }}
                     letterSpacing={0.5}
-                    mt={-6}
+                    mt={{ lg: "-6", xs: "-3" }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -925,8 +937,8 @@ const BuildingContracts = () => {
                       xl: "16px",
                       "2xl": "18px",
                     }}
-                     letterSpacing={0.5}
-                    mt={-6}
+                    letterSpacing={0.5}
+                    mt={{ lg: "-6", xs: "-3" }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -947,8 +959,8 @@ const BuildingContracts = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
-                     letterSpacing={0.5}
-                    mt={-6}
+                    letterSpacing={0.5}
+                    mt={{ lg: "-6", xs: "-3" }}
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Comprehensive Support</strong>: From initial
@@ -968,8 +980,8 @@ const BuildingContracts = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
-                     letterSpacing={0.5}
-                    mt={-6}
+                    letterSpacing={0.5}
+                    mt={{ lg: "-6", xs: "-3" }}
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Updated Knowledge</strong>: We stay abreast of the
@@ -989,14 +1001,14 @@ const BuildingContracts = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                     letterSpacing={0.5}
-                    mt={-6}
+                    letterSpacing={0.5}
+                    mt={{ lg: "-6", xs: "-3" }}
                   >
                     For assistance with building contracts, please do not
                     hesitate to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                       <Link
+                      <Link
                         to={"/contact"}
                         style={{ color: "#e91e63" }}
                         onMouseEnter={(e) => (e.target.style.color = "#091838")}

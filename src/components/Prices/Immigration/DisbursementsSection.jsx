@@ -102,23 +102,23 @@ const DisbursementsSection = ({ isOpen, onToggle }) => {
         <Text
           textAlign="left"
           fontSize={{
-            xs: "14px",
-            sm: "14px",
-            md: "16px",
-            lg: "16px",
-            xl: "18px",
-            "2xl": "20px",
+            xs: "13px",
+            sm: "13px",
+            md: "15px",
+            lg: "15px",
+            xl: "17px",
+            "2xl": "19px",
           }}
           fontWeight={500}
           fontFamily="CeraRoundPro"
-          color="#beab7c"
+          color="#bf9b30"
         >
           Disbursements (not included in the pricing set out below)
         </Text>
         {!isOpen ? (
-          <GoPlus color="#beab7c" size="2em" />
+          <GoPlus color="#bf9b30" size="1.8em" />
         ) : (
-          <AiOutlineMinus color="#beab7c" size="2em" />
+          <AiOutlineMinus color="#bf9b30" size="1.8em" />
         )}
       </HStack>
 
@@ -162,7 +162,8 @@ const DisbursementsSection = ({ isOpen, onToggle }) => {
               xl: "16px",
               "2xl": "18px",
             }}
-            fontWeight={600}
+            fontWeight={400}
+            mt={{ lg: "-7", xs: "-5", md: "-7" }}
             fontFamily="CeraRoundPro"
           >
             Our quoted fees do not include:
@@ -180,6 +181,8 @@ const DisbursementsSection = ({ isOpen, onToggle }) => {
             }}
             fontWeight={400}
             fontFamily="CeraRoundPro"
+            mt={{ lg: "-7", xs: "-5", md: "-7" }}
+
           >
             <List.Item>
               VAT applies in cases where people already have Leave to Remain in

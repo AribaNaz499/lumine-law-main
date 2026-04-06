@@ -1,193 +1,40 @@
 import React, { Suspense } from "react";
-import {
-  Text,
-  Container,
-  Box,
-  HStack,
-  Grid,
-  GridItem,
-  VStack,
-} from "@chakra-ui/react";
-import Navbar from "../Navbar/Navbar";
+import { Text, Container, Box, HStack } from "@chakra-ui/react";
 import Footer from "../Footer/Footer";
-import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import AllServiceLinks from "../NavLinks/AllServiceLinks";
+
 const AllPrices = React.lazy(() => import("../NavLinks/AllPrices"));
 const AllNewsInsights = React.lazy(() => import("../NavLinks/AllNewsInsights"));
 
-// Import all images
+// Banner Image
 import BannerImg from "../../assets/services/all/bannertest.webp";
-import ImmigrationImg from "../../assets/services/main/immigration/main-banner.webp";
-import DisputeImg from "../../assets/services/main/dispute/main-banner.webp";
-import LandlordImg from "../../assets/services/main/landlord/main-banner.webp";
-import FamilyImg from "../../assets/services/main/family/main-banner.webp";
-import IntellectualImg from "../../assets/services/main/intellectual/main-banner.webp";
-import ResidentialImg from "../../assets/services/main/residential/main-banner.webp";
-import CommercialImg from "../../assets/services/main/commercial/main-banner.webp";
-import WillsProbateImg from "../../assets/services/main/wills-probate/main-banner.webp";
 import "../../styles/fonts.css";
-
-// Services data
-const services = [
-  {
-    title: "Immigration",
-    path: "/all-services/immigration",
-    image: ImmigrationImg,
-    description: "A lil para about what this service is",
-    textColor: "#ffffff",
-  },
-  {
-    title: "Residential Property",
-    path: "/all-services/residential",
-    image: ResidentialImg,
-    description: "A lil para about what this service is",
-    textColor: "#ffffff",
-  },
-  {
-    title: "Commercial Property",
-    path: "all-services/commercial",
-    image: CommercialImg,
-    description: "A lil para about what this service is",
-    textColor: "#ffffff",
-  },
-  {
-    title: "Intellectual Property",
-    path: "/all-services/intellectual-property",
-    image: IntellectualImg,
-    description: "A lil para about what this service is",
-    textColor: "#ffffff",
-  },
-  {
-    title: "Dispute & Resolution Civil Litigation",
-    path: "/all-services/dispute-resolution",
-    image: DisputeImg,
-    description: "A lil para about what this service is",
-    textColor: "#ffffff",
-  },
-  {
-    title: "Landlord & Tenant Disputes",
-    path: "/all-services/landlord-tenant",
-    image: LandlordImg,
-    description: "A lil para about what this service is",
-    textColor: "#000000",
-  },
-  {
-    title: "Family & Children",
-    path: "/all-services/family-and-children",
-    image: FamilyImg,
-    description: "A lil para about what this service is",
-    textColor: "#ffffff",
-  },
-  {
-    title: "Wills and Probate",
-    path: "/all-services/wills-probate",
-    image: WillsProbateImg,
-    description: "A lil para about what this service is",
-    textColor: "#ffffff",
-  },
-];
-
-// Service Card Component
-const ServiceCard = ({ service }) => (
-  <GridItem
-    width={{ xs: "100%", lg: "80%", xl: "80%", "2xl": "80%" }}
-    height={{
-      xs: "125px",
-      lg: "175px",
-      xl: "200px",
-      "2xl": "250px",
-    }}
-    padding={{
-      xs: "15% 10px",
-      lg: "6px 14px",
-      xl: "8px 16px",
-      "2xl": "10px 20px",
-    }}
-    bgImage={`url(${service.image})`}
-    bgSize="cover"
-    bgPos="center"
-    bgRepeat="no-repeat"
-    border="1px solid black"
-    borderRadius="8px"
-    cursor="pointer"
-    _hover={{
-      opacity: "0.8",
-      transition: "all 0.5s ease",
-    }}
-  >
-    <Link to={service.path} style={{ textDecoration: "none" }}>
-      <Box
-        height="100%"
-        display="flex"
-        flexFlow="column"
-        justifyContent="center"
-        alignItems="flex-start"
-        gap="10px"
-      >
-        <Text
-          fontSize={{
-            xs: "11px",
-            lg: "14px",
-            xl: "16px",
-            "2xl": "20px",
-          }}
-          fontFamily="CeraRoundPro"
-          fontWeight={500}
-          textAlign="left"
-          color={service.textColor}
-        >
-          {service.title}
-        </Text>
-        <VStack
-          width="100%"
-          height="100%"
-          justifyContent="space-between"
-          alignItems="flex-start"
-        >
-          <Text
-            fontSize={{
-              xs: "10px",
-              lg: "12px",
-              xl: "13px",
-              "2xl": "16px",
-            }}
-            fontFamily="CeraRoundPro"
-            fontWeight={400}
-            color={service.textColor}
-          >
-            {service.description}
-          </Text>
-          <HiOutlineArrowLongRight size="3em" color={service.textColor} />
-        </VStack>
-      </Box>
-    </Link>
-  </GridItem>
-);
 
 // Banner Component
 const Banner = () => (
   <Box
     width="100%"
     height={{
-      xs: "200px",
-      lg: "250px",
-      xl: "300px",
-      "2xl": "350px",
+      xs: "250px",
+      lg: "300px",
+      xl: "350px",
+      "2xl": "400px",
     }}
-    bgImage={`url(${BannerImg})`}
+    bgImage={`linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${BannerImg})`}
     bgSize="cover"
     bgPos="center"
     bgRepeat="no-repeat"
     display="flex"
     justifyContent="space-around"
     alignItems="center"
-    _loading={"eager"}
   >
     <Text
-      fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
-      fontWeight={600}
+      fontSize={{ xs: "32px", lg: "42px", xl: "48px", "2xl": "58px" }}
+      fontWeight={700}
+      ml={{ lg: 4 }}
       fontFamily="CeraRoundPro"
+      color="white"
     >
       Services
     </Text>
@@ -205,8 +52,8 @@ const MainContent = () => (
     >
       <Text
         fontFamily="CeraRoundPro"
-        fontSize={{ xs: "14px", lg: "20px", xl: "26px", "2xl": "30px" }}
-        fontWeight={500}
+        fontSize={{ xs: "22px", lg: "28px", xl: "34px", "2xl": "38px" }}
+        fontWeight={400}
       >
         Our Legal Services
       </Text>
@@ -229,48 +76,56 @@ const MainContent = () => (
       <Text
         fontFamily="CeraRoundPro"
         fontWeight={400}
-        fontSize={{ xs: "10px", lg: "12px", xl: "14px", "2xl": "16px" }}
+        fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
         textAlign="justify"
+        lineHeight={1.7}
       >
-        Our legal services are highly recommended by our clients and other
-        professionals such as barristers and other solicitors. Our immigration
-        and litigation departments fight to win. Our property department is
-        focused on achieving the best and fastest outcome for our clients. We
-        explain complicated legal issues clearly and offer optimum solutions for
-        each client by providing advice which is versatile and effective. Known
-        for our integrity and commitment to our clients, we are pleased to say
-        that 90% of our clients come to us through recommendations.
+        At Lumine Solicitors, we provide a wide range of professional legal
+        services for individuals, families and businesses across the UK. Built
+        on principles of trust, experience and clear communication, our highly
+        qualified solicitors deliver tailored advice and effective solutions.
+        From immigration and property matters to dispute resolution, family law,
+        wills and criminal defence, we are committed to supporting clients
+        through complex legal challenges with confidence.
+      </Text>
+
+      <Text
+        fontFamily="CeraRoundPro"
+        fontWeight={400}
+        fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+        textAlign="justify"
+        mt={{ lg: "4" }}
+        lineHeight={1.7}
+      >
+        Our expertise covers immigration and visa applications, property and
+        conveyancing for both residential and commercial needs, intellectual
+        property protection and litigation. We also assist with landlord and
+        tenant disputes, family and children matters and succession planning.
+        Whether it is securing visas, buying or selling property, protecting
+        creative assets, resolving disputes, or safeguarding family interests,
+        we aim to provide practical, reliable and cost-effective guidance.
+      </Text>
+
+      <Text
+        fontFamily="CeraRoundPro"
+        fontWeight={400}
+        fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+        textAlign="justify"
+        mt={{ lg: "4" }}
+        lineHeight={1.7}
+      >
+        Choosing Lumine Solicitors means working with a team that upholds
+        integrity, transparency and client care. With clear fee plans,
+        nationwide availability through face-to-face or online consultations and
+        regulation by the SRA, we deliver trustworthy legal services with
+        professionalism at every stage. Our goal is to give you peace of mind,
+        knowing your legal matters are in safe hands.
       </Text>
     </Box>
   </Box>
 );
 
-// Services Grid Section
-const ServicesGrid = () => (
-  <Box
-    width="100%"
-    display="flex"
-    flexFlow="column"
-    alignItems="center"
-    color="black"
-    mb={{ xs: "25px", lg: "50px" }}
-  >
-    <Grid
-      width={{ xs: "95%", lg: "95%", xl: "95%", "2xl": "80%" }}
-      templateColumns={{ xs: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
-      templateRows={{ xs: "repeat(3, 1fr)", lg: "repeat(2, 1fr)" }}
-      gap={{ xs: "10px", lg: "20px", xl: "25px", "2xl": "30px" }}
-      justifyItems="center"
-      alignItems="center"
-    >
-      {services.map((service, index) => (
-        <ServiceCard key={index} service={service} />
-      ))}
-      <GridItem display={{ xs: "none", lg: "grid" }} />
-    </Grid>
-  </Box>
-);
-
+// Main Component
 const AllServices = () => {
   return (
     <Container
@@ -291,13 +146,18 @@ const AllServices = () => {
       <Box width="100%" flex="1" p={0} m={0} pt="50px">
         <Banner />
         <MainContent />
-        <ServicesGrid />
+
+        {/* ✅ Services Links (No extra bg/padding) */}
+        <AllServiceLinks />
+
         <Suspense fallback={<div>Loading All Prices ...</div>}>
           <AllPrices />
         </Suspense>
+
         <Suspense fallback={<div>Loading All News and Insights ...</div>}>
           <AllNewsInsights />
         </Suspense>
+
         <Footer />
       </Box>
     </Container>

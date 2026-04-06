@@ -10,8 +10,8 @@ import { Helmet } from "react-helmet";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
-import BannerImg from "../../../assets/services/main/sub-services/family.webp";
-
+import BannerImg from "../../../assets/services/main/family/bannerImg.jpg";
+import { Heading } from "@chakra-ui/react"
 const NuptialAgreement = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
@@ -42,10 +42,10 @@ const NuptialAgreement = () => {
           <Box
             width={"100%"}
             height={{
-              xs: "75px",
-              lg: "100px",
-              xl: "125px",
-              "2xl": "150px",
+              xs: "250px",
+              lg: "300px",
+              xl: "350px",
+              "2xl": "400px",
             }}
             bgImage={`url(${BannerImg})`}
             bgSize={"cover"}
@@ -57,7 +57,7 @@ const NuptialAgreement = () => {
             _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
+              fontSize={{ xs: "19px", lg: "29px", xl: "35px", "2xl": "44px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
@@ -81,16 +81,26 @@ const NuptialAgreement = () => {
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
+              <Heading
+                as={"h2"}
+                fontFamily={"CeraRoundPro"}
+                fontWeight={500}
+                color={"#bf9b30"}
+                fontSize={{ xs: "14px", lg: "24px", xl: "28px", "2xl": "38px" }}
+                textAlign={"left"}
+
+              >
+                What is a Pre-Nuptial Agreement?
+              </Heading>
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
                 textAlign={"justify"}
+                lineHeight={1.8}
+                mt={{ lg: "6" }}
               >
-                Legal issues concerning pre-nuptial agreements can often be
-                complex and sensitive. At Lumine Solicitors, we provide expert
-                legal advice with compassion and understanding to help you
-                secure your future.
+                A prenup, or prenuptial agreement, is a contract agreed upon before marriage that involves creating a document that clearly defines which property and financial assets belong to each partner. In most cases, both parties will need to sign a prenuptial agreement at least 28 days before the planned wedding date. Lumine solicitors advise that the agreement is created sufficiently in advance of the marriage so parties to the agreement have time to consider the terms.
               </Text>
             </Box>
           </Box>
@@ -101,100 +111,7 @@ const NuptialAgreement = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* Understanding Pre-Nuptial Agreements */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"90%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
-              <HStack
-                borderTop={"1px solid #adacac"}
-                width={"100%"}
-                justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
-                alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
-                cursor={"pointer"}
-                _hover={{ backgroundColor: !eligibilityState && "black" }}
-                transition={"all 0.3s ease"}
-                backgroundColor={eligibilityState && "black"}
-                onClick={() => setEligibilityState(!eligibilityState)}
-              >
-                <Text
-                  textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
-                  }}
-                  fontWeight={500}
-                  fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
-                >
-                  Understanding Pre-Nuptial Agreements
-                </Text>
-                {!eligibilityState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
-                ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
-                )}
-              </HStack>
 
-              {eligibilityState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    Pre-nuptial agreements, commonly known as “prenups,” are
-                    legal contracts entered into by couples before marriage.
-                    While the primary intention is not to anticipate separation
-                    or divorce, prenups are seen as a responsible and practical
-                    measure. Their use is becoming increasingly widespread as
-                    couples recognize the importance of protecting their
-                    individual financial interests.
-                  </Text>
-                </VStack>
-              )}
-            </Box>
 
             {/* The Importance of Pre-Nuptial Agreements */}
             <Box
@@ -230,29 +147,29 @@ const NuptialAgreement = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={spouseState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setSpouseState(!spouseState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   The Importance of Pre-Nuptial Agreements
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -278,6 +195,9 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
+                    pr={{ lg: "10" }}
+
                   >
                     A pre-nuptial agreement can play a significant role in
                     financial provision should the relationship come to an end.
@@ -323,29 +243,29 @@ const NuptialAgreement = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={applicationState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setApplicationState(!applicationState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Who Should Enter a Pre-Nuptial Agreement?
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -371,6 +291,7 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.7}
                   >
                     We recommend entering a pre-nuptial agreement if:
                   </Text>
@@ -387,6 +308,8 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-5", md: "-7" }}
+                    lineHeight={1.7}
                   >
                     <List.Item>
                       You and your partner have unequal levels of wealth.
@@ -426,6 +349,8 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", xs: "-5", md: "-7" }}
+                    lineHeight={1.7}
                   >
                     The starting point for financial provision in divorce is
                     that all assets are considered part of the marital pot and
@@ -472,29 +397,29 @@ const NuptialAgreement = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !screening && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={screening && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setScreening(!screening)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Are Pre-Nuptial Agreements Legally Binding?
                 </Text>
                 {!screening ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -520,6 +445,7 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
                   >
                     Pre-nuptial agreements are not legally binding in England
                     and Wales. Nevertheless, if properly drafted, they can be
@@ -542,6 +468,8 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
+                    mt={{ lg: "-7", md: "-7", xs: "-5" }}
                   >
                     <List.Item>
                       Financial and domestic contributions should be treated
@@ -578,6 +506,9 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", md: "-7", xs: "-5" }}
+                    lineHeight={1.8}
+
                   >
                     The overall aim is fairness to both partners.
                   </Text>
@@ -619,29 +550,29 @@ const NuptialAgreement = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !decisionState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={decisionState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setDecisionState(!decisionState)}
               >
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -667,6 +598,7 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
                   >
                     At Lumine, we offer comprehensive services to assist you
                     with the divorce process effectively:
@@ -684,6 +616,8 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", md: "-7", xs: "-5" }}
+                    lineHeight={1.8}
                   >
                     <strong>Initial Consultation</strong>: We offer an initial
                     consultation to understand your unique circumstances and
@@ -702,6 +636,8 @@ const NuptialAgreement = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-7", md: "-7", xs: "-5" }}
+                    lineHeight={1.8}
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong>Drafting and Review</strong>: Our experienced
@@ -721,6 +657,8 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", md: "-7", xs: "-5" }}
+                    lineHeight={1.8}
                   >
                     <strong>Negotiation</strong>: We assist with negotiations to
                     reach mutually agreeable terms that reflect the wishes and
@@ -739,6 +677,8 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", md: "-7", xs: "-5" }}
+                    lineHeight={1.8}
                   >
                     <strong>Legal Advice</strong>:We provide independent legal
                     advice to ensure that you fully understand the terms and
@@ -782,29 +722,29 @@ const NuptialAgreement = () => {
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
-                backgroundColor={helpState && "black"}
+                backgroundColor={"black" && "black"}
                 onClick={() => setHelpState(!helpState)}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "14px",
-                    sm: "14px",
-                    md: "16px",
-                    lg: "16px",
-                    xl: "18px",
-                    "2xl": "20px",
+                    fontSize={{
+                    xs: "13px",
+                    sm: "13px",
+                    md: "15px",
+                    lg: "15px",
+                    xl: "17px",
+                    "2xl": "19px",
                   }}
                   fontWeight={500}
                   fontFamily={"CeraRoundPro"}
-                  color={"#beab7c"}
+                  color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#beab7c"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
                 ) : (
-                  <AiOutlineMinus color={"#beab7c"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
                 )}
               </HStack>
 
@@ -830,6 +770,7 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    lineHeight={1.8}
                   >
                     At Lumine, we understand the intricacies of divorce
                     proceedings and are dedicated to providing personalized and
@@ -848,6 +789,8 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", md: "-7", xs: "-5" }}
+                    lineHeight={1.8}
                   >
                     <strong>Expert Advice</strong>: We offer clear, concise, and
                     practical legal advice tailored to your specific
@@ -865,6 +808,8 @@ const NuptialAgreement = () => {
                       "2xl": "18px",
                     }}
                     fontWeight={400}
+                    mt={{ lg: "-7", md: "-7", xs: "-5" }}
+                    lineHeight={1.8}
                     fontFamily={"CeraRoundPro"}
                   >
                     <strong> Compassionate Support</strong>: Our team provides
@@ -884,6 +829,8 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", md: "-7", xs: "-5" }}
+                    lineHeight={1.8}
                   >
                     <strong> Strategic Approach</strong>: We develop customized
                     strategies to achieve the best possible outcome for you.
@@ -901,6 +848,8 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", md: "-7", xs: "-5" }}
+                    lineHeight={1.8}
                   >
                     <strong> Cost Certainty</strong>: We offer fixed,
                     competitive, and transparent fee packages to maintain cost
@@ -919,13 +868,21 @@ const NuptialAgreement = () => {
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    mt={{ lg: "-7", md: "-7", xs: "-5" }}
+                    lineHeight={1.8}
                   >
                     For assistance with pre-nuptial agreements, please do not
                     hesitate to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link to={"/lumine-law/contact"}>Contact Us HERE</Link>{" "}
-                    </strong>
+                      <Link
+                        to={"/contact"}
+                        style={{ color: "#e91e63" }}
+                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
+                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
+                      >
+                        Contact Us HERE
+                      </Link>{" "}                    </strong>
                     We are here to help you navigate the complexities of family
                     law and achieve the best possible resolution for your
                     situation.
