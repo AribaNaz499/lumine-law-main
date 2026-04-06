@@ -25,7 +25,7 @@ import BannerImg from "../../assets/pricing/priceBanner.jpg";
 import { Helmet } from "react-helmet";
 import AllServiceLinks from "../NavLinks/AllServiceLinks";
 import AllNewsInsights from "../NavLinks/AllNewsInsights";
-import AllPrices from "../../NavLinks/AllPrices";
+import AllPrices from "../NavLinks/AllPrices";
 
 
 const PropertyPrices = () => {
