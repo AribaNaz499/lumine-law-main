@@ -93,7 +93,7 @@ const NewsArticles = () => {
       {articles.map((article) => (
         <GridItem
           as={Link}
-          to={"/lumine-law/article-page"}
+          to={"/article-page"}
           key={article.key}
           width={"100%"}
           height={"100%"}
