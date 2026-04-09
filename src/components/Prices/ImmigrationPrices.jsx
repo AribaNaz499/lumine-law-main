@@ -118,7 +118,7 @@ const ImmigrationPrices = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={600}
                 color={"#bf9b30"}
-                fontSize={{ xs: "12px", lg: "20px", xl: "24px", "2xl": "34px" }}
+                fontSize={{ xs: "11px", lg: "18px", xl: "22px", "2xl": "31px" }}
                 textAlign={"left"}
                 ml={{ lg: "2" }}
                 mt={{ lg: "-3" }}
@@ -130,24 +130,18 @@ const ImmigrationPrices = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={{ lg: "3" }}
                 ml={{ lg: "2" }}
-                lineHeight={1.8}
+                lineHeight={1.4}
               >
                 Our exact fees will depend on the circumstances of your particular case. You will need to pay us extra legal fees in relation to any additional family members. We will determine our fees depending on the following circumstances:
               </Text>
               <List.Root
                 textAlign={"justify"}
-                fontSize={{
-                  xs: "12px",
-                  sm: "12px",
-                  md: "14px",
-                  lg: "14px",
-                  xl: "16px",
-                  "2xl": "18px",
-                }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
+
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
                 ml={{ lg: "3" }}
@@ -248,23 +242,23 @@ const ImmigrationPrices = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Long Residence Applications:
                 </Text>
                 {!residentialState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -292,11 +286,11 @@ const ImmigrationPrices = () => {
                     <Grid
                       width="100%"
                       templateColumns="3fr 1fr"
-                      py="20px"
+                      py="7px"
                       px="10px"
                       backgroundColor="#d9edf7"
                       borderY="1px solid #bfbfbf"
-                      fontSize={{ xs: "14px", lg: "16px" }}
+                      fontSize={{ xs: "11px", lg: "13px" }}
                       fontWeight="600"
                     >
                       <GridItem justifySelf="start" textAlign="left">
@@ -311,11 +305,11 @@ const ImmigrationPrices = () => {
                     <Grid
                       width="100%"
                       templateColumns="3fr 1fr"
-                      py="20px"
+                      py="7px"
                       px="10px"
                       // borderBottom="1px solid #bfbfbf"
                       backgroundColor={"#ffffff"}
-                      fontSize={{ xs: "12px", lg: "14px" }}
+                      fontSize={{ xs: "11px", lg: "13px" }}
                       fontWeight="500"
                       _hover={{
                         backgroundColor: "#f3f3f3",
@@ -381,24 +375,25 @@ const ImmigrationPrices = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                   fontSize={{
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
+                  
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Passport and Travel Document Applications:
                 </Text>
                 {!additionalState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -426,11 +421,11 @@ const ImmigrationPrices = () => {
                     <Grid
                       width="100%"
                       templateColumns="3fr 1fr"
-                      py="20px"
+                      py="7px"
                       px="10px"
                       backgroundColor="#d9edf7"
                       borderY="1px solid #bfbfbf"
-                      fontSize={{ xs: "14px", lg: "16px" }}
+                      fontSize={{ xs: "11px", lg: "13px" }}
                       fontWeight="600"
                     >
                       <GridItem justifySelf="start" textAlign="left">
@@ -445,11 +440,11 @@ const ImmigrationPrices = () => {
                     <Grid
                       width="100%"
                       templateColumns="3fr 1fr"
-                      py="20px"
+                      py="7px"
                       px="10px"
                       // borderBottom="1px solid #bfbfbf"
                       backgroundColor={"#ffffff"}
-                      fontSize={{ xs: "12px", lg: "14px" }}
+                      fontSize={{ xs: "11px", lg: "13px" }}
                       fontWeight="500"
                       _hover={{
                         backgroundColor: "#f3f3f3",
@@ -470,11 +465,11 @@ const ImmigrationPrices = () => {
                     <Grid
                       width="100%"
                       templateColumns="3fr 1fr"
-                      py="20px"
+                      py="7px"
                       px="10px"
                       // borderBottom="1px solid #bfbfbf"
                       backgroundColor={"#f3f3f3"}
-                      fontSize={{ xs: "12px", lg: "14px" }}
+                      fontSize={{ xs: "11px", lg: "13px" }}
                       fontWeight="500"
                       _hover={{
                         backgroundColor: "#ebe8e8",
@@ -495,11 +490,11 @@ const ImmigrationPrices = () => {
                     <Grid
                       width="100%"
                       templateColumns="3fr 1fr"
-                      py="20px"
+                      py="7px"
                       px="10px"
                       // borderBottom="1px solid #bfbfbf"
                       backgroundColor={"#ffffff"}
-                      fontSize={{ xs: "12px", lg: "14px" }}
+                      fontSize={{ xs: "11px", lg: "13px" }}
                       fontWeight="500"
                       _hover={{
                         backgroundColor: "#f3f3f3",
@@ -520,11 +515,11 @@ const ImmigrationPrices = () => {
                     <Grid
                       width="100%"
                       templateColumns="3fr 1fr"
-                      py="20px"
+                      py="7px"
                       px="10px"
                       // borderBottom="1px solid #bfbfbf"
                       backgroundColor={"#f3f3f3"}
-                      fontSize={{ xs: "12px", lg: "14px" }}
+                      fontSize={{ xs: "11px", lg: "13px" }}
                       fontWeight="500"
                       _hover={{
                         backgroundColor: "#ebe8e8",
@@ -590,24 +585,24 @@ const ImmigrationPrices = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    fontSize={{
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Turkish Citizens:
                 </Text>
                 {!nameState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -635,11 +630,11 @@ const ImmigrationPrices = () => {
                     <Grid
                       width="100%"
                       templateColumns="3fr 1fr"
-                      py="20px"
+                      py="7px"
                       px="10px"
                       backgroundColor="#d9edf7"
                       borderY="1px solid #bfbfbf"
-                      fontSize={{ xs: "14px", lg: "16px" }}
+                      fontSize={{ xs: "11px", lg: "13px" }}
                       fontWeight="600"
                     >
                       <GridItem justifySelf="start" textAlign="left">
@@ -654,11 +649,11 @@ const ImmigrationPrices = () => {
                     <Grid
                       width="100%"
                       templateColumns="3fr 1fr"
-                      py="20px"
+                      py="7px"
                       px="10px"
                       // borderBottom="1px solid #bfbfbf"
                       backgroundColor={"#ffffff"}
-                      fontSize={{ xs: "12px", lg: "14px" }}
+                      fontSize={{ xs: "11px", lg: "13px" }}
                       fontWeight="500"
                       _hover={{
                         backgroundColor: "#f3f3f3",
@@ -679,11 +674,11 @@ const ImmigrationPrices = () => {
                     <Grid
                       width="100%"
                       templateColumns="3fr 1fr"
-                      py="20px"
+                      py="7px"
                       px="10px"
                       // borderBottom="1px solid #bfbfbf"
                       backgroundColor={"#f3f3f3"}
-                      fontSize={{ xs: "12px", lg: "14px" }}
+                      fontSize={{ xs: "11px", lg: "13px" }}
                       fontWeight="500"
                       _hover={{
                         backgroundColor: "#ebe8e8",
@@ -704,11 +699,11 @@ const ImmigrationPrices = () => {
                     <Grid
                       width="100%"
                       templateColumns="3fr 1fr"
-                      py="20px"
+                      py="7px"
                       px="10px"
                       // borderBottom="1px solid #bfbfbf"
                       backgroundColor={"#ffffff"}
-                      fontSize={{ xs: "12px", lg: "14px" }}
+                      fontSize={{ xs: "11px", lg: "13px" }}
                       fontWeight="500"
                       _hover={{
                         backgroundColor: "#f3f3f3",
@@ -729,11 +724,11 @@ const ImmigrationPrices = () => {
                     <Grid
                       width="100%"
                       templateColumns="3fr 1fr"
-                      py="20px"
+                      py="7px"
                       px="10px"
                       // borderBottom="1px solid #bfbfbf"
                       backgroundColor={"#f3f3f3"}
-                      fontSize={{ xs: "12px", lg: "14px" }}
+                      fontSize={{ xs: "11px", lg: "13px" }}
                       fontWeight="500"
                       _hover={{
                         backgroundColor: "#ebe8e8",
@@ -754,11 +749,11 @@ const ImmigrationPrices = () => {
                     <Grid
                       width="100%"
                       templateColumns="3fr 1fr"
-                      py="20px"
+                      py="7px"
                       px="10px"
                       // borderBottom="1px solid #bfbfbf"
                       backgroundColor={"#ffffff"}
-                      fontSize={{ xs: "12px", lg: "14px" }}
+                      fontSize={{ xs: "11px", lg: "13px" }}
                       fontWeight="500"
                       _hover={{
                         backgroundColor: "#f3f3f3",
@@ -779,11 +774,11 @@ const ImmigrationPrices = () => {
                     <Grid
                       width="100%"
                       templateColumns="3fr 1fr"
-                      py="20px"
+                      py="7px"
                       px="10px"
                       // borderBottom="1px solid #bfbfbf"
                       backgroundColor={"#f3f3f3"}
-                      fontSize={{ xs: "12px", lg: "14px" }}
+                      fontSize={{ xs: "11px", lg: "13px" }}
                       fontWeight="500"
                       _hover={{
                         backgroundColor: "#ebe8e8",
@@ -1024,7 +1019,7 @@ const ImmigrationPrices = () => {
             </Box>
           </VStack>
 
-       {/* All Prices */}
+          {/* All Prices */}
           <Suspense fallback={<div>Loading All Prices ...</div>}>
             <AllPrices />
           </Suspense>

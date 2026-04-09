@@ -103,7 +103,7 @@ const DebtRecovery = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={650}
                 color={"#bf9b30"}
-                fontSize={{ xs: "12px", lg: "20px", xl: "24px", "2xl": "34px" }}
+                fontSize={{ xs: "11px", lg: "19px", xl: "23px", "2xl": "32px" }}
                 textAlign={"left"}
                 ml={{ lg: "1" }}
                 mt={{ lg: "-3" }}
@@ -114,11 +114,11 @@ const DebtRecovery = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 ml={{ lg: "1" }}
                 mt={{ lg: "5" }}
-                lineHeight={1.6}
+                lineHeight={1.5}
 
               >
                 Usually all we require from you to action an instruction is a copy of the outstanding invoices/statement of account, together with the debtor’s contact details and any relevant correspondence between you and the debtor.
@@ -126,10 +126,10 @@ const DebtRecovery = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 ml={{ lg: "1" }}
-                lineHeight={1.6}
+                lineHeight={1.5}
               >
                 Should further action be required our solicitors can assist you with issuing legal proceedings or even bankruptcy and winding up proceedings. For more information please do not hesitate to contact us.
 
@@ -184,24 +184,24 @@ const DebtRecovery = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                 fontSize={{
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Debt Recovery – the Costs Involved
                 </Text>
                 {!timescaleState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} />
                 )}
               </HStack>
 
@@ -218,16 +218,17 @@ const DebtRecovery = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    lineHeight={1.8}
+                    lineHeight={1.7}
                   >
                     These costs apply where your claim relates to an unpaid
                     invoice or invoices which are not disputed and enforcement
@@ -280,24 +281,24 @@ const DebtRecovery = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    fontSize={{
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Our Fees
                 </Text>
                 {!serviceState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -313,14 +314,15 @@ const DebtRecovery = () => {
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                   fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
 
@@ -333,12 +335,12 @@ const DebtRecovery = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     fontWeight={600}
                     fontFamily={"CeraRoundPro"}
@@ -349,14 +351,15 @@ const DebtRecovery = () => {
 
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                   fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                     mt={{ lg: "-7", xs: "-4", md: "-6" }}
@@ -375,12 +378,12 @@ const DebtRecovery = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     fontWeight={600}
                     fontFamily={"CeraRoundPro"}
@@ -392,14 +395,15 @@ const DebtRecovery = () => {
 
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                                               mt={{lg:"-7", xs:"-4", md:"-6"}}
@@ -454,23 +458,23 @@ lineHeight={1.8}
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Pre-Action Advice (Stage 1)
                 </Text>
                 {!residentialState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} />
                 )}
               </HStack>
 
@@ -487,13 +491,14 @@ lineHeight={1.8}
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -501,12 +506,12 @@ lineHeight={1.8}
                     depend on the circumstances of the instructions and advice
                     required.
                   </Text>
-
+{/* 
                   <Box
                     border={"1px solid black"}
                     width={"100%"}
                     my={"15px"}
-                  ></Box>
+                  ></Box> */}
 
                   <Box
                     width={"100%"}
@@ -523,7 +528,7 @@ lineHeight={1.8}
                       width={"100%"}
                       templateColumns={"2fr 1fr"}
                       backgroundColor={"#d9edf7"}
-                      py={"20px"}
+                      py={"10px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
@@ -539,6 +544,15 @@ lineHeight={1.8}
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
                         textAlign={{ xs: "center", md: "left" }}
+                         fontSize={{
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
+                    }}
+                  
                       >
                         Our Charges
                       </GridItem>
@@ -549,7 +563,7 @@ lineHeight={1.8}
                       width={"100%"}
                       templateColumns={"2fr 1fr"}
                       backgroundColor={"#ffffff"}
-                      py={"20px"}
+                      py={"10px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
@@ -559,12 +573,28 @@ lineHeight={1.8}
                       fontWeight={"500"}
                       _hover={{ backgroundColor: "#f3f3f3" }}
                     >
-                      <GridItem justifySelf={"start"} textAlign={"left"}>
+                      <GridItem justifySelf={"start"} textAlign={"left"}        fontSize={{
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
+                    }}>
                         Individual/ Sole trade- Standard letter before action UK
                       </GridItem>
                       <GridItem
                         ustifySelf={{ xs: "center", md: "start" }}
                         textAlign={{ xs: "center", md: "left" }}
+                         fontSize={{
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
+                    }}
+                
                       >
                         £100.00 - £500.00
                       </GridItem>
@@ -574,7 +604,7 @@ lineHeight={1.8}
                     <Grid
                       width={"100%"}
                       templateColumns={"2fr 1fr"}
-                      py={"20px"}
+                      py={"10px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
@@ -585,12 +615,26 @@ lineHeight={1.8}
                       backgroundColor={"#f3f3f3"}
                       _hover={{ backgroundColor: "#ebe8e8" }}
                     >
-                      <GridItem justifySelf={"start"} textAlign={"left"}>
+                      <GridItem justifySelf={"start"} textAlign={"left"}        fontSize={{
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
+                    }}>
                         Company- Standard letter before action
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}        fontSize={{
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
+                    }}
                       >
                         £100.00 - £500.00
                       </GridItem>
@@ -601,7 +645,7 @@ lineHeight={1.8}
                       width={"100%"}
                       templateColumns={"2fr 1fr"}
                       backgroundColor={"#ffffff"}
-                      py={"20px"}
+                      py={"10px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
@@ -611,12 +655,26 @@ lineHeight={1.8}
                       fontWeight={"500"}
                       _hover={{ backgroundColor: "#f3f3f3" }}
                     >
-                      <GridItem justifySelf={"start"} textAlign={"left"}>
+                      <GridItem justifySelf={"start"} textAlign={"left"}        fontSize={{
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
+                    }}>
                         Follow up letters
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}        fontSize={{
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
+                    }}
                       >
                         £25.00
                       </GridItem>
@@ -626,7 +684,7 @@ lineHeight={1.8}
                     <Grid
                       width={"100%"}
                       templateColumns={"2fr 1fr"}
-                      py={"20px"}
+                      py={"10px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
@@ -637,12 +695,26 @@ lineHeight={1.8}
                       backgroundColor={"#f3f3f3"}
                       _hover={{ backgroundColor: "#ebe8e8" }}
                     >
-                      <GridItem justifySelf={"start"} textAlign={"left"}>
+                      <GridItem justifySelf={"start"} textAlign={"left"}        fontSize={{
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
+                    }}>
                         Bespoke non-standard drafted letters
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}        fontSize={{
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
+                    }}
                       >
                         From £20.00 per letter
                       </GridItem>
@@ -691,24 +763,24 @@ lineHeight={1.8}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                   fontSize={{
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Issuing a Claim (Stage 2)
                 </Text>
                 {!purchaseState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} />
                 )}
               </HStack>
 
@@ -737,7 +809,7 @@ lineHeight={1.8}
                       width={"100%"}
                       templateColumns={"1fr 1fr 3fr"}
                       backgroundColor={"#d9edf7"}
-                      py={"20px"}
+                      py={"10px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
@@ -746,18 +818,39 @@ lineHeight={1.8}
                       }}
                       fontWeight={"600"}
                     >
-                      <GridItem justifySelf={"start"} textAlign={"left"}>
+                      <GridItem justifySelf={"start"} textAlign={"left"}        fontSize={{
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
+                    }}>
                         Debt
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}        fontSize={{
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
+                    }}
                       >
                         Court fees
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}        fontSize={{
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
+                    }}
                       >
                         {" "}
                         Our legal fees
@@ -769,7 +862,7 @@ lineHeight={1.8}
                       width={"100%"}
                       templateColumns={"1fr 1fr 3fr"}
                       backgroundColor={"#ffffff"}
-                      py={"20px"}
+                      py={"6px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
@@ -779,18 +872,39 @@ lineHeight={1.8}
                       fontWeight={"500"}
                       _hover={{ backgroundColor: "#f3f3f3" }}
                     >
-                      <GridItem justifySelf={"start"} textAlign={"left"}>
+                      <GridItem justifySelf={"start"} textAlign={"left"}        fontSize={{
+                      xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}>
                         Up to £300
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}        fontSize={{
+                    xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
                       >
                         £35
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}        fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
                       >
                         {" "}
                         £90 plus VAT – and a success fee of 12.5%, 22.5% or
@@ -803,7 +917,7 @@ lineHeight={1.8}
                     <Grid
                       width={"100%"}
                       templateColumns={"1fr 1fr 3fr"}
-                      py={"20px"}
+                      py={"6px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
@@ -814,18 +928,40 @@ lineHeight={1.8}
                       backgroundColor={"#f3f3f3"}
                       _hover={{ backgroundColor: "#ebe8e8" }}
                     >
-                      <GridItem justifySelf={"start"} textAlign={"left"}>
+                      <GridItem justifySelf={"start"} textAlign={"left"}        fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}>
                         £300 – £500
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}       fontSize={{
+                    xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
                       >
                         £50
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}        fontSize={{
+                       xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
+                  
                       >
                         {" "}
                         £90 plus VAT – and a success fee of 12.5%, 22.5% or
@@ -839,7 +975,7 @@ lineHeight={1.8}
                       width={"100%"}
                       templateColumns={"1fr 1fr 3fr"}
                       backgroundColor={"#ffffff"}
-                      py={"20px"}
+                      py={"6px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
@@ -849,18 +985,39 @@ lineHeight={1.8}
                       fontWeight={"500"}
                       _hover={{ backgroundColor: "#f3f3f3" }}
                     >
-                      <GridItem justifySelf={"start"} textAlign={"left"}>
+                      <GridItem justifySelf={"start"} textAlign={"left"}        fontSize={{
+                    xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}>
                         £500 – £1,000
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}       fontSize={{
+                       xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
                       >
                         £70
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}        fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
                       >
                         £125 plus VAT– and a success fee of 12.5%, 22.5% or
                         32.5% depending on whether the debt is recovered at
@@ -872,7 +1029,7 @@ lineHeight={1.8}
                     <Grid
                       width={"100%"}
                       templateColumns={"1fr 1fr 3fr"}
-                      py={"20px"}
+                      py={"6px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
@@ -883,18 +1040,39 @@ lineHeight={1.8}
                       backgroundColor={"#f3f3f3"}
                       _hover={{ backgroundColor: "#ebe8e8" }}
                     >
-                      <GridItem justifySelf={"start"} textAlign={"left"}>
+                      <GridItem justifySelf={"start"} textAlign={"left"}   fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}>
                         £1,000 – £1,500
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}   fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
                       >
                         £80
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}   fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
                       >
                         £145 plus VAT– and a success fee of 12.5%, 22.5% or
                         32.5% depending on whether the debt is recovered at
@@ -907,7 +1085,7 @@ lineHeight={1.8}
                       width={"100%"}
                       templateColumns={"1fr 1fr 3fr"}
                       backgroundColor={"#ffffff"}
-                      py={"20px"}
+                      py={"6px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
@@ -917,18 +1095,39 @@ lineHeight={1.8}
                       fontWeight={"500"}
                       _hover={{ backgroundColor: "#f3f3f3" }}
                     >
-                      <GridItem justifySelf={"start"} textAlign={"left"}>
+                      <GridItem justifySelf={"start"} textAlign={"left"}   fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}>
                         £1,500 – £3,000
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}   fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
                       >
                         £115
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}   fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
                       >
                         £150 plus VAT– and a success fee of 10.5%, 18.5% or
                         22.5% depending on whether the debt is recovered at
@@ -940,7 +1139,7 @@ lineHeight={1.8}
                     <Grid
                       width={"100%"}
                       templateColumns={"1fr 1fr 3fr"}
-                      py={"20px"}
+                      py={"6px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
@@ -951,18 +1150,39 @@ lineHeight={1.8}
                       backgroundColor={"#f3f3f3"}
                       _hover={{ backgroundColor: "#ebe8e8" }}
                     >
-                      <GridItem justifySelf={"start"} textAlign={"left"}>
+                      <GridItem justifySelf={"start"} textAlign={"left"}   fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}>
                         £3,000 – £5,000
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}   fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
                       >
                         £205
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}   fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
                       >
                         £150 plus VAT– and a success fee of 6.5%, 15.5% or 20.5%
                         depending on whether the debt is recovered at stage 1, 2
@@ -975,7 +1195,7 @@ lineHeight={1.8}
                       width={"100%"}
                       templateColumns={"1fr 1fr 3fr"}
                       backgroundColor={"#ffffff"}
-                      py={"20px"}
+                      py={"6px"}
                       borderTop={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
@@ -985,18 +1205,39 @@ lineHeight={1.8}
                       fontWeight={"500"}
                       _hover={{ backgroundColor: "#f3f3f3" }}
                     >
-                      <GridItem justifySelf={"start"} textAlign={"left"}>
+                      <GridItem justifySelf={"start"} textAlign={"left"}   fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}>
                         £5,000 – £10,000
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}   fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
                       >
                         £455
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}   fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
                       >
                         £170 plus VAT– and a success fee of 4.5%, 16.5% or 18.5%
                         depending on whether the debt is recovered at stage 1, 2
@@ -1008,7 +1249,7 @@ lineHeight={1.8}
                     <Grid
                       width={"100%"}
                       templateColumns={"1fr 1fr 3fr"}
-                      py={"20px"}
+                      py={"6px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
@@ -1019,18 +1260,39 @@ lineHeight={1.8}
                       backgroundColor={"#f3f3f3"}
                       _hover={{ backgroundColor: "#ebe8e8" }}
                     >
-                      <GridItem justifySelf={"start"} textAlign={"left"}>
+                      <GridItem justifySelf={"start"} textAlign={"left"}   fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}>
                         £10,000 - £100,000
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}   fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
                       >
                         5% of claim
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        textAlign={{ xs: "center", md: "left" }}   fontSize={{
+                     xs: "9px",
+                      sm: "9px",
+                      md: "11px",
+                      lg: "11px",
+                      xl: "13px",
+                      "2xl": "15px",
+                    }}
                       >
                         £260 plus VAT– and a success fee of 3.5%, 14.5% or 13.5%
                         depending on whether the debt is recovered at stage 1, 2
@@ -1042,13 +1304,14 @@ lineHeight={1.8}
                   <Text
                     textAlign={"left"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -1059,15 +1322,18 @@ lineHeight={1.8}
 
                   <Text
                     textAlign={"left"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                   fontSize={{
+                     xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
+                    mt={{lg:"-7"}}
                     fontWeight={400}
+                    lineHeight={"1.7"}
                     fontFamily={"CeraRoundPro"}
                   >
                     Once the court has served the claim a debtor has 14 days in
@@ -1119,24 +1385,24 @@ lineHeight={1.8}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    fontSize={{
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Request for Judgement (Stage 3)
                 </Text>
                 {!disbursementsState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} />
                 )}
               </HStack>
 
@@ -1152,13 +1418,13 @@ lineHeight={1.8}
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                   fontSize={{
+                     xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     fontWeight={600}
                     fontFamily={"CeraRoundPro"}
@@ -1168,14 +1434,15 @@ lineHeight={1.8}
 
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     fontSize={{
+                     xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                     mt={{lg:"-6", md:"-7", xs:"-4"}}
@@ -1192,16 +1459,17 @@ lineHeight={1.8}
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                      mt={{lg:"-6", md:"-7", xs:"-4"}}
+                      mt={{lg:"-7", md:"-7", xs:"-4"}}
                     lineHeight={1.7}
                   >
                     Timescale: It usually takes the court about 10 working days
@@ -1211,13 +1479,13 @@ lineHeight={1.8}
 
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     fontSize={{
+                     xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     fontWeight={600}
                       mt={{lg:"-6", md:"-7", xs:"-4"}}
@@ -1229,17 +1497,18 @@ lineHeight={1.8}
 
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                  fontSize={{
+                     xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                      mt={{lg:"-6", md:"-7", xs:"-4"}}
+                      mt={{lg:"-7", md:"-7", xs:"-4"}}
                     lineHeight={1.7}
                   >
                     Please Note: The above set fees are only applicable in
@@ -1251,17 +1520,18 @@ lineHeight={1.8}
 
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                   fontSize={{
+                     xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     fontWeight={600}
+                    
                     fontFamily={"CeraRoundPro"}
-                      mt={{lg:"-6", md:"-7", xs:"-4"}}
+                      mt={{lg:"-7", md:"-7", xs:"-4"}}
                     lineHeight={1.7}
                   >
                     Additional services if necessary
@@ -1270,17 +1540,18 @@ lineHeight={1.8}
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                      mt={{lg:"-6", md:"-7", xs:"-4"}}
+                      mt={{lg:"-7", md:"-7", xs:"-4"}}
                     lineHeight={1.7}
+                    color={"gray.800"}
                   >
                     Where possible indications of third-party costs are given.
                   </Text>
@@ -1327,24 +1598,24 @@ lineHeight={1.8}
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    fontSize={{
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Enforcement of Judgement (Stage 4)
                 </Text>
                 {!leaseholdState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} />
                 )}
               </HStack>
 
@@ -1373,12 +1644,12 @@ lineHeight={1.8}
                       width={"100%"}
                       templateColumns={"2fr 1fr 1fr"}
                       backgroundColor={"#d9edf7"}
-                      py={"20px"}
+                      py={"7px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
-                        xs: "14px",
-                        lg: "16px",
+                        xs: "11px",
+                        lg: "13px",
                       }}
                       fontWeight={"600"}
                     >
@@ -1387,14 +1658,20 @@ lineHeight={1.8}
                         textAlign={"left"}
                       ></GridItem>
                       <GridItem
-                        justifySelf={{ xs: "center", md: "start" }}
-                        textAlign={{ xs: "center", md: "left" }}
+                        justifySelf={{ xs: "center", md: "start" }} 
+                        textAlign={{ xs: "center", md: "left" }}  fontSize={{
+                        xs: "11px",
+                        lg: "13px",
+                      }}
                       >
                         Disbursement £
                       </GridItem>
                       <GridItem
                         justifySelf={{ xs: "center", md: "center" }}
-                        textAlign={{ xs: "center", md: "center" }}
+                        textAlign={{ xs: "center", md: "center" }}  fontSize={{
+                        xs: "11px",
+                        lg: "13px",
+                      }}
                       >
                         Our Charges £
                       </GridItem>
@@ -1405,12 +1682,12 @@ lineHeight={1.8}
                       width={"100%"}
                       templateColumns={"2fr 1fr 1fr"}
                       backgroundColor={"#ffffff"}
-                      py={"20px"}
+                      py={"7px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
-                        xs: "12px",
-                        lg: "14px",
+                        xs: "11px",
+                        lg: "13px",
                       }}
                       fontWeight={"500"}
                       _hover={{ backgroundColor: "#f3f3f3" }}
@@ -1436,12 +1713,12 @@ lineHeight={1.8}
                     <Grid
                       width={"100%"}
                       templateColumns={"2fr 1fr 1fr"}
-                      py={"20px"}
+                      py={"7px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
-                      fontSize={{
-                        xs: "12px",
-                        lg: "14px",
+                       fontSize={{
+                        xs: "11px",
+                        lg: "13px",
                       }}
                       fontWeight={"500"}
                       backgroundColor={"#f3f3f3"}
@@ -1469,12 +1746,12 @@ lineHeight={1.8}
                       width={"100%"}
                       templateColumns={"2fr 1fr 1fr"}
                       backgroundColor={"#ffffff"}
-                      py={"20px"}
+                      py={"7px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
-                        xs: "12px",
-                        lg: "14px",
+                        xs: "11px",
+                        lg: "13px",
                       }}
                       fontWeight={"500"}
                       _hover={{ backgroundColor: "#f3f3f3" }}
@@ -1500,12 +1777,12 @@ lineHeight={1.8}
                     <Grid
                       width={"100%"}
                       templateColumns={"2fr 1fr 1fr"}
-                      py={"20px"}
+                      py={"7px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
-                      fontSize={{
-                        xs: "12px",
-                        lg: "14px",
+                       fontSize={{
+                        xs: "11px",
+                        lg: "13px",
                       }}
                       fontWeight={"500"}
                       backgroundColor={"#f3f3f3"}
@@ -1533,12 +1810,12 @@ lineHeight={1.8}
                       width={"100%"}
                       templateColumns={"2fr 1fr 1fr"}
                       backgroundColor={"#ffffff"}
-                      py={"20px"}
+                      py={"7px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
-                      fontSize={{
-                        xs: "12px",
-                        lg: "14px",
+                       fontSize={{
+                        xs: "11px",
+                        lg: "13px",
                       }}
                       fontWeight={"500"}
                       _hover={{ backgroundColor: "#f3f3f3" }}
@@ -1564,12 +1841,12 @@ lineHeight={1.8}
                     <Grid
                       width={"100%"}
                       templateColumns={"2fr 1fr 1fr"}
-                      py={"20px"}
+                      py={"7px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
-                      fontSize={{
-                        xs: "12px",
-                        lg: "14px",
+                       fontSize={{
+                        xs: "11px",
+                        lg: "13px",
                       }}
                       fontWeight={"500"}
                       backgroundColor={"#f3f3f3"}
@@ -1597,12 +1874,12 @@ lineHeight={1.8}
                       width={"100%"}
                       templateColumns={"2fr 1fr 1fr"}
                       backgroundColor={"#ffffff"}
-                      py={"20px"}
+                      py={"7px"}
                       borderTop={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
-                        xs: "12px",
-                        lg: "14px",
+                        xs: "11px",
+                        lg: "13px",
                       }}
                       fontWeight={"500"}
                       _hover={{ backgroundColor: "#f3f3f3" }}
@@ -1628,12 +1905,12 @@ lineHeight={1.8}
                     <Grid
                       width={"100%"}
                       templateColumns={"2fr 1fr 1fr"}
-                      py={"20px"}
+                      py={"7px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
                       fontSize={{
-                        xs: "12px",
-                        lg: "14px",
+                        xs: "11px",
+                        lg: "13px",
                       }}
                       fontWeight={"500"}
                       backgroundColor={"#f3f3f3"}
@@ -1660,12 +1937,12 @@ lineHeight={1.8}
                     <Grid
                       width={"100%"}
                       templateColumns={"2fr 1fr 1fr"}
-                      py={"20px"}
+                      py={"7px"}
                       borderY={"1px solid #bfbfbf"}
                       px={"10px"}
-                      fontSize={{
-                        xs: "12px",
-                        lg: "14px",
+                       fontSize={{
+                        xs: "11px",
+                        lg: "13px",
                       }}
                       fontWeight={"500"}
                       backgroundColor={"#f3f3f3"}
@@ -1692,14 +1969,15 @@ lineHeight={1.8}
                   <Text
                     textAlign={"left"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     fontWeight={400}
+                    color={"gray.800"}
                     fontFamily={"CeraRoundPro"}
                   >
                     If we are required to enter into correspondence about the

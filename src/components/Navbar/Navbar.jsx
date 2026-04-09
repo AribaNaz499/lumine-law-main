@@ -46,7 +46,7 @@ const Menu = () => {
           _hover={{
             color: "white",
             backgroundColor: "black",
-            borderBottom: "5px solid #BEAB7C",
+            borderBottom: "5px solid #e2c67f",
           }}
           className={styles.menuButton}
           css={{
@@ -197,7 +197,7 @@ const Navbar = () => {
                 overflow="hidden"
                 _hover={{
                   backgroundColor: "black",
-                  color: "#BEAB7C",
+                  color: "#e2c67f",
                 }}
                 className={styles.contactButton}
                 css={{

@@ -23,7 +23,7 @@ import BannerImg from "../../assets/news/news.webp";
 import { Helmet } from "react-helmet";
 const AllServiceLinks = React.lazy(() => import("../NavLinks/AllServiceLinks"));
 const AllPrices = React.lazy(() => import("../NavLinks/AllPrices"));
-import NewsArticles from "./NewsArticles";
+import NewsArticle from "./NewsArticle";
 
 const News = () => {
   const frameworks = createListCollection({

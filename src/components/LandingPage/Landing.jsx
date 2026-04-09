@@ -165,23 +165,28 @@ const LandingPage = () => {
                 xl: "32px",
                 "2xl": "36px",
               }}
+                          mt={{lg:"25%"}}
+
               textAlign={"left"}
             >
               <span
                 style={{
-                  fontSize: "36px",
-                  color: "#EFDC6B",
+                  fontSize: "34px",
+                  color: "#efdc6b",
                   fontWeight: "600",
                   fontFamily: "CeraRoundPro",
+                  letterSpacing:"0.6",
+
                 }}
               >
                 Integrity{" "}
               </span>
               <span
                 style={{
-                  fontSize: "36px",
+                  fontSize: "34px",
                   color: "white",
                   fontWeight: "500",
+                  letterSpacing:"0.6",
                   fontFamily:
                     "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif",
                 }}
@@ -190,9 +195,10 @@ const LandingPage = () => {
               </span>
               <span
                 style={{
-                  fontSize: "36px",
-                  color: "#EFDC6B",
+                  fontSize: "34px",
+                  color: "#efdc6b",
                   fontWeight: "600",
+                  letterSpacing:"0.6",
                   fontFamily: "CeraRoundPro",
                 }}
               >
@@ -212,6 +218,8 @@ const LandingPage = () => {
               fontFamily="HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif"
               textAlign={"left"}
               color={"white"}
+                          mt={{lg:"-2"}}
+
             >
               We provide tailored legal solutions designed to meet your specific needs. Whether you are navigating complex corporate challenges, resolving personal disputes, or planning for the future, our expert team offers clear and practical guidance at every stage.
             </Text>

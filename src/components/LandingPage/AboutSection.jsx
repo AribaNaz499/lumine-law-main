@@ -5,16 +5,16 @@ import "../../styles/fonts.css";
 const AboutSection = () => {
   const paragraphStyles = {
     fontSize: {
-      base: "12px",
-      sm: "13px",
-      md: "14px",       
-      lg: "16px",
+      base: "11px",
+      sm: "12px",
+      md: "13px",       
+      lg: "15px",
     },
     fontWeight: 300,
     fontFamily: "HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, sans-serif",
     textAlign: "justify",
     color: "#000000",
-    lineHeight: "1.6",   
+    lineHeight: "1.5",   
     width: "100%",
   };
 

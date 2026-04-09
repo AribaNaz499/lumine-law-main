@@ -34,11 +34,11 @@ const ProofOfResidence = ({ isOpen, onToggle }) => {
     <Grid
       width="100%"
       templateColumns="3fr 1fr"
-      py="20px"
+      py="7px"
       px="10px"
       // borderBottom="1px solid #bfbfbf"
       backgroundColor={isAlternate ? "#f3f3f3" : "#ffffff"}
-      fontSize={{ xs: "12px", lg: "14px" }}
+      fontSize={{ xs: "11px", lg: "13px" }}
       fontWeight="500"
       _hover={{ backgroundColor: isAlternate ? "#ebe8e8" : "#f3f3f3" }}
     >
@@ -58,11 +58,11 @@ const ProofOfResidence = ({ isOpen, onToggle }) => {
     <Grid
       width="100%"
       templateColumns="3fr 1fr"
-      py="20px"
+      py="7px"
       px="10px"
       backgroundColor="#d9edf7"
       borderY="1px solid #bfbfbf"
-      fontSize={{ xs: "14px", lg: "16px" }}
+      fontSize={{ xs: "11px", lg: "13px" }}
       fontWeight="600"
     >
       <GridItem justifySelf="start" textAlign="left">
@@ -111,24 +111,24 @@ const ProofOfResidence = ({ isOpen, onToggle }) => {
       >
         <Text
           textAlign="left"
-            fontSize={{
-            xs: "13px",
-            sm: "13px",
-            md: "15px",
-            lg: "15px",
-            xl: "17px",
-            "2xl": "19px",
-          }}
-          fontWeight={500}
+             fontSize={{
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
+                  }}
+                  fontWeight={600}
           fontFamily="CeraRoundPro"
           color="#bf9b30"
         >
           Proof of Residence for EU Citizens:
         </Text>
         {!isOpen ? (
-          <GoPlus color="#bf9b30" size="1.8em" />
+          <GoPlus color="#bf9b30" size="1.7em" />
         ) : (
-          <AiOutlineMinus color="#bf9b30" size="1.8em" />
+          <AiOutlineMinus color="#bf9b30" size="1.7em" />
         )}
       </HStack>
 

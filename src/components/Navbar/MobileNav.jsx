@@ -346,7 +346,7 @@ const Menu = () => {
                       {/* All */}
                       <Box
                         width={"100%"}
-                        borderY={"1px solid #beab7c"}
+                        borderY={"1px solid "}
                         display={"flex"}
                         py={"5px"}
                         as={Link}
@@ -355,7 +355,7 @@ const Menu = () => {
                         <Button
                           ml={"5%"}
                           backgroundColor="inherit"
-                          color="#beab7c"
+                          color="#F0E078"
                           size="sm"
                           fontSize={{
                             xs: "14px",

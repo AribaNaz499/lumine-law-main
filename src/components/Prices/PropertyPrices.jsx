@@ -434,7 +434,7 @@ const PropertyPrices = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{ base: "12px", sm: "13px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ base: "11px", sm: "12px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   fontWeight={700}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
@@ -443,9 +443,9 @@ const PropertyPrices = () => {
                   Residential Sale Freehold and Leasehold Estimated Fee
                 </Text>
                 {!residentialState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} fontWeight={"bold"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} fontWeight={"bold"} />
                 )}
               </HStack>
 
@@ -465,6 +465,8 @@ const PropertyPrices = () => {
                     fontWeight={300}
                     mb={"-25px"}
                     fontFamily={"CeraRoundPro"}
+                    color={"gray.800"}
+
                   >
                     Our fee for dealing with a normal conveyancing property sale is:
                   </Text>
@@ -521,8 +523,10 @@ const PropertyPrices = () => {
                   <Text
                     textAlign={"left"}
                     marginTop={"18px"}
-                    fontSize={{ base: "12px", sm: "13px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ base: "11px", sm: "12px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                     fontWeight={600}
+                    color={"gray.800"}
+
                     fontFamily={"CeraRoundPro"}
                   >
                     Please note VAT will be added to our legal fees
@@ -531,10 +535,12 @@ const PropertyPrices = () => {
                   <Text
                     textAlign={"left"}
                     lineHeight={"1.5"}
-                    fontSize={{ base: "12px", sm: "13px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ base: "11px", sm: "12px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                     marginTop={"-20px"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    color={"gray.800"}
+
                   >
                     If there are charges/ mortgage over the property you are
                     selling we charge an additional fee of £125 plus VAT per
@@ -547,8 +553,10 @@ const PropertyPrices = () => {
                     textAlign={"left"}
                     marginTop={"-25px"}
                     lineHeight={"1.8"}
-                    fontSize={{ base: "12px", sm: "13px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ base: "11px", sm: "12px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                     fontWeight={400}
+                    color={"gray.800"}
+                    letterSpacing={"0.5"}
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>Obtaining a redemption statement</List.Item>
@@ -582,7 +590,7 @@ const PropertyPrices = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{ base: "12px", sm: "13px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ base: "11px", sm: "12px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   fontWeight={700}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
@@ -590,9 +598,9 @@ const PropertyPrices = () => {
                   Likely Disbursements
                 </Text>
                 {!likelyState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} fontWeight={"bold"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} fontWeight={"bold"} />
                 )}
               </HStack>
 
@@ -609,9 +617,11 @@ const PropertyPrices = () => {
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{ base: "11px", sm: "12px", md: "13px", lg: "13px", xl: "16px", "2xl": "17px" }}
+                    fontSize={{ base: "11px", sm: "11px", md: "12px", lg: "12px", xl: "15px", "2xl": "16px" }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    color={"gray.800"}
+
                     pr={{ base: "0px", md: "40px", lg: "60px" }}
                   >
                     (These are costs related to your matter that are payable to
@@ -622,9 +632,11 @@ const PropertyPrices = () => {
                   <List.Root
                     textAlign={"justify"}
                     ml={{ base: "-10px", md: "-15px", lg: "-20px" }}
-                    fontSize={{ base: "12px", sm: "13px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ base: "11px", sm: "11px", md: "12px", lg: "12px", xl: "15px", "2xl": "16px" }}
                     mt={"-25px"}
+                    color={"gray.800"}
                     fontWeight={400}
+                    lineHeight={1.7}
                     fontFamily={"CeraRoundPro"}
                   >
                     <List.Item>Land Registry Title Documents (Freehold) £6 each (no VAT)</List.Item>
@@ -659,7 +671,7 @@ const PropertyPrices = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{ base: "12px", sm: "13px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ base: "11px", sm: "12px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   fontWeight={700}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
@@ -667,9 +679,9 @@ const PropertyPrices = () => {
                   Potential Additional Disbursements
                 </Text>
                 {!additionalState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} fontWeight={"bold"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} fontWeight={"bold"} />
                 )}
               </HStack>
 
@@ -685,8 +697,9 @@ const PropertyPrices = () => {
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{ base: "12px", sm: "13px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ base: "11px", sm: "12px", md: "12px", lg: "13px", xl: "15px", "2xl": "17px" }}
                     fontWeight={400}
+                    color={"gray.800"}
                     fontFamily={"CeraRoundPro"}
                   >
                     In Leasehold matters we may also need to pay a fee to the
@@ -700,9 +713,10 @@ const PropertyPrices = () => {
 
                   <Text
                     textAlign={"justify"}
-                    marginTop={"-23px"}
-                    fontSize={{ base: "12px", sm: "13px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    marginTop={"-29px"}
+                    fontSize={{ base: "11px", sm: "12px", md: "12px", lg: "13px", xl: "15px", "2xl": "17px" }}
                     fontWeight={400}
+                    color={"gray.800"}
                     fontFamily={"CeraRoundPro"}
                   >
                     You should note that these disbursements can vary from
@@ -715,8 +729,9 @@ const PropertyPrices = () => {
 
                   <Text
                     textAlign={"justify"}
-                    fontSize={{ base: "12px", sm: "13px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                    marginTop={"-23px"}
+                    fontSize={{ base: "11px", sm: "12px", md: "12px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                    marginTop={"-29px"}
+                    color={"gray.800"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -757,7 +772,7 @@ const PropertyPrices = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{ base: "12px", sm: "13px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ base: "11px", sm: "12px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   fontWeight={700}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
@@ -765,9 +780,9 @@ const PropertyPrices = () => {
                   Average Timescales
                 </Text>
                 {!timescaleState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} fontWeight={"bold"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} fontWeight={"bold"} />
                 )}
               </HStack>
 
@@ -783,8 +798,9 @@ const PropertyPrices = () => {
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{ base: "12px", sm: "13px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                    lineHeight={"1.9"}
+                    fontSize={{ base: "11px", sm: "12px", md: "12px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                    lineHeight={"1.7"}
+                    color={"gray.800"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -825,7 +841,7 @@ const PropertyPrices = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{ base: "12px", sm: "13px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ base: "11px", sm: "12px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   fontWeight={700}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
@@ -833,9 +849,9 @@ const PropertyPrices = () => {
                   As Part of Our Professional Services we will:
                 </Text>
                 {!nameState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} fontWeight={"bold"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} fontWeight={"bold"} />
                 )}
               </HStack>
 
@@ -852,8 +868,9 @@ const PropertyPrices = () => {
                   <Flex flexFlow={{ base: "column", md: "row" }} gap={"15px"}>
                     <List.Root
                       textAlign={"justify"}
-                      fontSize={{ base: "12px", sm: "13px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                    fontSize={{ base: "11px", sm: "12px", md: "12px", lg: "13px", xl: "15px", "2xl": "17px" }}
                       mt={1}
+                      color={"gray.800"}
                       ml={"-20px"}
                       lineHeight={1.8}
                       fontWeight={400}

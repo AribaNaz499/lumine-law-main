@@ -15,7 +15,7 @@ const NewsNInsightsSection = () => {
       as="section"
       width="100%"
       height="80%"
-      minheight={{ base: "auto", md: "70vh", lg: "80vh" }}
+      minheight={{ base: "auto", md: "80vh", lg: "100vh" }}
       bgImage={`url(${NewsInsightsBg})`}
       bgPosition="center"
       bgSize="cover"
@@ -25,77 +25,76 @@ const NewsNInsightsSection = () => {
       justifyContent="center"
     >
       <VStack
-        width="100%"
-        py={{ base: "60px", sm: "80px", md: "100px", lg: "120px" }}
-        px={{ base: "5%", sm: "8%", md: "12%", lg: "15%", xl: "20%" }}
-        spacing={{ base: 6, sm: 8, md: 10 }}
-        textAlign="center"
-      >
-        {/* Description Text */}
-        <Text
-          color="black"
-          fontSize={{ base: "15px", sm: "17px", md: "18px", lg: "20px" }}
-          fontWeight="400"
-          fontFamily="HelveticaNeue-Light, Helvetica Neue, Arial, sans-serif"
-          lineHeight={{ base: "1.5", md: "1.6", lg: "1.7" }}
-          maxWidth={{ base: "100%", md: "900px", lg: "1000px", xl: "1100px" }}
-          px={{ base: 2, sm: 4, md: 6 }}
-        >
-          We provide all our clients with premium and bespoke legal services and support. Our  
-          aim is to simplify the process of accessing quality legal support, irrespective of financial  
-          or other restrictions. We do provide free initial consultations during which all available  
-          options will be discussed. We build and maintain relationships with our clients that are  
-          based on mutual respect. Our hard-earned reputation is based on traditional client-  
-          centred values, and our objective is to meet our clients' needs in every matter.
-        </Text>
+  width="100%"
+  height="100vh"
+  display="flex"
+  alignItems="center" 
+  justifyContent="center" 
+  spacing={{ base: 10, md: 16 }} 
+  px="5%"
+>
+  {/* Description Text - Image 1 Look */}
+  <Box 
+    maxWidth={{ base: "80%", md: "700px", lg: "800px" }}
+    width="100%"
+  >
+    <Text
+      color="black"
+      fontSize={{ base: "14px", md: "17px", lg: "18px" }}
+      fontWeight="500"
+      fontFamily="HelveticaNeue-Light, Helvetica Neue, Arial, sans-serif"
+      lineHeight={{ base: "1.7", md: "1.8" }} // Line spacing badha di image 1 ki tarah
+      textAlign="justify" // SABSE ZAROORI: Ye dono sides se barabar rakhega
+      style={{ textJustify: "inter-word" }} // Chrome/Safari ke liye support
+    >
+      We provide all our clients with premium and bespoke legal services and support. Our
+      aim is to simplify the process of accessing quality legal support, irrespective of financial
+      or other restrictions. We do provide free initial consultations during which all available
+      options will be discussed. We build and maintain relationships with our clients that are
+      based on mutual respect. Our hard-earned reputation is based on traditional client-
+      centred values, and our objective is to meet our clients' needs in every matter.
+    </Text>
+  </Box>
 
-        {/* Buttons Section - Fully Responsive */}
-        <Flex 
-          gap={{ base: "20px", sm: "30px", md: "40px", lg: "270px" }}
-          direction={{ base: "column", sm: "row" }}
-          width="100%"
-          justify="center"
-          align="center"
-          mt={{ base: 4, md: 6, lg: 8 }}
-          flexWrap="wrap"
-        >
-          <Button
-            as={Link}
-            to="/news"
-            bg="black"
-            color="white"
-            width={{ base: "90px", sm: "190px", md: "135px" }}
-            height={{ base: "45px", sm: "48px", md: "50px" }}
-            borderRadius="4px"
-            _hover={{ bg: "#333", transform: "translateY(-2px)" }}
-            _active={{ transform: "translateY(0)" }}
-            transition="all 0.3s ease"
-            fontSize={{ base: "13px", sm: "14px", md: "15px" }}
-            fontWeight="500"
-            letterSpacing="0.5px"
-          >
-            News
-          </Button>
+  {/* Buttons Section */}
+  <Flex
+    gap={{ base: "20px", md: "100px", lg: "200px" }}
+    direction="row"
+    width="100%"
+    justify="center"
+    align="center"
+  >
+    <Button
+      as={Link}
+      to="/news"
+      bg="black"
+      color="white"
+      width={{ base: "110px", md: "145px" }}
+      height={{ base: "45px", md: "50px" }}
+      borderRadius="4px"
+      _hover={{ bg: "#333", transform: "scale(1.05)" }}
+      transition="0.2s"
+      fontSize="15px"
+    >
+      News
+    </Button>
 
-          <Button
-            as={Link}
-            to="/insights"
-            bg="black"
-            color="white"
-            width={{ base: "90px", sm: "1900px", md: "135px" }}
-            height={{ base: "45px", sm: "48px", md: "50px" }}
-            borderRadius="4px"
-            _hover={{ bg: "#333", transform: "translateY(-2px)" }}
-            _active={{ transform: "translateY(0)" }}
-            transition="all 0.3s ease"
-            fontSize={{ base: "13px", sm: "14px", md: "15px" }}
-            fontWeight="500"
-            letterSpacing="0.5px"
-          >
-            Insights
-          </Button>
-        </Flex>
-      </VStack>
+    <Button
+      as={Link}
+      to="/insights"
+      bg="black"
+      color="white"
+      width={{ base: "110px", md: "145px" }}
+      height={{ base: "45px", md: "50px" }}
+      borderRadius="4px"
+      _hover={{ bg: "#333", transform: "scale(1.05)" }}
+      transition="0.2s"
+      fontSize="15px"
+    >
+      Insights
+    </Button>
+  </Flex>
+</VStack>
     </Box>
   );
 };

@@ -50,11 +50,11 @@ const TimeFrameSection = ({ isOpen, onToggle }) => {
     <Grid
       width="100%"
       templateColumns="3fr 1fr"
-      py="20px"
+      py="7px"
       px="10px"
       borderY="1px solid #bfbfbf"
       backgroundColor={isAlternate ? "#f3f3f3" : "#ffffff"}
-      fontSize={{ xs: "12px", lg: "14px" }}
+      fontSize={{ xs: "11px", lg: "13px" }}
       fontWeight="500"
       _hover={{ backgroundColor: isAlternate ? "#ebe8e8" : "#f3f3f3" }}
     >
@@ -107,24 +107,24 @@ const TimeFrameSection = ({ isOpen, onToggle }) => {
       >
         <Text
           textAlign="left"
-          fontSize={{
-            xs: "13px",
-            sm: "13px",
-            md: "15px",
-            lg: "15px",
-            xl: "17px",
-            "2xl": "19px",
-          }}
-          fontWeight={500}
+            fontSize={{
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
+                  }}
+                  fontWeight={600}
           fontFamily="CeraRoundPro"
           color="#bf9b30"
         >
           Time Frame for Immigration Applications:
         </Text>
         {!isOpen ? (
-          <GoPlus color="#bf9b30" size="1.8em" />
+          <GoPlus color="#bf9b30" size="1.7em" />
         ) : (
-          <AiOutlineMinus color="#bf9b30" size="1.8em" />
+          <AiOutlineMinus color="#bf9b30" size="1.7em" />
         )}
       </HStack>
 
@@ -141,14 +141,15 @@ const TimeFrameSection = ({ isOpen, onToggle }) => {
           <Text
             textAlign="justify"
             fontSize={{
-              xs: "12px",
-              sm: "12px",
-              md: "14px",
-              lg: "14px",
-              xl: "16px",
-              "2xl": "18px",
-            }}
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
+                  }}
             fontWeight={400}
+            color={"gray.800"}
             fontFamily="CeraRoundPro"
           >
             The length of time that it will take to complete the work will
@@ -157,14 +158,15 @@ const TimeFrameSection = ({ isOpen, onToggle }) => {
 
           <List.Root
             textAlign="justify"
-            fontSize={{
-              xs: "12px",
-              sm: "12px",
-              md: "14px",
-              lg: "14px",
-              xl: "16px",
-              "2xl": "18px",
-            }}
+              fontSize={{
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
+                  }}
+                color={"gray.800"}
             fontWeight={400}
             mt={{ lg: "-7", xs: "-5", md: "-7" }}
 
@@ -185,15 +187,18 @@ const TimeFrameSection = ({ isOpen, onToggle }) => {
 
           <Text
             textAlign="justify"
-            fontSize={{
-              xs: "12px",
-              sm: "12px",
-              md: "14px",
-              lg: "14px",
-              xl: "16px",
-              "2xl": "18px",
-            }}
+             fontSize={{
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
+                  }}
+               color={"gray.800"}
             fontWeight={400}
+            lineHeight={"1.8"}
+            mb={{lg:"-6"}}
             mt={{ lg: "-7", xs: "-5", md: "-7" }}
 
             fontFamily="CeraRoundPro"
@@ -218,10 +223,10 @@ const TimeFrameSection = ({ isOpen, onToggle }) => {
               width="100%"
               templateColumns="3fr 1fr"
               backgroundColor="#d9edf7"
-              py="20px"
+              py="7px"
               borderY="1px solid #bfbfbf"
               px="10px"
-              fontSize={{ xs: "14px", lg: "16px" }}
+              fontSize={{ xs: "11px", lg: "13px" }}
               fontWeight="600"
             >
               <GridItem justifySelf="start" textAlign="left">

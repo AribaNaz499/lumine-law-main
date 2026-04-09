@@ -2,6 +2,11 @@ import "../styles/App.css";
 import React, { Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
+// Baki imports ke saath yeh line add karein
+import NewsArticle2 from '../components/News/NewsArticle2.jsx';
+// Agar aapne files src/pages folder mein banayi hain:
+import PrivacyPolicy from '../components/Footer/PrivacyPolicy.jsx';
+import Disclaimer from '../components/Footer/Disclaimer.jsx';
 
 // 🔹 Main Pages
 const LandingPage = React.lazy(() => import("../components/LandingPage/Landing"));
@@ -107,6 +112,32 @@ const PrivateWealthManagement = React.lazy(() => import("../components/ServicesP
 const DebtRecoveryPrices = React.lazy(() => import("../components/Prices/DebtRecovery"));
 const ImmigrationPrices = React.lazy(() => import("../components/Prices/ImmigrationPrices"));
 
+// News & Insights 
+const ImmigrationNews = React.lazy(() => import("../components/NewsInsights/ImmigrationNews"));
+const Litigation = React.lazy(() => import("../components/NewsInsights/Litigation"));
+
+
+const KeyUpdatesEVisa = React.lazy(() => import("../components/ArticlePages/KeyUpdatesEVisa"));
+const VisitorVisaArticle = React.lazy(() => import("../components/ArticlePages/VisitorVisaArticle"));
+const SwitchingVisaCategories = React.lazy(() => import("../components/ArticlePages/SwitchingVisaCategories"));
+const StudentVisaGuide = React.lazy(() => import("../components/ArticlePages/StudentVisaGuide"))
+const UKStudentVisaGuide = React.lazy(() => import("../components/ArticlePages/UKStudentVisaGuide.jsx"));
+const SuccessfulStudentVisa = React.lazy(() => import("../components/ArticlePages/SuccessfulStudentVisa.jsx"));
+const InternationalStudentsThrive = React.lazy(() => import("../components/ArticlePages/InternationalStudentsThrive"));
+const NavigatingTheSkilledWorkerVisa = React.lazy(() => import("../components/ArticlePages/NavigatingTheSkilledWorkerVisa"));
+const HowLumineSolicitorsSupport = React.lazy(() => import("../components/ArticlePages/HowLumineSolicitorsSupport"));
+const HowToApplySkilledWorker = React.lazy(() => import("../components/ArticlePages/HowToApplySkilledWorker"));
+
+
+
+
+// 🔹 News Articles (Dynamic)
+const NewsArticles = React.lazy(() => import("../components/News/NewsArticles"));
+const ArticleDetailPage = React.lazy(() => import("../components/News/ArticleDetailPage"));
+const ArticleEditor = React.lazy(() => import("../components/Admin/ArticleEditor"));
+const Conveyancing = React.lazy(() => import("../components/NewsInsights/Conveyancing.jsx"));
+const NewsArticle3 = React.lazy(() => import("../components/News/NewsArticle3.jsx"));
+
 // 🔹 Transition
 const PageTransition = React.lazy(() => import("../lib/PageTransitions/PageTransition"));
 
@@ -161,6 +192,9 @@ function App() {
             <Route path="/news" element={<SuspensePageTransition><News /></SuspensePageTransition>} />
             <Route path="/insights" element={<SuspensePageTransition><Insights /></SuspensePageTransition>} />
             <Route path="/article-page" element={<SuspensePageTransition><Article /></SuspensePageTransition>} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/disclaimer" element={<Disclaimer />} />
+
 
             {/* 🔹 Price Pages */}
             <Route path="/prices/property-prices" element={<SuspensePageTransition><PropertyPrices /></SuspensePageTransition>} />
@@ -261,6 +295,37 @@ function App() {
             <Route path="/all-services/wills-probate/inheritance-tax-planning" element={<SuspensePageTransition><InheritanceTaxPlanning /></SuspensePageTransition>} />
             <Route path="/all-services/wills-probate/power-attorney" element={<SuspensePageTransition><PowerAttorney /></SuspensePageTransition>} />
             <Route path="/all-services/wills-probate/private-wealth-management" element={<SuspensePageTransition><PrivateWealthManagement /></SuspensePageTransition>} />
+
+
+            {/* News&Insights  */}
+            <Route path="/immigration-news" element={<SuspensePageTransition><ImmigrationNews /></SuspensePageTransition>} />
+            <Route path="/litigation" element={<SuspensePageTransition><Litigation /></SuspensePageTransition>} />
+
+            {/* 🔹 Article Pages */}
+            <Route path="/immigration/evisa-updates" element={<SuspensePageTransition><KeyUpdatesEVisa /></SuspensePageTransition>} />
+            <Route path="/all-you-need-to-know-about-visitor-visa-in-uk" element={<SuspensePageTransition><VisitorVisaArticle /></SuspensePageTransition>} />
+            <Route path="/switching-visa-categories" element={<SuspensePageTransition><SwitchingVisaCategories /></SuspensePageTransition>} />
+            <Route path="/student-visa-guide" element={<SuspensePageTransition><StudentVisaGuide /></SuspensePageTransition>} />
+            <Route path="/uk-student-visa-your-complete-guide-to-studying-in-the-uk" element={<SuspensePageTransition><UKStudentVisaGuide /></SuspensePageTransition>} />
+            <Route path="/how-to-ensure-a-successful-student-visa-application" element={<SuspensePageTransition><SuccessfulStudentVisa /></SuspensePageTransition>} />
+            <Route path="/how-lumine-solicitors-help-international-students-thrive-in-uk" element={<SuspensePageTransition><InternationalStudentsThrive /></SuspensePageTransition>} />
+            <Route path="/navigating-the-skilled-worker-visa" element={<SuspensePageTransition>   <NavigatingTheSkilledWorkerVisa /></SuspensePageTransition>} />
+            <Route path="/how-lumine-solicitors-support-employers-and-applicants-with-skilled-worker-visas" element={<SuspensePageTransition> <HowLumineSolicitorsSupport /></SuspensePageTransition>} />
+            <Route path="/how-to-apply-skilled-worker" element={<SuspensePageTransition> <HowToApplySkilledWorker /></SuspensePageTransition>} />
+
+
+            <Route path="/news/articles" element={<SuspensePageTransition><NewsArticles /></SuspensePageTransition>} />
+            <Route path="/news/articles/:slug" element={<SuspensePageTransition><ArticleDetailPage /></SuspensePageTransition>} />
+            <Route path="/admin/articles/new" element={<SuspensePageTransition><ArticleEditor /></SuspensePageTransition>} />
+            <Route path="/immigration-news/:slug" element={<SuspensePageTransition><ArticleDetailPage /></SuspensePageTransition>} />
+            <Route path="/litigation-news" element={<SuspensePageTransition><Litigation /></SuspensePageTransition>} />
+            <Route path="/litigation-news/:slug" element={<SuspensePageTransition><ArticleDetailPage /></SuspensePageTransition>} />
+            {/* 🔹 Housing Property News Routes */}
+            <Route path="/conveyancing" element={<SuspensePageTransition>< Conveyancing /></SuspensePageTransition>} />
+            <Route path="/conveyancing-news/:slug" element={<SuspensePageTransition><ArticleDetailPage /></SuspensePageTransition>} />
+
+            {/* Agar aap NewsArticle3 ko alag se bhi dekhna chahte hain (Optional) */}
+            <Route path="/news/housing-cards" element={<SuspensePageTransition><NewsArticle3 /></SuspensePageTransition>} />
           </Routes>
         </Suspense>
       </BrowserRouter>

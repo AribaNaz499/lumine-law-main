@@ -10,7 +10,7 @@ const ScrollingRow = ({ images, direction, speed }) => {
       position="relative"
       width="100%"
       // Height ko kam kar ke compact kiya gaya hai
-      height={{ base: "45px", md: "60px", lg: "75px" }} 
+      height={{ base: "43px", md: "58px", lg: "73px" }} 
       overflow="hidden"
       whiteSpace="nowrap"
       display="flex"
@@ -35,7 +35,7 @@ const ScrollingRow = ({ images, direction, speed }) => {
         {multipliedImages.map((img, index) => (
           <Box
             key={index}
-            px={{ base: "3", md: "5", lg: "7" }} // Logos ke darmiyan gap balanced rakha
+            px={{ base: "2", md: "4", lg: "6" }} // Logos ke darmiyan gap balanced rakha
             display="flex"
             alignItems="center"
             justifyContent="center"
@@ -45,12 +45,12 @@ const ScrollingRow = ({ images, direction, speed }) => {
               alt="Lumine Solicitors Panels"
               // Logo size ko elegant banaya
               height={{
-                base: "22px",
-                md: "32px",
-                lg: "40px",
-                xl: "45px",
+                base: "23px",
+                md: "33px",
+                lg: "41px",
+                xl: "46px",
               }}
-              maxWidth="180px"
+              maxWidth="190px"
               objectFit="contain"
               loading="lazy"
             />
@@ -92,30 +92,33 @@ const AnimatedPanels = ({ images }) => {
 
   return (
     <Box
-      width="100%"
-      position="relative"
-      // Panel ki overall height (Sleek padding)
-      py={{ base: "15px", md: "25px", lg: "35px" }} 
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-    >
+    width="100%"
+  position="relative"
+  py={{ base: "8px", md: "14px", lg: "16px" }} // 👈 thoda compact
+  display="flex"
+  alignItems="center"
+  justifyContent="center"
+>
       {/* Gray Background Layer */}
       <Box
-        position="absolute"
-        top={0} left={0} right={0} bottom={0}
-        backgroundColor="rgba(243, 239, 239, 0.45)"
-        opacity={0.8}
-        borderRadius="4px"
+      position="absolute"
+    top={0}
+    left={0}
+    right={0}
+    bottom={0}
+    backgroundColor="rgba(255, 255, 255, 0.4)" // 👈 lighter like screenshot
+    backdropFilter="blur(6px)" // 👈 glass effect 🔥
+    borderRadius="4px"
       />
 
       {/* Rows Container */}
       <VStack
-        width="100%"
-        // Gap ko kam kar ke sleek kiya gaya hai
-        spacing={{ base: 2, md: 4, lg: 5 }} 
-        position="relative"
-        zIndex={1}
+        width="90%"
+    spacing={{ base: 1, md: 2, lg: 3 }}
+    position="relative"
+    zIndex={1}
+    justify="center" // 👈 ADD THIS (center fix)
+  
       >
         <ScrollingRow images={images} direction="left" speed={55} />
         <ScrollingRow images={images} direction="right" speed={65} />

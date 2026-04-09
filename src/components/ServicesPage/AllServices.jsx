@@ -52,8 +52,9 @@ const MainContent = () => (
     >
       <Text
         fontFamily="CeraRoundPro"
-        fontSize={{ xs: "22px", lg: "28px", xl: "34px", "2xl": "38px" }}
+        fontSize={{ xs: "21px", lg: "28px", xl: "34px", "2xl": "38px" }}
         fontWeight={400}
+        mb={{lg:"-3"}}
       >
         Our Legal Services
       </Text>
@@ -76,9 +77,9 @@ const MainContent = () => (
       <Text
         fontFamily="CeraRoundPro"
         fontWeight={400}
-        fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+        fontSize={{ xs: "12px", lg: "13px", xl: "15px", "2xl": "17px" }}
         textAlign="justify"
-        lineHeight={1.7}
+        lineHeight={1.5}
       >
         At Lumine Solicitors, we provide a wide range of professional legal
         services for individuals, families and businesses across the UK. Built
@@ -92,10 +93,10 @@ const MainContent = () => (
       <Text
         fontFamily="CeraRoundPro"
         fontWeight={400}
-        fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+        fontSize={{ xs: "12px", lg: "13px", xl: "15px", "2xl": "17px" }}
         textAlign="justify"
         mt={{ lg: "4" }}
-        lineHeight={1.7}
+        lineHeight={1.5}
       >
         Our expertise covers immigration and visa applications, property and
         conveyancing for both residential and commercial needs, intellectual
@@ -109,10 +110,10 @@ const MainContent = () => (
       <Text
         fontFamily="CeraRoundPro"
         fontWeight={400}
-        fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+        fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
         textAlign="justify"
         mt={{ lg: "4" }}
-        lineHeight={1.7}
+        lineHeight={1.5}
       >
         Choosing Lumine Solicitors means working with a team that upholds
         integrity, transparency and client care. With clear fee plans,

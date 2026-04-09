@@ -113,8 +113,8 @@ const ServicesSection = () => {
           xl: "22px",
           "2xl": "25px",
         }}
-        height={{ xs: "35%", sm: "40%", md: "45%", lg: "50%" }}
-        width={{ xs: "85%", md: "70%" }}
+        height={{ xs: "50%", sm: "55%", md: "60%", lg: "65%" }}
+        width={{ xs: "100%", md: "95%" }}
         alignItems={"flex-start"}
         justifyItems={"center"}
       >
@@ -126,7 +126,7 @@ const ServicesSection = () => {
             backgroundColor={"rgba(0, 0, 0, 0.6)"}
             height={"100%"}
             width={"100%"}
-            borderRadius={"10px"}
+           
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
@@ -179,19 +179,19 @@ const ServicesSection = () => {
         <GridItem colSpan={{ xs: "2", lg: "4" }}>
           <Button
             as={Link}
-            to={"/lumine-law/all-services"}
+            to={"/all-services"}
             style={{ textDecoration: "none" }}
             border={"1px solid white"}
             backgroundColor={"rgba(0, 0, 0, 0.6)"}
             py={{
               //base: {"15px"}
-              xs: "6px",
-              md: "8px",
-              lg: "10px",
-              xl: "12px",
-              "2xl": "15px",
+              xs: "12x",
+              md: "13px",
+              lg: "14px",
+              xl: "16px",
+              "2xl": "17px",
             }}
-            borderRadius={"10px"}
+            borderRadius={"8px"}
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
