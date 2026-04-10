@@ -185,11 +185,11 @@ const ServicesSection = () => {
             backgroundColor={"rgba(0, 0, 0, 0.6)"}
             py={{
               //base: {"15px"}
-              xs: "12x",
-              md: "13px",
-              lg: "14px",
-              xl: "16px",
-              "2xl": "17px",
+              xs: "20x",
+              md: "20px",
+              lg: "21px",
+              xl: "23px",
+              "2xl": "24px",
             }}
             borderRadius={"8px"}
             display={"flex"}
@@ -199,16 +199,16 @@ const ServicesSection = () => {
             _hover={{
               backgroundColor: "rgba(0, 0, 0, 0.9)",
               borderColor: "#beab7c",
-              color: "#beab7c",
+              color: "#ffff",
             }}
             transition={"all 0.3s ease"}
             fontSize={{
-              xs: "14px",
-              sm: "14px",
-              md: "16px",
-              lg: "16px",
-              xl: "18px",
-              "2xl": "20px",
+              xs: "13px",
+              sm: "13px",
+              md: "15px",
+              lg: "15px",
+              xl: "17px",
+              "2xl": "19px",
             }}
             fontWeight={400}
             fontFamily={"CeraRoundPro"}

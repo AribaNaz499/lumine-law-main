@@ -61,7 +61,7 @@ const BritishCitizenshipApplication = () => {
             _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
+              fontSize={{ xs: "18px", lg: "28px", xl: "34px", "2xl": "43px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
@@ -92,7 +92,7 @@ const BritishCitizenshipApplication = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={600}
                 color={"#bf9b30"}
-                fontSize={{ xs: "14px", lg: "26px", xl: "32px", "2xl": "42px" }}
+                fontSize={{ xs: "11px", lg: "23px", xl: "29px", "2xl": "39px" }}
                 textAlign={"left"}
 
               >
@@ -101,7 +101,16 @@ const BritishCitizenshipApplication = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{
+                  xs: "11px",
+                  sm: "11px",
+                  md: "13px",
+                  lg: "13px",
+                  xl: "15px",
+                  "2xl": "17px",
+                }}
+                lineHeight={1.7}
+                color={"gray.800"}
                 textAlign={"left"}
                 mt={5}
                 mr={2}
@@ -110,7 +119,16 @@ const BritishCitizenshipApplication = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{
+                  xs: "11px",
+                  sm: "11px",
+                  md: "13px",
+                  lg: "13px",
+                  xl: "15px",
+                  "2xl": "17px",
+                }}
+                lineHeight={1.7}
+                color={"gray.800"}
                 textAlign={"left"}
                 mt={5}
 
@@ -121,7 +139,16 @@ const BritishCitizenshipApplication = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{
+                  xs: "11px",
+                  sm: "11px",
+                  md: "13px",
+                  lg: "13px",
+                  xl: "15px",
+                  "2xl": "17px",
+                }}
+                lineHeight={1.7}
+                color={"gray.800"}
                 textAlign={"left"}
 
               >
@@ -175,23 +202,23 @@ const BritishCitizenshipApplication = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   What is British Citizenship?
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} />
                 )}
               </HStack>
 
@@ -208,14 +235,15 @@ const BritishCitizenshipApplication = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
-                    lineHeight={1.8}
+                    color={"gray.800"}
+                    lineHeight={1.7}
                     mb={2}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -265,24 +293,24 @@ const BritishCitizenshipApplication = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                 fontSize={{
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Benefits of British Citizenship
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} />
                 )}
               </HStack>
 
@@ -298,15 +326,17 @@ const BritishCitizenshipApplication = () => {
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mr={3}
+                    lineHeight={1.7}
                     mb={4}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -357,23 +387,23 @@ const BritishCitizenshipApplication = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Who is Eligible for British Citizenship?
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} />
                 )}
               </HStack>
 
@@ -389,32 +419,34 @@ const BritishCitizenshipApplication = () => {
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     ml={3}
                     mr={3}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    To gain UK citizenship, or naturalisation, certain requirements must be fulfilled. Naturalisation refers to a person from another country gaining citizenship in the UK. Lumine solicitors can apply for your British citizenship if you:
+                    To gain UK citizenship, or <span> naturalisation </span>, certain requirements must be fulfilled. Naturalisation refers to a person from another country gaining citizenship in the UK. Lumine solicitors can apply for your British citizenship if you:
                   </Text>
 
                   <List.Root
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mt={-6}
                     lineHeight={1.8}
                     fontWeight={400}
@@ -484,25 +516,24 @@ const BritishCitizenshipApplication = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                   fontSize={{
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   How long does it take to reach a decision?
                 </Text>
                 {!appeal ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} />
                 )}
               </HStack>
 
@@ -518,14 +549,15 @@ const BritishCitizenshipApplication = () => {
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     ml={3}
                     mr={8}
                     fontWeight={400}
@@ -576,15 +608,15 @@ const BritishCitizenshipApplication = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                   fontSize={{
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
@@ -609,14 +641,15 @@ const BritishCitizenshipApplication = () => {
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     ml={3}
                     mr={9}
 
@@ -628,23 +661,24 @@ const BritishCitizenshipApplication = () => {
 
                   <List.Root
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     fontSize={{
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
                     }}
+                    color={"gray.800"}
                     mr={3}
                     mt={-7}
                     lineHeight={2}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    
+
                   >
                     <List.Item>
-                     The application process for British citizenship
+                      The application process for British citizenship
 
                     </List.Item>
                     <List.Item>
@@ -652,21 +686,22 @@ const BritishCitizenshipApplication = () => {
 
                     </List.Item>
                     <List.Item>
-                     Save you time by uploading your documents to UKVI
+                      Save you time by uploading your documents to UKVI
 
                     </List.Item>
 
                   </List.Root>
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mt={"-7"}
                     ml={3}
                     fontWeight={400}
@@ -677,14 +712,15 @@ const BritishCitizenshipApplication = () => {
                   </Text>
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mt={"-6"}
                     ml={3}
                     fontWeight={400}
@@ -709,7 +745,7 @@ const BritishCitizenshipApplication = () => {
               )}
             </Box>
 
-           
+
           </VStack>
 
           {/* Other Services */}

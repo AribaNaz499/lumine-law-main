@@ -2,8 +2,9 @@
 .servicesMegaMenuButton[data-state="open"] {
   color: white !important;
   background-color: black !important;
-  border-bottom: 5px solid #beab7c !important;
+  /* border-bottom: 5px solid #beab7c !important; */
 }
+
 
 .servicesMegaMenuButton img:first-of-type {
   display: block;
@@ -102,11 +103,11 @@
 }
 
 .menuText:hover {
-  border-bottom: 3px solid #beab7c;
+  color: #EFDC6B ;
 }
 
 .menuHeader {
-  color: #beab7c;
+  color: #EFDC6B;
 }
 
 /* navbar.module.css */

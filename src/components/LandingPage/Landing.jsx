@@ -172,7 +172,7 @@ const LandingPage = () => {
               <span
                 style={{
                   fontSize: "34px",
-                  color: "#efdc6b",
+                  color: "#EFDC6B",
                   fontWeight: "600",
                   fontFamily: "CeraRoundPro",
                   letterSpacing:"0.6",
@@ -196,7 +196,7 @@ const LandingPage = () => {
               <span
                 style={{
                   fontSize: "34px",
-                  color: "#efdc6b",
+                  color: "#EFDC6B",
                   fontWeight: "600",
                   letterSpacing:"0.6",
                   fontFamily: "CeraRoundPro",

@@ -75,11 +75,11 @@ const ServicesMegaMenu = () => {
             _hover={{
               color: "white",
               backgroundColor: "black",
-              borderBottom: "5px solid #e2c67f",
+              borderBottom: "5px solid #BF9B30",
             }}
             css={{
               transition: "all 0.3s ease",
-              borderBottom: isOpen ? "5px solid #e2c67f" : "none",
+              // borderBottom: isOpen ? "5px solid #e2c67f" : "none",
             }}
           >
             Services
@@ -127,7 +127,7 @@ const ServicesMegaMenu = () => {
                     maxWidth={{ lg: "140px", xl: "160px", "2xl": "180px" }}
                   >
                     <Link to={"/all-services/immigration"} style={{ textDecoration: "none" }}>
-                      <Text fontSize={{ lg: "12px", xl: "13px", "2xl": "14px" }} fontWeight={700} color={"#efdc6b"} textAlign={"left"} className={styles.menuHeader}>
+                      <Text fontSize={{ lg: "12px", xl: "13px", "2xl": "14px" }} fontWeight={700} color={"#EFDC6B"} textAlign={"left"} className={styles.menuHeader}>
                         Immigration
                       </Text>
                     </Link>
@@ -148,7 +148,7 @@ const ServicesMegaMenu = () => {
                     maxWidth={{ lg: "170px", xl: "190px", "2xl": "210px" }}
                   >
                     <Link to={"/all-services/residential"} style={{ textDecoration: "none" }}>
-                      <Text fontSize={{ lg: "12px", xl: "13px", "2xl": "14px" }} fontWeight={700} color={"#efdc6b"} textAlign={"left"} className={styles.menuHeader}>
+                      <Text fontSize={{ lg: "12px", xl: "13px", "2xl": "14px" }} fontWeight={700} color={"#EFDC6B"} textAlign={"left"} className={styles.menuHeader}>
                         Residential Property
                       </Text>
                     </Link>

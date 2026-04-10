@@ -45,11 +45,11 @@ const NewInsightsMenu = () => {
           _hover={{
             color: "white",
             backgroundColor: "black",
-            borderBottom: "5px solid #C0983A",
+            borderBottom: "5px solid #BF9B30",
           }}
           css={{
             transition: "all 0.3s ease",
-            borderBottom: isOpen ? "5px solid #C0983A" : "none",
+            borderBottom: isOpen ? "5px solid #BF9B30" : "none",
           }}
         >
           News & Insights
@@ -71,13 +71,13 @@ const NewInsightsMenu = () => {
     <Box
       width="100%"
       height="5px"
-      backgroundColor="#e2c67f"
+      // backgroundColor=""
     />
 
     {/* Black box with white border */}
     <Box
       border="1px solid white"
-      borderTop="none"
+      // borderTop="none"
       backgroundColor="black"
       py="8px"
     >

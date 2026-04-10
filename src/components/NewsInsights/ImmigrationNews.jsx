@@ -104,7 +104,7 @@ bgImage={`linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${BannerImg})`}
               width={"90%"}
               alignSelf={"center"}
               mb={"5%"}
-              border={"1px solid #202020"}
+              border={"1px solid black"}
               borderRadius={"8px"}
               p={"20px"}
             >

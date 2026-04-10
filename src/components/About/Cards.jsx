@@ -46,7 +46,7 @@ const Cards = () => {
                     >
                         <Box
                             /* --- COLOR LOGIC HERE --- */
-                            backgroundColor={index === 0 ? "#bf9b30" : "black"} // Red for 1st card, Black for others
+                            backgroundColor={index === 0 ? "#BF9B30" : "black"} // Red for 1st card, Black for others
                             p="20px"
                             color={"white"}
                             height="150px" // Slightly increased height for better spacing

@@ -64,7 +64,7 @@ const BailRevocation = () => {
             _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
+              fontSize={{ xs: "17px", lg: "27px", xl: "33px", "2xl": "42px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
@@ -98,7 +98,7 @@ const BailRevocation = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 color={"#bf9b30"}
-                fontSize={{ xs: "10px", lg: "19px", xl: "25px", "2xl": "35px" }}
+                fontSize={{ xs: "10px", lg: "17px", xl: "23px", "2xl": "33px" }}
                 textAlign={"left"}
               >
                 IMMIGRATION BAIL AND REVOCATION OF A DEPORTATION ORDER
@@ -108,7 +108,7 @@ const BailRevocation = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={5}
               >
@@ -117,7 +117,7 @@ const BailRevocation = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
 
               >
@@ -128,7 +128,7 @@ const BailRevocation = () => {
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"left"}
                   color="black"
                 >
@@ -139,7 +139,7 @@ const BailRevocation = () => {
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"left"}
                   color="black"
                   mt={-2}
@@ -154,7 +154,7 @@ const BailRevocation = () => {
                   ml={5}
                   spacing={3}
                   fontFamily={"CeraRoundPro"}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   color="black"
                 >
                   <List.Item textAlign="justify">
@@ -164,7 +164,7 @@ const BailRevocation = () => {
                   <Text
                     fontFamily={"CeraRoundPro"}
                     fontWeight={400}
-                    fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                     textAlign={"left"}
                     color="black"
                   >
@@ -174,7 +174,7 @@ const BailRevocation = () => {
                   <Text
                     fontFamily={"CeraRoundPro"}
                     fontWeight={400}
-                    fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                     textAlign={"left"}
                     color="black"
                   >
@@ -185,7 +185,7 @@ const BailRevocation = () => {
                   <Text
                     fontFamily={"CeraRoundPro"}
                     fontWeight={400}
-                    fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                     textAlign={"left"}
                     color="black"
                   >
@@ -195,13 +195,13 @@ const BailRevocation = () => {
                   </Text>
 
                   <List.Item textAlign="justify">
-                    <Text as="span">Unconditional Bail:  </Text> The individual is released from detention without any specific conditions, though this is less common and generally applies to individuals who pose no flight risk or threat to public safety
+                    <Text as="span">Unconditional Bail:  </Text> The individual is released from detention without any specific conditions, though this is less common and generally applies to individuals who pose no flight risk or threat to public safety
                   </List.Item>
 
                   <Text
                     fontFamily={"CeraRoundPro"}
                     fontWeight={400}
-                    fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                     textAlign={"left"}
                     color="black"
                   >
@@ -215,7 +215,7 @@ const BailRevocation = () => {
                     ml={{ lg: "5", xs: "-2" }}
                     spacing={3}
                     fontFamily={"CeraRoundPro"}
-                    fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                     color="black"
                   >
 
@@ -227,11 +227,11 @@ const BailRevocation = () => {
                       ml={5}
                       spacing={3}
                       fontFamily={"CeraRoundPro"}
-                      fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                      fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                       color="black"
                     >
                       <List.Item textAlign="justify">
-                        <Text as="span">Revocation: </Text>  If a person wants his deportation order to be revoked, he is at liberty to file an application with the Home Office or appeal to the First-tier Tribunal (Immigration and Asylum Chamber) for the revocation. The grounds stated in the application should be supported by proof.
+                        <Text as="span">Revocation: </Text>  If a person wants his deportation order to be revoked, he is at liberty to file an application with the Home Office or appeal to the First-tier Tribunal (Immigration and Asylum Chamber) for the revocation. The grounds stated in the application should be supported by proof.
                       </List.Item>
                       <List.Item textAlign="justify">
                         Appeal of the Decision If the Home Office declines the revocation request, the person can appeal against the decision. The appeal will be heard by an immigration judge who will consider the evidence and decide whether to revoke the deportation order.
@@ -240,7 +240,7 @@ const BailRevocation = () => {
                         <Text as="span"> Timing: </Text>It should be noted that the request for revocation has to come forth soon after the deportation order is made. The case would be adversely affected with delays in requesting a revocation and that the person might be deported before the application is considered.
                       </List.Item>
                       <List.Item textAlign="justify">
-                        <Text as="span">  Decision: </Text>   On revocation of the deportation order, the individual will be granted permission to remain in the UK, and any restrictions that might have been enforced by the deportation order will be lifted. Notwithstanding this, it is not guaranteed, as each case would be dealt with on its merit.
+                        <Text as="span">  Decision: </Text>   On revocation of the deportation order, the individual will be granted permission to remain in the UK, and any restrictions that might have been enforced by the deportation order will be lifted. Notwithstanding this, it is not guaranteed, as each case would be dealt with on its merit.
                       </List.Item>
 
                     </List.Root>
@@ -252,7 +252,7 @@ const BailRevocation = () => {
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"left"}
                   color="black"
                   mt={4}
@@ -260,12 +260,6 @@ const BailRevocation = () => {
                   For personalized assistance with your legal needs, contact us or visit Lumine for expert guidance tailored to your specific situation. Our experienced team is here to help you navigate the complexities with confidence and ease.
 
                 </Text>
-
-
-
-
-
-
 
               </VStack>
             </Box>
@@ -277,6 +271,7 @@ const BailRevocation = () => {
             alignItems={"center"}
             mb={"50px"}
           >
+            {/* Immigration Bail */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -316,14 +311,14 @@ const BailRevocation = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
@@ -349,32 +344,35 @@ const BailRevocation = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     lineHeight={1.9}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                     ml={3}
                     mr={3}
                   >
-                    If the Home Office is holding you on immigration matters, you can apply for immigration bail. You may be held because they believe you are in the UK illegally or have broken rules of your stay. Immigration bail will not be granted for criminal matters.                  </Text>
+                    If the Home Office is holding you on immigration matters, you can apply for immigration bail. You may be held because they believe you are in the UK illegally or have broken rules of your stay. Immigration bail will not be granted for criminal matters.
+                  </Text>
 
                   <Text
                     mt={-7}
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     lineHeight={1.9}
                     mb={2}
                     fontWeight={400}
@@ -391,13 +389,14 @@ const BailRevocation = () => {
                     mt={-9}
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     lineHeight={1.9}
                     mb={2}
                     fontWeight={400}
@@ -410,13 +409,14 @@ const BailRevocation = () => {
                   <List.Root
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mt={-9}
                     ml={{ lg: "-3", xs: "1" }}
                     lineHeight={1.8}
@@ -428,7 +428,7 @@ const BailRevocation = () => {
                       You have somewhere to stay in the UK. This address can be used to keep in touch with you, and knowledge of where you are increases the chances of a bail applicant successfully being released.
                     </List.Item>
                     <List.Item>
-                      You have at least 1 ‘Financial Condition Supporter’. This is a reliable person who will pay money if you fail to follow the bail conditions of your bail & will also attend any bail hearings.
+                      You have at least 1 'Financial Condition Supporter'. This is a reliable person who will pay money if you fail to follow the bail conditions of your bail & will also attend any bail hearings.
                     </List.Item>
                   </List.Root>
 
@@ -436,13 +436,14 @@ const BailRevocation = () => {
                     mt={{ lg: "-7", xs: "-1" }}
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     lineHeight={1.9}
                     mb={2}
                     fontWeight={400}
@@ -457,13 +458,14 @@ const BailRevocation = () => {
                     mt={{ lg: "-9", xs: "-4" }}
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     lineHeight={1.9}
                     mb={2}
                     fontWeight={400}
@@ -476,16 +478,16 @@ const BailRevocation = () => {
 
                   <Text
                     mt={-9}
-
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     lineHeight={1.9}
                     mb={2}
                     fontWeight={400}
@@ -499,15 +501,15 @@ const BailRevocation = () => {
                   <List.Root
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mt={{ lg: "-9", xs: "-5" }}
-
                     ml={{ lg: "-3", xs: "1" }}
                     lineHeight={1.8}
                     fontWeight={400}
@@ -530,7 +532,7 @@ const BailRevocation = () => {
               )}
             </Box>
 
-            {/* Administrative Review */}
+            {/* Revocation of a Deportation Order */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -570,14 +572,14 @@ const BailRevocation = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
@@ -603,13 +605,14 @@ const BailRevocation = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mr={3}
                     mb={4}
                     fontWeight={400}
@@ -621,33 +624,34 @@ const BailRevocation = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mr={3}
                     mb={4}
                     mt={-10}
-
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
-                    An application for revocation of a deportation order must be made from outside the UK after you have been deported, unless removal breaches a person’s human rights. Lumine Solicitors can assist you in navigating this process effectively.
+                    An application for revocation of a deportation order must be made from outside the UK after you have been deported, unless removal breaches a person's human rights. Lumine Solicitors can assist you in navigating this process effectively.
                   </Text>
 
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mr={3}
                     mb={2}
                     mt={-10}
@@ -661,13 +665,14 @@ const BailRevocation = () => {
                   <List.Root
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mt={{ lg: "-9", xs: "-5" }}
                     ml={{ lg: "-3", xs: "1" }}
                     lineHeight={1.8}
@@ -680,8 +685,6 @@ const BailRevocation = () => {
                     </List.Item>
                     <List.Item >
                       where deportation order is invalid but the deportation action continues
-
-
                     </List.Item>
                     <List.Item >
                       where deportation is no longer lawful
@@ -691,7 +694,7 @@ const BailRevocation = () => {
               )}
             </Box>
 
-            {/* Judicial Review */}
+            {/* How can Lumine Solicitors help */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -731,14 +734,14 @@ const BailRevocation = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
@@ -764,34 +767,33 @@ const BailRevocation = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mr={4}
                     ml={3}
                     fontWeight={400}
                     lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}
                   >
-
                     At Lumine Solicitors we offer expert advice to you on the application process for revocation of a deportation order, as well as reviewing your immigration history to see whether you qualify. Following this, we will ensure complex evidential requirements are met and will submit this to the home office.
-
-
                   </Text>
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mr={4}
                     ml={3}
                     mt={{ lg: "-7", xs: "-3", md: "-4" }}
@@ -836,4 +838,4 @@ const BailRevocation = () => {
   );
 };
 
-export default BailRevocation;  
+export default BailRevocation;

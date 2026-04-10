@@ -61,7 +61,7 @@ const ReviewsAppeals = () => {
             _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
+              fontSize={{ xs: "18px", lg: "28px", xl: "33px", "2xl": "43px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
@@ -94,7 +94,7 @@ const ReviewsAppeals = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={600}
                 color={"#bf9b30"}
-                fontSize={{ xs: "14px", lg: "26px", xl: "32px", "2xl": "42px" }}
+                fontSize={{ xs: "13px", lg: "25px", xl: "29px", "2xl": "39px" }}
                 textAlign={"left"}
                 ml={3}
               >
@@ -103,7 +103,7 @@ const ReviewsAppeals = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={9}
               >
@@ -112,7 +112,7 @@ const ReviewsAppeals = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={5}
 
@@ -122,7 +122,7 @@ const ReviewsAppeals = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={5}
 
@@ -133,7 +133,7 @@ const ReviewsAppeals = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={5}
               >
@@ -142,7 +142,7 @@ const ReviewsAppeals = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={5}
 
@@ -200,24 +200,17 @@ const ReviewsAppeals = () => {
               >
                 <Text
                   textAlign={"left"}
-                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                  fontWeight={"600"}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Administrative Reviews, Appeals, and Judicial Reviews
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -234,14 +227,15 @@ const ReviewsAppeals = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
                     }}
-                    lineHeight={1.8}
+                    color={"gray.800"}
+                    lineHeight={1.7}
                     mb={2}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -294,24 +288,17 @@ const ReviewsAppeals = () => {
               >
                 <Text
                   textAlign={"left"}
-                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                  fontWeight={"600"}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Administrative Review
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -327,14 +314,15 @@ const ReviewsAppeals = () => {
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                   fontSize={{
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
                     }}
+                    color={"gray.800"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -349,13 +337,14 @@ const ReviewsAppeals = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
                     }}
+                    color={"gray.800"}
                     fontWeight={400}
                     mt={-6}
                     fontFamily={"CeraRoundPro"}
@@ -367,14 +356,16 @@ const ReviewsAppeals = () => {
                   <List.Root
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "10px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "12px",
+                      xl: "14px",
+                      "2xl": "16px",
                     }}
+                    color={"gray.800"}
                     mt={-6}
+                    lineHeight={1.7}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
 
@@ -431,24 +422,17 @@ const ReviewsAppeals = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                  fontWeight={"600"}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Successful Administrative Review
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -465,13 +449,14 @@ const ReviewsAppeals = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     ml={3}
                     mr={3}
                     fontWeight={400}
@@ -484,14 +469,16 @@ const ReviewsAppeals = () => {
 
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                   fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    mt={{lg:"-6"}}
+                    color={"gray.800"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                     ml={3}
@@ -546,25 +533,17 @@ const ReviewsAppeals = () => {
               >
                 <Text
                   textAlign={"left"}
-                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-
-                  fontWeight={500}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                  fontWeight={"600"}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Appeals
                 </Text>
                 {!appeal ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -581,13 +560,15 @@ const ReviewsAppeals = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    lineHeight={1.8}
+                    color={"gray.800"}
                     ml={3}
                     mr={8}
                     fontWeight={400}
@@ -609,14 +590,16 @@ const ReviewsAppeals = () => {
 
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    lineHeight={1.8}
+                    color={"gray.800"}
                     ml={3}
                     mr={3}
                     mt={-6}
@@ -629,14 +612,15 @@ const ReviewsAppeals = () => {
 
                   <List.Root
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     lineHeight={1.7}
                     mt={-6}
                     fontWeight={400}
@@ -694,24 +678,17 @@ const ReviewsAppeals = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                  fontWeight={"600"}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Judicial Review
                 </Text>
                 {!review ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -727,14 +704,16 @@ const ReviewsAppeals = () => {
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    lineHeight={1.8}
+                    color={"gray.800"}
                     ml={3}
                     mr={9}
 
@@ -750,17 +729,19 @@ const ReviewsAppeals = () => {
 
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    lineHeight={1.8}
+                    color={"gray.800"}
                     ml={3}
                     mr={3}
-                    mt={-6}
+                    mt={-8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -769,17 +750,19 @@ const ReviewsAppeals = () => {
 
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    lineHeight={1.8}
+                    color={"gray.800"}
                     ml={3}
                     mr={3}
-                    mt={-6}
+                    mt={-8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -789,18 +772,19 @@ const ReviewsAppeals = () => {
 
                   <List.Root
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    lineHeight={1.8}
+                    color={"gray.800"}
 
                     mr={3}
-                    mt={-6}
-                    lineHeight={1.9}
+                    mt={-8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -864,24 +848,17 @@ const ReviewsAppeals = () => {
               >
                 <Text
                   textAlign={"left"}
-                fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                  fontWeight={"600"}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   How long does it take to reach a decision?
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -897,17 +874,18 @@ const ReviewsAppeals = () => {
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    lineHeight={1.8}
+                    color={"gray.800"}
                     mr={4}
                     ml={3}
-                    lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -959,24 +937,17 @@ const ReviewsAppeals = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                  fontWeight={"600"}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -992,14 +963,15 @@ const ReviewsAppeals = () => {
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mr={4}
                     ml={3}
                     lineHeight={1.8}
@@ -1018,15 +990,17 @@ const ReviewsAppeals = () => {
 
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
-                    mt={"-6"}
+                    lineHeight={1.8}
+                    color={"gray.800"}
+                    mt={"-8"}
                     ml={3}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}

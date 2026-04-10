@@ -106,7 +106,7 @@ const NewsArticle = () => {
           cursor="pointer"
           display={"flex"}
           flexDir={"column"}
-          border={"1px solid #2a2a2b"}
+          border={"1px solid black"}
           borderRadius={"10px"}
           overflow={"hidden"}
           bg="white"
@@ -116,9 +116,9 @@ const NewsArticle = () => {
         >
           <Image src={article.image_url} alt={article.title} height="230px" width="100%" objectFit="cover" />
           <Box p="20px" display="flex" flexDir="column" flex="1">
-            <Text fontSize="12px" color="gray.500" mb="2">{article.date}</Text>
-            <Text fontSize="17px" fontWeight="700" color="black" mb="2" noOfLines={2}>{article.title}</Text>
-            <Text fontSize="14px" color="gray.600" noOfLines={3}>{article.content}</Text>
+            <Text fontSize="12px" color="black" mb="2" textAlign={"left"}>{article.date}</Text>
+            <Text fontSize="17px" fontWeight="700" color="black" mb="2" textAlign={"left"} noOfLines={2}>{article.title}</Text>
+            <Text fontSize="14px" color="black" textAlign={"left"} noOfLines={3}>{article.content}</Text>
           </Box>
         </GridItem>
       ))}

@@ -45,11 +45,11 @@ const PricesMenu = () => {
           _hover={{
             color: "white",
             backgroundColor: "black",
-            borderBottom: "5px solid #F0E078",
+            borderBottom: "5px solid #BF9B30",
           }}
           css={{
             transition: "all 0.3s ease",
-            borderBottom: isOpen ? "5px solid #F0E078" : "none",
+            borderBottom: isOpen ? "5px solid #BF9B30" : "none",
           }}
         >
           Pricing
@@ -71,13 +71,13 @@ const PricesMenu = () => {
             <Box
               width="100%"
               height="5px"
-              backgroundColor="#e2c67f"
+              // backgroundColor="#e2c67f"
             />
 
             {/* Black box with white border */}
             <Box
               border="1px solid white"
-              borderTop="none"
+              // borderTop="none"
               backgroundColor="black"
               py="8px"
             >

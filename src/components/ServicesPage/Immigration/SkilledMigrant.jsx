@@ -59,8 +59,9 @@ const SkilledMigrant = () => {
             alignItems={"center"}
             _loading={"eager"}
           >
+            {/* Banner heading - UNCHANGED */}
             <Text
-              fontSize={{ xs: "36px", lg: "44px", xl: "46px", "2xl": "56px" }}
+              fontSize={{ xs: "34px", lg: "42px", xl: "44px", "2xl": "54px" }}
               fontWeight={700}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
@@ -88,12 +89,13 @@ const SkilledMigrant = () => {
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
+              {/* Section Heading - UNCHANGED */}
               <Heading
                 as={"h2"}
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 color={"#bf9b30"}
-                fontSize={{ xs: "13px", lg: "17px", xl: "24px", "2xl": "34px" }}
+                fontSize={{ xs: "12px", lg: "15px", xl: "22px", "2xl": "32px" }}
                 textAlign={"left"}
                 ml={3}
               >
@@ -106,7 +108,9 @@ const SkilledMigrant = () => {
                 mr={2}
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                                    color={"gray.800"}
+
+                fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={4}
               >
@@ -118,9 +122,9 @@ const SkilledMigrant = () => {
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"left"}
-                  color="black"
+                    color={"gray.800"}
                   ml={3}
                   mt={{lg:"2", xs:"-1"}}
                 >
@@ -131,37 +135,26 @@ const SkilledMigrant = () => {
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"left"}
                   color="black"
-                                    mt={{lg:"6", xs:"2"}}
+                  mt={{lg:"6", xs:"2"}}
                   ml={3}
                 >
                   Eligibility Criteria for a Sponsorship License
 
                 </Text>
 
-                {/* <Text
-                  fontFamily={"CeraRoundPro"}
-                  fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                  textAlign={"left"}
-                  color="black"
-                  ml={3}
-                  mt={-2}
-                >
-                  To apply for Indefinite Leave to Remain, applicants must have met several eligibility criteria, such as:
-                </Text> */}
-
                 <List.Root
                   as="ol"
                   styleType="decimal"
                   ml={5}
                   mt={-2}
+
                   spacing={3}
                   fontFamily={"CeraRoundPro"}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                  color="black"
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                    color={"gray.800"}
                 >
                   <List.Item textAlign="justify">
                     <Text as="span">Legal Presence in the UK:</Text>  The employer must have a registered presence in the UK, either as a business or as a non-profit organization. They must have a physical address and, in many cases, be actively engaged in lawful business activity.
@@ -178,10 +171,10 @@ const SkilledMigrant = () => {
                     <Text as="span">Sponsorship Obligations:  </Text>The employer has to show that they have the ability and infrastructure to handle the obligations associated with sponsoring a skilled migrant worker. Such obligations include maintaining employment records of the migrant, immigration law compliance, and reporting major changes in employment status to the Home Office.
                   </List.Item>
                   <List.Item textAlign="justify">
-                    <Text as="span">  </Text>Good Compliance Record The Home Office will consider the employer’s record of compliance with immigration law. Those employers who have previously violated immigration rules or have a history of non-compliance will face a more difficult application process.
+                    <Text as="span">  </Text>Good Compliance Record The Home Office will consider the employer's record of compliance with immigration law. Those employers who have previously violated immigration rules or have a history of non-compliance will face a more difficult application process.
                   </List.Item>
                   <List.Item textAlign="justify">
-                    <Text as="span"> Financial Stability: </Text>There is no specific financial requirement for obtaining a sponsorship license, but employers have to be able to demonstrate their financial stability in order to show that they can fulfill the sponsorship obligations, such as paying the migrant worker’s salary and keeping accurate records.
+                    <Text as="span"> Financial Stability: </Text>There is no specific financial requirement for obtaining a sponsorship license, but employers have to be able to demonstrate their financial stability in order to show that they can fulfill the sponsorship obligations, such as paying the migrant worker's salary and keeping accurate records.
                   </List.Item>
                 </List.Root>
               </VStack>
@@ -189,8 +182,10 @@ const SkilledMigrant = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
+                                    color={"gray.800"}
+
                 mt={{lg:"8", xs:"3"}}
                 mb={8}
                 ml={3}
@@ -246,23 +241,23 @@ const SkilledMigrant = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Types of Sponsor Licences
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -279,12 +274,12 @@ const SkilledMigrant = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     lineHeight={1.9}
                     fontWeight={400}
@@ -299,18 +294,19 @@ const SkilledMigrant = () => {
                     styleType="decimal"
                     mt={-7}
                     spacing={3}
+                    
                     fontFamily={"CeraRoundPro"}
-                    fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                    color="black"
+                    fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                    color={"gray.800"}
                     ml={{xs:"1"}}
                     mr={{xs:"1"}}
                   >
                     <List.Item textAlign="justify">
-                      <Text as="span"></Text>  A sponsor licence for ‘Workers’, which includes long-term employment such as the Skilled Worker visa; and
+                      <Text as="span"></Text>  A sponsor licence for 'Workers', which includes long-term employment such as the Skilled Worker visa; and
 
                     </List.Item>
                     <List.Item textAlign="justify">
-                      <Text as="span"></Text>A sponsor licence for ‘Temporary Workers’ for particular forms of temporary employment, Such as Religious Workers
+                      <Text as="span"></Text>A sponsor licence for 'Temporary Workers' for particular forms of temporary employment, Such as Religious Workers
 
                     </List.Item>
                   </List.Root>
@@ -359,23 +355,23 @@ const SkilledMigrant = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Who Does The Licence Allow You To Sponsor?
                 </Text>
                 {!allowState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -392,15 +388,17 @@ const SkilledMigrant = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     mr={3}
                     mb={4}
+                                        color={"gray.800"}
+
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -410,13 +408,15 @@ const SkilledMigrant = () => {
                   <List.Root
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                                        color={"gray.800"}
+
                     mt={-10}
                     ml={{lg:"-3" , xs: "1"}}
                     lineHeight={1.8}
@@ -486,23 +486,23 @@ const SkilledMigrant = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Eligibility Requirements
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -519,14 +519,16 @@ const SkilledMigrant = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     mr={3}
+                                        color={"gray.800"}
+
                     mb={4}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -537,13 +539,15 @@ const SkilledMigrant = () => {
                   <List.Root
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                                        color={"gray.800"}
+
                     mt={-10}
                     ml={{lg:"-3", xs:"1"}}
                     lineHeight={1.8}
@@ -593,6 +597,7 @@ const SkilledMigrant = () => {
                   xl: "9px",
                   "2xl": "10px",
                 }}
+                
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applyState && "black" }}
                 transition={"all 0.3s ease"}
@@ -602,23 +607,23 @@ const SkilledMigrant = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   How long does it take to reach a decision?
                 </Text>
                 {!applyState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -635,13 +640,15 @@ const SkilledMigrant = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                                        color={"gray.800"}
+
                     mr={3}
                     mb={4}
                     fontWeight={400}
@@ -694,23 +701,23 @@ const SkilledMigrant = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!review ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -727,13 +734,14 @@ const SkilledMigrant = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mr={4}
                     ml={3}
                     mb={4}
@@ -742,18 +750,18 @@ const SkilledMigrant = () => {
                     fontFamily={"CeraRoundPro"}
                   >
 
-                    At Lumine Solicitors, we will take into account your organisation’s needs and carefully prepare your licence application to ensure it meets all the necessary requirements. Our solicitors will also determine the appropriate sponsorship licence for your organisation. Contact Lumine Solicitors’ specialised immigration members regarding the process of applying for a sponsor licence, renewing sponsor licences, challenging revocations of an existing sponsor licence, and avoiding licence rejection.
+                    At Lumine Solicitors, we will take into account your organisation's needs and carefully prepare your licence application to ensure it meets all the necessary requirements. Our solicitors will also determine the appropriate sponsorship licence for your organisation. Contact Lumine Solicitors' specialised immigration members regarding the process of applying for a sponsor licence, renewing sponsor licences, challenging revocations of an existing sponsor licence, and avoiding licence rejection.
                   </Text>
 
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     mr={4}
                     ml={3}

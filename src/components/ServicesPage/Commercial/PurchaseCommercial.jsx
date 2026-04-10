@@ -19,11 +19,11 @@ const PurchaseCommercial = () => {
   return (
     <>
       <Container
-        width="100vw"
+        width="100%"
         maxWidth="100%"
         minHeight="100vh"
         backgroundColor={"white"}
-        overflow="auto"
+        overflowX="hidden"
         m={0}
         p={0}
         display="flex"
@@ -34,43 +34,43 @@ const PurchaseCommercial = () => {
         </Helmet>
 
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
-          {/* Banner */}
+          {/* Banner - FIXED */}
           <Box
             width={"100%"}
             height={{
-              xs: "300px",
-              lg: "340px",
-              xl: "390",
-              "2xl": "460px",
+              base: "230px",
+              lg: "310px",
+              xl: "330px",
+              "2xl": "380px",
             }}
-            bgImage={`url(${BannerImg})`}
+            bgImage={`linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url(${BannerImg})`}
             bgSize={"cover"}
             bgPos={"center"}
             bgRepeat={"no-repeat"}
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
-            _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
+              fontSize={{ xs: "19px", lg: "27.5px", xl: "33.5px", "2xl": "42.5px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
+              lineHeight={1.1}
+              letterSpacing={0.2}
               textAlign={"left"}
             >
               Purchase of Commercial Property
             </Text>
           </Box>
 
-          {/* Main */}
+          {/* Main Content - FIXED FONT SIZE */}
           <Box
             width={"100%"}
             display={"flex"}
             flexFlow={"column"}
             color={"black"}
           >
-            {/* Heading */}
             <Box
               width={"85%"}
               alignSelf={"center"}
@@ -80,53 +80,28 @@ const PurchaseCommercial = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                mt={"-1%"}
-                mb={"-3"}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "12.5px", xl: "14.5px", "2xl": "16.5px" }}
                 textAlign={"justify"}
+                lineHeight="1.5"
+                color="black"
               >
-               Are you considering purchasing commercial property? At Lumine Solicitors, we understand that acquiring commercial real estate is a significant investment and can provide long-term stability for your business. Whether you’re expanding your company, seeking rental income, or diversifying your investments, our legal expertise ensures that your purchase is a sound and secure investment.
+                Are you considering purchasing commercial property? At Lumine Solicitors, we understand that acquiring commercial real estate is a significant investment and can provide long-term stability for your business. Whether you're expanding your company, seeking rental income, or diversifying your investments, our legal expertise ensures that your purchase is a sound and secure investment.
               </Text>
             </Box>
           </Box>
 
-          {/* Dropdown info */}
-          <VStack
-            justifyContent={"space-around"}
-            alignItems={"center"}
-            mb={"50px"}
-          >
+          {/* Dropdown info - FIXED */}
+          <VStack justifyContent={"space-around"} alignItems={"center"} mb={"50px"}>
+
             {/* Why choose Lumine Solicitors? */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"85%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
+            <Box display={"flex"} flexDir={"column"} color={"black"} width={"85%"} justifyContent={"center"} alignItems={"center"}>
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
@@ -135,50 +110,29 @@ const PurchaseCommercial = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Why choose Lumine Solicitors?
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
               {eligibilityState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
+                <VStack justifyContent={"center"} alignItems={"flex-start"} gap={{ xs: "20px", md: "30px" }} mb={{ xs: "4px", md: "10px" }} borderTop={"1px solid #adacac"} py={{ xs: "15px", md: "30px" }} width={"100%"}>
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    lineHeight={1.9}
+                    fontSize={{ xs: "11px", sm: "11px", md: "12.5px", lg: "12.5px", xl: "14.5px", "2xl": "16.5px" }}
+                    lineHeight={1.8}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                    color="gray.800"
                   >
                     Our experienced solicitors are here to guide you through the process of purchasing commercial property. We conduct thorough due diligence to identify potential risks and liabilities associated with the property. Our team meticulously reviews title deeds, planning permissions, environmental assessments, and other critical documents to safeguard your interests. From negotiation to final sale, we ensure a smooth process, coordinating with all parties involved to address any issues promptly.
                   </Text>
@@ -186,37 +140,15 @@ const PurchaseCommercial = () => {
               )}
             </Box>
 
-            {/* Help */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"85%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
+            {/* Contact Us Today */}
+            <Box display={"flex"} flexDir={"column"} color={"black"} width={"85%"} justifyContent={"center"} alignItems={"center"}>
               <HStack
                 borderY={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !helpState && "black" }}
                 transition={"all 0.3s ease"}
@@ -225,53 +157,32 @@ const PurchaseCommercial = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Contact Us Today
                 </Text>
                 {!helpState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
               {helpState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
+                <VStack justifyContent={"center"} alignItems={"flex-start"} gap={{ xs: "20px", md: "30px" }} mb={{ xs: "4px", md: "10px" }} borderTop={"1px solid #adacac"} py={{ xs: "15px", md: "30px" }} width={"100%"}>
                   <Text
-                    textAlign={"left"}
-                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    textAlign={"justify"}
+                    fontSize={{ xs: "11px", sm: "11px", md: "12.5px", lg: "12.5px", xl: "14.5px", "2xl": "16.5px" }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
-                    mt={"2"}
+                    color="gray.800"
                   >
-                    For all property matters, please do not hesitate to get in touch with Lumine solicitors{" "}
-                    <strong>020 3950 2246</strong> or{" "}
+                    For all property matters, please do not hesitate to get in touch with Lumine solicitors <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link
-                        to={"/contact"}
-                        style={{ color: "#e91e63" }}
-                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
-                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
-                      >
+                      <Link to={"/contact"} style={{ color: "#e91e63" }} onMouseEnter={(e) => (e.target.style.color = "#091838")} onMouseLeave={(e) => (e.target.style.color = "#e91e63")}>
                         Contact Us HERE
                       </Link>{" "}
                     </strong>
@@ -283,13 +194,8 @@ const PurchaseCommercial = () => {
 
           {/* Other Services */}
           <AllServiceLinks />
-
-          {/* Prices */}
           <AllPrices />
-
-          {/* News and Insights */}
           <AllNewsInsights />
-
           <Footer />
         </Box>
       </Container>

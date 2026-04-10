@@ -46,7 +46,7 @@ const Menu = () => {
           _hover={{
             color: "white",
             backgroundColor: "black",
-            borderBottom: "5px solid #e2c67f",
+            borderBottom: "5px solid #BF9B30",
           }}
           className={styles.menuButton}
           css={{

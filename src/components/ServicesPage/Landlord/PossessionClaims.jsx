@@ -137,24 +137,24 @@ const PossessionClaims = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                   fontSize={{
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Our Services
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#bf9b30"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -170,14 +170,15 @@ const PossessionClaims = () => {
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -187,14 +188,15 @@ const PossessionClaims = () => {
 
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "13px",
-                      sm: "13px",
-                      md: "15px",
-                      lg: "15px",
-                      xl: "17px",
-                      "2xl": "19px",
+                     fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mt={-6}
                     lineHeight={1.5}
                     fontWeight={400}
@@ -212,14 +214,15 @@ const PossessionClaims = () => {
 
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mt={-6}
                     lineHeight={1.7}
                     fontWeight={400}
@@ -237,14 +240,15 @@ const PossessionClaims = () => {
 
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mt={-6}
                     lineHeight={1.7}
                     fontWeight={400}
@@ -301,23 +305,23 @@ const PossessionClaims = () => {
                 <Text
                   textAlign={"left"}
                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   How can Lumine Solicitors Help?
                 </Text>
                 {!decisionState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
@@ -332,14 +336,15 @@ const PossessionClaims = () => {
                 >
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     fontWeight={400}
                     
                   lineHeight={1.6}
@@ -353,14 +358,15 @@ const PossessionClaims = () => {
                   </Text>
                   <Text
                     textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                     fontSize={{
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mt={-6}
                   lineHeight={1.6}
                     fontWeight={400}
@@ -381,13 +387,14 @@ const PossessionClaims = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     fontWeight={400}
                     mt={-6}
                   lineHeight={1.6}

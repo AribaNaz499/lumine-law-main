@@ -12,6 +12,7 @@ import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import BannerImg from "../../../assets/services/main/immigration/Asylum.jpg";
 import { Heading } from "@chakra-ui/react"
+
 const EntryClearance = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
@@ -35,17 +36,14 @@ const EntryClearance = () => {
         flexDirection="column"
       >
         <Helmet>
-
           <title>
             Lumine Law Entry Clearance Applications from Outside of the UK
             Services
           </title>
-
-
         </Helmet>
 
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
-          {/* Banner */}
+          {/* Banner - NO CHANGE */}
           <Box
             width={"100%"}
             height={{
@@ -64,7 +62,7 @@ const EntryClearance = () => {
             _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
+              fontSize={{ xs: "18px", lg: "28px", xl: "34px", "2xl": "43px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
@@ -72,8 +70,6 @@ const EntryClearance = () => {
               lineHeight={1.1}
             >
               Eu settlement scheme applications
-
-
             </Text>
           </Box>
 
@@ -96,16 +92,17 @@ const EntryClearance = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={600}
                 color={"#bf9b30"}
-                fontSize={{ xs: "14px", lg: "26px", xl: "32px", "2xl": "42px" }}
+                fontSize={{ xs: "12px", lg: "24px", xl: "30px", "2xl": "40px" }}
                 textAlign={"left"}
               >
                 EU SETTLEMENT SCHEME APPLICATIONS
               </Heading>
 
+              {/* CONTENT FONT SIZE - REDUCED like reference */}
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={5}
               >
@@ -116,9 +113,8 @@ const EntryClearance = () => {
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"left"}
-                  color="black"
                 >
                   The EU Settlement Scheme is a significant program for EU citizens and their families to preserve their rights in the UK following the country’s exit from the EU. The deadline for the application of the EU Settlement Scheme was June 30, 2021; however, provisions for late applications exist under certain conditions.
                 </Text>
@@ -126,9 +122,8 @@ const EntryClearance = () => {
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"left"}
-                  color="black"
                 >
                   Eligibility for the EU Settlement Scheme
                 </Text>
@@ -139,8 +134,7 @@ const EntryClearance = () => {
                   ml={5}
                   spacing={3}
                   fontFamily={"CeraRoundPro"}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                  color="black"
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 >
                   <List.Item textAlign="justify">
                     <Text as="span">EU, EEA, and Swiss Citizens: </Text> Individuals from these countries who were living in the UK before the end of 2020 can apply. The scheme also applies to their family members, whether or not they are from an EU/EEA/Swiss country.
@@ -158,8 +152,7 @@ const EntryClearance = () => {
                       ml={5}
                       spacing={3}
                       fontFamily={"CeraRoundPro"}
-                      fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                      color="black"
+                      fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                     >
                       <List.Item textAlign="justify">
                         <Text as="span">Permanent Residence or Settled Status: </Text> This status is granted to those who have been continuously in the UK for 5 years or more when applying. An applicant with settled status can live in the UK permanently and will receive access to free healthcare, free education, and other public services.
@@ -175,9 +168,8 @@ const EntryClearance = () => {
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"left"}
-                  color="black"
                   mt={4}
                 >
                   Application Process for the EU Settlement Scheme
@@ -186,9 +178,8 @@ const EntryClearance = () => {
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"left"}
-                  color="black"
                 >
                   The application process is quite simple, and it can be done entirely online. The following is a step-by-step process:
                 </Text>
@@ -199,8 +190,8 @@ const EntryClearance = () => {
                   ml={5}
                   spacing={3}
                   fontFamily={"CeraRoundPro"}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                  color="black"
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                  
                 >
                   <List.Item textAlign="justify">
                     <Text as="span">Create an Account: </Text> For the application to the EU Settlement Scheme, a person needs to begin by opening an account on the GOV.UK website. This account will require a person to enter personal details like full name, nationality, and details of their family members who apply with them.
@@ -212,7 +203,7 @@ const EntryClearance = () => {
 
                   <List.Item textAlign="justify">
                     <Text as="span">Evidence of Residence: </Text> The applicant needs to give evidence that they have been resident in the UK. Such evidence may include:
-                    <List.Root as="ul" styleType="disc" ml={5} mt={2} spacing={1}>
+                    <List.Root as="ul" styleType="disc" ml={5} mt={2} spacing={1} >
                       <List.Item>Payslips</List.Item>
                       <List.Item>Bank statements</List.Item>
                       <List.Item>Utility bills</List.Item>
@@ -225,9 +216,9 @@ const EntryClearance = () => {
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"justify"}
-                  color="black"
+              
                 >
                   The Home Office may rely on existing data, such as HMRC or NHS records, to check this information for some applicants, which will make the process easier.
                 </Text>
@@ -239,8 +230,8 @@ const EntryClearance = () => {
                   start={4}
                   spacing={3}
                   fontFamily={"CeraRoundPro"}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                  color="black"
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
+              
                 >
                   <List.Item textAlign="justify">
                     <Text as="span">Criminality Check: </Text> The Home Office may check criminal records, but minor offenses should not be a basis for disqualification of an applicant. However, serious criminal convictions may lead to the refusal of an application.
@@ -257,9 +248,10 @@ const EntryClearance = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={5}
+                
               >
                 For personalized assistance with your legal needs, contact us or visit Lumine for expert guidance tailored to your specific situation. Our experienced team is here to help you navigate the complexities with confidence and ease.
               </Text>
@@ -267,42 +259,17 @@ const EntryClearance = () => {
           </Box>
 
           {/* Dropdown info */}
-          <VStack
-            justifyContent={"space-around"}
-            alignItems={"center"}
-            mb={"50px"}
-          >
-            {/* What is Administrative Reviews, Appeals, and Judicial Reviews */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"93%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
+          <VStack justifyContent={"space-around"} alignItems={"center"} mb={"50px"}>
+            
+            {/* Dropdown 1 - What is The EU Settlement Scheme? */}
+            <Box display={"flex"} flexDir={"column"} color={"black"} width={"93%"} justifyContent={"center"} alignItems={"center"}>
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
@@ -311,112 +278,41 @@ const EntryClearance = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   What is The EU Settlement Scheme?
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
               {spouseState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    lineHeight={1.9}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                    ml={3}
-                    mr={3}
-                  >
+                <VStack justifyContent={"center"} alignItems={"flex-start"} gap={{ xs: "20px", md: "30px" }} mb={{ xs: "4px", md: "10px" }} borderTop={"1px solid #adacac"} py={{ xs: "15px", md: "30px" }} width={"100%"}>
+                  <Text textAlign={"justify"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} lineHeight={1.9} fontWeight={400} fontFamily={"CeraRoundPro"} ml={3} mr={3} color={"gray.800"}>
                     The Home Office introduced the EU Settlement Scheme as a way for EU, EEA, and Swiss nationals to continue living in the UK. The scheme will classify your immigration status as either ‘settled’ or ‘pre-settled’.
                   </Text>
-
-                  <Text
-                    mt={-7}
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    lineHeight={1.9}
-                    mb={2}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                    ml={3}
-                    mr={3}
-                  >
+                  <Text mt={-7} textAlign={"justify"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} lineHeight={1.9} mb={2} fontWeight={400} fontFamily={"CeraRoundPro"} ml={3} mr={3} color={"gray.800"}>
                     The deadline for making an application to the EU Settlement Scheme was 30 June 2021. If you can demonstrate that you had ‘reasonable grounds’ for not applying on time, you may still be able to apply after 30 June 2021. If you have pre-settled status and are applying for settled status, this deadline does not apply to you.
-
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Administrative Review */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"93%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
+            {/* Dropdown 2 - Eligibility Requirements */}
+            <Box display={"flex"} flexDir={"column"} color={"black"} width={"93%"} justifyContent={"center"} alignItems={"center"}>
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
@@ -425,149 +321,50 @@ const EntryClearance = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Eligibility Requirements
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
               {eligibilityState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    mr={3}
-                    mb={4}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    According to the UK government website You must meet <strong> one </strong> of the following eligibility criteria for the scheme, which for most people is either:
-
-
-
+                <VStack justifyContent={"center"} alignItems={"flex-start"} gap={{ xs: "20px", md: "30px" }} mb={{ xs: "4px", md: "10px" }} borderTop={"1px solid #adacac"} py={{ xs: "15px", md: "30px" }} width={"100%"}>
+                  <Text textAlign={"justify"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} mr={3} mb={4} fontWeight={400} fontFamily={"CeraRoundPro"} color={"gray.800"}>
+                    According to the UK government website You must meet <strong>one</strong> of the following eligibility criteria for the scheme, which for most people is either:
                   </Text>
-
-                  <List.Root
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    mt={-9}
-                    ml={{lg: "-3" , xs: "1"}}
-                    lineHeight={1.8}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-
-                  >
-                    <List.Item >
-                      you’re from the EU, Switzerland, Norway, Iceland or Liechtenstein and you started living in the UK by 31 December 2020
-                    </List.Item>
-                    <List.Item >
-                      a non-visa national not a British national and is seeking entry for a period exceeding six months, or for a purpose for which prior entry clearance is required under these Rules;
-
-
-                    </List.Item>
-                    <List.Item >you’re the family member of someone from the EU, Switzerland, Norway, Iceland or Liechtenstein who started living in the UK by 31 December 2020 and had settled or pre-settled status
-                    </List.Item>
-
-                    <Text>
-                      You may also be eligible if:
-                    </Text>
-                    <List.Item >
-                      you used to have a family member from the EU, Switzerland, Norway, Iceland or Liechtenstein who started living in the UK by 31 December 2020 (but you’ve separated, they’ve died or the family relationship has broken down)
-                    </List.Item>
-
-                    <List.Item >
-                      you’re the family member of a British citizen who you lived in the EU, Switzerland, Norway, Iceland or Liechtenstein – you must have lived with them in that country by 31 December 2020 and returned to the UK with them before you apply
-                    </List.Item>
-
-                    <List.Item >
-                      you’re the family member of a British citizen who also is a citizen of an EU country, Switzerland, Norway, Iceland or Liechtenstein, and they lived in the UK as a citizen of one of these countries before getting British citizenship.
-                    </List.Item>
-
-                    <List.Item >
-                      you have a family member who is an eligible person of Northern Ireland
-                    </List.Item>
-                    <List.Item >
-                      you’re the child of someone from the EU, Switzerland, Norway, Iceland or Liechtenstein who used to live and work in the UK – you must be in education in the UK
-                    </List.Item>
-                    <List.Item >
-                      you’re the family member of a person who is exempt from immigration control
-                    </List.Item>
-                    <List.Item >
-                      you’re the family member of a ‘frontier worker’.
-                    </List.Item>
+                  <List.Root textAlign={"justify"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} mt={-9} ml={{ lg: "-3", xs: "1" }} lineHeight={1.8} fontWeight={400} fontFamily={"CeraRoundPro"} color={"gray.800"}>
+                    <List.Item>you’re from the EU, Switzerland, Norway, Iceland or Liechtenstein and you started living in the UK by 31 December 2020</List.Item>
+                    <List.Item>you’re the family member of someone from the EU, Switzerland, Norway, Iceland or Liechtenstein who started living in the UK by 31 December 2020 and had settled or pre-settled status</List.Item>
+                    <Text>You may also be eligible if:</Text>
+                    <List.Item>you used to have a family member from the EU, Switzerland, Norway, Iceland or Liechtenstein who started living in the UK by 31 December 2020 (but you’ve separated, they’ve died or the family relationship has broken down)</List.Item>
+                    <List.Item>you’re the family member of a British citizen who you lived in the EU, Switzerland, Norway, Iceland or Liechtenstein – you must have lived with them in that country by 31 December 2020 and returned to the UK with them before you apply</List.Item>
+                    <List.Item>you’re the family member of a British citizen who also is a citizen of an EU country, Switzerland, Norway, Iceland or Liechtenstein, and they lived in the UK as a citizen of one of these countries before getting British citizenship.</List.Item>
+                    <List.Item>you have a family member who is an eligible person of Northern Ireland</List.Item>
+                    <List.Item>you’re the child of someone from the EU, Switzerland, Norway, Iceland or Liechtenstein who used to live and work in the UK – you must be in education in the UK</List.Item>
+                    <List.Item>you’re the family member of a person who is exempt from immigration control</List.Item>
+                    <List.Item>you’re the family member of a ‘frontier worker’.</List.Item>
                   </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Successful Administrative Review */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"93%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
+            {/* Dropdown 3 - How long does it take to reach a decision? */}
+            <Box display={"flex"} flexDir={"column"} color={"black"} width={"93%"} justifyContent={"center"} alignItems={"center"}>
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applicationState && "black" }}
                 transition={"all 0.3s ease"}
@@ -576,92 +373,38 @@ const EntryClearance = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   How long does it take to reach a decision?
                 </Text>
                 {!applicationState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
               {applicationState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    ml={3}
-                    mr={3}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
+                <VStack justifyContent={"center"} alignItems={"flex-start"} gap={{ xs: "20px", md: "30px" }} mb={{ xs: "4px", md: "10px" }} borderTop={"1px solid #adacac"} py={{ xs: "15px", md: "30px" }} width={"100%"}>
+                  <Text textAlign={"justify"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} ml={3} mr={3} fontWeight={400} fontFamily={"CeraRoundPro"} color={"gray.800"}>
                     Your EU settlement scheme application will usually take 5 days to process. However, it can take as long as a month or even longer if more information is required by the Home Office.
-
-
                   </Text>
                 </VStack>
               )}
             </Box>
 
-
-            {/* Judicial Review */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"93%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
+            {/* Dropdown 4 - How can Lumine Solicitors help? */}
+            <Box display={"flex"} flexDir={"column"} color={"black"} width={"93%"} justifyContent={"center"} alignItems={"center"}>
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !review && "black" }}
                 transition={"all 0.3s ease"}
@@ -670,103 +413,43 @@ const EntryClearance = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!review ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
               {review && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    mr={4}
-                    ml={3}
-                    fontWeight={400}
-                    lineHeight={1.9}
-                    fontFamily={"CeraRoundPro"}
-                  >
-
+                <VStack justifyContent={"center"} alignItems={"flex-start"} gap={{ xs: "20px", md: "30px" }} mb={{ xs: "4px", md: "10px" }} borderTop={"1px solid #adacac"} py={{ xs: "15px", md: "30px" }} width={"100%"}>
+                  <Text textAlign={"justify"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} mr={4} ml={3} fontWeight={400} lineHeight={1.9} fontFamily={"CeraRoundPro"} color={"gray.800"}>
                     We are able to provide guidance on the best options for you, taking into account your unique circumstances whether you’re already living in the UK or intend to move to the UK. We will also advice you on complex evidential requirements/documents for your application, submit your online application and book your appointment with UKVCAS for your biometrics.
                   </Text>
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    mr={4}
-                    ml={3}
-                    mt={-7}
-                    fontWeight={400}
-                    lineHeight={1.9}
-                    fontFamily={"CeraRoundPro"}
-                  >
+                  <Text textAlign={"justify"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} mr={4} ml={3} mt={-7} fontWeight={400} lineHeight={1.9} fontFamily={"CeraRoundPro"} color={"gray.800"}>
                     For all immigration matters, Please do not hesitate to get in touch with Lumine solicitors
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link
-                        to={"/contact"}
-                        style={{ color: "#e91e63" }}
-                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
-                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
-                      >
+                      <Link to={"/contact"} style={{ color: "#e91e63" }} onMouseEnter={(e) => (e.target.style.color = "#091838")} onMouseLeave={(e) => (e.target.style.color = "#e91e63")}>
                         Contact Us HERE
                       </Link>{" "}
                     </strong>
                   </Text>
-
                 </VStack>
               )}
             </Box>
-
-
           </VStack>
 
-          {/* Other Services */}
+          {/* Other Services - NO CHANGE */}
           <AllServiceLinks />
-
-          {/* Prices */}
           <AllPrices />
-
-          {/* News and Insights */}
           <AllNewsInsights />
-
           <Footer />
         </Box>
       </Container>

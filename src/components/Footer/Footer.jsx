@@ -49,12 +49,12 @@ const Footer = () => {
           <Box justifyContent={"center"} alignItems={"center"}>
             <Text
               fontSize={{
-                xs: "31px",
-                xl: "33px",
-                "2xl": "37px",
+                xs: "29px",
+                xl: "31px",
+                "2xl": "35px",
               }}
-              color={"#bf9b30"}
-              fontWeight={300}
+              color={"#BF9B30"}
+              fontWeight={400}
               mb={"7px"}
               textAlign={"left"}
             >
@@ -63,7 +63,7 @@ const Footer = () => {
             <VStack justifyContent={"center"} alignItems={"flex-start"}>
               <HStack>
                 <FaLocationDot
-                  color={"#bf9b30"}
+                  color={"#DEB92C"}
                   fontSize={{
                     xs: "12px",
                     xl: "13px",
@@ -74,7 +74,7 @@ const Footer = () => {
                   color={"white"}
                                       fontSize={{ xs: "11px", xl: "14px", "2xl": "15px" }}
 
-                  _hover={{ color: "#bf9b30" }}
+                  _hover={{ color: "#DEB92C" }}
                   fontWeight={300}
                   lineHeight={1.7}
                 >
@@ -83,7 +83,7 @@ const Footer = () => {
               </HStack>
               <HStack>
                 <PiPhoneCallFill
-                  color={"#bf9b30"}
+                  color={"#DEB92C"}
                   fontSize={{
                     xs: "12px",
                     xl: "13px",
@@ -95,7 +95,7 @@ const Footer = () => {
                   lineHeight={1.7}
                                      fontSize={{ xs: "11px", xl: "14px", "2xl": "15px" }}
 
-                  _hover={{ color: "#bf9b30" }}
+                  _hover={{ color: "#DEB92C" }}
                   cursor={"pointer"}
                   fontWeight={300}
                 >
@@ -104,7 +104,7 @@ const Footer = () => {
               </HStack>
               <HStack>
                 <BsPrinterFill
-                  color={"#bf9b30"}
+                  color={"#DEB92C"}
                   fontSize={{
                     xs: "12px",
                     xl: "13px",
@@ -116,7 +116,7 @@ const Footer = () => {
                                       fontSize={{ xs: "11px", xl: "14px", "2xl": "15px" }}
 
                   lineHeight={1.7}
-                  _hover={{ color: "#bf9b30" }}
+                  _hover={{ color: "#DEB92C" }}
                   fontWeight={300}
                 >
                   Fax: 02030062503
@@ -124,7 +124,7 @@ const Footer = () => {
               </HStack>
               <HStack>
                 <MdEmail
-                  color={"#bf9b30"}
+                  color={"#DEB92C"}
                   fontSize={{
                     xs: "12px",
                     xl: "13px",
@@ -137,7 +137,7 @@ const Footer = () => {
 
                   lineHeight={1.7}
                   fontWeight={300}
-                  _hover={{ color: "#bf9b30" }}
+                  _hover={{ color: "#DEB92C" }}
                   cursor={"pointer"}
                 >
                   Email: info@luminelaw.com
@@ -347,7 +347,7 @@ const Footer = () => {
                 fontWeight={400}
                 mt={{ lg: "2" }}
                 ml={{ lg: "-16" }}
-                color={"#bf9b30"}
+                color={"#BF9B27"}
               >
                 Integrity Innovation Impact
               </Text>

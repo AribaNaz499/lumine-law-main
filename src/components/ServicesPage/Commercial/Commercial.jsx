@@ -48,7 +48,7 @@ const ServiceButton = ({ service }) => (
     justifyContent="center"
     alignItems="center"
     backgroundColor="white"
-    _hover={{ backgroundColor: "#000000", color: "#beab7c", transition: "0.3s ease all", fontWeight: "600" }}
+    _hover={{ backgroundColor: "#000000", color: "white", transition: "0.3s ease all", fontWeight: "600" }}
     fontSize={{ base: "10px", xs: "11px", sm: "11px", md: "14px", lg: "15px" }}
     fontWeight={500}
     fontFamily="CeraRoundPro"

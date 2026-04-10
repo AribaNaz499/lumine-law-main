@@ -12,6 +12,7 @@ import AllPrices from "../../NavLinks/AllPrices";
 import AllNewsInsights from "../../NavLinks/AllNewsInsights";
 import BannerImg from "../../../assets/services/main/immigration/Asylum.jpg";
 import { Heading } from "@chakra-ui/react"
+
 const InnovatorFounder = () => {
   const [spouseState, setSpouseState] = useState(false);
   const [eligibilityState, setEligibilityState] = useState(false);
@@ -36,11 +37,8 @@ const InnovatorFounder = () => {
           <title>Lumine Law Innovator Founder Visa Services</title>
         </Helmet>
 
-
-
-
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
-          {/* Banner */}
+          {/* Banner - NO CHANGE */}
           <Box
             width={"100%"}
             height={{
@@ -59,7 +57,7 @@ const InnovatorFounder = () => {
             _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
+              fontSize={{ xs: "17px", lg: "27px", xl: "33px", "2xl": "42px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
@@ -88,8 +86,8 @@ const InnovatorFounder = () => {
                 as={"h2"}
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                color={"#bf9b30"}
-                fontSize={{ xs: "12px", lg: "19px", xl: "25px", "2xl": "35px" }}
+                color={"#DEBA35"}
+                fontSize={{ xs: "11px", lg: "18px", xl: "24px", "2xl": "34px" }}
                 textAlign={"left"}
                 ml={3}
               >
@@ -101,18 +99,18 @@ const InnovatorFounder = () => {
                 mr={2}
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={4}
               >
-                The Innovator Founder Visa is a UK immigration route intended for those who would like to set up and run an innovative business in the UK. This visa is for entrepreneurs with a unique and viable business idea that they intend to develop their business in the UK. The Innovator Founder Visa forms part of the UK’s move to attract talented entrepreneurs and facilitate innovation, job creation, and economic growth.
+                The Innovator Founder Visa is a UK immigration route intended for those who would like to set up and run an innovative business in the UK. This visa is for entrepreneurs with a unique and viable business idea that they intend to develop their business in the UK. The Innovator Founder Visa forms part of the UK's move to attract talented entrepreneurs and facilitate innovation, job creation, and economic growth.
               </Text>
 
               <VStack align="start" spacing={4} mt={5} width="100%">
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"left"}
                   color="black"
                   ml={3}
@@ -124,7 +122,7 @@ const InnovatorFounder = () => {
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"left"}
                   color="black"
                   mt={6}
@@ -133,18 +131,6 @@ const InnovatorFounder = () => {
                   There are several stages of application process to the Innovator Founder Visa. These are;
                 </Text>
 
-                {/* <Text
-                  fontFamily={"CeraRoundPro"}
-                  fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                  textAlign={"left"}
-                  color="black"
-                  ml={3}
-                  mt={-2}
-                >
-                  To apply for Indefinite Leave to Remain, applicants must have met several eligibility criteria, such as:
-                </Text> */}
-
                 <List.Root
                   as="ol"
                   styleType="decimal"
@@ -152,25 +138,23 @@ const InnovatorFounder = () => {
                   mt={-2}
                   spacing={3}
                   fontFamily={"CeraRoundPro"}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   color="black"
                 >
                   <List.Item textAlign="justify">
-                    <Text as="span">Obtaining an endorsement; </Text>  it is through getting an approval endorsement from the body that is accepted as a visa. There is normally the submission of the business plan with details to demonstrate that the business meets the eligibility criteria to innovate and scale up. Once a body approves your idea, then an official letter will be provided.
-
+                    <Text as="span">Obtaining an endorsement; </Text> it is through getting an approval endorsement from the body that is accepted as a visa. There is normally the submission of the business plan with details to demonstrate that the business meets the eligibility criteria to innovate and scale up. Once a body approves your idea, then an official letter will be provided.
                   </List.Item>
                   <List.Item textAlign="justify">
-                    <Text as="span"></Text>Online Application Online application by the applicant following an endorsement in GOV.UK will be filled after getting the endorsement. The online application will require personal details of the applicant with proof of identity and biometric information and letter of endorsement. Further documents are requested to prove the applicant’s proficiency in the English language and financial capability.
-
+                    <Text as="span">Online Application: </Text> Online application by the applicant following an endorsement in GOV.UK will be filled after getting the endorsement. The online application will require personal details of the applicant with proof of identity and biometric information and letter of endorsement. Further documents are requested to prove the applicant's proficiency in the English language and financial capability.
                   </List.Item>
                   <List.Item textAlign="justify">
                     <Text as="span">Biometric Information: </Text> Applicants will be required to provide biometric information, such as fingerprints and a photograph, at a UK Visa and Citizenship Application Services (UKVCAS) center during the application process.
                   </List.Item>
                   <List.Item textAlign="justify">
-                    <Text as="span">Application Fee: </Text> The application fee for the Innovator Founder Visa is usually £1,021 (as of 2025), although this fee may vary depending on the applicant’s circumstances and whether they are applying from within the UK or from overseas.
+                    <Text as="span">Application Fee: </Text> The application fee for the Innovator Founder Visa is usually £1,021 (as of 2025), although this fee may vary depending on the applicant's circumstances and whether they are applying from within the UK or from overseas.
                   </List.Item>
                   <List.Item textAlign="justify">
-                    <Text as="span">Decision:   </Text>The Home Office will look at the application. This involves scrutinizing the endorsing letter, business plan, and supporting documents. An application decision usually .
+                    <Text as="span">Decision: </Text> The Home Office will look at the application. This involves scrutinizing the endorsing letter, business plan, and supporting documents. An application decision usually takes 8 weeks.
                   </List.Item>
                 </List.Root>
               </VStack>
@@ -178,54 +162,29 @@ const InnovatorFounder = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={8}
                 mb={8}
                 ml={3}
               >
                 For personalized assistance with your legal needs, contact us or visit Lumine for expert guidance tailored to your specific situation. Our experienced team is here to help you navigate the complexities with confidence and ease.
-
               </Text>
             </Box>
           </Box>
 
           {/* Dropdown info */}
-          <VStack
-            justifyContent={"space-around"}
-            alignItems={"center"}
-            mb={"50px"}
-          >
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"93%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
+          <VStack justifyContent={"space-around"} alignItems={"center"} mb={"50px"}>
+            
+            {/* Dropdown 1 - What is the Innovator Founder Visa? */}
+            <Box display={"flex"} flexDir={"column"} color={"black"} width={"93%"} justifyContent={"center"} alignItems={"center"}>
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !spouseState && "black" }}
                 transition={"all 0.3s ease"}
@@ -234,91 +193,38 @@ const InnovatorFounder = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   What is the Innovator Founder Visa?
                 </Text>
                 {!spouseState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
               {spouseState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    lineHeight={1.9}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                    ml={3}
-                    mr={3}
-                  >
+                <VStack justifyContent={"center"} alignItems={"flex-start"} gap={{ xs: "20px", md: "30px" }} mb={{ xs: "4px", md: "10px" }} borderTop={"1px solid #adacac"} py={{ xs: "15px", md: "30px" }} width={"100%"}>
+                  <Text textAlign={"justify"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} lineHeight={1.9} fontWeight={400} fontFamily={"CeraRoundPro"} ml={3} mr={3} color={"gray.800"}>
                     The innovator founder visa is now the main visa category for foreign entrepreneurs wishing to establish a business in the UK, effectively replacing the Innovator route and start up visa.
-
                   </Text>
                 </VStack>
               )}
             </Box>
 
-
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"93%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
+            {/* Dropdown 2 - Benefits */}
+            <Box display={"flex"} flexDir={"column"} color={"black"} width={"93%"} justifyContent={"center"} alignItems={"center"}>
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !applyState && "black" }}
                 transition={"all 0.3s ease"}
@@ -327,89 +233,38 @@ const InnovatorFounder = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Benefits
                 </Text>
                 {!applyState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
               {applyState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    mr={3}
-                    mb={4}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
-                    There are many benefits of the innovator founder visa. Firstly, you have permission to live/work in the UK for 3 years, and following this, you can apply for indefinite leave to remain. Secondly, it allows you to bring your spouse and children to the UK
-
+                <VStack justifyContent={"center"} alignItems={"flex-start"} gap={{ xs: "20px", md: "30px" }} mb={{ xs: "4px", md: "10px" }} borderTop={"1px solid #adacac"} py={{ xs: "15px", md: "30px" }} width={"100%"}>
+                  <Text textAlign={"justify"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} mr={3} mb={4} fontWeight={400} fontFamily={"CeraRoundPro"} color={"gray.800"}>
+                    There are many benefits of the innovator founder visa. Firstly, you have permission to live/work in the UK for 3 years, and following this, you can apply for indefinite leave to remain. Secondly, it allows you to bring your spouse and children to the UK.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"93%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
+            {/* Dropdown 3 - Eligibility Requirements */}
+            <Box display={"flex"} flexDir={"column"} color={"black"} width={"93%"} justifyContent={"center"} alignItems={"center"}>
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !eligibilityState && "black" }}
                 transition={"all 0.3s ease"}
@@ -418,127 +273,46 @@ const InnovatorFounder = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Eligibility Requirements
                 </Text>
                 {!eligibilityState ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
               {eligibilityState && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    mr={3}
-                    mb={4}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
+                <VStack justifyContent={"center"} alignItems={"flex-start"} gap={{ xs: "20px", md: "30px" }} mb={{ xs: "4px", md: "10px" }} borderTop={"1px solid #adacac"} py={{ xs: "15px", md: "30px" }} width={"100%"}>
+                  <Text textAlign={"justify"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} mr={3} mb={4} fontWeight={400} fontFamily={"CeraRoundPro"} color={"gray.800"}>
                     You can apply for an Innovator Founder visa through Lumine Solicitors if:
                   </Text>
-                  <List.Root
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    mt={-10}
-                    ml={{lg:"-3" , xs:"1"}}
-                    lineHeight={1.8}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-
-                  >
-                    <List.Item >
-                      you want to run an innovative business in the UK
-
-                    </List.Item>
-                    <List.Item >
-                      you are at least 18 years old
-                    </List.Item>
-                    <List.Item >
-                      your business plan is endorsed by an endorsing body
-                    </List.Item>
-
-                    <List.Item >
-                      you meet the English language requirements
-                    </List.Item>
-                    <List.Item >
-                      you meet the financial requirements and have enough savings for yourself whilst in the UK
-                    </List.Item>
-                    <List.Item >
-                      you meet other eligibility requirements
-                    </List.Item>
+                  <List.Root textAlign={"justify"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} mt={-10} ml={{ lg: "-3", xs: "1" }} lineHeight={1.8} fontWeight={400} fontFamily={"CeraRoundPro"} color={"gray.800"}>
+                    <List.Item>you want to run an innovative business in the UK</List.Item>
+                    <List.Item>you are at least 18 years old</List.Item>
+                    <List.Item>your business plan is endorsed by an endorsing body</List.Item>
+                    <List.Item>you meet the English language requirements</List.Item>
+                    <List.Item>you meet the financial requirements and have enough savings for yourself whilst in the UK</List.Item>
+                    <List.Item>you meet other eligibility requirements</List.Item>
                   </List.Root>
                 </VStack>
               )}
             </Box>
 
-            {/* Judicial Review */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={"93%"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              {/* Initial Button */}
+            {/* Dropdown 4 - How can Lumine Solicitors help? */}
+            <Box display={"flex"} flexDir={"column"} color={"black"} width={"93%"} justifyContent={"center"} alignItems={"center"}>
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
                 justifyContent={"space-between"}
-                px={{
-                  xs: "8px",
-                  sm: "10px",
-                  md: "12px",
-                  lg: "13px",
-                  xl: "14px",
-                  "2xl": "15px",
-                }}
+                px={{ xs: "8px", sm: "10px", md: "12px", lg: "13px", xl: "14px", "2xl": "15px" }}
                 alignItems={"center"}
-                py={{
-                  xs: "4px",
-                  sm: "6px",
-                  md: "7px",
-                  lg: "8px",
-                  xl: "9px",
-                  "2xl": "10px",
-                }}
+                py={{ xs: "4px", sm: "6px", md: "7px", lg: "8px", xl: "9px", "2xl": "10px" }}
                 cursor={"pointer"}
                 _hover={{ backgroundColor: !review && "black" }}
                 transition={"all 0.3s ease"}
@@ -547,108 +321,43 @@ const InnovatorFounder = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
-                  }}
-                  fontWeight={500}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {!review ? (
-                  <GoPlus color={"#bf9b30"} size={"1.8em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"1.8em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
               {review && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    mr={4}
-                    ml={3}
-                    mb={4}
-                    fontWeight={400}
-                    lineHeight={1.9}
-                    fontFamily={"CeraRoundPro"}
-                  >
-
-                    Lumine Solicitors will get to know you and your business goals to advise you on the best way forward. We will support you from the beginning to the end of your application and ensure difficult evidential requirements are met. As well as this, we will also assess if you need to apply for an innovator founder visa or if another visa would be more suitable
-
-
-
+                <VStack justifyContent={"center"} alignItems={"flex-start"} gap={{ xs: "20px", md: "30px" }} mb={{ xs: "4px", md: "10px" }} borderTop={"1px solid #adacac"} py={{ xs: "15px", md: "30px" }} width={"100%"}>
+                  <Text textAlign={"justify"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} mr={4} ml={3} mb={4} fontWeight={400} lineHeight={1.9} fontFamily={"CeraRoundPro"} color={"gray.800"}>
+                    Lumine Solicitors will get to know you and your business goals to advise you on the best way forward. We will support you from the beginning to the end of your application and ensure difficult evidential requirements are met. As well as this, we will also assess if you need to apply for an innovator founder visa or if another visa would be more suitable.
                   </Text>
-
-                  <Text
-                    textAlign={"justify"}
-                    fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
-                    }}
-                    mr={4}
-                    ml={3}
-                    mt={-7}
-                    fontWeight={400}
-                    lineHeight={1.9}
-                    fontFamily={"CeraRoundPro"}
-                  >
+                  <Text textAlign={"justify"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} mr={4} ml={3} mt={-7} fontWeight={400} lineHeight={1.9} fontFamily={"CeraRoundPro"} color={"gray.800"}>
                     For all immigration matters, Please do not hesitate to get in touch with Lumine solicitors
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link
-                        to={"/contact"}
-                        style={{ color: "#e91e63" }}
-                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
-                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
-                      >
+                      <Link to={"/contact"} style={{ color: "#e91e63" }} onMouseEnter={(e) => (e.target.style.color = "#091838")} onMouseLeave={(e) => (e.target.style.color = "#e91e63")}>
                         Contact Us HERE
                       </Link>{" "}
                     </strong>
                   </Text>
-
                 </VStack>
               )}
             </Box>
-
-
           </VStack>
 
           {/* Other Services */}
           <AllServiceLinks />
-
-          {/* Prices */}
           <AllPrices />
-
-          {/* News and Insights */}
           <AllNewsInsights />
-
           <Footer />
         </Box>
       </Container>

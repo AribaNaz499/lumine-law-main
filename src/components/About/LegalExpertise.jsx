@@ -114,7 +114,7 @@ const services = [
                                 height="100%"
                             >
                                 <Box
-                                    backgroundColor="rgba(222, 185, 44, 0.25)"
+                                    backgroundColor="#392F0C"
                                     // Padding ko optimize kiya Nest Hub Max ke liye
                                     p={{ base: "12px", md: "15px", lg: "20px" }} 
                                     textAlign="left"

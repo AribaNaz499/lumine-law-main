@@ -94,7 +94,7 @@ const NewsArticle2 = () => {
           cursor="pointer"
           display="flex"
           flexDir="column"
-          border="1px solid #242525"
+          border="1px solid black"
           borderRadius="12px"
           overflow="hidden"
           bg="white"
@@ -109,11 +109,11 @@ const NewsArticle2 = () => {
             objectFit="cover" 
           />
           <Box p="16px" display="flex" flexDir="column" flex="1">
-            <Text fontSize="12px" color="gray.500" mb="8px">{article.date}</Text>
-            <Text fontSize="16px" fontWeight="700" color="black" mb="8px" noOfLines={2}>
+            <Text fontSize="12px" color="black" textAlign={"left"} mb="8px">{article.date}</Text>
+            <Text fontSize="16px" fontWeight="700" color="black" textAlign={"left"} mb="8px" noOfLines={2}>
               {article.title}
             </Text>
-            <Text fontSize="14px" color="gray.600" noOfLines={3}>
+            <Text fontSize="14px" color="black" textAlign={"left"} noOfLines={3}>
               {article.content}
             </Text>
           </Box>

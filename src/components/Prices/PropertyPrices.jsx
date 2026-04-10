@@ -111,7 +111,7 @@ const PropertyPrices = () => {
                 font={"bold"}
                 fontSize={{ base: "16px", sm: "18px", md: "20px", lg: "21px", xl: "23px", "2xl": "25px" }}
                 textAlign={"left"}
-                color={"#bf9b30"}
+                color={"#BF9B30"}
               >
                 Purchase of residential property freehold and leasehold
               </Text>

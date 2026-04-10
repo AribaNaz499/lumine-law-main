@@ -60,8 +60,9 @@ const HumanRights = () => {
             alignItems={"center"}
             _loading={"eager"}
           >
+            {/* Banner heading - UNCHANGED */}
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
+              fontSize={{ xs: "18px", lg: "27px", xl: "32px", "2xl": "42px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
@@ -86,12 +87,13 @@ const HumanRights = () => {
               mb={"5%"}
               my={{ xs: "5%", md: "2.5%" }}
             >
+              {/* Section heading - UNCHANGED */}
               <Heading
                 as={"h2"}
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 color={"#bf9b30"}
-                fontSize={{ xs: "12px", lg: "19px", xl: "25px", "2xl": "35px" }}
+                fontSize={{ xs: "12px", lg: "15px", xl: "21px", "2xl": "31px" }}
                 textAlign={"left"}
                 ml={3}
               >
@@ -103,18 +105,18 @@ const HumanRights = () => {
                 mr={2}
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={5}
               >
-                Private life and human rights-based applications refer to immigration applications made on the basis of the applicant’s right to a private life under the European Convention on Human Rights (ECHR) and the Human Rights Act 1998. These applications are often made by individuals who are facing potential deportation, refusal of visa applications, or other adverse immigration decisions but argue that their right to private and family life would be severely impacted by such actions.
+                Private life and human rights-based applications refer to immigration applications made on the basis of the applicant's right to a private life under the European Convention on Human Rights (ECHR) and the Human Rights Act 1998. These applications are often made by individuals who are facing potential deportation, refusal of visa applications, or other adverse immigration decisions but argue that their right to private and family life would be severely impacted by such actions.
               </Text>
 
               <VStack align="start" spacing={4} mt={5} width="100%">
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"left"}
                   color="black"
                   ml={3}
@@ -126,7 +128,7 @@ const HumanRights = () => {
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"left"}
                   color="black"
                   mt={8}
@@ -139,7 +141,7 @@ const HumanRights = () => {
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"left"}
                   color="black"
                   ml={3}
@@ -156,7 +158,7 @@ const HumanRights = () => {
                   mt={-2}
                   spacing={3}
                   fontFamily={"CeraRoundPro"}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   color="black"
                 >
                   <List.Item textAlign="justify">
@@ -173,7 +175,7 @@ const HumanRights = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={8}
                 mb={8}
@@ -230,14 +232,14 @@ const HumanRights = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
@@ -263,14 +265,15 @@ const HumanRights = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
-                    lineHeight={1.9}
+                    lineHeight={1.7}
+                    color={"gray.800"}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                     ml={3}
@@ -284,17 +287,19 @@ const HumanRights = () => {
                     mt={{ lg: "-7", xs: "-4" }}
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
-                    lineHeight={1.9}
+                    lineHeight={1.7}
                     mb={2}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
+                                        color={"gray.800"}
+
                     ml={3}
                     mr={3}
                   >
@@ -305,21 +310,23 @@ const HumanRights = () => {
 
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
-                    lineHeight={1.9}
+                    lineHeight={1.7}
+                                        color={"gray.800"}
+
                     mb={2}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                     ml={3}
                     mr={3}
                   >
-                    <strong> ‘No one shall be subjected to torture or to inhuman or degrading treatment or punishment.’</strong>
+                    <strong> 'No one shall be subjected to torture or to inhuman or degrading treatment or punishment.'</strong>
                   </Text>
 
                   <Text
@@ -327,14 +334,16 @@ const HumanRights = () => {
 
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
-                    lineHeight={1.9}
+                    lineHeight={1.7}
+                                        color={"gray.800"}
+
                     mb={2}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -349,14 +358,16 @@ const HumanRights = () => {
 
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
-                    lineHeight={1.9}
+                    lineHeight={1.7}
+                                        color={"gray.800"}
+
                     mb={2}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
@@ -370,54 +381,58 @@ const HumanRights = () => {
 
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
-                    lineHeight={1.9}
+                    lineHeight={1.7}
+                                        color={"gray.800"}
+
                     mb={2}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                     ml={3}
                     mr={3}
                   >
-                    <strong>8 (1) ‘Everyone has the right to respect for his private and family life, his home, and his correspondence.’</strong>
+                    <strong>8 (1) 'Everyone has the right to respect for his private and family life, his home, and his correspondence.'</strong>
                   </Text>
                   <Text
                     mt={{ lg: "-10", xs: "-6" }}
 
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
-                    lineHeight={1.9}
+                    lineHeight={1.7}
+                                        color={"gray.800"}
+
                     mb={2}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                     ml={3}
                     mr={3}
                   >
-                    <strong>8 (2) ‘There shall be no interference by a public authority with the exercise of this right except such as is in accordance with the law and is necessary in a democratic society in the interests of national security, public safety, or the economic well-being of the country, for the prevention of disorder or crime, for the protection of health or morals, or for the protection of the rights and freedoms of others.’</strong>
+                    <strong>8 (2) 'There shall be no interference by a public authority with the exercise of this right except such as is in accordance with the law and is necessary in a democratic society in the interests of national security, public safety, or the economic well-being of the country, for the prevention of disorder or crime, for the protection of health or morals, or for the protection of the rights and freedoms of others.'</strong>
                   </Text>
                   <Text
                     mt={{ lg: "-9", xs: "-6" }}
 
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     lineHeight={1.9}
                     fontWeight={400}
@@ -471,14 +486,14 @@ const HumanRights = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
@@ -504,12 +519,12 @@ const HumanRights = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     mr={3}
                     mb={4}
@@ -522,12 +537,12 @@ const HumanRights = () => {
                   <List.Root
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     mt={-10}
                     ml={{ lg: "-3", xs: "1" }}
@@ -554,15 +569,16 @@ const HumanRights = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     mr={3}
                     mb={4}
+                    mt={{lg:"-6"}}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -615,14 +631,14 @@ const HumanRights = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
@@ -648,12 +664,12 @@ const HumanRights = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     mr={4}
                     ml={3}
@@ -670,12 +686,12 @@ const HumanRights = () => {
                   <List.Root
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     mt={-10}
                     ml={{ lg: "-3", xs: "1" }}
@@ -699,12 +715,12 @@ const HumanRights = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
                     mr={4}
                     ml={3}

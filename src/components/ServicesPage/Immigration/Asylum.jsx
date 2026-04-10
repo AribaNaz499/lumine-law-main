@@ -56,7 +56,7 @@ const Asylum = () => {
             alignItems={"center"}
           >
             <Text
-              fontSize={{ xs: "22px", lg: "32px", xl: "38px", "2xl": "48px" }}
+              fontSize={{ xs: "22px", lg: "28px", xl: "34px", "2xl": "44px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
@@ -86,7 +86,7 @@ const Asylum = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={600}
                 color={"#bf9b30"}
-                fontSize={{ xs: "14px", lg: "26px", xl: "32px", "2xl": "42px" }}
+                fontSize={{ xs: "14px", lg: "23px", xl: "29px", "2xl": "39px" }}
                 textAlign={"left"}
                 ml={3}
               >
@@ -97,9 +97,9 @@ const Asylum = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={300}
                 color={"black"}
-                lineHeight={"1.5"}
+                lineHeight={"1.4"}
                 letterSpacing={"0.8"}
-                fontSize={{ xs: "9px", lg: "11px", xl: "17px", "2xl": "19px" }}
+                fontSize={{ xs: "9px", lg: "9px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 ml={3}
                 mt={8}
@@ -112,7 +112,7 @@ const Asylum = () => {
                 color={"black"}
                 lineHeight={"1.5"}
                 letterSpacing={"0.8"}
-                fontSize={{ xs: "9px", lg: "11px", xl: "17px", "2xl": "19px" }}
+                fontSize={{ xs: "9px", lg: "9px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 ml={3}
                 mt={7}
@@ -158,17 +158,17 @@ const Asylum = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{ xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "18px", "2xl": "20px" }}
-                  fontWeight={500}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   What is Asylum?
                 </Text>
                 {activeIndex !== 0 ? (
-                  <GoPlus color={"#bf9b30"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} />
                 )}
               </HStack>
 
@@ -185,8 +185,10 @@ const Asylum = () => {
                   <Text
                     textAlign={"left"}
                     mb={6}
-                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ xs: "10px", sm: "10px", md: "12px", lg: "12px", xl: "14px", "2xl": "16px" }}
                     fontWeight={400}
+                    lineHeight={1.9}
+                    color={"gray.800"}
                     fontFamily={"CeraRoundPro"}
                   >
                     If you are unable to live safely in any part of your own
@@ -221,17 +223,17 @@ const Asylum = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{ xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "18px", "2xl": "20px" }}
-                  fontWeight={500}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Eligibility Requirements
                 </Text>
                 {activeIndex !== 1 ? (
-                  <GoPlus color={"#bf9b30"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} />
                 )}
               </HStack>
 
@@ -247,10 +249,10 @@ const Asylum = () => {
                 >
                   <Text
                     textAlign={"left"}
-                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                     fontWeight={300}
                     fontFamily={"CeraRoundPro"}
-                    mb={"-5"}
+                    mb={"-7"}
                   >
                     To receive refugee status, certain requirements must be
                     fulfilled. The fear of persecution must be because of:
@@ -259,7 +261,7 @@ const Asylum = () => {
                   <List.Root
                     textAlign={"left"}
                     lineHeight={1.8}
-                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                     fontWeight={300}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -275,7 +277,7 @@ const Asylum = () => {
                   <Text
                     textAlign={"left"}
                     ml={1}
-                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                     fontWeight={300}
                     mt={"-6"}
                     fontFamily={"CeraRoundPro"}
@@ -311,17 +313,17 @@ const Asylum = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{ xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "18px", "2xl": "20px" }}
-                  fontWeight={500}
+                fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Screening
                 </Text>
                 {activeIndex !== 2 ? (
-                  <GoPlus color={"#bf9b30"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} />
                 )}
               </HStack>
 
@@ -337,7 +339,7 @@ const Asylum = () => {
                 >
                   <Text
                     textAlign={"left"}
-                    fontSize={{ xs: "12px", sm: "13px", md: "14px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                    fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
                     fontWeight={300}
                     lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}
@@ -376,17 +378,17 @@ const Asylum = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{ xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "18px", "2xl": "20px" }}
-                  fontWeight={500}
+                  fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   After Screening
                 </Text>
                 {activeIndex !== 3 ? (
-                  <GoPlus color={"#bf9b30"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} />
                 )}
               </HStack>
 
@@ -402,8 +404,8 @@ const Asylum = () => {
                 >
                   <Text
                     textAlign={"left"}
-                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                    fontWeight={400}
+                    fontSize={{ xs: "10px", sm: "10px", md: "12px", lg: "12px", xl: "14px", "2xl": "16px" }}
+                    fontWeight={300}
                     fontFamily={"CeraRoundPro"}
                   >
                     If your case is considered by the home office, an asylum
@@ -413,10 +415,10 @@ const Asylum = () => {
 
                   <Text
                     textAlign={"left"}
-                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                    fontWeight={400}
+                    fontSize={{ xs: "10px", sm: "10px", md: "12px", lg: "12px", xl: "14px", "2xl": "16px" }}
+                    fontWeight={300}
                     fontFamily={"CeraRoundPro"}
-                    mt={"-5"}
+                    mt={"-7"}
                   >
                     Following this, you are assigned a caseworker, and the
                     reasoning behind your asylum claim is discussed in another
@@ -451,17 +453,17 @@ const Asylum = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{ xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "18px", "2xl": "20px" }}
-                  fontWeight={500}
+                 fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   How long does it take to reach a decision?
                 </Text>
                 {activeIndex !== 4 ? (
-                  <GoPlus color={"#bf9b30"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} />
                 )}
               </HStack>
 
@@ -477,10 +479,10 @@ const Asylum = () => {
                 >
                   <Text
                     textAlign={"left"}
-                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ xs: "10px", sm: "10px", md: "12px", lg: "12px", xl: "14px", "2xl": "16px" }}
                     fontWeight={300}
                     fontFamily={"CeraRoundPro"}
-                    lineHeight={1.9}
+                    lineHeight={1.7}
                   >
                     The usual time it takes for a decision to be made by the
                     Home Office is around 6 months. However, more complex cases
@@ -515,17 +517,17 @@ const Asylum = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{ xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "18px", "2xl": "20px" }}
-                  fontWeight={500}
+                 fontSize={{ xs: "13px", sm: "13px", md: "15px", lg: "15px", xl: "17px", "2xl": "19px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {activeIndex !== 5 ? (
-                  <GoPlus color={"#bf9b30"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.6em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.6em"} />
                 )}
               </HStack>
 
@@ -541,7 +543,7 @@ const Asylum = () => {
                 >
                   <Text
                     textAlign={"left"}
-                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ xs: "10px", sm: "10px", md: "12px", lg: "12px", xl: "14px", "2xl": "16px" }}
                     fontWeight={400}
                     lineHeight={1.9}
                     fontFamily={"CeraRoundPro"}
@@ -559,7 +561,7 @@ const Asylum = () => {
 
                   <Text
                     textAlign={"left"}
-                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                    fontSize={{ xs: "10px", sm: "10px", md: "12px", lg: "12px", xl: "14px", "2xl": "16px" }}
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                     mt={"-6"}

@@ -1,27 +1,29 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { 
   Box, Input, Button, Text, Container, VStack, 
   Stack, Heading, Flex
 } from '@chakra-ui/react';
-import ReactQuill, { Quill } from 'react-quill'; // Quill ko bhi import kiya
+import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { supabase } from '../../config/supabaseClient';
 import { FiUploadCloud } from 'react-icons/fi';
+import { useAuth } from '../../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
-// Quill ke toolbar options define karein
+// Quill toolbar options
 const modules = {
   toolbar: [
     [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
     [{ 'font': [] }],
-    ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
-    [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
-    [{ 'script': 'sub' }, { 'script': 'super' }],      // superscript/subscript
+    ['bold', 'italic', 'underline', 'strike'],
+    [{ 'color': [] }, { 'background': [] }],
+    [{ 'script': 'sub' }, { 'script': 'super' }],
     [{ 'list': 'ordered' }, { 'list': 'bullet' }],
-    [{ 'indent': '-1' }, { 'indent': '+1' }],          // outdent/indent
-    [{ 'direction': 'rtl' }],                         // text direction
+    [{ 'indent': '-1' }, { 'indent': '+1' }],
+    [{ 'direction': 'rtl' }],
     [{ 'align': [] }],
     ['link', 'image', 'video'],
-    ['clean']                                         // remove formatting button
+    ['clean']
   ],
 };
 
@@ -43,16 +45,37 @@ const ArticleEditor = () => {
   const [message, setMessage] = useState({ text: '', type: '' });
   
   const fileInputRef = useRef(null);
+  const { user, signOut } = useAuth();
+  const navigate = useNavigate();
 
+  // Check authentication on page load
+  useEffect(() => {
+    const checkAuth = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) {
+        navigate('/admin/login');
+      }
+    };
+    checkAuth();
+  }, [navigate]);
+
+  // Generate slug from title
   const generateSlug = (text) => {
     return text.toLowerCase().trim()
-      .replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '');
+      .replace(/[^\w\s-]/g, '')
+      .replace(/[\s_-]+/g, '-')
+      .replace(/^-+|-+$/g, '');
   };
 
   const handleTitleChange = (e) => {
     const newTitle = e.target.value;
     setTitle(newTitle);
     setSlug(generateSlug(newTitle));
+  };
+
+  // Manual slug edit karne ke liye
+  const handleSlugChange = (e) => {
+    setSlug(e.target.value);
   };
 
   const handleImageUpload = async (event) => {
@@ -77,38 +100,64 @@ const ArticleEditor = () => {
       return;
     }
     setLoading(true);
+    
     const { error } = await supabase.from('articles').insert([{ 
       title, 
-      slug, 
+      slug,
       category,
       content, 
       image_url: imageUrl, 
+      user_id: user?.id,
       date: new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }), 
       published: true 
     }]);
 
-    if (error) setMessage({ text: 'Error: ' + error.message, type: 'error' });
-    else {
+    if (error) {
+      setMessage({ text: 'Error: ' + error.message, type: 'error' });
+    } else {
       setMessage({ text: '✅ Published Successfully!', type: 'success' });
-      setTitle(''); setSlug(''); setContent(''); setImageUrl(''); setCategory('');
+      setTitle(''); 
+      setSlug(''); 
+      setContent(''); 
+      setImageUrl(''); 
+      setCategory('');
     }
     setLoading(false);
   };
+
+  const handleLogout = async () => {
+    await signOut();
+    navigate('/admin/login');
+  };
+
+  if (!user) {
+    return null;
+  }
 
   return (
     <Box bg="#f8fafc" minH="100vh" py={12} color="black">
       <Container maxW="4xl">
         <Flex justify="space-between" align="center" mb={8}>
-          <Box>
+          <Box mt={"5"}>
             <Heading size="xl" color="gray.800">Create New Post</Heading>
-            <Text color="gray.500">Professional Rich Text Editor</Text>
           </Box>
-          <Button 
-            bg="blue.600" color="white" _hover={{ bg: "blue.700" }}
-            size="lg" onClick={handlePublish} isLoading={loading}
-          >
-            Publish Post
-          </Button>
+          <Flex gap={3}>
+            <Button  
+              mt={"5"}
+              variant="outline" 
+              color={"blue.600"}
+              onClick={handleLogout}
+            >
+              Logout
+            </Button>
+            <Button 
+              mt={"5"}
+              bg="blue.600" color="white" _hover={{ bg: "blue.700" }}
+              size="lg" onClick={handlePublish} isLoading={loading}
+            >
+              Publish Post
+            </Button>
+          </Flex>
         </Flex>
 
         <Stack spacing={6}>
@@ -121,14 +170,32 @@ const ArticleEditor = () => {
           <Box bg="white" p={8} borderRadius="2xl" boxShadow="md" border="1px solid #e2e8f0">
             <VStack spacing={6} align="stretch">
               
+              {/* Post Title Field */}
               <Box>
                 <Text fontWeight="bold" mb={2} color="gray.700">Post Title</Text>
                 <Input 
-                  placeholder="Enter title..." value={title} onChange={handleTitleChange} 
+                  placeholder="Enter title..." 
+                  value={title} 
+                  onChange={handleTitleChange} 
                   bg="white" color="black" borderColor="gray.300"
                 />
               </Box>
 
+             
+              <Box>
+                <Text fontWeight="bold" mb={2} color="gray.700"> Slug (URL)</Text>
+                <Input 
+                  placeholder="enter-post-slug" 
+                  value={slug} 
+                  onChange={handleSlugChange}
+                  bg="white" color="blue.600" borderColor="gray.300"
+                />
+                <Text fontSize="xs" color="gray.500" mt={1}>
+                  Preview: /news/articles/{slug || 'your-post-slug'}
+                </Text>
+              </Box>
+
+              {/* Category Field */}
               <Box>
                 <Text fontWeight="bold" mb={2} color="gray.700">Select Category</Text>
                 <select 
@@ -146,6 +213,7 @@ const ArticleEditor = () => {
                 </select>
               </Box>
 
+              {/* Cover Image Field */}
               <Box>
                 <Text fontWeight="bold" mb={2} color="gray.700">Cover Image</Text>
                 <Box 
@@ -158,6 +226,7 @@ const ArticleEditor = () => {
                 </Box>
               </Box>
 
+              {/* Content Editor */}
               <Box>
                 <Text fontWeight="bold" mb={3} color="gray.700">Content Editor</Text>
                 <style>
@@ -167,10 +236,8 @@ const ArticleEditor = () => {
                       background-color: white !important; 
                       min-height: 400px; 
                       font-size: 16px;
-                      line-height: 1.6; /* Default Line Height */
+                      line-height: 1.6;
                     }
-                    /* Line height editor controls are limited in Quill, 
-                       so we set a good default here */
                     .quill-wrapper .ql-editor p { margin-bottom: 15px; }
                     .quill-wrapper .ql-container { border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; }
                     .quill-wrapper .ql-toolbar { 

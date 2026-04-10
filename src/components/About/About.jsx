@@ -64,7 +64,7 @@ const About = () => {
               <Text color="white" fontSize={{ base: "14px", lg: "18px" }}>
                 <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>Home</a>
               </Text>
-              <Text fontSize={"20px"} color={"#f0a028"} lineHeight={"1"}>→</Text>
+              <Text fontSize={"22px"} fontWeight={"900"} color={"#DEB92C"} lineHeight={"1"}>→</Text>
               <Text color="white" fontSize={{ base: "14px", lg: "18px" }} fontWeight={400}>
                 About Us
               </Text>
@@ -87,33 +87,33 @@ const About = () => {
             >
               {/* Box 1 */}
               <Flex width={{ base: "100%", md: "31%" }} backgroundColor="white" >
-                <Box width="80px" bg="#ebc51de7" display="flex" justifyContent="center" alignItems="center" py="30px">
+                <Box width="80px" bg="#DEB92C" display="flex" justifyContent="center" alignItems="center" py="30px">
                   <Text color="white" fontSize="30px">⚖️</Text>
                 </Box>
                 <Box p={4} display="flex" flexDirection="column" justifyContent="center">
-                  <Text marginLeft={{ base: "0px", md: "-78px" }} fontSize="20px" color="#ebc51de7">Confidential</Text>
+                  <Text marginLeft={{ base: "0px", md: "-78px" }} fontSize="20px" color="#DEB92C">Confidential</Text>
                   <Text marginLeft={{ base: "0px", md: "-17px" }} color={"black"} fontWeight="400" fontSize={{ base: "20px", lg: "26px" }}>Client Support</Text>
                 </Box>
               </Flex>
 
               {/* Box 2 */}
               <Flex width={{ base: "100%", md: "31%" }} backgroundColor="white">
-                <Box width="80px" bg="#ebc51de7" display="flex" justifyContent="center" alignItems="center" py="30px">
+                <Box width="80px" bg="#DEB92C" display="flex" justifyContent="center" alignItems="center" py="30px">
                   <Text color="white" fontSize="30px">🤝</Text>
                 </Box>
                 <Box p={4} display="flex" flexDirection="column" justifyContent="center">
-                  <Text marginLeft={{ base: "0px", md: "-100px" }} fontSize="20px" color="#ebc51de7" >Trusted</Text>
+                  <Text marginLeft={{ base: "0px", md: "-100px" }} fontSize="20px" color="#DEB92C" >Trusted</Text>
                   <Text marginLeft={{ base: "0px", md: "-17px" }} color={"black"} fontWeight="400" fontSize={{ base: "20px", lg: "26px" }}>Legal Advice</Text>
                 </Box>
               </Flex>
 
               {/* Box 3 */}
               <Flex width={{ base: "100%", md: "31%" }} backgroundColor="white">
-                <Box width="80px" bg="#ebc51de7" display="flex" justifyContent="center" alignItems="center" py="30px">
+                <Box width="80px" bg="#DEB92C" display="flex" justifyContent="center" alignItems="center" py="30px">
                   <Text color="white" fontSize="30px">🛡️</Text>
                 </Box>
                 <Box p={4} display="flex" flexDirection="column" justifyContent="center">
-                  <Text marginLeft={{ base: "0px", md: "-80px" }} fontSize="20px" color="#ebc51de7">Protect</Text>
+                  <Text marginLeft={{ base: "0px", md: "-80px" }} fontSize="20px" color="#DEB92C">Protect</Text>
                   <Text marginLeft={{ base: "0px", md: "-17px" }} color={"black"} fontWeight="400" fontSize={{ base: "20px", lg: "26px" }}>Your Rights</Text>
                 </Box>
               </Flex>
@@ -139,7 +139,7 @@ const About = () => {
                 fontWeight={400}
                 fontSize={{ base: "16px", md: "18px", lg: "20px", "2xl": "22px" }}
                 marginTop={{ base: "0px", md: "-45px" }}
-                color={"#deb92c"}
+                color={"#DEB92C"}
                 textAlign={"justify"}
                 lineHeight="1.8"
               >
@@ -148,7 +148,7 @@ const About = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                color={"#deb92c"}
+                color={"#DEB92C"}
                 marginTop={"8px"}
                 fontSize={{ base: "22px", md: "24px", lg: "26px", "2xl": "28px" }}
                 textAlign={"justify"}
@@ -160,10 +160,10 @@ const About = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 marginTop={"16px"}
-                fontSize={{ base: "13px", md: "14px", lg: "16px", "2xl": "18px" }}
+                fontSize={{ base: "12px", md: "13px", lg: "15px", "2xl": "17px" }}
                 textAlign={"justify"}
                 color={"#7a7a7a"}
-                lineHeight="1.6"
+                lineHeight="1.5"
               >
                 Lumine Solicitors is an SRA regulated firm of solicitors. We offer the dedicated support and advice you require from the very outset of your matter. We provide
                 a remarkably personal and approachable service, whatever your legal service requirements may be.We are well known for the calibre of advice we provide
@@ -197,7 +197,7 @@ const About = () => {
                 as={Link}
                 to="/contact"
                 display="inline-flex" 
-                backgroundColor="#deb92c"
+                backgroundColor="#DEB92C"
                 // Desktop pe wahi style, mobile pe padding di hai taaki cut na ho
                 padding={{ base: "12px 25px", md: "12px 0px" }} 
                 justifyContent="center"
@@ -214,6 +214,7 @@ const About = () => {
                   display="flex"
                   color="white"
                   height="auto"
+                  py={{lg:"-8px"}}
                   minW="auto"
                   fontSize={{ base: "16px", md: "18px", lg: "20px" }}
                   fontWeight={400}

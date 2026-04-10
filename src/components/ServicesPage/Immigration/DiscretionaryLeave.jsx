@@ -60,7 +60,7 @@ const DiscretionaryLeave = () => {
             _loading={"eager"}
           >
             <Text
-              fontSize={{ xs: "20px", lg: "30px", xl: "36px", "2xl": "45px" }}
+              fontSize={{ xs: "17px", lg: "27px", xl: "33px", "2xl": "41px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
@@ -92,7 +92,7 @@ const DiscretionaryLeave = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
                 color={"#bf9b30"}
-                fontSize={{ xs: "10px", lg: "22px", xl: "28px", "2xl": "38px" }}
+                fontSize={{ xs: "10px", lg: "15px", xl: "22px", "2xl": "32px" }}
                 textAlign={"left"}
 
               >
@@ -102,7 +102,7 @@ const DiscretionaryLeave = () => {
               <Text
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={5}
                 mr={2}
@@ -114,7 +114,7 @@ const DiscretionaryLeave = () => {
                 <Text
                   fontFamily={"CeraRoundPro"}
                   fontWeight={400}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   textAlign={"left"}
                   color="black"
                 >
@@ -127,7 +127,7 @@ const DiscretionaryLeave = () => {
                   ml={5}
                   spacing={3}
                   fontFamily={"CeraRoundPro"}
-                  fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                  fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                   color="black"
                 >
                   <List.Item textAlign="justify">
@@ -135,7 +135,7 @@ const DiscretionaryLeave = () => {
                   </List.Item>
 
                   <List.Item textAlign="justify">
-                    <Text as="span" >Compassionate Grounds:</Text> In other cases, Discretionary Leave can be awarded on compassionate grounds, including that one has members of the family in the UK or any other personal reasons to warrant an exemption. The grounds may be related to the applicant’s health, well-being, or remaining in the UK for other current legal or humanitarian matters.
+                    <Text as="span" >Compassionate Grounds:</Text> In other cases, Discretionary Leave can be awarded on compassionate grounds, including that one has members of the family in the UK or any other personal reasons to warrant an exemption. The grounds may be related to the applicant's health, well-being, or remaining in the UK for other current legal or humanitarian matters.
                   </List.Item>
 
                   <List.Item textAlign="justify">
@@ -151,7 +151,7 @@ const DiscretionaryLeave = () => {
                 mb={8}
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 mt={5}
 
@@ -170,7 +170,7 @@ const DiscretionaryLeave = () => {
             alignItems={"center"}
             mb={"50px"}
           >
-            {/* What is Administrative Reviews, Appeals, and Judicial Reviews */}
+            {/* What is Discretionary Leave */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -210,14 +210,14 @@ const DiscretionaryLeave = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
@@ -243,13 +243,14 @@ const DiscretionaryLeave = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     lineHeight={1.9}
                     mb={2}
                     fontWeight={400}
@@ -257,14 +258,14 @@ const DiscretionaryLeave = () => {
                     ml={3}
                     mr={3}
                   >
-                    Discretionary leave is a way in which the Home Office can grant a period of leave to migrants outside of the UK’s Immigration Rules. This is in exceptional and compassionate circumstances. This route is considered if applying under the asylum, humanitarian protection, family, or private life routes is not possible. However, since the UK offers other immigration routes within the Rules, the Home Office is not obliged to grant discretionary leave
+                    Discretionary leave is a way in which the Home Office can grant a period of leave to migrants outside of the UK's Immigration Rules. This is in exceptional and compassionate circumstances. This route is considered if applying under the asylum, humanitarian protection, family, or private life routes is not possible. However, since the UK offers other immigration routes within the Rules, the Home Office is not obliged to grant discretionary leave
 
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* Administrative Review */}
+            {/* Benefits */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -304,14 +305,14 @@ const DiscretionaryLeave = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
@@ -337,13 +338,14 @@ const DiscretionaryLeave = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mr={3}
                     mb={4}
                     fontWeight={400}
@@ -356,13 +358,14 @@ const DiscretionaryLeave = () => {
                   <List.Root
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mt={-9}
                     lineHeight={1.8}
                     fontWeight={400}
@@ -388,7 +391,7 @@ const DiscretionaryLeave = () => {
               )}
             </Box>
 
-            {/* Successful Administrative Review */}
+            {/* Eligibility Requirements */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -428,14 +431,14 @@ const DiscretionaryLeave = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
@@ -461,13 +464,14 @@ const DiscretionaryLeave = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     ml={3}
                     mr={3}
                     fontWeight={400}
@@ -480,13 +484,14 @@ const DiscretionaryLeave = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     ml={3}
                     mr={3}
                     fontWeight={400}
@@ -501,13 +506,14 @@ const DiscretionaryLeave = () => {
                   <List.Root
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mt={-6}
                     lineHeight={1.8}
                     fontWeight={400}
@@ -535,13 +541,14 @@ const DiscretionaryLeave = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     ml={3}
                     mt={-6}
                     mr={3}
@@ -558,7 +565,7 @@ const DiscretionaryLeave = () => {
             </Box>
 
 
-            {/* Judicial Review */}
+            {/* If Your Application is Successful */}
             <Box
               display={"flex"}
               flexDir={"column"}
@@ -598,14 +605,14 @@ const DiscretionaryLeave = () => {
                 <Text
                   textAlign={"left"}
                   fontSize={{
-                    xs: "13px",
-                    sm: "13px",
-                    md: "15px",
-                    lg: "15px",
-                    xl: "17px",
-                    "2xl": "19px",
+                    xs: "11px",
+                    sm: "11px",
+                    md: "13px",
+                    lg: "13px",
+                    xl: "15px",
+                    "2xl": "17px",
                   }}
-                  fontWeight={500}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
@@ -631,17 +638,17 @@ const DiscretionaryLeave = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     ml={3}
                     mr={9}
                     lineHeight={1.9}
-
                     fontWeight={400}
                     fontFamily={"CeraRoundPro"}
                   >
@@ -651,13 +658,14 @@ const DiscretionaryLeave = () => {
                   <Text
                     textAlign={"justify"}
                     fontSize={{
-                      xs: "12px",
-                      sm: "12px",
-                      md: "14px",
-                      lg: "14px",
-                      xl: "16px",
-                      "2xl": "18px",
+                      xs: "11px",
+                      sm: "11px",
+                      md: "13px",
+                      lg: "13px",
+                      xl: "15px",
+                      "2xl": "17px",
                     }}
+                    color={"gray.800"}
                     mt={{lg: "-8" , xs: "-4"}}
                     ml={3}
                     fontWeight={400}

@@ -37,7 +37,7 @@ const VisitorVisa = () => {
         </Helmet>
 
         <Box width="100%" flex="1" p={0} m={0} pt={"50px"}>
-          {/* Banner */}
+          {/* Banner - FIXED */}
           <Box
             width={"100%"}
             height={{
@@ -55,11 +55,12 @@ const VisitorVisa = () => {
             alignItems={"center"}
           >
             <Text
-              fontSize={{ xs: "22px", lg: "32px", xl: "38px", "2xl": "48px" }}
+              fontSize={{ xs: "17px", lg: "27px", xl: "33px", "2xl": "42px" }}
               fontWeight={600}
               fontFamily={"CeraRoundPro"}
               width={"90%"}
               textAlign={"left"}
+              lineHeight={1.1}
             >
               UK Visitor Visa
             </Text>
@@ -84,20 +85,20 @@ const VisitorVisa = () => {
                 fontFamily={"CeraRoundPro"}
                 fontWeight={600}
                 color={"#bf9b30"}
-                fontSize={{ xs: "14px", lg: "26px", xl: "32px", "2xl": "42px" }}
+                fontSize={{ xs: "11px", lg: "29px", xl: "32px", "2xl": "42px" }}
                 textAlign={"left"}
                 ml={3}
               >
                 UK VISITOR VISA
               </Heading>
 
+              {/* Main Content - Color BLACK, Font Size Fixed */}
               <Text
                 fontFamily={"CeraRoundPro"}
-                fontWeight={300}
+                fontWeight={400}
                 color={"black"}
-                lineHeight={"1.5"}
-                letterSpacing={"0.8"}
-                fontSize={{ xs: "9px", lg: "11px", xl: "17px", "2xl": "19px" }}
+                lineHeight={"1.6"}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 ml={3}
                 mt={8}
@@ -107,11 +108,10 @@ const VisitorVisa = () => {
 
               <Text
                 fontFamily={"CeraRoundPro"}
-                fontWeight={300}
+                fontWeight={400}
                 color={"black"}
-                lineHeight={"1.5"}
-                letterSpacing={"0.8"}
-                fontSize={{ xs: "9px", lg: "11px", xl: "17px", "2xl": "19px" }}
+                lineHeight={"1.6"}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign={"left"}
                 ml={3}
                 mt={7}
@@ -128,21 +128,10 @@ const VisitorVisa = () => {
           </Box>
 
           {/* Dropdown info */}
-          <VStack
-            justifyContent={"space-around"}
-            alignItems={"center"}
-            mb={"50px"}
-            width="100%"
-          >
-            {/* 0 - What is a Visitor Visa? */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={{ base: "90%", md: "85%" }}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
+          <VStack justifyContent={"space-around"} alignItems={"center"} mb={"50px"} width="100%">
+            
+            {/* Dropdown 0 - What is a Visitor Visa? */}
+            <Box display={"flex"} flexDir={"column"} color={"black"} width={{ base: "90%", md: "85%" }} justifyContent={"center"} alignItems={"center"}>
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
@@ -157,52 +146,31 @@ const VisitorVisa = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{ xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "18px", "2xl": "20px" }}
-                  fontWeight={500}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   What is a Visitor Visa?
                 </Text>
                 {activeIndex !== 0 ? (
-                  <GoPlus color={"#bf9b30"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
               {activeIndex === 0 && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    mb={6}
-                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                  >
+                <VStack justifyContent={"center"} alignItems={"flex-start"} gap={{ xs: "20px", md: "30px" }} mb={{ xs: "4px", md: "10px" }} borderTop={"1px solid #adacac"} py={{ xs: "15px", md: "30px" }} width={"100%"}>
+                  <Text textAlign={"left"} mb={6} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} fontWeight={400} fontFamily={"CeraRoundPro"} color={"gray.800"}>
                     At Lumine Solicitors, we can apply for your Visitor visa if you wish to come to the UK temporarily (often for up to 6 months), for tourism, visiting friends or family, carrying out a business-related activity, or studying. You must also adhere to the conditions outlined in Appendix V.
                   </Text>
                 </VStack>
               )}
             </Box>
 
-            {/* 1 - Requirements */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={{ base: "90%", md: "85%" }}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
+            {/* Dropdown 1 - Requirements */}
+            <Box display={"flex"} flexDir={"column"} color={"black"} width={{ base: "90%", md: "85%" }} justifyContent={"center"} alignItems={"center"}>
               <HStack
                 borderTop={"1px solid #adacac"}
                 width={"100%"}
@@ -217,47 +185,26 @@ const VisitorVisa = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{ xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "18px", "2xl": "20px" }}
-                  fontWeight={500}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   Requirements
                 </Text>
                 {activeIndex !== 1 ? (
-                  <GoPlus color={"#bf9b30"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
               {activeIndex === 1 && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                    fontWeight={300}
-                    fontFamily={"CeraRoundPro"}
-                    mb={"-5"}
-                  >
+                <VStack justifyContent={"center"} alignItems={"flex-start"} gap={{ xs: "20px", md: "30px" }} mb={{ xs: "4px", md: "10px" }} borderTop={"1px solid #adacac"} py={{ xs: "15px", md: "30px" }} width={"100%"}>
+                  <Text textAlign={"left"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} fontWeight={400} fontFamily={"CeraRoundPro"} mb={"-5"} color={"gray.800"}>
                     The following are a few of the main requirements for a UK visitor visa:
                   </Text>
-
-                  <List.Root
-                    textAlign={"left"}
-                    lineHeight={1.8}
-                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                    fontWeight={300}
-                    fontFamily={"CeraRoundPro"}
-                  >
+                  <List.Root textAlign={"left"} lineHeight={1.8} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} fontWeight={400} fontFamily={"CeraRoundPro"} color={"gray.800"}>
                     <List.Item>
                       You intend to leave the UK at the end of your visit and return to your country of origin (this is generally met by showing strong family/financial ties to your country of residence)
                     </List.Item>
@@ -272,15 +219,8 @@ const VisitorVisa = () => {
               )}
             </Box>
 
-            {/* 2 - How can Lumine Solicitors help? */}
-            <Box
-              display={"flex"}
-              flexDir={"column"}
-              color={"black"}
-              width={{ base: "90%", md: "85%" }}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
+            {/* Dropdown 2 - How can Lumine Solicitors help? */}
+            <Box display={"flex"} flexDir={"column"} color={"black"} width={{ base: "90%", md: "85%" }} justifyContent={"center"} alignItems={"center"}>
               <HStack
                 borderY={"1px solid #adacac"}
                 width={"100%"}
@@ -295,56 +235,30 @@ const VisitorVisa = () => {
               >
                 <Text
                   textAlign={"left"}
-                  fontSize={{ xs: "14px", sm: "14px", md: "16px", lg: "16px", xl: "18px", "2xl": "20px" }}
-                  fontWeight={500}
+                  fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }}
+                  fontWeight={600}
                   fontFamily={"CeraRoundPro"}
                   color={"#bf9b30"}
                 >
                   How can Lumine Solicitors help?
                 </Text>
                 {activeIndex !== 2 ? (
-                  <GoPlus color={"#bf9b30"} size={"2em"} />
+                  <GoPlus color={"#bf9b30"} size={"1.7em"} />
                 ) : (
-                  <AiOutlineMinus color={"#bf9b30"} size={"2em"} />
+                  <AiOutlineMinus color={"#bf9b30"} size={"1.7em"} />
                 )}
               </HStack>
 
               {activeIndex === 2 && (
-                <VStack
-                  justifyContent={"center"}
-                  alignItems={"flex-start"}
-                  gap={{ xs: "20px", md: "30px" }}
-                  mb={{ xs: "4px", md: "10px" }}
-                  borderTop={"1px solid #adacac"}
-                  py={{ xs: "15px", md: "30px" }}
-                  width={"100%"}
-                >
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                    fontWeight={400}
-                    lineHeight={1.9}
-                    fontFamily={"CeraRoundPro"}
-                  >
+                <VStack justifyContent={"center"} alignItems={"flex-start"} gap={{ xs: "20px", md: "30px" }} mb={{ xs: "4px", md: "10px" }} borderTop={"1px solid #adacac"} py={{ xs: "15px", md: "30px" }} width={"100%"}>
+                  <Text textAlign={"left"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} fontWeight={400} lineHeight={1.9} fontFamily={"CeraRoundPro"} color={"gray.800"}>
                     At Lumine Solicitors, we strive to simplify the visa procedure for you. Whether it's applying for a UK visitor visa, extending your existing visa, or bringing dependents along, we're here to assist you. With our proficient team of immigration solicitors, we provide professional advice on selecting the appropriate visa type and guarantee a hassle-free application process.
                   </Text>
-
-                  <Text
-                    textAlign={"left"}
-                    fontSize={{ xs: "12px", sm: "12px", md: "14px", lg: "14px", xl: "16px", "2xl": "18px" }}
-                    fontWeight={400}
-                    fontFamily={"CeraRoundPro"}
-                    mt={"-6"}
-                  >
+                  <Text textAlign={"left"} fontSize={{ xs: "11px", sm: "11px", md: "13px", lg: "13px", xl: "15px", "2xl": "17px" }} fontWeight={400} fontFamily={"CeraRoundPro"} mt={"-6"} color={"gray.800"}>
                     For all immigration matters, Please do not hesitate to get in touch with Lumine solicitors{" "}
                     <strong>020 3950 2246</strong> or{" "}
                     <strong>
-                      <Link
-                        to={"/contact"}
-                        style={{ color: "#e91e63" }}
-                        onMouseEnter={(e) => (e.target.style.color = "#091838")}
-                        onMouseLeave={(e) => (e.target.style.color = "#e91e63")}
-                      >
+                      <Link to={"/contact"} style={{ color: "#e91e63" }} onMouseEnter={(e) => (e.target.style.color = "#091838")} onMouseLeave={(e) => (e.target.style.color = "#e91e63")}>
                         Contact Us HERE
                       </Link>
                     </strong>

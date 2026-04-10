@@ -43,7 +43,7 @@ const NewsNInsightsSection = () => {
       fontSize={{ base: "14px", md: "17px", lg: "18px" }}
       fontWeight="500"
       fontFamily="HelveticaNeue-Light, Helvetica Neue, Arial, sans-serif"
-      lineHeight={{ base: "1.7", md: "1.8" }} // Line spacing badha di image 1 ki tarah
+      lineHeight={{ base: "1.5", md: "1.6" }} // Line spacing badha di image 1 ki tarah
       textAlign="justify" // SABSE ZAROORI: Ye dono sides se barabar rakhega
       style={{ textJustify: "inter-word" }} // Chrome/Safari ke liye support
     >
@@ -58,8 +58,9 @@ const NewsNInsightsSection = () => {
 
   {/* Buttons Section */}
   <Flex
-    gap={{ base: "20px", md: "100px", lg: "200px" }}
+    gap={{ base: "8%", md: "18%", lg: "38%" }}
     direction="row"
+    mt={{lg:"8"}}
     width="100%"
     justify="center"
     align="center"
@@ -69,10 +70,10 @@ const NewsNInsightsSection = () => {
       to="/news"
       bg="black"
       color="white"
-      width={{ base: "110px", md: "145px" }}
-      height={{ base: "45px", md: "50px" }}
-      borderRadius="4px"
-      _hover={{ bg: "#333", transform: "scale(1.05)" }}
+      width={{ base: "100px", md: "135px" }}
+      height={{ base: "38px", md: "43px" }}
+      borderRadius="2px"
+      // _hover={{ bg: "#333", transform: "scale(1.05)" }}
       transition="0.2s"
       fontSize="15px"
     >
@@ -84,10 +85,10 @@ const NewsNInsightsSection = () => {
       to="/insights"
       bg="black"
       color="white"
-      width={{ base: "110px", md: "145px" }}
-      height={{ base: "45px", md: "50px" }}
-      borderRadius="4px"
-      _hover={{ bg: "#333", transform: "scale(1.05)" }}
+     width={{ base: "100px", md: "135px" }}
+      height={{ base: "38px", md: "43px" }}
+      borderRadius="2px"
+      // _hover={{ bg: "#333", transform: "scale(1.05)" }}
       transition="0.2s"
       fontSize="15px"
     >
