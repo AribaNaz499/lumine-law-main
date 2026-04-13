@@ -19,7 +19,7 @@ import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 import "../../../styles/fonts.css";
 import BannerImg from "../../../assets/services/main/commercial/commercial-banner.webp";
 
-// ── Commercial services data — all paths match existing component files ──
+// Commercial services data
 const commercialServices = [
   { title: "Advice on Commercial Lease Terms, Survey Reports, and Repairing Obligations", path: "/all-services/commercial/advice-multiple" },
   { title: "Break Clauses and Rent Reviews", path: "/all-services/commercial/break-rent" },
@@ -34,7 +34,7 @@ const commercialServices = [
   { title: "Schedules of Conditions", path: "/all-services/commercial/schedules-conditions" },
 ];
 
-// ── Service Button — same as Immigration styling ──
+// Service Button
 const ServiceButton = ({ service }) => (
   <GridItem
     as={Link}
@@ -60,7 +60,7 @@ const ServiceButton = ({ service }) => (
   </GridItem>
 );
 
-// ── Banner — same structure as Immigration ──
+// Banner
 const Banner = () => (
   <Box
     width="100%"
@@ -85,12 +85,12 @@ const Banner = () => (
       width="100%" height="100%"
     >
       <Text
-        fontSize={{ base: "26px", xs: "36px", sm: "40px", md: "44px", lg: "48px", xl: "50px" }}
-        fontWeight={600}
+        fontSize={{ base: "23px", xs: "31px", sm: "35px", md: "39px", lg: "43px", xl: "45px" }}
+        fontWeight={650}
         fontFamily="CeraRoundPro"
         ml={{ base: "5%", md: "5%" }}
         color="white"
-        textShadow="2px 2px 4px rgba(0,0,0,0.5)"
+        textShadow="2px 2px 4px rgba(0,0,0,0.6)"
       >
         Commercial Property
       </Text>
@@ -98,27 +98,28 @@ const Banner = () => (
   </Box>
 );
 
-// ── Main Content — same spacing/layout as Immigration ──
+// Main Content - SIRF TEXT COLOR BLACK KIYA
 const MainContent = () => (
   <Box width="100%" display="flex" flexFlow="column" color="black" px={{ base: "5%", md: "0" }}>
     <HStack justifyContent="flex-start" alignItems="center" mt="2%" mb="1%" ml={{ base: "0", md: "5%" }}>
-      <Text fontFamily="CeraRoundPro" fontSize={{ base: "24px", md: "32px" }} fontWeight={400}>
+      <Text fontFamily="CeraRoundPro" fontSize={{ base: "22px", md: "30px" }} mb={"1.5%"} mt={"1.5%"} fontWeight={400} color="black">
         Commercial Property
       </Text>
     </HStack>
-    <Box width={{ base: "100%", md: "95%" }} alignSelf="center" mb={{ base: "10%", xs: "15%", sm: "10%", md: "7.5%", xl: "5%" }}>
+    <Box width={{ base: "100%", md: "95%" }} color={"black"} alignSelf="center" mb={{ base: "10%", xs: "15%", sm: "10%", md: "7.5%", xl: "5%" }}>
       <Text
         fontFamily="CeraRoundPro"
-        fontWeight={350}
+        fontWeight={400}
         ml={{ base: 0, md: 9 }}
-        fontSize={{ base: "14px", md: "16px" }}
+        fontSize={{ base: "13px", md: "15px" }}
         textAlign="justify"
+        color="black"
       >
         When it comes to legal matters concerning property, we provide expertise that you can rely on and trust. Whether it&apos;s for residential property dealings or commercial property transactions.
       </Text>
 
-      {/* Bullet list — left-aligned dots like Immigration */}
-      <Box ml={{ base: 2, md: 9 }} mt="10px" mb="12px">
+      {/* Bullet list */}
+      <Box ml={{ base: 2, md: 9 }} mt="5px" mb="12px" color={"black"}>
         {[
           "Freehold and leasehold sales",
           "Freehold and leasehold purchases",
@@ -126,8 +127,8 @@ const MainContent = () => (
           "Advice on lease terms",
         ].map((item, i) => (
           <HStack key={i} align="center" mb="5px">
-            <Box w="6px" h="6px" bg="gray.600" borderRadius="50%" flexShrink={0} />
-            <Text fontFamily="CeraRoundPro" fontSize={{ base: "14px", md: "16px" }} fontWeight={350}>
+            <Box w="5px" h="5px" bg="black" borderRadius="50%" mt={"-2"} flexShrink={0} />
+            <Text fontFamily="CeraRoundPro" fontSize={{ base: "13px", md: "15px" }} color="black" fontWeight={400}>
               {item}
             </Text>
           </HStack>
@@ -136,10 +137,12 @@ const MainContent = () => (
 
       <Text
         fontFamily="CeraRoundPro"
-        fontWeight={350}
+        fontWeight={400}
         ml={{ base: 0, md: 9 }}
-        fontSize={{ base: "14px", md: "16px" }}
+        fontSize={{ base: "13px", md: "15px" }}
         textAlign="justify"
+        color="black"
+        mt={"-2"}
       >
         We appreciate that moving home can be a stressful experience and we aim to reduce this as much as practically possible. We assist our clients in dealing with the formalities and technicalities of a house purchase or sale to enable matters to be concluded smoothly and quickly.
       </Text>
@@ -147,7 +150,7 @@ const MainContent = () => (
   </Box>
 );
 
-// ── Services Grid — same structure as Immigration ──
+// Services Grid
 const CommercialServicesGrid = () => (
   <Box width="100%" display="flex" flexFlow="column" alignItems="center" color="black" mb={{ base: "20px", xs: "25px", lg: "50px" }}>
     <Grid
@@ -164,7 +167,7 @@ const CommercialServicesGrid = () => (
   </Box>
 );
 
-// ── Main Component ──
+// Main Component
 const Commercial = () => {
   return (
     <Container
@@ -193,21 +196,21 @@ const Commercial = () => {
         {/* Services Grid */}
         <CommercialServicesGrid />
 
-        {/* All Service Links — white bg, same as Immigration */}
+        {/* All Service Links — white bg */}
         <Box bg="white" width="100%" py={8}>
           <Suspense fallback={<div>Loading All Services...</div>}>
             <AllServiceLinks />
           </Suspense>
         </Box>
 
-        {/* Pricing — grey bg, same as Immigration */}
+        {/* Pricing — grey bg */}
         <Box width="100%" py={8}>
           <Suspense fallback={<div>Loading Prices...</div>}>
             <AllPrices />
           </Suspense>
         </Box>
 
-        {/* News and Insights — same negative margin as Immigration */}
+        {/* News and Insights */}
         <Box width="100%" mt={"-4%"}>
           <Suspense fallback={<div>Loading News...</div>}>
             <AllNewsInsights />

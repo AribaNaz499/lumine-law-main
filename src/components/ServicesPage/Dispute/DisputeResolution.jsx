@@ -60,7 +60,6 @@ const ServiceButton = ({ service }) => (
       color: "white",
       transition: "0.3s ease all",
       fontWeight: "600",
-      textDecor: "underline",
     }}
     fontSize={{
       xs: "12px",
@@ -162,10 +161,10 @@ const Dispute = () => {
           >
             <Text
               fontFamily="CeraRoundPro"
-              fontSize="31px"
+              fontSize="30px"
               fontWeight={400}
               textAlign="justify"
-              mb="2.5%"
+              mb="2%"
               color="black"
             >
               Dispute Resolution and Civil Litigation Services
@@ -174,7 +173,7 @@ const Dispute = () => {
             <Text
               fontFamily="CeraRoundPro"
               fontWeight={400}
-              fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+              fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
               textAlign="justify"
               color="black"
             >

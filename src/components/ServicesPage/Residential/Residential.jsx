@@ -116,12 +116,12 @@ const ServiceButton = ({ service }) => (
       fontWeight: "600",
     }}
     fontSize={{
-      xs: "11px",
-      sm: "12px",
-      md: "13px",
-      lg: "14px",
-      xl: "14px",
-      "2xl": "15px",
+      xs: "11.5px",
+      sm: "12.5px",
+      md: "13.5px",
+      lg: "14.5px",
+      xl: "14.5px",
+      "2xl": "15.5px",
     }}
     fontWeight={500}
     fontFamily="CeraRoundPro"
@@ -198,7 +198,7 @@ const Residential = () => {
           >
             <Text
               fontFamily="CeraRoundPro"
-              fontSize="31px"
+              fontSize="30px"
               fontWeight={400}
               textAlign="left"
               mb="2.5%"
@@ -210,9 +210,9 @@ const Residential = () => {
               fontFamily="CeraRoundPro"
               fontWeight={400}
               letterSpacing={0.5}
-              fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
+              fontSize={{ xs: "10.5px", lg: "12.5px", xl: "14.5px", "2xl": "16.5px" }}
               textAlign="justify"
-              lineHeight={1.9}
+              lineHeight={1.4}
             >
               When it comes to legal matters concerning property we provide
               expertise that you can rely on and trust. Whether it's for
@@ -229,7 +229,7 @@ const Residential = () => {
           >
             <Grid
               templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
-              width={{ base: "95%", md: "100%", lg: "95%", xl: "90%" }}
+              width={{ base: "95%", md: "100%", lg: "95%", xl: "92%" }}
               justifySelf="center"
               justifyItems="center"
               gap={{ base: "12px", lg: "16px", xl: "20px" }}

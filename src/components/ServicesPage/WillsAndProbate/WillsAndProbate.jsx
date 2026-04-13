@@ -42,7 +42,7 @@ const WillsServiceButton = ({ title, path }) => (
       transition: "0.3s ease all",
       fontWeight: "600",
     }}
-    fontSize={{ base: "14px", md: "16px" }}
+    fontSize={{ base: "13px", md: "15px" }}
     fontWeight={500}
     fontFamily="CeraRoundPro"
     p="8px 3px"
@@ -64,29 +64,33 @@ const WillsAndProbate = () => {
 
         <Box width="100%" flex="1" pt="50px">
           {/* Banner - Same UI */}
-          <Box width="100%" height={{ base: "200px", lg: "300px" }} bgImage={`url(${BannerImg})`} bgSize="cover" bgPos="center" display="flex" justifyContent="center" alignItems="center">
-            <Text fontSize={{ base: "24px", lg: "45px" }} fontWeight={600} fontFamily="CeraRoundPro" textAlign={"left"} width="90%" color="white">
+          <Box width="100%" height={{ base: "200px", lg: "300px" }} bgImage={`linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${BannerImg})`}
+            bgSize="cover" bgPos="center" display="flex" justifyContent="center" alignItems="center">
+            <Text fontSize={{ base: "24px", lg: "44px" }} fontWeight={600} fontFamily="CeraRoundPro" textAlign={"left"} width="90%" color="white">
               Wills and Probate
             </Text>
           </Box>
 
           {/* Main Content - Same UI */}
           <Box width="90%" color={"black"} mx="auto" mt="2%" >
-            <Text fontFamily="CeraRoundPro" fontSize="38px" fontWeight={400} mb="20px" textAlign={"left"}>Wills and Probate</Text>
-            <Text fontFamily="CeraRoundPro" fontSize={{ base: "14px", lg: "16px" }} textAlign="justify" mb="30px" mt={{ lg: "-3" }}>
+            <Text fontFamily="CeraRoundPro" fontSize="32px" fontWeight={400} mb="20px" textAlign={"left"}>Wills and Probate</Text>
+            <Text fontFamily="CeraRoundPro" fontSize={{ base: "12.5px", lg: "14.5px" }} textAlign="justify" mb="30px" mt={{ lg: "-3" }}>
               With regards to road traffic accidents, we can act for you in relation to whiplash and serious injury claims including passenger injury compensation. We can provide you with advice to help you secure the maximum possible compensation.
             </Text>
 
-            <Text fontFamily="CeraRoundPro" fontSize={{ base: "14px", lg: "16px" }} textAlign="justify" mb="12px" mt={{ lg: "-3" }}>
+            <Text fontFamily="CeraRoundPro" fontSize={{ base: "12.5px", lg: "14.5px" }} textAlign="justify" mb="12px" mt={{ lg: "-3" }}>
               You should seek medical attention immediately following a road traffic accident. A personal injury solicitor should also be contacted without delay.
             </Text>
-            <Text fontFamily="CeraRoundPro" fontSize={{ base: "14px", lg: "16px" }} textAlign="justify" mb="40px" mt={{ lg: "-3" }}>
+            <Text fontFamily="CeraRoundPro" fontSize={{ base: "12.5px", lg: "14.5px" }} textAlign="justify" mb="40px" mt={{ lg: "-3" }}>
               In most instances the time limit for issuing a claim is 3 years from the date of the accident. These time limits however may not be applicable in certain cases involving children and individuals lacking capacity.
             </Text>
 
+            <Text fontFamily="CeraRoundPro" fontSize={{ base: "12.5px", lg: "14.5px" }} textAlign="justify" mb="10px" mt={{ lg: "-3" }}>
+              We consider all the circumstances of the accident and ensure you are provided with an honest evaluation of your case. We operate on a no win no fee basis. You therefore do not pay us any legal costs should your claim not be admitted.We seek to provide you financial recourse as soon as practically possible from the insurers of the liable vehicle. Our solicitors will assess the prospects of winning your case, review all the funding options and always consider proceeding on a no win no fee agreement basis.
+            </Text>
 
             {/* Specific Wills Grid - Same UI */}
-            <Grid templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }} mt={{lg:"20"}} gap="20px" mb="100px">
+            <Grid templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }} mt={{ lg: "20" }} gap="20px" mb="100px">
               {willsServices.map((service) => (
                 <WillsServiceButton key={service.title} title={service.title} path={service.path} />
               ))}

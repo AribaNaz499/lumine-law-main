@@ -86,7 +86,7 @@ const DomesticViolence = () => {
                 as={"h2"}
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                color={"#DEBB48"}
+                color={"#DEBA35"}
                 fontSize={{ xs: "12px", lg: "15px", xl: "23px", "2xl": "33px" }}
                 textAlign={"left"}
                 ml={{ lg: "2" }}
@@ -131,7 +131,7 @@ const DomesticViolence = () => {
                 as={"h2"}
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                color={"#DEBB48"}
+                color={"#DEBA35"}
                 fontSize={{ xs: "12px", lg: "15px", xl: "23px", "2xl": "33px" }}
                 textAlign={"left"}
                 ml={{ lg: "2" }}
@@ -164,7 +164,7 @@ const DomesticViolence = () => {
                 as={"h2"}
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                color={"#DEBB48"}
+                color={"#DEBA35"}
                 fontSize={{ xs: "12px", lg: "15px", xl: "23px", "2xl": "33px" }}
                 textAlign={"left"}
                 ml={{ lg: "2" }}

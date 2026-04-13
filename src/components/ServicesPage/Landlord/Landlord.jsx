@@ -50,7 +50,6 @@ const LandlordServiceButton = ({ title, path }) => (
       color: "white",
       transition: "0.3s ease all",
       fontWeight: "600",
-      textDecor: "underline",
     }}
     fontSize={{
       xs: "12px",
@@ -63,7 +62,7 @@ const LandlordServiceButton = ({ title, path }) => (
     fontWeight={500}
     fontFamily="CeraRoundPro"
     cursor="pointer"
-    p="10px 5px"
+    p="8px 3px"
   >
     {title}
   </GridItem>
@@ -108,7 +107,7 @@ const Landlord = () => {
   alignItems="center"
 >
   <Text
-    fontSize={{ xs: "24px", lg: "32px", xl: "40px", "2xl": "48px" }}
+    fontSize={{ xs: "33px", lg: "41px", xl: "49px", "2xl": "57px" }}
     fontWeight={700}
     fontFamily="CeraRoundPro"
     width="90%"
@@ -132,10 +131,10 @@ const Landlord = () => {
             >
               <Text
                 fontFamily="CeraRoundPro"
-                fontSize="32px"
-                fontWeight={500}
+                fontSize="27px"
+                fontWeight={400}
                 textAlign="left"
-                mb="2.5%"
+                mb="2%"
               >
                 Landlord and Tenant Disputes Services
               </Text>
@@ -143,7 +142,7 @@ const Landlord = () => {
               <Text
                 fontFamily="CeraRoundPro"
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11.5px", lg: "13.5px", xl: "15.5px", "2xl": "17.5px" }}
                 textAlign="justify"
               >
                 We can assist you in the following areas:
@@ -152,12 +151,12 @@ const Landlord = () => {
               <List.Root
                 textAlign={"justify"}
                 fontSize={{
-                  xs: "12px",
-                  sm: "12px",
-                  md: "14px",
-                  lg: "14px",
-                  xl: "16px",
-                  "2xl": "18px",
+                  xs: "11.5px",
+                  sm: "11.5px",
+                  md: "13.5px",
+                  lg: "13.5px",
+                  xl: "15.5px",
+                  "2xl": "17.5px",
                 }}
                 ml={2}
                 lineHeight={1.6}

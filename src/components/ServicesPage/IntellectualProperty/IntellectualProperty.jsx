@@ -1,4 +1,3 @@
-
 import { Suspense } from "react";
 import {
   Text,
@@ -19,7 +18,7 @@ import BannerImg from "../../../assets/services/main/intellectual/intellectual-b
 import "../../../styles/fonts.css";
 import AllServiceLinks from "../../NavLinks/AllServiceLinks";
 
-// ✅ FULL ORIGINAL DATA (FIXED)
+// FULL ORIGINAL DATA
 const introContent = {
   mainText:
     "Intellectual property (IP) rights are designed to protect the creations of human intellect, such as inventions, literary and artistic works, symbols, names, images, and designs. These rights allow individuals or organizations to have exclusive control over their creations and prevent others from using them without permission.",
@@ -56,7 +55,7 @@ const IPServices = [
   { title: "Trademark", path: "/all-services/intellectual-property/trademark" },
 ];
 
-// ✅ SAME BUTTON (NO UI CHANGE)
+// Service Button - SIRF FONT SIZE CHHOTA
 const IPServiceButton = ({ title, path }) => (
   <GridItem
     as={Link}
@@ -77,10 +76,10 @@ const IPServiceButton = ({ title, path }) => (
       fontWeight: "600",
     }}
     fontSize={{
-      xs: "12px",
-      sm: "14px",
-      md: "15px",
-      lg: "16px",
+      xs: "10px",
+      sm: "12px",
+      md: "13px",
+      lg: "14px",
     }}
     fontWeight={500}
     fontFamily="CeraRoundPro"
@@ -97,7 +96,7 @@ const IntellectualProperty = () => {
       width="100vw"
       maxWidth="100%"
       minHeight="100vh"
-      backgroundColor="#99acbd" // ✅ SAME BG
+      backgroundColor="#99acbd"
       overflow="auto"
       m={0}
       p={0}
@@ -110,7 +109,7 @@ const IntellectualProperty = () => {
 
       <Box width="100%" flex="1" pt="50px">
 
-        {/* Banner */}
+        {/* Banner - SIRF FONT SIZE CHHOTA */}
         <Box
           width="100%"
           height={{ xs: "310px", lg: "310px", xl: "360px" }}
@@ -122,8 +121,8 @@ const IntellectualProperty = () => {
           textAlign={"left"}
         >
           <Text
-            fontSize={{ xs: "36px", lg: "44px", xl: "48px" }}
-            fontWeight={600}
+            fontSize={{ xs: "32px", lg: "40px", xl: "44px" }}
+            fontWeight={700}
             fontFamily="CeraRoundPro"
             width="90%"
             ml="5%"
@@ -133,138 +132,73 @@ const IntellectualProperty = () => {
           </Text>
         </Box>
 
-        {/* Content */}
+        {/* Content - SIRF FONT SIZE CHHOTA */}
         <Box width="100%" display="flex" flexFlow="column" color="white">
-
           <Box
-
             width="92%"
-
             alignSelf="center"
-
             mb="5%"
-
             my={{ xs: "5%", md: "2.5%" }}
-
           >
-
             <Text
-
               fontFamily="CeraRoundPro"
-
-              fontSize={{ xs: "17px", lg: "19px", xl: "23px", "2xl": "27px" }}
-
+              fontSize={{ xs: "17px", lg: "19px", xl: "22px", "2xl": "25px" }}
               fontWeight={450}
-
               textAlign="justify"
-
               mb="2.5%"
-
               lineHeight={1.1}
-
               mt={"-3.5"}
-
               color="black"
-
             >
-
               {introContent.mainText}
-
             </Text>
-
-
 
             <Text
-
               fontFamily="CeraRoundPro"
-
               fontWeight={400}
-
-              fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-
+              fontSize={{ xs: "14px", lg: "14px", xl: "15px", "2xl": "17px" }}
               textAlign="justify"
-
               color="black"
-
               mt={"-2"}
-
             >
-
               {introContent.subText}
-
             </Text>
-
-
 
             <List.Root
-
               as="ol"
-
               ml={4.5}
-
               textAlign="justify"
-
               fontSize={{
-
-                xs: "12px",
-
-                sm: "12px",
-
+                xs: "13px",
+                sm: "13px",
                 md: "14px",
-
                 lg: "14px",
-
-                xl: "16px",
-
+                xl: "15px",
                 "2xl": "18px",
-
               }}
-
               color="black"
-
               fontWeight={400}
-
               fontFamily="CeraRoundPro"
-
             >
-
               {introContent.listItems.map((item, index) => (
-
                 <List.Item key={index} _marker={{ color: "black" }}>
-
                   {item.title}: {item.content}
-
                 </List.Item>
-
               ))}
-
             </List.Root>
 
-
-
             <Text
-
               fontFamily="CeraRoundPro"
-
               fontWeight={400}
-
-              fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
-
+              fontSize={{ xs: "13px", lg: "14px", xl: "15px", "2xl": "17px" }}
               textAlign="justify"
-
               color="black"
-
             >
-
               {introContent.conclusion}
-
             </Text>
-
           </Box>
-
-
-
         </Box>
+
         {/* Services */}
         <Box display="flex" justifyContent="center" mt={10} mb={10}>
           <Grid
@@ -278,7 +212,7 @@ const IntellectualProperty = () => {
           </Grid>
         </Box>
 
-        {/* ✅ Services Links WHITE BG */}
+        {/* Services Links WHITE BG */}
         <Box bg="white" width="100%" py={8}>
           <Suspense fallback={<div>Loading Services...</div>}>
             <AllServiceLinks />

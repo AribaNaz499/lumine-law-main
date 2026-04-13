@@ -77,12 +77,12 @@ const FamilyServiceButton = ({ title, path }) => (
       fontWeight: "600",
     }}
     fontSize={{
-      xs: "12px",
-      sm: "14px",
-      md: "15px",
-      lg: "16px",
-      xl: "16px",
-      "2xl": "16px",
+      xs: "11px",
+      sm: "13px",
+      md: "14px",
+      lg: "15px",
+      xl: "15px",
+      "2xl": "15px",
     }}
     fontWeight={500}
     fontFamily="CeraRoundPro"
@@ -131,7 +131,7 @@ const Family = () => {
             alignItems="center"
           >
             <Text
-              fontSize={{ xs: "34px", lg: "44px", xl: "48px", "2xl": "58px" }}
+              fontSize={{ xs: "32px", lg: "42px", xl: "46px", "2xl": "56px" }}
               fontWeight={700}
               fontFamily="CeraRoundPro"
               ml="2.5%"
@@ -152,11 +152,12 @@ const Family = () => {
                 as={"h2"}
                 fontFamily={"CeraRoundPro"}
                 fontWeight={400}
-                fontSize={{ xs: "16px", sm: "20px", md: "24px", lg: "30px", xl: "32px", "2xl": "36px" }}
+                fontSize={{ xs: "15px", sm: "19px", md: "23px", lg: "29px", xl: "31px", "2xl": "35px" }}
                 color={"black"}
                 textAlign={"left"}
                 letterSpacing={0.1}
                 mb={3}
+                ml={5}
                 mt={{ lg: "-9" }}
               >
                 Family and Children
@@ -164,9 +165,12 @@ const Family = () => {
               <Text
                 fontFamily="CeraRoundPro"
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign="justify"
                 mt={{lg:"5"}}
+                ml={5}
+                mr={6}
+                pr={14}
               >
                 Legal issues concerning children and family can often be stressful, and at times upsetting. We offer the following legal advice with compassion and understanding:
               </Text>
@@ -174,12 +178,12 @@ const Family = () => {
               <List.Root
                 textAlign={"justify"}
                 fontSize={{
-                  xs: "12px",
-                  sm: "12px",
-                  md: "14px",
-                  lg: "14px",
-                  xl: "16px",
-                  "2xl": "18px",
+                  xs: "11px",
+                  sm: "11px",
+                  md: "13px",
+                  lg: "13px",
+                  xl: "15px",
+                  "2xl": "17px",
                 }}
                 fontWeight={400}
                 fontFamily={"CeraRoundPro"}
@@ -216,7 +220,7 @@ const Family = () => {
               <Text
                 fontFamily="CeraRoundPro"
                 fontWeight={400}
-                fontSize={{ xs: "12px", lg: "14px", xl: "16px", "2xl": "18px" }}
+                fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
                 textAlign="justify"
                 ml={{lg:"2"}}
                 mr={{lg:"4"}}

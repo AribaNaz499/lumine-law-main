@@ -14,6 +14,8 @@ import Disclaimer from '../components/Footer/Disclaimer.jsx';
 import { AuthProvider } from '../context/AuthContext';
 import ProtectedRoute from '../components/ProtectedRoute';
 import AdminLogin from '../components/Admin/AdminLogin';
+import NotFound from "../components/NotFound/NotFound.jsx"; // path adjust karo
+
 
 // 🔹 Main Pages
 const LandingPage = React.lazy(() => import("../components/LandingPage/Landing"));
@@ -341,6 +343,9 @@ function App() {
 
               {/* Agar aap NewsArticle3 ko alag se bhi dekhna chahte hain (Optional) */}
               <Route path="/news/housing-cards" element={<SuspensePageTransition><NewsArticle3 /></SuspensePageTransition>} />
+           
+           <Route path="*" element={<NotFound />} />
+
             </Routes>
           </Suspense>
         </AuthProvider>  {/* <-- YEH CLOSE KIYA HAI */}
