@@ -21,7 +21,7 @@ const Banner = () => (
       xl: "350px",
       "2xl": "400px",
     }}
-    bgImage={`linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${BannerImg})`}
+    bgImage={`linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${BannerImg})`}
     bgSize="cover"
     bgPos="center"
     bgRepeat="no-repeat"
@@ -30,8 +30,8 @@ const Banner = () => (
     alignItems="center"
   >
     <Text
-      fontSize={{ xs: "32px", lg: "42px", xl: "48px", "2xl": "58px" }}
-      fontWeight={700}
+      fontSize={{ xs: "29px", lg: "39px", xl: "45px", "2xl": "55px" }}
+      fontWeight={650}
       ml={{ lg: 4 }}
       fontFamily="CeraRoundPro"
       color="white"
@@ -52,7 +52,7 @@ const MainContent = () => (
     >
       <Text
         fontFamily="CeraRoundPro"
-        fontSize={{ xs: "21px", lg: "28px", xl: "34px", "2xl": "38px" }}
+        fontSize={{ xs: "17px", lg: "23px", xl: "29px", "2xl": "33px" }}
         fontWeight={400}
         mb={{lg:"-3"}}
       >
@@ -77,9 +77,10 @@ const MainContent = () => (
       <Text
         fontFamily="CeraRoundPro"
         fontWeight={400}
-        fontSize={{ xs: "12px", lg: "13px", xl: "15px", "2xl": "17px" }}
+        fontSize={{ xs: "11.5px", lg: "12.5px", xl: "14.5px", "2xl": "16.5px" }}
         textAlign="justify"
         lineHeight={1.5}
+        ml={3}
       >
         At Lumine Solicitors, we provide a wide range of professional legal
         services for individuals, families and businesses across the UK. Built
@@ -93,10 +94,11 @@ const MainContent = () => (
       <Text
         fontFamily="CeraRoundPro"
         fontWeight={400}
-        fontSize={{ xs: "12px", lg: "13px", xl: "15px", "2xl": "17px" }}
+        fontSize={{ xs: "11.5px", lg: "12.5px", xl: "14.5px", "2xl": "16.5px" }}
         textAlign="justify"
         mt={{ lg: "4" }}
         lineHeight={1.5}
+        ml={3}
       >
         Our expertise covers immigration and visa applications, property and
         conveyancing for both residential and commercial needs, intellectual
@@ -110,10 +112,11 @@ const MainContent = () => (
       <Text
         fontFamily="CeraRoundPro"
         fontWeight={400}
-        fontSize={{ xs: "11px", lg: "13px", xl: "15px", "2xl": "17px" }}
+        fontSize={{ xs: "11.5px", lg: "12.5px", xl: "14.5px", "2xl": "16.5px" }}
         textAlign="justify"
         mt={{ lg: "4" }}
         lineHeight={1.5}
+        ml={3}
       >
         Choosing Lumine Solicitors means working with a team that upholds
         integrity, transparency and client care. With clear fee plans,
